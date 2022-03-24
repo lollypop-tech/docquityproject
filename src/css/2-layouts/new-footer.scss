@@ -5,24 +5,42 @@ footer {
     border-radius: 16px;
     margin: 0px 15px 15px 15px;
     color: #FFFFFF;
+    position: relative;
+    padding: 0px 80px;
 
-    @media (min-width: 767px) {}
+    @media (max-width: 767px) {
+        padding: 175px 15px 0px;
+    }
 
-    .footer-list{
-        .footer-sub-list{
-            &__item{
-                margin-bottom: 16px;
+    .footer-list {
+        &__item {
+            @media (max-width: 767px) {
+                margin-bottom: 40px;
+            }
+
+            .footer-sub-list {
+                &__item {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        .patient-item {
+            @media (max-width: 767px) {
+                position: absolute;
+                top: 75%;
             }
         }
     }
 
     .footer-top {
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        padding: 80px 80px;
+        border-bottom: 1px solid #252424;
+        padding: 80px 0px;
 
         @media (max-width: 767px) {
-            padding: 10px 10px;
+            padding: 40px 0px 80px;
+            border-top: 1px solid #252424;
+            
         }
 
 
@@ -36,16 +54,21 @@ footer {
                 .footer-form {
                     width: 65%;
                     border: 1px solid #ffffff1a;
-                    background: 0 0!important;
+                    background: 0 0 !important;
                     -webkit-border-radius: 8px;
                     border-radius: 8px;
                     font-weight: 400;
                     font-size: 14px;
-                    font-family: 'Lexend Deca',sans-serif;
+                    font-family: 'Lexend Deca', sans-serif;
                     line-height: 16.94px;
                     letter-spacing: .2px;
                     height: 48px;
                     position: relative;
+
+                    @media (max-width: 767px) {
+                        margin-bottom: 16px;
+                        width: 100%;
+                    }
 
                     &:focus {
                         box-shadow: none !important;
@@ -58,10 +81,15 @@ footer {
                     top: 0%;
                     right: 0;
                     border: 0;
-                    padding: 13px 25px;    
+                    padding: 13px 25px;
                     background: #1B4A52;
                     border-radius: 12px;
                     color: #fff;
+
+                    @media (max-width: 767px) {
+                        position: relative;
+                        width: 100%;
+                    }
 
                     &:focus {
                         outline: none !important;
@@ -72,32 +100,60 @@ footer {
                     }
                 }
             }
+
             .playstore-list {
                 display: flex;
                 margin-bottom: 22px;
-                &__item{
-                    margin-right: 16px;
+                @media (max-width: 767px){    
+                    position: relative;
+                    transform: translateY(80px);}
+
+                &__item {
+                    &:first-child {
+                        margin-right: 16px;
+                    }
                 }
             }
-            .star-list{
+
+            .star-list {
                 display: flex;
+
+                @media (max-width: 767px) {
+                    width: 30%;
+                    margin: 0px auto;
+                    position: relative;
+                    transform: translateY(-80px);
+                }
             }
-            .footer-span{
+
+            .footer-span {
                 position: absolute;
                 bottom: 0px;
                 left: 20%;
+                @media (max-width: 767px){
+                    bottom: 55px;
+                }
             }
 
         }
     }
 
     .footer-bottom {
-        padding: 32px 80px;
+        padding: 32px 0px;
 
         @media (max-width: 767px) {
-            padding: 32px 15px;
+            padding: 40px 0px;
             display: flex;
             flex-direction: column-reverse;
+        }
+
+        .footer-logodiv {
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top: 56px;
+                padding: 0px;
+            }
         }
 
         .footer-menu {
@@ -134,40 +190,53 @@ footer {
 
             @media (max-width: 767px) {
                 float: none;
-                margin-bottom: 20px;
+                width: 85%;
+                margin: 0px auto 20px;
 
             }
 
             &__item {
-                border: 1px solid #fff;                
+                border: 1px solid #fff;
                 border-radius: 50%;
+
                 &:not(:last-child) {
                     margin-right: 18px;
                 }
             }
-            .facebook{
+
+            .facebook {
                 padding: 10px 16px;
             }
-            .twitter{
+
+            .twitter {
                 padding: 9px 10px;
             }
-            .insta{
+
+            .insta {
                 padding: 8px 9px;
             }
-            .linked{
+
+            .linked {
                 padding: 6px 12px;
             }
         }
-        .policy-link{           
+
+        .policy-link {
             display: flex;
             position: absolute;
             right: 0px;
-            bottom: -8px;       
+            bottom: -8px;
+
+            @media (max-width: 767px) {
+                position: relative;
+                bottom: 0px;
+            }
+
             &__item {
                 &:not(:last-child) {
                     margin-right: 26px;
                 }
-            }    
+            }
 
         }
     }

@@ -3,9 +3,8 @@
 
 var swiper = new Swiper('.diverseSwiper', {
   direction: 'vertical',
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 0,
-  // mousewheel: true,
   grabCursor: true,
   loop: true,
   autoplay: {
@@ -15,6 +14,14 @@ var swiper = new Swiper('.diverseSwiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 4
+    },
+    768: {
+      slidesPerView: 4
+    }
   }
 });
 
@@ -32,6 +39,24 @@ var swiper = new Swiper(".individualSwiper", {
     el: ".swiper-pagination",
     clickable: true
   }
+});
+
+// support mobile
+
+var swiper = new Swiper(".supportSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  // slidesPerGroup: 3,
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
+
 });
 
 },{}]},{},[1])//# sourceMappingURL=career.js.map
