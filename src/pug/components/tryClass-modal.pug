@@ -1,0 +1,30 @@
+#tryClassModal.modal.fade.download-modal(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    form#contact-form.contact-form(data-parsley-validate).modal-content
+      .modal-header.border-0
+        h5#exampleModalLongTitle.modal-title Download Cheatsheet
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        
+        .form-container.row
+            .col-md-6.form-fields-container.d-flex.flex-wrap
+                .input-field.input-block
+                    input.input-data(id="name" type="text" name="name"  data-parsley-error-message="* Please enter the name" data-parsley-required data-parsley-trigger="blur" placeholder="Name* ")
+                    span.focus-border
+            .col-md-6.form-fields-container.d-flex.flex-wrap
+                .input-field.input-block
+                    input.input-data(id="email" type="text" name="email"  data-parsley-error-message="* Please enter the email id" data-parsley-required data-parsley-trigger="blur" placeholder="Email* ")
+                    span.focus-border
+      .modal-footer.border-0.d-block
+        p.mb-2.fnt-bold Which session will you attend? *
+        span.pb-4.d-block We recommend intermediate if you are familiar with functionality like sumifs().  Intro is great for both beginners and individuals not yet familiar with sumifs() or countifs()
+        .div
+            .row 
+                .col-md-6
+                    .input-block.w-100.input-field.drp-corp
+                        select.input-data.fnt-reg.wide#selectOption1.try-drp(data-parsley-required )
+                            option(value="Corporate or individual?*" hidden) Choose your session
+                            option(value="Corporate") Corporate
+                            option(value="Individual") Individual
+        button.float-left.rec-btn.rec-btn--primary.mt-3.mt-md-5 Sign up

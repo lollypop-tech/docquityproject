@@ -1,0 +1,67 @@
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+// Arrow
+.rec-nav-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+// .slick-arrow
+.slide-nav {
+  &__arrow {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $black;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    transition: $trans;
+    @media (min-width: $sm) {
+      width: 50px;
+      height: 50px;
+    }
+
+    &--sm {
+      height: 40px;
+      width: 40px;
+    }
+
+    &:focus,
+    &:hover {
+      transition: $trans;
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+.img20x20 {
+  height: 12px;
+  width: 12px;
+  @media (min-width: $sm) {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.slick-slide {
+  outline: none !important;
+
+  &:focus,
+  &:hover {
+    outline: none !important;
+  }
+}

@@ -1,0 +1,19 @@
+section.brand-section 
+    .container 
+        .row 
+            .col-lg-6.ml-auto.mr-auto.text-center 
+                h2.h2.fnt-lex We work with the most renowned brands in healthcare
+                p.fnt-sm.text-blackish.fnt500.fnt-man.opacity-text.mb-4 Take a look at some of the companies that have been supporting our growth across Southeast Asia and beyond.
+    .container
+        .row.justify-content-center
+            .col-md-7
+                nav
+                    #nav-tab.nav.nav-tabs.nav-fill(role='tablist')
+                        #nav-home-tab.nav-item.nav-link.active(data-toggle='tab' href='#nav-home' role='tab' aria-controls='nav-home' aria-selected='true') Medical Associations
+                        #nav-profile-tab.nav-item.nav-link(data-toggle='tab' href='#nav-profile' role='tab' aria-controls='nav-profile' aria-selected='false') Pharma Companies
+            .col-12
+                #nav-tabContent.tab-content.py-3.px-3.px-sm-0
+                    #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-home-tab')
+                        include brandslider.pug
+                    #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab')
+                        | Our employees are founders, operators and doctors working on frontier ideas in health tech. They come from diverse backgrounds and share a strong spirit of service, a belief that technology can push the boundaries of the healthcare system.

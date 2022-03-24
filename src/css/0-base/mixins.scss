@@ -1,0 +1,64 @@
+/* Mixins */
+
+@mixin border-gradient($from, $to, $blur: 0, $weight: 0) {
+  $mix-main: mix($from, $to);
+  $mix-sub-from: mix($mix-main, $from);
+  $mix-sub-to: mix($mix-main, $to);
+
+  box-shadow: 0 1px $blur $weight rgba($to, 1), 0 -1px $blur $weight rgba($from, 0.5), 1px 0 $blur $weight rgba($to, 0.5), -1px 0 $blur $weight rgba($from, 0.2);
+}
+
+@mixin border-gradient-sec($from, $to, $blur: 0, $weight: 0) {
+  $mix-main: mix($from, $to);
+  $mix-sub-from: mix($mix-main, $from);
+  $mix-sub-to: mix($mix-main, $to);
+
+  box-shadow: 0 1px $blur $weight rgba($mix-sub-to, 1), 0 -1px $blur $weight rgba($mix-sub-from, 1), 1px 0 $blur $weight rgba($mix-sub-to, 1), -1px 0 $blur $weight rgba($mix-sub-from, 1);
+  // 1px -1px $blur $weight rgba($mix-main, .5),
+  // -1px 1px $blur $weight rgba($mix-main, .5),
+  // 1px 1px $blur $weight rgba($to, .7),
+  // -1px -1px $blur $weight rgba($from, .7);
+}
+
+//Fonts Mixins
+
+@mixin font($font-family, $font-size) {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+/* antialiasing mode font rendering */
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* font family mixin */
+
+@mixin fonts($size-xs, $size-sm, $size-md, $case, $f-family) {
+  $line-diff: 10px;
+
+  text-transform: $case;
+  font-family: $f-family;
+  font-size: $size-xs;
+  line-height: $size-xs + $line-diff;
+
+  @media (min-width: $sm) {
+    font-size: $size-sm;
+    line-height: $size-sm + $line-diff;
+  }
+
+  @media (min-width: $md) {
+    $line-diff: 10px;
+
+    font-size: $size-md;
+    line-height: $size-md + $line-diff;
+  }
+}
+
+@mixin fnt-mixin($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+

@@ -1,0 +1,29 @@
+section.sudeo-wrapper.bg-grd
+    .container.section-padding-5
+        .row
+            .col-md-4.d-none-only-xs
+                img.w-100(src="img/footer.svg" alt="logo")
+                .n-dot-pattern.n-dot-pattern--green
+                    img.img-fluid(src="./img/patterns/dots-green.svg" alt="Dots pattern")
+            .col-md-8.pl-0
+                img.banner-pattern.-bottom(src="./img/home/square-pattern.svg" alt="banner-img")
+                //- FORM
+                .stat-card.sudeo-wrapper__info
+                    form#contact-form.contact-form(data-parsley-validate)
+                        .form-container
+                            h3.subheading.mb-3 Let’s Talk!
+                            p.form-container__des Have an interesting product to build or design? Or have queries about our other services? Or do you just want to talk? Send us your details and we’ll get in touch with you.
+                            .form-fields-container.d-flex.flex-wrap.px-0
+                                .input-field.input-block
+                                    label.input__label(for="name")
+                                            | Name
+                                    input.input-data(id="name" type="text" name="name"  data-parsley-error-message="* Please enter the name" data-parsley-required data-parsley-trigger="blur")
+                                    span.focus-border
+
+                                .input-field.input-block
+                                    label.input__label(for="email")
+                                            | Email
+                                    input.input-data(id="email" type="text" name="email"  data-parsley-type="email" data-parsley-error-message="* Please enter the email" data-parsley-required data-parsley-trigger="blur")
+                                    span.focus-border
+                                .contact-form-submit
+                                    <input class="form-submit" type="submit", value="")/>

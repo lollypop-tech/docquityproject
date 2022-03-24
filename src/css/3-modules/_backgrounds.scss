@@ -1,0 +1,40 @@
+.bg-blue {
+  // background-color: $secondary-clr;
+  position: relative;
+  color   : $w;
+}
+
+.bg-secndary {
+  background: rgba($color: $secondary-clr, $alpha: 0.05);
+}
+
+.rec-noshadow {
+  box-shadow   : none !important;
+  border-radius: 0 !important;
+}
+
+.rec-bg-ece {
+  background: #eceef5;
+}
+
+// background interactions
+
+.rec-gsap-bg-pri {
+  position  : absolute;
+  width     : 100%;
+  height    : 100%;
+  left      : 0;
+  right     : 0;
+  bottom    : 0;
+  background: $secondary-clr;
+}
+
+// background blue 
+
+.bg-dblue {
+  background: #0D3486;
+}
+
+.bg-yellow {
+  background: #F2B94C;
+}

@@ -1,0 +1,70 @@
+// .rec-bg-shape {
+//   background: url("../../img/stokes/stroke-pattern-h.svg");
+//   background-position: 100% 100%, 0% 50%;
+//   background-size: auto, auto;
+//   background-repeat: no-repeat;
+// }
+.rec-stroke-line {
+    @media (min-width: $md) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 1040px;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+    @media (min-width: $lg) {
+        max-width: 1040px;
+    }
+    &__fig-wrap {
+        @media (min-width: $md) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            background: #f2f4fa;
+            height: calc(100% + 107px);
+            transform: translateY(-107px);
+        }
+        @media (min-width: $lg) {
+            width: 50px;
+        }
+    }
+}
+
+.rec-stoke-bended {
+    @media (min-width: $md) {
+        position: absolute;
+        top: 12rem;
+        max-width: 890px;
+        width: 100%;
+        left: 0;
+    }
+    @media (min-width: $lg) {
+        max-width: 1250px;
+    }
+    &__wrap {
+        @media (min-width: $md) {
+            position: relative;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+        }
+        & .overlay {
+            position: absolute;
+            top: 0;
+            z-index: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            right: 0;
+            background: black;
+            height: 100%;
+        }
+    }
+}

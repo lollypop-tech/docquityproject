@@ -1,0 +1,225 @@
+// font-sizes
+
+.fnt-lg {
+  font-size  : 24px;
+  line-height: 36px;
+
+  @media (min-width: $md) {
+    font-size  : 36px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+  }
+}
+
+.fnt-md {
+  font-size  : 14px;
+  line-height: 24px;
+
+  @media (min-width: $sm) {
+    font-size  : 16px;
+    line-height: 26px;
+  }
+}
+
+.fnt-sm {
+  font-size  : 12px;
+  line-height: 22px;
+
+  @media (min-width: $sm) {
+    font-size  : 14px;
+    line-height: 24px;
+  }
+}
+
+.fnt-xs {
+  font-size  : 12px;
+  line-height: 22px;
+}
+
+// Font varients
+
+.fnt-reg {
+  font-weight: $fnt-reg !important;
+}
+
+.fnt-medium {
+  font-weight: $fnt-medium !important;
+}
+
+.fnt-bold {
+  font-weight: $fnt-bold;
+}
+
+// colors
+
+.txt-primary {
+  color: $primary;
+}
+
+// backgrounds
+
+.gsap-bg-bg-gray {
+  position           : absolute;
+  top                : 0;
+  bottom             : 0;
+  left               : 0;
+  right              : 0;
+  height             : 100%;
+  width              : 100%;
+  // background-color: $gray;
+}
+
+// font family
+
+
+// new 
+
+.text-blackish { color: #1D1919;}
+.text-red{ color: #E2504B;}
+
+.text-white{color:#FFFFFF!important}
+
+.text-gray{color:#C4C4C4!important;}
+
+.text-bluey{color:#1B4A52!important}
+
+.fnt-lex{font-family: 'Lexend Deca', sans-serif;}
+
+.fnt-man{font-family: 'Manrope', sans-serif;}
+
+
+.h1 {
+  
+
+  @media (min-width: $md) {
+
+    font-size  : 48px !important;
+    line-height:54px;
+  }
+}
+
+.h2 {  
+  font-size: 24px;
+  line-height: 28px;
+  @media (min-width: $md) {
+    font-size  : 32px !important;
+    line-height: 40px;
+    
+  }
+}
+
+.h3 {
+
+  font-size  : 24px;
+  line-height: 140%;
+
+  @media (min-width: $md) {
+    font-size  : 32px !important;
+    line-height: 36px;
+  }
+}
+
+.h5 {
+
+  font-size  : 24px;
+  line-height: 140%;
+
+  @media (min-width: $md) {
+    font-size  : 24px !important;
+    line-height: 29.05px;
+  }
+}
+
+.para-text{
+  @media (min-width: $md) {
+    font-size  : 20px !important;
+    line-height: 24.2px;
+  }
+}
+
+.fnt800 {
+  font-weight: 800;
+}
+
+.fnt700 {
+  font-weight: 700;
+}
+
+.fnt400 {
+  font-weight: 400;
+}
+
+.fnt500 {
+  font-weight: 500;
+}
+
+.fnt600 {
+  font-weight: 600;
+}
+
+.text-inherit {
+  text-transform: inherit;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height   : auto;
+}
+
+.txt-md {
+  
+
+  @media (min-width: $md) {
+    font-size  : 16px !important;
+    line-height: 150% !important;
+  }
+}
+
+.txt-sm {
+  
+
+  @media (min-width: $md) {
+    font-size  : 14px !important;
+    line-height: 28px !important;
+  }
+}
+
+.mb120 {
+  margin-bottom: 64px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+}
+
+.mt120 {
+  margin-top: 64px;
+
+  @media (min-width: 768px) {
+    margin-top: 120px;
+  }
+}
+
+.txt-owhite {
+  color:#fff;
+  opacity: 0.7;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.mr4 {
+  margin-right: 4rem;
+}
+
+.mx22 {
+  @media (max-width: 768px) {
+    margin-left : 2rem;
+    margin-right: 2rem;
+  }
+}
+
+
+
+

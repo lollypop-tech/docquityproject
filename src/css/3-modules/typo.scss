@@ -1,0 +1,100 @@
+.main-heading {
+  font-size  : 34px;
+  line-height: 46px;
+  font-weight: $fnt-bold;
+
+  @media (min-width: $sm) {
+    font-size  : 45px;
+    line-height: 55px;
+  }
+
+  @media (min-width: $lg) {
+    font-size  : 60px;
+    line-height: 84px;
+  }
+}
+
+// .h2 {
+//   font-size  : 22px;
+//   line-height: 32px;
+//   font-weight: $fnt-bold;
+
+//   @media (min-width: $sm) {
+//     font-size  : 36px;
+//     line-height: 46px;
+//   }
+
+//   @media (min-width: $md) {
+//     font-size  : 48px;
+//     line-height: 58px;
+//   }
+// }
+
+// .h3 {
+//   font-size  : 20px;
+//   line-height: 30px;
+//   font-weight: $fnt-bold;
+
+//   @media (min-width: $md) {
+//     font-size  : 34px;
+//     line-height: 44px;
+//   }
+// }
+
+.fnt-xxl {
+  font-size  : 16px;
+  line-height: 130%;
+  font-weight: $fnt-bold;
+
+  @media (min-width: $md) {
+    font-size  : 24px;
+    line-height: 34px;
+  }
+}
+
+.fnt-xl {
+  font-size  : 16px;
+  line-height: 26px;
+  font-weight: $fnt-bold;
+
+  @media (min-width: $md) {
+    font-size  : 20px;
+    line-height: 30px;
+  }
+}
+
+.hero-title {
+  font-size  : 18px;
+  line-height: 30px;
+  font-weight: $fnt-bold;
+
+  @media (min-width: $sm) {
+    font-size  : 34px;
+    line-height: 50px;
+  }
+}
+
+.line-35 {
+  line-height: 30px;
+
+  @media (min-width: $sm) {
+    line-height: 35px;
+  }
+}
+
+// new font sizes
+
+.text-llextra {
+  font-size  : 30px;
+  line-height: 41px;
+
+  @media (min-width: 768px) {
+    font-size  : 40px;
+    line-height: 51px;
+  }
+}
+
+.txt-lopacitywhite {
+  color  : #ffffff;
+  opacity: 0.8;
+}

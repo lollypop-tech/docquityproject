@@ -1,0 +1,214 @@
+
+section.ns-best-ui.v-hidden.gsap-tabs-wrap
+    .gsap-bg-blue.bg-blue
+    .container
+        .row.captions
+            .col-md-6
+                h2.h2.gsap-captions-item  Naskay - The Best Eye For Your UI
+
+        .row.ns-tabs-v
+            .col-lg-5.ns-tabs-v__left
+
+                ul#tabs.nav.nav-tabs.titles(role='tablist' aria-orientation='vertical')
+                    li.nav-item.gsap-list-item
+                        a#tab-A.nav-link.active.ns-tabs-v__link(href='#pane-A' data-toggle='tab' role='tab') 
+                            .ns-tabs-v__fig-wrap
+                                .n-tabs-circle
+                                    .ns-tabs-v__img
+                                        i.icon-ui-experience
+                                        //- img.img-fluid(src="./img/home/UI/design.svg" alt="We design from experience")
+                                        //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                            span.ns-tabs-v__link-text We design from experience
+                    li.nav-item.gsap-list-item
+                        a#tab-B.nav-link.ns-tabs-v__link(href='#pane-B' data-toggle='tab' role='tab') 
+                            .ns-tabs-v__fig-wrap
+                                .n-tabs-circle
+                                    .ns-tabs-v__img
+                                        i.icon-ui-inno
+                                        //- img.img-fluid(src="./img/home/UI/innovative.svg" alt="We design from experience")
+                                        //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                            span.ns-tabs-v__link-text Iterative yet Innovative
+                    li.nav-item.gsap-list-item
+                        a#tab-C.nav-link.ns-tabs-v__link(href='#pane-C' data-toggle='tab' role='tab') 
+                            .ns-tabs-v__fig-wrap
+                                .n-tabs-circle
+                                    .ns-tabs-v__img
+                                        i.icon-ui-detail
+                                        //- img.img-fluid(src="./img/home/UI/approach.svg" alt="We design from experience")
+                                        //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                            span.ns-tabs-v__link-text Detail oriented approach
+                    li.nav-item.gsap-list-item
+                        a#tab-D.nav-link.ns-tabs-v__link(href='#pane-D' data-toggle='tab' role='tab') 
+                            .ns-tabs-v__fig-wrap
+                                .n-tabs-circle
+                                    .ns-tabs-v__img
+                                        i.icon-ui-timely
+                                        //- img.img-fluid(src="./img/home/UI/timely.svg" alt="We design from experience")
+                                        //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                            span.ns-tabs-v__link-text Timely handoffs 
+                    li.nav-item.gsap-list-item
+                        a#tab-E.nav-link.ns-tabs-v__link(href='#pane-E' data-toggle='tab' role='tab') 
+                            .ns-tabs-v__fig-wrap
+                                .n-tabs-circle
+                                    .ns-tabs-v__img
+                                        i.icon-ui-std
+                                        //- img.img-fluid(src="./img/home/UI/design-tool.svg" alt="We design from experience")
+                                        //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                            span.ns-tabs-v__link-text Standard design tools  
+            
+            .col-lg-7
+                .n-dot-pattern.n-dot-pattern--blue
+                    img.img-fluid(src="./img/home/square-pattern.svg" alt="banner-img")
+                    //- img.img-fluid(src="./img/home/square-pattern.svg" alt="banner-img")
+                
+                .ns-tabs-v__right.gsap-panel-left
+                    #content.tab-content(role='tablist')
+                        #pane-A.ns-panel.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='tab-A')
+                            #heading-A.ns-panel-header(role='tab')
+                                span.ns-tabs-v__link-text(data-toggle='collapse' href='#collapse-A' data-parent='#content' aria-expanded='true' aria-controls='collapse-A')
+                                    .ns-tabs-v__fig-wrap
+                                        .n-tabs-circle
+                                            .ns-tabs-v__img
+                                                i.icon-ui-experience
+                                                //- img.img-fluid(src="./img/home/UI/design.svg" alt="We design from experience")
+                                                //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                                    span We design from experience
+                            #collapse-A.collapse.show(role='tabpanel' aria-labelledby='heading-A')
+                                .ns-panel-body
+                                    h3.subheading.mb-3.mb-md-4 We design from experience
+                                    p.tab-content__des Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        #pane-B.ns-panel.tab-pane.fade(role='tabpanel' aria-labelledby='tab-B')
+                            #heading-B.ns-panel-header(role='tab')
+                                span.ns-tabs-v__link-text.collapsed(data-toggle='collapse' href='#collapse-B' data-parent='#content' aria-expanded='false' aria-controls='collapse-B')
+                                    .ns-tabs-v__fig-wrap
+                                        .n-tabs-circle
+                                            .ns-tabs-v__img
+                                                i.icon-ui-inno
+                                                //- img.img-fluid(src="./img/home/UI/lterative.svg" alt="We design from experience")
+                                                //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                                    span Iterative yet Innovative
+                            #collapse-B.collapse(role='tabpanel' aria-labelledby='heading-B')
+                                .ns-panel-body
+                                    h3.subheading.mb-3.mb-md-4 Iterative yet Innovative
+                                    p.tab-content__des Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        #pane-C.ns-panel.tab-pane.fade(role='tabpanel' aria-labelledby='tab-C')
+                            #heading-C.ns-panel-header(role='tab')
+                                span.ns-tabs-v__link-text.collapsed(data-toggle='collapse' href='#collapse-C' data-parent='#content' aria-expanded='false' aria-controls='collapse-C')
+                                    .ns-tabs-v__fig-wrap
+                                        .n-tabs-circle
+                                            .ns-tabs-v__img
+                                                i.icon-ui-detail
+                                                //- img.img-fluid(src="./img/home/UI/details.svg" alt="We design from experience")
+                                                //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                                    span Detail oriented approach
+                            #collapse-C.collapse(role='tabpanel' aria-labelledby='heading-C')
+                                .ns-panel-body
+                                    h3.subheading.mb-3.mb-md-4 Detail oriented approach 
+                                    p.tab-content__des Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        #pane-D.ns-panel.tab-pane.fade(role='tabpanel' aria-labelledby='tab-D')
+                            #heading-D.ns-panel-header(role='tab')
+                                span.ns-tabs-v__link-text.collapsed(data-toggle='collapse' href='#collapse-D' data-parent='#content' aria-expanded='false' aria-controls='collapse-D')
+                                    .ns-tabs-v__fig-wrap
+                                        .n-tabs-circle
+                                            .ns-tabs-v__img
+                                                i.icon-ui-timely
+                                                //- img.img-fluid(src="./img/home/UI/timely.svg" alt="We design from experience")
+                                                //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                                    span Timely handoffs 
+                            #collapse-D.collapse(role='tabpanel' aria-labelledby='heading-D')
+                                .ns-panel-body
+                                    h3.subheading.mb-3.mb-md-4 Timely handoffs 
+                                    p.tab-content__des Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        #pane-E.ns-panel.tab-pane.fade(role='tabpanel' aria-labelledby='tab-E')
+                            #heading-E.ns-panel-header(role='tab')
+                                span.ns-tabs-v__link-text.collapsed(data-toggle='collapse' href='#collapse-E' data-parent='#content' aria-expanded='false' aria-controls='collapse-E')
+                                    .ns-tabs-v__fig-wrap
+                                        .n-tabs-circle
+                                            .ns-tabs-v__img
+                                                i.icon-ui-std
+                                                //- img.img-fluid(src="./img/home/UI/design-tool.svg" alt="We design from experience")
+                                                //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                                    span Standard design tools  
+                            #collapse-E.collapse(role='tabpanel' aria-labelledby='heading-E')
+                                .ns-panel-body
+                                    h3.subheading.mb-3.mb-md-4 Standard design tools  
+                                    p.tab-content__des Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+
+
+//- section.bg-dark-blue.ns-best-ui.v-hidden
+    .container
+        .row
+            .col-md-6
+                h2.h2  Naskay - The Best Eye For Your UI
+
+        .row.ns-tabs-v
+            .col-lg-5.ns-tabs-v__left
+                #v-pills-tab.nav.flex-column.nav-pills(role='tablist' aria-orientation='vertical')
+                    
+                    a#tab-one.nav-link.ns-tabs-v__link.active(data-toggle='pill' href='#one-tab' role='tab' aria-controls='one-tab' aria-selected='true') 
+                        .ns-tabs-v__fig-wrap
+                            .n-tabs-circle
+                                .ns-tabs-v__img
+                                    img.img-fluid(src="./img/home/UI/design.svg" alt="We design from experience")
+                                    //- img.img-fluid(src="./img/favicon.ico" alt="We design from experience")
+                        span.ns-tabs-v__link-text We design from experience
+                    
+                    a#tab-two.nav-link.ns-tabs-v__link(data-toggle='pill' href='#two-tab' role='tab' aria-controls='two-tab' aria-selected='false') 
+                        .ns-tabs-v__fig-wrap
+                            .n-tabs-circle
+                                .ns-tabs-v__img
+                                    img.img-fluid(src="./img/home/UI/lterative.svg" alt="Iterative yet Innovative")
+                                    //- img.img-fluid(src="./img/favicon.ico" alt="Iterative yet Innovative")
+                        span.ns-tabs-v__link-text Iterative yet Innovative
+                    
+                    a#tab-three.nav-link.ns-tabs-v__link(data-toggle='pill' href='#three-tab' role='tab' aria-controls='three-tab' aria-selected='false') 
+                        .ns-tabs-v__fig-wrap
+                            .n-tabs-circle
+                                .ns-tabs-v__img
+                                    img.img-fluid(src="./img/home/UI/details.svg" alt="Detail oriented approach ")
+                                    //- img.img-fluid(src="./img/favicon.ico" alt="Detail oriented approach ")
+                        span.ns-tabs-v__link-text Detail oriented approach 
+                    
+                    a#tab-four.nav-link.ns-tabs-v__link(data-toggle='pill' href='#four-tab' role='tab' aria-controls='four-tab' aria-selected='false') 
+                        .ns-tabs-v__fig-wrap
+                            .n-tabs-circle
+                                .ns-tabs-v__img
+                                    img.img-fluid(src="./img/home/UI/timely.svg" alt="Timely handoffs  ")
+                                    //- img.img-fluid(src="./img/favicon.ico" alt="Timely handoffs  ")
+                        span.ns-tabs-v__link-text Timely handoffs  
+                    
+                    a#tab-five.nav-link.ns-tabs-v__link(data-toggle='pill' href='#five-tab' role='tab' aria-controls='five-tab' aria-selected='false') 
+                        .ns-tabs-v__fig-wrap
+                            .n-tabs-circle
+                                .ns-tabs-v__img
+                                    img.img-fluid(src="./img/home/UI/design-tool.svg" alt="Standard design tools  ")
+                                    //- img.img-fluid(src="./img/favicon.ico" alt="Standard design tools  ")
+                        span.ns-tabs-v__link-text Standard design tools  
+            
+            
+            .col-lg-7
+                .n-dot-pattern.n-dot-pattern--blue
+                    img.img-fluid(src="./img/home/square-pattern.svg" alt="banner-img")
+                    //- img.img-fluid(src="./img/home/square-pattern.svg" alt="banner-img")
+                
+                .ns-tabs-v__right 
+                    #v-pills-tabContent.tab-content
+                        #one-tab.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='tab-one') 
+                            h3.subheading.mb-3.mb-md-4 We design from experience
+                            p Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        
+                        #two-tab.tab-pane.fade(role='tabpanel' aria-labelledby='tab-two') 
+                            h3.subheading.mb-3.mb-md-4 Iterative yet Innovative
+                            p Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        
+                        #three-tab.tab-pane.fade(role='tabpanel' aria-labelledby='tab-three') 
+                            h3.subheading.mb-3.mb-md-4 Detail oriented approach 
+                            p Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        
+                        #four-tab.tab-pane.fade(role='tabpanel' aria-labelledby='tab-four') 
+                            h3.subheading.mb-3.mb-md-4 Timely handoffs  
+                            p Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.
+                        
+                        #five-tab.tab-pane.fade(role='tabpanel' aria-labelledby='tab-five') 
+                            h3.subheading.mb-3.mb-md-4 Standard design tools   
+                            p Our team has a splendid lot of design skills that touch every aspect of UI. Our design experts fit your needs like a glove and bring you the most effective designs that work best for your purpose.

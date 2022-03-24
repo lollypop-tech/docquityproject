@@ -1,0 +1,133 @@
+.rec-steps-list {
+    display: flex;
+    margin: 0 auto;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+    @media (min-width: $sm) {
+        align-items: center;
+        justify-self: center;
+    }
+    @media (min-width: $md) {
+        padding: {
+            left: 1rem;
+            right: 1rem;
+        }
+    }
+    &__item {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        @media (max-width: 767px) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media (min-width: $sm) {
+            max-width: 33.33%;
+        }
+        padding: {
+            left: 1.5rem;
+            right: 1.5rem;
+        }
+        @media (min-width: $md) {
+            padding: {
+                left: 1rem;
+                right: 1rem;
+            }
+        }
+    }
+}
+
+.rec-step-circle {
+    position: relative;
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    background: #d6ddf4;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    @media (min-width: $sm) {
+        margin-bottom: 2rem;
+        height: 112px;
+        width: 112px;
+    }
+    @media (min-width: $md) {
+        margin-bottom: 2rem;
+        height: 152px;
+        width: 152px;
+    }
+}
+
+.rec-line {
+    @media (min-width: $sm) {
+        position: absolute;
+        height: 11px;
+        max-width: 104px;
+        width: 100%;
+        left: calc(50% + 10px);
+        background: #f2f4f9;
+        transform: translateX(50%);
+        border-radius: 11px;
+    }
+    @media (min-width: $md) {
+        left: calc(50% + 20px);
+        max-width: 130px;
+    }
+    @media (min-width: $lg) {
+        max-width: 154px;
+    }
+}
+
+.rec-step-txt {
+    font-size: 56px;
+    line-height: 66px;
+    color: $w;
+    letter-spacing: -1.5px;
+    font-weight: $fnt-bold;
+    @media (min-width: $sm) {
+        font-size: 76px;
+        line-height: 86px;
+    }
+    @media (min-width: $md) {
+        font-size: 96px;
+        line-height: 106px;
+    }
+}
+
+.rec-form-wrap {
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+// try class inf0
+.rec-banner--tryclas {
+    p {
+        @extend .fnt-xl;
+        font-weight: $fnt-reg;
+        color: $black;
+        @media (max-width: 767px) {
+            font-size: 16px !important;
+            line-height: 26px !important;
+        }
+    }
+}
+
+.rec-class-info {
+    display: inline-block;
+    padding: {
+        top: 1rem;
+        bottom: 1rem;
+    }
+    @media (min-width: $md) {
+        padding: {
+            top: 2.8rem;
+            bottom: 2.8rem;
+        }
+    }
+}
+
+.rec-btn-wrapper {
+    display: inline-block;
+    padding-top: 2rem;
+}

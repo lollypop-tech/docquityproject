@@ -1,0 +1,189 @@
+// Animate footer
+// Footer
+footer {
+    background-color: #0E0D0D;
+    border-radius: 16px;
+    margin: 0px 15px 15px 15px;
+    color: #FFFFFF;
+
+    @media (min-width: 767px) {}
+
+    .footer-list{
+        .footer-sub-list{
+            &__item{
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .footer-top {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 80px 80px;
+
+        @media (max-width: 767px) {
+            padding: 10px 10px;
+        }
+
+
+        .footer-right {
+            @media (max-width: 767px) {}
+
+            form {
+                position: relative;
+                margin-bottom: 32px;
+
+                .footer-form {
+                    width: 65%;
+                    border: 1px solid #ffffff1a;
+                    background: 0 0!important;
+                    -webkit-border-radius: 8px;
+                    border-radius: 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-family: 'Lexend Deca',sans-serif;
+                    line-height: 16.94px;
+                    letter-spacing: .2px;
+                    height: 48px;
+                    position: relative;
+
+                    &:focus {
+                        box-shadow: none !important;
+                    }
+
+                }
+
+                .footer__submit {
+                    position: absolute;
+                    top: 0%;
+                    right: 0;
+                    border: 0;
+                    padding: 13px 25px;    
+                    background: #1B4A52;
+                    border-radius: 12px;
+                    color: #fff;
+
+                    &:focus {
+                        outline: none !important;
+                    }
+
+                    &:focus-visible {
+                        outline: none !important;
+                    }
+                }
+            }
+            .playstore-list {
+                display: flex;
+                margin-bottom: 22px;
+                &__item{
+                    margin-right: 16px;
+                }
+            }
+            .star-list{
+                display: flex;
+            }
+            .footer-span{
+                position: absolute;
+                bottom: 0px;
+                left: 20%;
+            }
+
+        }
+    }
+
+    .footer-bottom {
+        padding: 32px 80px;
+
+        @media (max-width: 767px) {
+            padding: 32px 15px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .footer-menu {
+            display: flex;
+
+            @media (max-width: 767px) {
+                width: 100%;
+
+            }
+
+            &--item {
+                width: 45%;
+
+                &:first-child {
+                    @media (max-width: 767px) {
+                        width: 49%;
+                        margin-right: 15px;
+                    }
+                }
+
+                a {
+                    color: #202020 !important;
+                    font-family: $inter;
+                    font-size: 16px;
+                    line-height: 19.36px;
+
+                }
+            }
+        }
+
+        .social-list {
+            display: flex;
+            float: right;
+
+            @media (max-width: 767px) {
+                float: none;
+                margin-bottom: 20px;
+
+            }
+
+            &__item {
+                border: 1px solid #fff;                
+                border-radius: 50%;
+                &:not(:last-child) {
+                    margin-right: 18px;
+                }
+            }
+            .facebook{
+                padding: 10px 16px;
+            }
+            .twitter{
+                padding: 9px 10px;
+            }
+            .insta{
+                padding: 8px 9px;
+            }
+            .linked{
+                padding: 6px 12px;
+            }
+        }
+        .policy-link{           
+            display: flex;
+            position: absolute;
+            right: 0px;
+            bottom: -8px;       
+            &__item {
+                &:not(:last-child) {
+                    margin-right: 26px;
+                }
+            }    
+
+        }
+    }
+
+}
+
+
+// .mobile-view{
+//     display: none!important;
+//     @media (max-width: 767px) {
+//         display: block!important;    
+//         width: 100%;           
+//     }
+// }
+// .desktop-view{
+//     @media (max-width: 767px) {
+//         display: none!important;               
+//     }
+// }

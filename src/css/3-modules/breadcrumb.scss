@@ -1,0 +1,23 @@
+.rec-breadcrumb {
+  display: flex;
+  padding-left: 0;
+  &__item {
+    position: relative;
+    @extend .fnt-md;
+    margin-right: 0.5rem;
+    font-weight: $fnt-medium;
+
+    &.active {
+      font-weight: $fnt-reg;
+    }
+    a {
+      padding-right: 0.5rem;
+    }
+    &::after {
+      content: ">";
+    }
+    &:last-child::after {
+      content: none;
+    }
+  }
+}

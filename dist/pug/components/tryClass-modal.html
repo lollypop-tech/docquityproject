@@ -1,0 +1,42 @@
+
+<div class="modal fade download-modal" id="tryClassModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <form class="contact-form modal-content" id="contact-form" data-parsley-validate="data-parsley-validate">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="exampleModalLongTitle">Download Cheatsheet</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-container row">
+          <div class="col-md-6 form-fields-container d-flex flex-wrap">
+            <div class="input-field input-block">
+              <input class="input-data" id="name" type="text" name="name" data-parsley-error-message="* Please enter the name" data-parsley-required="data-parsley-required" data-parsley-trigger="blur" placeholder="Name* "/><span class="focus-border"></span>
+            </div>
+          </div>
+          <div class="col-md-6 form-fields-container d-flex flex-wrap">
+            <div class="input-field input-block">
+              <input class="input-data" id="email" type="text" name="email" data-parsley-error-message="* Please enter the email id" data-parsley-required="data-parsley-required" data-parsley-trigger="blur" placeholder="Email* "/><span class="focus-border"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0 d-block">
+        <p class="mb-2 fnt-bold">Which session will you attend? *</p><span class="pb-4 d-block">We recommend intermediate if you are familiar with functionality like sumifs().  Intro is great for both beginners and individuals not yet familiar with sumifs() or countifs()</span>
+        <div class="div">
+          <div class="row"> 
+            <div class="col-md-6">
+              <div class="input-block w-100 input-field drp-corp">
+                <select class="input-data fnt-reg wide try-drp" id="selectOption1" data-parsley-required="data-parsley-required">
+                  <option value="Corporate or individual?*" hidden="hidden">Choose your session</option>
+                  <option value="Corporate">Corporate</option>
+                  <option value="Individual">Individual</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="float-left rec-btn rec-btn--primary mt-3 mt-md-5">Sign up</button>
+      </div>
+    </form>
+  </div>
+</div>

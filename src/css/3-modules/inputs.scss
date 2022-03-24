@@ -1,0 +1,127 @@
+// .rec-search-wrap {
+//   display      : flex;
+//   align-items  : center;
+//   border       : 1px solid #d0d0d0;
+//   border-radius: $border-radius10;
+//   padding      : 0.5rem 1.2rem;
+//   width        : 440px;
+//   max-width    : 100%;
+
+//   @media (min-width: $md) {
+//     padding: 0.7rem 1.6rem;
+//   }
+// }
+
+// .rec-no-brder {
+//   border     : none;
+//   font-size  : 20px;
+//   line-height: 30px;
+
+//   &:focus {
+//     outline   : none;
+//     box-shadow: none;
+//   }
+// }
+
+// .rec-search-icon {
+//   width: 20px;
+
+//   @media (min-width: $md) {
+//     width: 26px;
+//   }
+// }
+
+.select-field {
+  .form-control {
+    // max-width: 360px;
+    border-top   : 0;
+    border-left  : 0;
+    border-right : 0;
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 0;
+    box-shadow   : none;
+    padding      : 0;
+  }
+}
+
+textarea.input-data~.focus-border {
+  top   : initial;
+  bottom: 0;
+
+  @media all and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+    bottom: 0;
+  }
+}
+
+textarea.input-data {
+  resize        : none;
+  vertical-align: middle;
+}
+
+.input-block {
+  margin: 10px 0 10px 0;
+}
+
+// ::-webkit-input-placeholder {
+//   /* Chrome/Opera/Safari */
+//   font-weight: $fnt-reg;
+//   font-size  : 16px;
+//   line-height: 26px;
+
+//   @media (min-width: $md) {
+//     font-size  : 20px;
+//     line-height: 30px;
+//   }
+// }
+
+// ::-moz-placeholder {
+//   font-weight: $fnt-reg;
+//   font-size  : 16px;
+//   line-height: 26px;
+
+//   /* Firefox 19+ */
+//   @media (min-width: $md) {
+//     font-size  : 20px;
+//     line-height: 30px;
+//   }
+// }
+
+// :-ms-input-placeholder {
+//   font-weight: $fnt-reg;
+//   font-size  : 16px;
+//   line-height: 26px;
+
+//   /* IE 10+ */
+//   @media (min-width: $md) {
+//     font-size  : 20px;
+//     line-height: 30px;
+//   }
+// }
+
+// :-moz-placeholder {
+//   /* Firefox 18- */
+//   font-weight: $fnt-reg;
+// }
+
+// :not(output):-moz-ui-invalid {
+//   box-shadow: none;
+// }
+
+// .form-group {
+//   &.select-field {
+//     margin-bottom: 70px;
+//   }
+
+//   .nice-select {
+//     width  : 100%;
+//     z-index: 200;
+//   }
+// }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: transparent !important;
+}

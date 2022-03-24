@@ -1,0 +1,14 @@
+//IE Breaks my heart all the time
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+  /* IE10+ CSS styles go here */
+  .link {
+
+    &.active,
+    &:hover {
+      background: none;
+      color     : #358fcf;
+    }
+  }
+}
