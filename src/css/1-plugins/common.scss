@@ -245,3 +245,22 @@ main {
         padding-top: 113px;     
       } 
 }
+
+
+// mobile and desktop combined
+
+.dq-only-desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.dq-only-mobile {
+    display: block;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}

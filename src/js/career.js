@@ -4,10 +4,10 @@ var swiper = new Swiper('.diverseSwiper', {
   spaceBetween: 0,
   grabCursor: true,
   loop: true,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
