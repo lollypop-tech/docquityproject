@@ -406,3 +406,35 @@
     }
 
 }
+
+// GLobal buttons 
+
+.dq-btn {
+    background   : linear-gradient(94.21deg, #252424 4.48%, #424242 87.94%);
+    padding      : 1rem 2rem;
+    display      : inline-block;
+    border-radius: 12px;
+    color        : $w;
+    font-weight  : $fnt-sembold;
+    font-size    : 16px;
+    line-height  : 26px;
+
+
+    &--lg {
+        padding        : 1.2rem 3rem;
+        width          : 228px;
+        max-width      : 100%;
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+
+        @media (min-width: 992px) {
+            padding: 1rem 3rem;
+        }
+    }
+
+    &:hover {
+        color: $w;
+    }
+
+}

@@ -8,14 +8,11 @@ body {
     text-rendering         : optimizeLegibility;
 
     p {
-        font-weight: normal;
-        font-size  : 14px;
-        line-height: 24px;
-        color      : #2D343B;
+        opacity: 0.7;
 
         @media (min-width: $md) {
-            font-size  : 24px;
-            line-height: 38px;
+            font-size  : 16px;
+            line-height: 28px;
         }
     }
 }
@@ -157,7 +154,15 @@ body {
 }
 
 .mb-16 {
-    margin-bottom: 16px !important;
+    @media (min-width: 768px) {
+        margin-bottom: 16px !important;
+    }
+}
+
+.mb-24 {
+    @media (min-width: 768px) {
+        margin-bottom: 24px !important;
+    }
 }
 
 .mb-20 {
@@ -170,4 +175,23 @@ body {
 
 main {
     padding-top: 130px;
+}
+
+
+// mobile and desktop combined
+
+.dq-only-desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+.dq-only-mobile {
+    display: block;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
 }
