@@ -200,3 +200,5 @@ var rightSlider = new Swiper(".js-partners-icons-right", {
   // kickstart
   breakpointChecker();
 })();
+
+
