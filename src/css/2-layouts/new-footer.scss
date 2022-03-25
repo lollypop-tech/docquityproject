@@ -5,24 +5,42 @@ footer {
     border-radius   : 16px;
     margin          : 0px 15px 15px 15px;
     color           : #FFFFFF;
+    position        : relative;
+    padding         : 0px 80px;
 
-    @media (min-width: 767px) {}
+    @media (max-width: 767px) {
+        padding: 175px 15px 0px;
+    }
 
     .footer-list {
-        .footer-sub-list {
-            &__item {
-                margin-bottom: 16px;
+        &__item {
+            @media (max-width: 767px) {
+                margin-bottom: 40px;
+            }
+
+            .footer-sub-list {
+                &__item {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        .patient-item {
+            @media (max-width: 767px) {
+                position: absolute;
+                top     : 75%;
             }
         }
     }
 
     .footer-top {
-        border-top   : 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        padding      : 80px 80px;
+        border-bottom: 1px solid #252424;
+        padding      : 80px 0px;
 
         @media (max-width: 767px) {
-            padding: 10px 10px;
+            padding   : 40px 0px 80px;
+            border-top: 1px solid #252424;
+
         }
 
 
@@ -47,6 +65,11 @@ footer {
                     height               : 48px;
                     position             : relative;
 
+                    @media (max-width: 767px) {
+                        margin-bottom: 16px;
+                        width        : 100%;
+                    }
+
                     &:focus {
                         box-shadow: none !important;
                     }
@@ -63,6 +86,11 @@ footer {
                     border-radius: 12px;
                     color        : #fff;
 
+                    @media (max-width: 767px) {
+                        position: relative;
+                        width   : 100%;
+                    }
+
                     &:focus {
                         outline: none !important;
                     }
@@ -77,31 +105,58 @@ footer {
                 display      : flex;
                 margin-bottom: 22px;
 
+                @media (max-width: 767px) {
+                    position : relative;
+                    transform: translateY(80px);
+                }
+
                 &__item {
-                    margin-right: 16px;
+                    &:first-child {
+                        margin-right: 16px;
+                    }
                 }
             }
 
             .star-list {
                 display: flex;
+
+                @media (max-width: 767px) {
+                    width    : 30%;
+                    margin   : 0px auto;
+                    position : relative;
+                    transform: translateY(-80px);
+                }
             }
 
             .footer-span {
                 position: absolute;
                 bottom  : 0px;
                 left    : 20%;
+
+                @media (max-width: 767px) {
+                    bottom: 55px;
+                }
             }
 
         }
     }
 
     .footer-bottom {
-        padding: 32px 80px;
+        padding: 32px 0px;
 
         @media (max-width: 767px) {
-            padding       : 32px 15px;
+            padding       : 40px 0px;
             display       : flex;
             flex-direction: column-reverse;
+        }
+
+        .footer-logodiv {
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top     : 56px;
+                padding : 0px;
+            }
         }
 
         .footer-menu {
@@ -137,8 +192,9 @@ footer {
             float  : right;
 
             @media (max-width: 767px) {
-                float        : none;
-                margin-bottom: 20px;
+                float : none;
+                width : 85%;
+                margin: 0px auto 20px;
 
             }
 
@@ -173,6 +229,11 @@ footer {
             position: absolute;
             right   : 0px;
             bottom  : -8px;
+
+            @media (max-width: 767px) {
+                position: relative;
+                bottom  : 0px;
+            }
 
             &__item {
                 &:not(:last-child) {

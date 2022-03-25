@@ -187,9 +187,10 @@
         min-width: 144px;
         height   : 144px;
     }
+
     @media only screen and (width: 768px) and (height: 1024px) and (orientation:portrait) {
         min-width: 144px;
-        height   : 144px!important;
+        height   : 144px !important;
     }
 
 
@@ -212,22 +213,23 @@
         &:focus {
 
             background: radial-gradient(50% 50% at 50% 50%, #FFC178 0%, #FF9836 100%);
-            box-shadow:-2px 28px 89px 0 #eb7c11;
+            box-shadow: -2px 28px 89px 0 #eb7c11;
 
             img {
                 transform: translateX(6px);
             }
 
-           
-            outline      : 0;
-            transition   : $trans;
+
+            outline    : 0;
+            transition : $trans;
         }
     }
 
     &--primarySend {
-        background   : #FF9530;
-        border       : 1px solid transparent;
-        color        : $white;       
+        background: #FF9530;
+        border    : 1px solid transparent;
+        color     : $white;
+
         img {
             margin     : 0 auto;
             padding-top: 13px;
@@ -235,13 +237,15 @@
 
         &:hover,
         &:focus {
-            background      : radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
-            box-shadow      : 0px 16px 64px rgba(239, 143, 51, 0.5);  
+            background: radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
+            box-shadow: 0px 16px 64px rgba(239, 143, 51, 0.5);
+
             img {
                 transform: translateX(6px);
             }
-            outline      : 0;           
-            transition   : $trans;
+
+            outline    : 0;
+            transition : $trans;
         }
     }
 
@@ -250,20 +254,20 @@
 
 .aread-more-sm {
 
-    padding          : 0.5rem 1rem;
-    font-size        : 14px;
-    line-height      : 26px;
-    transition       : $trans;   
-    letter-spacing   : 1px;
-    font-weight      : $fnt-bold;
-    text-transform   : uppercase;
-    cursor           : pointer;
-    display          : inline-block;
-    font-family      : 'Barlow', sans-serif;
-    position         : relative;
-    transition       : transform 0.3s ease-out;
+    padding       : 0.5rem 1rem;
+    font-size     : 14px;
+    line-height   : 26px;
+    transition    : $trans;
+    letter-spacing: 1px;
+    font-weight   : $fnt-bold;
+    text-transform: uppercase;
+    cursor        : pointer;
+    display       : inline-block;
+    font-family   : 'Barlow', sans-serif;
+    position      : relative;
+    transition    : transform 0.3s ease-out;
 
-    @media (min-width: 768px) {      
+    @media (min-width: 768px) {
         font-size  : 16px;
         line-height: 24px;
         height     : 140px;
@@ -285,16 +289,16 @@
         &:focus {
 
 
-            background      : radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
-            box-shadow      : 0px 16px 64px rgba(239, 143, 51, 0.5);
-           
+            background: radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
+            box-shadow: 0px 16px 64px rgba(239, 143, 51, 0.5);
+
             img {
                 transform: translateX(6px);
             }
 
-           
-            outline      : 0;           
-            transition   : $trans;
+
+            outline    : 0;
+            transition : $trans;
         }
     }
 
@@ -303,22 +307,21 @@
         border    : 1px solid transparent;
         color     : $white;
 
-        img {
-      
-        }
+        img {}
 
         &:hover,
         &:focus {
 
 
-            background      : radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
-            box-shadow      : 0px 16px 64px rgba(239, 143, 51, 0.5);         
+            background: radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
+            box-shadow: 0px 16px 64px rgba(239, 143, 51, 0.5);
 
             img {
                 transform: translateX(6px);
             }
-            outline      : 0;           
-            transition   : $trans;
+
+            outline    : 0;
+            transition : $trans;
         }
     }
 
@@ -328,19 +331,19 @@
 
 .aread-more-mobile {
 
-    padding          : 0.5rem 1.5rem;
-    font-size        : 14px;
-    line-height      : 26px;
-    transition       : $trans;    
-    letter-spacing   : 1px;
-    font-weight      : $fnt-bold;
-    text-transform   : uppercase;
-    cursor           : pointer;
-    display          : inline-block;
-    font-family      : 'Barlow', sans-serif;
-    position         : relative;
-    transition       : transform 0.3s ease-out;
-    min-height       : 60px;
+    padding       : 0.5rem 1.5rem;
+    font-size     : 14px;
+    line-height   : 26px;
+    transition    : $trans;
+    letter-spacing: 1px;
+    font-weight   : $fnt-bold;
+    text-transform: uppercase;
+    cursor        : pointer;
+    display       : inline-block;
+    font-family   : 'Barlow', sans-serif;
+    position      : relative;
+    transition    : transform 0.3s ease-out;
+    min-height    : 60px;
 
     @media (max-width: 767px) {
         min-width: 60px;
@@ -361,45 +364,45 @@
         border    : 1px solid transparent;
         color     : $white;
 
-        img {           
-        }
+        img {}
 
         &:hover,
         &:focus {
-            background      : radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
-            box-shadow      : 0px 16px 64px rgba(239, 143, 51, 0.5);           
+            background: radial-gradient(50% 50% at 50% 50%, #FFA944 0%, #FF9530 100%);
+            box-shadow: 0px 16px 64px rgba(239, 143, 51, 0.5);
 
             img {
                 transform: translateX(6px);
-            }            
-            outline      : 0;           
-            transition   : $trans;
+            }
+
+            outline    : 0;
+            transition : $trans;
         }
     }
 
 }
 
 
-.blue-btn{
+.blue-btn {
     border-radius: 8px;
-    padding: 12px 32px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 32px;
-    font-family: 'Inter', sans-serif;
-    cursor : pointer;
-    display : inline-block;
+    padding      : 12px 32px;
+    font-size    : 14px;
+    font-weight  : 600;
+    line-height  : 32px;
+    font-family  : 'Inter', sans-serif;
+    cursor       : pointer;
+    display      : inline-block;
 
-    &--primary{
-        background-color:#012368;
-        color: $white!important;
-        border:1px solid #012368;
+    &--primary {
+        background-color: #012368;
+        color           : $white !important;
+        border          : 1px solid #012368;
     }
 
-    &--border{
-        background-color:transparent!important;
-        color: #012368!important;
-        border:1px solid #012368;
+    &--border {
+        background-color: transparent !important;
+        color           : #012368 !important;
+        border          : 1px solid #012368;
     }
 
 }
