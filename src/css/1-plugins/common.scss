@@ -25,6 +25,7 @@ body {
 
     p {
         opacity: 0.7;
+
         @media (min-width: $md) {
             font-size: 16px;
             line-height: 28px;
@@ -54,8 +55,7 @@ body {
 //font sizes
 .fnt-14 {
     font-size: 14px;
-    line-height: 22px;
-    color: #393939;
+    line-height: 28px;
 }
 
 .fnt-18 {
@@ -157,7 +157,8 @@ body {
 
 .gray-btn {
     background: linear-gradient(94.21deg, #252424 4.48%, #424242 87.94%);
-    padding: 20px 42px;
+    padding: 19px 32px;
+    line-height: 16px !important;
     color: #fff !important;
     border-radius: 12px;
     display: inline-block;
@@ -169,15 +170,49 @@ body {
     }
 }
 
-.mb-16 {    
+.op1 {
+    opacity: 1;
+}
+
+.mb-3 {
+    margin-bottom: 3px !important;
+}
+
+.mb-6 {
+    margin-bottom: 6px;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.mb-13 {
+    margin-bottom: 13px !important;
+}
+
+.mb-18 {
+    margin-bottom: 18px !important;
+}
+
+.lh24 {
+    line-height: 24px !important;
+}
+
+.lh20 {
+    line-height: 20px !important;
+}
+
+.mb-16 {
+    margin-bottom: 24px!important;
     @media (min-width: 768px) {
         margin-bottom: 16px !important;
-    }    
+    }
 }
-.mb-24 {    
+
+.mb-24 {
     @media (min-width: 768px) {
         margin-bottom: 24px !important;
-    }    
+    }
 }
 
 .mb-20 {
@@ -188,6 +223,25 @@ body {
     margin-bottom: 44px !important;
 }
 
-main{
+.mb-51 {
+    margin-bottom: 51px !important;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.ml-7 {
+    margin-left: 7px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+main {
     padding-top: 130px;
+    @media(max-width: 768px) {    
+        padding-top: 113px;     
+      } 
 }

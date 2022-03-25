@@ -73,7 +73,7 @@
 
 // new 
 
-.text-blackish { color: #1D1919;}
+.text-blackish { color: #1D1919!important;}
 .text-red{ color: #E2504B;}
 
 .text-white{color:#FFFFFF!important}
@@ -87,11 +87,12 @@
 .fnt-man{font-family: 'Manrope', sans-serif;}
 
 
-.h1 {
-  
+.h1 {  
+
+  font-size  : 24px !important;
+    line-height:28px;
 
   @media (min-width: $md) {
-
     font-size  : 48px !important;
     line-height:54px;
   }
