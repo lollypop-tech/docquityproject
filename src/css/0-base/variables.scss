@@ -6,9 +6,9 @@
 
 /* Medium screen / desktop */
 
-$sm: 768px;
-$md: 992px;
-$lg: 1200px;
+$sm : 768px;
+$md : 992px;
+$lg : 1200px;
 $xlg: 1440px;
 
 
@@ -22,36 +22,43 @@ $fnt-lg: 24px;
 
 /** colors **/
 
-$primary:#1D1919;
-$secondary-clr: #1940c0;
-$thrisery: #19c099;
-$black: #121212;
-$w: #ffffff;
+$primary       :#1D1919;
+$secondary-clr : #1940c0;
+$thrisery      : #19c099;
+$black         : #121212;
+$w             : #ffffff;
+
+
 // Theme colors
 // Black variation
-$black666: #666666;
-$black555: #666666;
-$black333: #333333;
-$black77: #777777;
+$black666 : #666666;
+$black555 : #666666;
+$black333 : #333333;
+$black77  : #777777;
+
 // text-primary
-$text-pri: #151945;
-$text-sec: #3f3d56;
-$textf5: #f5f8ff;
+$text-pri : #151945;
+$text-sec : #3f3d56;
+$textf5   : #f5f8ff;
+
+//
+
 // Letter spacings
-$letter-spac25: 1.25px;
+$letter-spac25     : 1.25px;
 // font-weights
-$fnt-reg: 400;
-$fnt-medium: 500;
-$fnt-bold: 700;
+$fnt-reg           : 400;
+$fnt-medium        : 500;
+$fnt-bold          : 700;
 // Border radius
-$border-radius10: 10px;
-$border-radius20: 20px;
+$border-radius10   : 10px;
+$border-radius20   : 20px;
 //transisitions
-$trans: all 0.6s ease;
+$trans             : all 0.6s ease;
 // box shadow
-$box-shadow: 0px 11px 35px rgba(0, 0, 0, 0.05);
+$box-shadow        : 0px 11px 35px rgba(0, 0, 0, 0.05);
 // Mbile Icon color:
-$mobile-icon: #3f3d56;
-$robo:'Roboto',
+$mobile-icon       : #3f3d56;
+$robo              :'Roboto',
 sans-serif;
-$inter:'Inter', sans-serif;
+$inter:'Inter',
+sans-serif;

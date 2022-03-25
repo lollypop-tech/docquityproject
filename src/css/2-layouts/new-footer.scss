@@ -2,24 +2,24 @@
 // Footer
 footer {
     background-color: #0E0D0D;
-    border-radius: 16px;
-    margin: 0px 15px 15px 15px;
-    color: #FFFFFF;
+    border-radius   : 16px;
+    margin          : 0px 15px 15px 15px;
+    color           : #FFFFFF;
 
     @media (min-width: 767px) {}
 
-    .footer-list{
-        .footer-sub-list{
-            &__item{
+    .footer-list {
+        .footer-sub-list {
+            &__item {
                 margin-bottom: 16px;
             }
         }
     }
 
     .footer-top {
-        border-top: 1px solid #ddd;
+        border-top   : 1px solid #ddd;
         border-bottom: 1px solid #ddd;
-        padding: 80px 80px;
+        padding      : 80px 80px;
 
         @media (max-width: 767px) {
             padding: 10px 10px;
@@ -30,22 +30,22 @@ footer {
             @media (max-width: 767px) {}
 
             form {
-                position: relative;
+                position     : relative;
                 margin-bottom: 32px;
 
                 .footer-form {
-                    width: 65%;
-                    border: 1px solid #ffffff1a;
-                    background: 0 0!important;
+                    width                : 65%;
+                    border               : 1px solid #ffffff1a;
+                    background           : 0 0 !important;
                     -webkit-border-radius: 8px;
-                    border-radius: 8px;
-                    font-weight: 400;
-                    font-size: 14px;
-                    font-family: 'Lexend Deca',sans-serif;
-                    line-height: 16.94px;
-                    letter-spacing: .2px;
-                    height: 48px;
-                    position: relative;
+                    border-radius        : 8px;
+                    font-weight          : 400;
+                    font-size            : 14px;
+                    font-family          : 'Lexend Deca', sans-serif;
+                    line-height          : 16.94px;
+                    letter-spacing       : .2px;
+                    height               : 48px;
+                    position             : relative;
 
                     &:focus {
                         box-shadow: none !important;
@@ -54,14 +54,14 @@ footer {
                 }
 
                 .footer__submit {
-                    position: absolute;
-                    top: 0%;
-                    right: 0;
-                    border: 0;
-                    padding: 13px 25px;    
-                    background: #1B4A52;
+                    position     : absolute;
+                    top          : 0%;
+                    right        : 0;
+                    border       : 0;
+                    padding      : 13px 25px;
+                    background   : #1B4A52;
                     border-radius: 12px;
-                    color: #fff;
+                    color        : #fff;
 
                     &:focus {
                         outline: none !important;
@@ -72,20 +72,24 @@ footer {
                     }
                 }
             }
+
             .playstore-list {
-                display: flex;
+                display      : flex;
                 margin-bottom: 22px;
-                &__item{
+
+                &__item {
                     margin-right: 16px;
                 }
             }
-            .star-list{
+
+            .star-list {
                 display: flex;
             }
-            .footer-span{
+
+            .footer-span {
                 position: absolute;
-                bottom: 0px;
-                left: 20%;
+                bottom  : 0px;
+                left    : 20%;
             }
 
         }
@@ -95,8 +99,8 @@ footer {
         padding: 32px 80px;
 
         @media (max-width: 767px) {
-            padding: 32px 15px;
-            display: flex;
+            padding       : 32px 15px;
+            display       : flex;
             flex-direction: column-reverse;
         }
 
@@ -113,15 +117,15 @@ footer {
 
                 &:first-child {
                     @media (max-width: 767px) {
-                        width: 49%;
+                        width       : 49%;
                         margin-right: 15px;
                     }
                 }
 
                 a {
-                    color: #202020 !important;
+                    color      : #202020 !important;
                     font-family: $inter;
-                    font-size: 16px;
+                    font-size  : 16px;
                     line-height: 19.36px;
 
                 }
@@ -130,60 +134,53 @@ footer {
 
         .social-list {
             display: flex;
-            float: right;
+            float  : right;
 
             @media (max-width: 767px) {
-                float: none;
+                float        : none;
                 margin-bottom: 20px;
 
             }
 
             &__item {
-                border: 1px solid #fff;                
+                border       : 1px solid #fff;
                 border-radius: 50%;
+
                 &:not(:last-child) {
                     margin-right: 18px;
                 }
             }
-            .facebook{
+
+            .facebook {
                 padding: 10px 16px;
             }
-            .twitter{
+
+            .twitter {
                 padding: 9px 10px;
             }
-            .insta{
+
+            .insta {
                 padding: 8px 9px;
             }
-            .linked{
+
+            .linked {
                 padding: 6px 12px;
             }
         }
-        .policy-link{           
-            display: flex;
+
+        .policy-link {
+            display : flex;
             position: absolute;
-            right: 0px;
-            bottom: -8px;       
+            right   : 0px;
+            bottom  : -8px;
+
             &__item {
                 &:not(:last-child) {
                     margin-right: 26px;
                 }
-            }    
+            }
 
         }
     }
 
 }
-
-
-// .mobile-view{
-//     display: none!important;
-//     @media (max-width: 767px) {
-//         display: block!important;    
-//         width: 100%;           
-//     }
-// }
-// .desktop-view{
-//     @media (max-width: 767px) {
-//         display: none!important;               
-//     }
-// }
