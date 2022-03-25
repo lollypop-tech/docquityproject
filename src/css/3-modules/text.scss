@@ -11,6 +11,11 @@
   }
 }
 
+.fnt-20{
+  font-size: 20px !important;
+  line-height: 40px !important;
+}
+
 .fnt-md {
   font-size  : 14px;
   line-height: 24px;
@@ -21,15 +26,24 @@
   }
 }
 
-.fnt-sm {
-  font-size  : 12px;
-  line-height: 22px;
-
-  @media (min-width: $sm) {
-    font-size  : 14px;
-    line-height: 24px;
-  }
+.opa{
+  opacity: 0.7 !important;
 }
+
+.fnt-sm {
+  font-size  : 16px;
+  line-height: 28px;
+
+  // @media (min-width: $sm) {
+  //   font-size  : 14px;
+  //   line-height: 24px;
+  // }
+}
+
+// .fnt-ssm {
+//   font-size  : 16px !important;
+//   line-height: 28px !important;
+// }
 
 .fnt-xs {
   font-size  : 12px;
@@ -104,7 +118,10 @@
   @media (min-width: $md) {
     font-size  : 32px !important;
     line-height: 40px;
-    
+  }
+  @media (min-width: $lg) {
+    font-size  : 32px !important;
+    line-height: 40px;
   }
 }
 
@@ -167,16 +184,18 @@
 }
 
 .txt-md {
-  
-
+  font-size  : 16px !important;
+    line-height: 28px !important;
+    opacity: 0.7 !important;
   @media (min-width: $md) {
     font-size  : 16px !important;
-    line-height: 150% !important;
+    line-height: 28px;
+    opacity: 0.7 !important;
+    // line-height: 150% !important;
   }
 }
 
 .txt-sm {
-  
 
   @media (min-width: $md) {
     font-size  : 14px !important;
@@ -199,7 +218,6 @@
     margin-top: 120px;
   }
 }
-
 .txt-owhite {
   color:#fff;
   opacity: 0.7;

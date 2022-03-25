@@ -3,6 +3,7 @@
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//Timeline
 $(document).ready(function () {
   var mySwiper = new Swiper(".swiper", {
     autoHeight: true,
@@ -64,6 +65,11 @@ $(document).ready(function () {
       settings: {
         slidesToShow: 3
       }
+    }, {
+      breakpoint: 375,
+      settings: {
+        slidesToShow: 3
+      }
     }]
   });
   $('.brand-logos1').slick((_$$slick = {
@@ -84,17 +90,28 @@ $(document).ready(function () {
     settings: {
       slidesToShow: 3
     }
+  }, {
+    breakpoint: 375,
+    settings: {
+      slidesToShow: 3
+    }
   }]), _$$slick));
 });
 
+//Investor Slider
 var rightSlider = new Swiper(".js-partners-icons-right", {
   slidesPerView: 6,
   spaceBetween: 40,
   loop: true,
+  grabCursor: true,
   autoplay: {
     delay: 1000
   },
-  speed: 3000,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  speed: 2000,
   breakpoints: {
     500: {
       slidesPerView: 2
@@ -111,98 +128,79 @@ var rightSlider = new Swiper(".js-partners-icons-right", {
   }
 });
 
-// story
-var items = document.querySelectorAll(".timeline li");
+// var swiperVerticle = new Swiper('.mySwiper-tab', {
+//   direction: 'vertical',
+//   slidesPerView: 4,
+//   spaceBetween: 0,
+//   // mousewheel: true,
+// grabCursor: true,
+//   // loop: true,
+//   // autoplay: {
+//   //   delay: 500,
+//   //   disableOnInteraction: false,
+//   // },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
 
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
-}
 
-function callbackFunc() {
-  for (var i = 0; i < items.length; i++) {
-    if (isElementInViewport(items[i])) {
-      if (!items[i].classList.contains("in-view")) {
-        items[i].classList.add("in-view");
+// var swiper = new Swiper('.mySwiper-tab', {
+//   direction: 'vertical',
+//   speed: 800,
+//   mousewheelControl: true,
+//   watchSlidesProgress: true,
+
+
+// });
+
+
+(function () {
+  "use strict";
+  // breakpoint where swiper will be destroyed
+  // and switches to a dual-column layout
+
+  var breakpoint = window.matchMedia("(min-width:31.25em)");
+  // keep track of swiper instances to destroy later
+  var mySwiper;
+  var manufactureTabslider = mySwiper;
+
+  var breakpointChecker = function breakpointChecker() {
+    // if larger viewport and multi-row layout needed
+    if (breakpoint.matches === true) {
+      // clean up old instances and inline styles when available
+      if (manufactureTabslider !== undefined) manufactureTabslider.destroy(true, true);
+      // or/and do nothing
+      return;
+      // else if a small viewport and single column layout needed
+    } else if (breakpoint.matches === false) {
+      // fire small viewport version of swiper
+      return manufactureslider();
+    }
+  };
+
+  var manufactureslider = function manufactureslider() {
+    manufactureTabslider = new Swiper(".js-resources-cards", {
+      loop: false,
+      slidesPerView: 1.2,
+      // spaceBetween: 20,
+      // a11y: true,
+      keyboardControl: true,
+      grabCursor: true,
+
+      breakpoints: {
+        360: {
+          slidesPerView: 1.3
+        }
       }
-    } else if (items[i].classList.contains("in-view")) {
-      items[i].classList.remove("in-view");
-    }
-  }
-}
+    });
+  };
 
-window.addEventListener("load", callbackFunc);
-window.addEventListener("scroll", callbackFunc);
-
-// counter
-// number count for stats, using jQuery animate
-
-$(".counting").each(function () {
-  var $this = $(this),
-      countTo = $this.attr("data-count");
-
-  $({ countNum: $this.text() }).animate({
-    countNum: countTo
-  }, {
-    duration: 3000,
-    easing: "linear",
-    step: function step() {
-      $this.text(Math.floor(this.countNum));
-    },
-    complete: function complete() {
-      $this.text(this.countNum);
-      //alert('finished');
-    }
-  });
-});
-
-// $(".option").click(function(){
-//   $(".option").removeClass("active");
-//   $(this).addClass("active");
-// });
-$(".option").hover(function () {
-  $(".option").removeClass("active");
-  $(this).addClass("active");
-});
-
-// $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-//   event.preventDefault();
-//   $(this).ekkoLightbox();
-// });
-
-var scroll = document.querySelector(".scroll");
-var isDown = false;
-var scrollX;
-var scrollLeft;
-
-// Mouse Up Function
-scroll.addEventListener("mouseup", function () {
-  isDown = false;
-  scroll.classList.remove("active");
-});
-
-// Mouse Leave Function
-scroll.addEventListener("mouseleave", function () {
-  isDown = false;
-  scroll.classList.remove("active");
-});
-
-// Mouse Down Function
-scroll.addEventListener("mousedown", function (e) {
-  e.preventDefault();
-  isDown = true;
-  scroll.classList.add("active");
-  scrollX = e.pageX - scroll.offsetLeft;
-  scrollLeft = scroll.scrollLeft;
-});
-
-// Mouse Move Function
-scroll.addEventListener("mousemove", function (e) {
-  if (!isDown) return;
-  e.preventDefault();
-  var element = e.pageX - scroll.offsetLeft;
-  var scrolling = (element - scrollX) * 2;
-  scroll.scrollLeft = scrollLeft - scrolling;
-});
+  // keep an eye on viewport size changes
+  breakpoint.addListener(breakpointChecker);
+  // kickstart
+  breakpointChecker();
+})();
 
 },{}]},{},[1])//# sourceMappingURL=about.js.map
