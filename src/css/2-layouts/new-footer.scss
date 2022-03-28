@@ -6,7 +6,7 @@ footer {
     margin: 0px 15px 15px 15px;
     color: #FFFFFF;
     position: relative;
-    padding: 0px 80px;
+    padding: 0px 56px;
 
     @media (max-width: 767px) {
         padding: 175px 15px 0px;
@@ -35,7 +35,7 @@ footer {
 
     .footer-top {
         border-bottom: 1px solid #252424;
-        padding: 80px 0px;
+        padding: 72px 0px 40px;
 
         @media (max-width: 767px) {
             padding: 40px 0px 80px;
@@ -54,14 +54,13 @@ footer {
                 .footer-form {
                     width: 65%;
                     border: 1px solid #ffffff1a;
-                    background: 0 0 !important;
-                    -webkit-border-radius: 8px;
+                    background: #ffffff12!important;                   
                     border-radius: 8px;
-                    font-weight: 400;
-                    font-size: 14px;
+                    font-weight:300;
+                    font-size: 16px;
                     font-family: 'Lexend Deca', sans-serif;
-                    line-height: 16.94px;
-                    letter-spacing: .2px;
+                    line-height: 20px;
+                    letter-spacing:0.5%;
                     height: 48px;
                     position: relative;
 
@@ -102,8 +101,7 @@ footer {
             }
 
             .playstore-list {
-                display: flex;
-                margin-bottom: 22px;
+                display: flex;               
                 @media (max-width: 767px){    
                     position: relative;
                     transform: translateY(80px);}
@@ -117,19 +115,19 @@ footer {
 
             .star-list {
                 display: flex;
-
                 @media (max-width: 767px) {
                     width: 30%;
                     margin: 0px auto;
                     position: relative;
                     transform: translateY(-80px);
                 }
+                &__item{margin-right: 9px;}
             }
 
             .footer-span {
                 position: absolute;
-                bottom: 0px;
-                left: 20%;
+                bottom:-10px;
+                left:34%;
                 @media (max-width: 767px){
                     bottom: 55px;
                 }
@@ -139,7 +137,7 @@ footer {
     }
 
     .footer-bottom {
-        padding: 32px 0px;
+        padding:40px 0px 40px;
 
         @media (max-width: 767px) {
             padding: 40px 0px;
@@ -225,7 +223,7 @@ footer {
             display: flex;
             position: absolute;
             right: 0px;
-            bottom: -8px;
+            bottom:0px;
 
             @media (max-width: 767px) {
                 position: relative;

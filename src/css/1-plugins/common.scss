@@ -25,6 +25,7 @@ body {
 
     p {
         opacity: 0.7;
+        letter-spacing: 0.1px;
 
         @media (min-width: $md) {
             font-size: 16px;
@@ -149,6 +150,7 @@ body {
     font-weight: 500 !important;
     font-size: 14px;
     line-height: 21px;
+    letter-spacing: 0.1px;
 }
 
 .op-5 {
@@ -197,15 +199,32 @@ body {
 .lh24 {
     line-height: 24px !important;
 }
+.lh38 {
+    line-height: 38px !important;
+}
 
 .lh20 {
     line-height: 20px !important;
 }
-
+.lh21 {
+    line-height: 21px!important;
+}
+.mb-12 {
+    margin-bottom: 12px!important;
+    @media (min-width: 768px) {
+        margin-bottom: 12px !important;
+    }
+}
 .mb-16 {
     margin-bottom: 24px!important;
     @media (min-width: 768px) {
         margin-bottom: 16px !important;
+    }
+}
+.mb-19 {
+    margin-bottom: 19px!important;
+    @media (min-width: 768px) {
+        margin-bottom: 19px !important;
     }
 }
 
@@ -244,6 +263,9 @@ main {
     @media(max-width: 768px) {    
         padding-top: 113px;     
       } 
+}
+.ls15{
+letter-spacing: 0.15px;
 }
 
 
