@@ -1,52 +1,11 @@
-//Brand Slider 1 & 2
-var swiper = new Swiper(".brandSwiper", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  loop: true,
-  centeredSlides: true,
-  reverseDirection: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-        767: {
-          slidesPerView:3,
-          spaceBetween: 20,        
-        },
-        768: {
-          slidesPerView:4,        
-        }
-      } 
-});
-
-var swiper = new Swiper(".brandSwiper1", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  loop: true,
-  centeredSlides: true,
-  reverseDirection: false,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-        767: {
-          slidesPerView:3,
-          spaceBetween: 20,         
-        },
-        768: {
-          slidesPerView:4,        
-        }
-      } 
-});
-//Brand Slider End
-
-
-//Timeline Slider
 $(document).ready(function () {
-  var mySwiper = new Swiper(".swiper", {
+  var mySwiper = new Swiper(".swiper-container--timeline", {
     autoHeight: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
+    // speed: 500,
     direction: "horizontal",
     navigation: {
       nextEl: ".swiper-button-next",
@@ -78,7 +37,144 @@ $(document).ready(function () {
 });
 
 
-//Team Slider
+//brand slider
+var rightSlider = new Swiper('.js-partners-icons', {
+  slidesPerView:3,
+  spaceBetween:10,
+  loop: true,
+  autoplay: {
+    delay:0,
+  },
+  speed: 3000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    700: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    }
+  }
+});
+
+
+var rightSlider = new Swiper('.js-partners-icons-reverse', {
+  slidesPerView:3,
+  spaceBetween:10,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    //waitForTransition: false,
+    reverseDirection: true,
+  },
+  speed: 3000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    700: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    }
+  }
+});
+
+//pharma slider
+var rightSlider = new Swiper('.js-pharma-icons', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay:0,
+  },
+  speed: 3000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    700: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    }
+  }
+});
+
+
+var rightSlider = new Swiper('.js-pharma-icons-reverse', {
+  slidesPerView:3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    //waitForTransition: false,
+    reverseDirection: true,
+  },
+  speed: 3000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    700: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    }
+  }
+});
+
+
+
+// builder
+
+var swiper = new Swiper('.builderSwiper', {
+  direction: 'vertical',
+  slidesPerView: 2,
+  spaceBetween: 0,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    767: {
+      slidesPerView:2,        
+    },
+    768: {
+      slidesPerView:2,        
+    }
+  }  
+});
+
+
+
+// team swiper
+
 var swiper = new Swiper(".teamSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -95,46 +191,40 @@ var swiper = new Swiper(".teamSwiper", {
   
 });
 
-//Investor Slider
-var rightSlider = new Swiper(".js-partners-icons-right", {
-  slidesPerView: 6,
-  spaceBetween: 40,
+
+// investor
+var rightSlider = new Swiper('.investor-icons', {
+  slidesPerView:3,
+  spaceBetween: 10,
   loop: true,
-  grabCursor: true,
   autoplay: {
-    delay: 1000,
+    delay:0,
   },
+  speed: 3000,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
-  speed: 2000,
   breakpoints: {
     500: {
-      slidesPerView: 2,
+      slidesPerView: 6,
+      spaceBetween:10
     },
     700: {
-      slidesPerView: 2,
+      slidesPerView: 6,
+      spaceBetween:10
     },
     768: {
       slidesPerView: 6,
-    },
-    834: {
-      slidesPerView: 6,
-    },
-  },
+      spaceBetween: 10
+    }
+  }
 });
 
-// $(document).ready(function() {
-//   $(".horizontal-tabs-steps .nav-link").click(function() {
-//     $(this).parent().prevAll().children('.horizontal-tabs-steps .nav-link').addClass('checked-steps');
 
-//     $(this).parent().nextAll().children('.horizontal-tabs-steps .nav-link').removeClass('checked-steps');
 
-//     $(this).removeClass('checked-steps');
-//     $(this).parent().removeClass('complete-step');
-//     $(this).parent().nextAll().removeClass('complete-step');
+$(".option").hover(function () {
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+});
 
-//     $(".horizontal-tabs-steps .nav-link.checked-steps").parent().addClass('complete-step');
-//   });
-// });
