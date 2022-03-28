@@ -1,12 +1,52 @@
-//Timeline
+//Brand Slider 1 & 2
+var swiper = new Swiper(".brandSwiper", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  loop: true,
+  centeredSlides: true,
+  reverseDirection: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+        767: {
+          slidesPerView:3,
+          spaceBetween: 20,        
+        },
+        768: {
+          slidesPerView:4,        
+        }
+      } 
+});
+
+var swiper = new Swiper(".brandSwiper1", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  loop: true,
+  centeredSlides: true,
+  reverseDirection: false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+        767: {
+          slidesPerView:3,
+          spaceBetween: 20,         
+        },
+        768: {
+          slidesPerView:4,        
+        }
+      } 
+});
+//Brand Slider End
+
+
+//Timeline Slider
 $(document).ready(function () {
   var mySwiper = new Swiper(".swiper", {
     autoHeight: true,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false
-    // },
-    // speed: 500,
     direction: "horizontal",
     navigation: {
       nextEl: ".swiper-button-next",
@@ -37,64 +77,23 @@ $(document).ready(function () {
   });
 });
 
-//Brand Slider
 
-$(document).ready(function(){
-  $('.brand-logos').slick({
-      slidesToShow: 6,
-      slidesToScroll: -1,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      arrows: false,
-      dots: false,
-      pauseOnHover: false,
-      responsive: [{
-          breakpoint: 768,
-          settings: {
-              slidesToShow: 4
-          }
-      }, {
-          breakpoint: 520,
-          settings: {
-              slidesToShow: 3
-          }
-      },
-      {
-        breakpoint: 375,
-        settings: {
-            slidesToShow: 3
-        }
-    }]
-  });
-  $('.brand-logos1').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    slidesToScroll: 1,
-    responsive: [{
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 4
-        }
-    }, {
-        breakpoint: 520,
-        settings: {
-            slidesToShow: 3
-        }
-    },
-    {
-      breakpoint: 375,
-      settings: {
-          slidesToShow: 3
-      }
-  }]
+//Team Slider
+var swiper = new Swiper(".teamSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  // slidesPerGroup: 3,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  
 });
-});
-
 
 //Investor Slider
 var rightSlider = new Swiper(".js-partners-icons-right", {
@@ -118,87 +117,24 @@ var rightSlider = new Swiper(".js-partners-icons-right", {
       slidesPerView: 2,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 6,
     },
     834: {
-      slidesPerView: 3,
+      slidesPerView: 6,
     },
   },
 });
 
-// var swiperVerticle = new Swiper('.mySwiper-tab', {
-//   direction: 'vertical',
-//   slidesPerView: 4,
-//   spaceBetween: 0,
-//   // mousewheel: true,
-// grabCursor: true,
-//   // loop: true,
-//   // autoplay: {
-//   //   delay: 500,
-//   //   disableOnInteraction: false,
-//   // },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
+// $(document).ready(function() {
+//   $(".horizontal-tabs-steps .nav-link").click(function() {
+//     $(this).parent().prevAll().children('.horizontal-tabs-steps .nav-link').addClass('checked-steps');
+
+//     $(this).parent().nextAll().children('.horizontal-tabs-steps .nav-link').removeClass('checked-steps');
+
+//     $(this).removeClass('checked-steps');
+//     $(this).parent().removeClass('complete-step');
+//     $(this).parent().nextAll().removeClass('complete-step');
+
+//     $(".horizontal-tabs-steps .nav-link.checked-steps").parent().addClass('complete-step');
+//   });
 // });
-
-
-// var swiper = new Swiper('.mySwiper-tab', {
-//   direction: 'vertical',
-//   speed: 800,
-//   mousewheelControl: true,
-//   watchSlidesProgress: true,
-  
-  
-// });
-
-
-(function () {
-  "use strict";
-  // breakpoint where swiper will be destroyed
-  // and switches to a dual-column layout
-  var breakpoint = window.matchMedia("(min-width:31.25em)");
-  // keep track of swiper instances to destroy later
-  var mySwiper;
-  var manufactureTabslider = mySwiper;
-
-  var breakpointChecker = function () {
-    // if larger viewport and multi-row layout needed
-    if (breakpoint.matches === true) {
-      // clean up old instances and inline styles when available
-      if (manufactureTabslider !== undefined)
-        manufactureTabslider.destroy(true, true);
-      // or/and do nothing
-      return;
-      // else if a small viewport and single column layout needed
-    } else if (breakpoint.matches === false) {
-      // fire small viewport version of swiper
-      return manufactureslider();
-    }
-  };
-
-  var manufactureslider = function () {
-    manufactureTabslider = new Swiper(".js-resources-cards", {
-      loop: false,
-      slidesPerView: 1.2,
-      // spaceBetween: 20,
-      // a11y: true,
-      keyboardControl: true,
-      grabCursor: true,
-
-      breakpoints: {
-        360: {
-          slidesPerView: 1.3,
-        },
-      },
-    });
-  };
-
-  // keep an eye on viewport size changes
-  breakpoint.addListener(breakpointChecker);
-  // kickstart
-  breakpointChecker();
-})();
-
-
