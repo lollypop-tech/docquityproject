@@ -2,10 +2,7 @@ $panel-bg: #B1CBCF;
 
 
 .dq-careerdetail-wrap {
-    padding: {
-        top   : 3rem;
-        bottom: 6rem;
-    }
+    padding:31px 100px 131px 100px;
 }
 
 .dq-panel {
@@ -198,7 +195,7 @@ aside {
             padding-left : 2.5rem;
 
             &::before {
-                content : url(../../img/caree-details/bullet-logo.svg);
+                content : url(../img/caree-details/bullet-logo.svg);                
                 height  : 17px;
                 width   : 17px;
                 position: absolute;
