@@ -577,15 +577,18 @@
 
     .department-list {
         margin-top: 40px;
+       
 
         &__item {
             margin-bottom: 20px;
             transition: all 0.3s ease 0s;
+            position: relative;
 
             .department-card {
                 background: #FFFFFF;
                 display: flex;
                 border-radius: 16px;
+                position: relative;
 
                 @media(max-width: 767px) {
                     display: block;
@@ -628,7 +631,8 @@
                 }
 
                 .faq-btn {
-                    margin-left: 70px;
+                    position: absolute;
+                    right: 25px;
                     line-height: 16px !important;
                     padding: 20px 25px;
 
