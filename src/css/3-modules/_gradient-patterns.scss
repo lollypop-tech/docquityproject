@@ -1,0 +1,19 @@
+.dq-bg-gradient-pri,
+.dq-bg-gradient-sec,
+.dq-bg-gradient-thric {
+    border-radius: 12px;
+    margin       : 1.5rem;
+}
+
+
+.dq-bg-gradient-pri {
+    background: linear-gradient(180deg, #FFFFFF -6.18%, #FFF4F4 101.72%);
+}
+
+.dq-bg-gradient-sec {
+    background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+}
+
+.dq-bg-gradient-thric {
+    background: linear-gradient(180deg, #FFFFFF -16.9%, #FEFAF6 55.39%);
+}

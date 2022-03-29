@@ -5,15 +5,15 @@
   line-height: 36px;
 
   @media (min-width: $md) {
-    font-size  : 36px;
-    line-height: 36px;
+    font-size     : 36px;
+    line-height   : 36px;
     letter-spacing: 0.15px;
   }
 }
 
-.fnt-20{
-  font-size: 20px !important;
-  line-height: 40px !important;
+.fnt-20 {
+  font-size  : 20px !important;
+  line-height: 24px !important;
 }
 
 .fnt-md {
@@ -26,7 +26,7 @@
   }
 }
 
-.opa{
+.opa {
   opacity: 0.7 !important;
 }
 
@@ -73,13 +73,13 @@
 // backgrounds
 
 .gsap-bg-bg-gray {
-  position           : absolute;
-  top                : 0;
-  bottom             : 0;
-  left               : 0;
-  right              : 0;
-  height             : 100%;
-  width              : 100%;
+  position: absolute;
+  top     : 0;
+  bottom  : 0;
+  left    : 0;
+  right   : 0;
+  height  : 100%;
+  width   : 100%;
 }
 
 // font family
@@ -87,38 +87,66 @@
 
 // new 
 
-.text-blackish { color: #1D1919!important;}
-.text-red{ color: #E2504B;}
+.text-blackish {
+  color: #1D1919 !important;
+}
 
-.text-white{color:#FFFFFF!important}
+.text-red {
+  color: #E2504B;
+}
 
-.text-gray{color:#C4C4C4!important;}
+.text-white {
+  color: #FFFFFF !important
+}
 
-.text-bluey{color:#1B4A52!important}
+.text-gray {
+  color: #C4C4C4 !important;
+}
 
-.fnt-lex{font-family: 'Lexend Deca', sans-serif;}
+.text-bluey {
+  color: #1B4A52 !important
+}
 
-.fnt-man{font-family: 'Manrope', sans-serif;}
+.fnt-lex {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.fnt-man {
+  font-family: 'Manrope', sans-serif;
+}
 
 
-.h1 {  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lexend Deca', sans-serif !important;
+}
 
+
+.h1 {
   font-size  : 24px !important;
-    line-height:28px;
+  line-height: 28px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 700;
 
   @media (min-width: $md) {
     font-size  : 48px !important;
-    line-height:54px;
+    line-height: 54px;
   }
 }
 
-.h2 {  
-  font-size: 24px;
+.h2 {
+  font-size  : 24px;
   line-height: 28px;
+
   @media (min-width: $md) {
     font-size  : 32px !important;
     line-height: 40px;
   }
+
   @media (min-width: $lg) {
     font-size  : 32px !important;
     line-height: 40px;
@@ -126,7 +154,6 @@
 }
 
 .h3 {
-
   font-size  : 24px;
   line-height: 140%;
 
@@ -147,7 +174,7 @@
   }
 }
 
-.para-text{
+.para-text {
   @media (min-width: $md) {
     font-size  : 20px !important;
     line-height: 24.2px;
@@ -174,6 +201,10 @@
   font-weight: 600;
 }
 
+.fnt-700 {
+  font-weight: 700;
+}
+
 .text-inherit {
   text-transform: inherit;
 }
@@ -185,12 +216,13 @@
 
 .txt-md {
   font-size  : 16px !important;
-    line-height: 28px !important;
-    opacity: 0.7 !important;
+  line-height: 28px !important;
+  opacity    : 0.7 !important;
+
   @media (min-width: $md) {
-    font-size  : 16px !important;
-    line-height: 28px;
-    opacity: 0.7 !important;
+    font-size     : 16px !important;
+    line-height   : 28px;
+    opacity       : 0.7 !important;
     // line-height: 150% !important;
   }
 }
@@ -199,7 +231,7 @@
 
   @media (min-width: $md) {
     font-size  : 14px !important;
-    line-height: 28px !important;
+    line-height: 24px !important;
   }
 }
 
@@ -218,8 +250,9 @@
     margin-top: 120px;
   }
 }
+
 .txt-owhite {
-  color:#fff;
+  color  : #fff;
   opacity: 0.7;
 }
 
@@ -237,7 +270,3 @@
     margin-right: 2rem;
   }
 }
-
-
-
-

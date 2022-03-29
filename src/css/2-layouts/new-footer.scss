@@ -2,11 +2,11 @@
 // Footer
 footer {
     background-color: #0E0D0D;
-    border-radius: 16px;
-    margin: 0px 15px 15px 15px;
-    color: #FFFFFF;
-    position: relative;
-    padding: 0px 80px;
+    border-radius   : 16px;
+    margin          : 0px 15px 15px 15px;
+    color           : #FFFFFF;
+    position        : relative;
+    padding         : 0px 80px;
 
     @media (max-width: 767px) {
         padding: 175px 15px 0px;
@@ -28,19 +28,19 @@ footer {
         .patient-item {
             @media (max-width: 767px) {
                 position: absolute;
-                top: 75%;
+                top     : 75%;
             }
         }
     }
 
     .footer-top {
         border-bottom: 1px solid #252424;
-        padding: 80px 0px;
+        padding      : 80px 0px;
 
         @media (max-width: 767px) {
-            padding: 40px 0px 80px;
+            padding   : 40px 0px 80px;
             border-top: 1px solid #252424;
-            
+
         }
 
 
@@ -48,26 +48,26 @@ footer {
             @media (max-width: 767px) {}
 
             form {
-                position: relative;
+                position     : relative;
                 margin-bottom: 32px;
 
                 .footer-form {
-                    width: 65%;
-                    border: 1px solid #ffffff1a;
-                    background: 0 0 !important;
+                    width                : 65%;
+                    border               : 1px solid #ffffff1a;
+                    background           : 0 0 !important;
                     -webkit-border-radius: 8px;
-                    border-radius: 8px;
-                    font-weight: 400;
-                    font-size: 14px;
-                    font-family: 'Lexend Deca', sans-serif;
-                    line-height: 16.94px;
-                    letter-spacing: .2px;
-                    height: 48px;
-                    position: relative;
+                    border-radius        : 8px;
+                    font-weight          : 400;
+                    font-size            : 14px;
+                    font-family          : 'Lexend Deca', sans-serif;
+                    line-height          : 16.94px;
+                    letter-spacing       : .2px;
+                    height               : 48px;
+                    position             : relative;
 
                     @media (max-width: 767px) {
                         margin-bottom: 16px;
-                        width: 100%;
+                        width        : 100%;
                     }
 
                     &:focus {
@@ -77,18 +77,18 @@ footer {
                 }
 
                 .footer__submit {
-                    position: absolute;
-                    top: 0%;
-                    right: 0;
-                    border: 0;
-                    padding: 13px 25px;
-                    background: #1B4A52;
+                    position     : absolute;
+                    top          : 0%;
+                    right        : 0;
+                    border       : 0;
+                    padding      : 13px 25px;
+                    background   : #1B4A52;
                     border-radius: 12px;
-                    color: #fff;
+                    color        : #fff;
 
                     @media (max-width: 767px) {
                         position: relative;
-                        width: 100%;
+                        width   : 100%;
                     }
 
                     &:focus {
@@ -102,11 +102,13 @@ footer {
             }
 
             .playstore-list {
-                display: flex;
+                display      : flex;
                 margin-bottom: 22px;
-                @media (max-width: 767px){    
-                    position: relative;
-                    transform: translateY(80px);}
+
+                @media (max-width: 767px) {
+                    position : relative;
+                    transform: translateY(80px);
+                }
 
                 &__item {
                     &:first-child {
@@ -119,18 +121,19 @@ footer {
                 display: flex;
 
                 @media (max-width: 767px) {
-                    width: 30%;
-                    margin: 0px auto;
-                    position: relative;
+                    width    : 30%;
+                    margin   : 0px auto;
+                    position : relative;
                     transform: translateY(-80px);
                 }
             }
 
             .footer-span {
                 position: absolute;
-                bottom: 0px;
-                left: 20%;
-                @media (max-width: 767px){
+                bottom  : 0px;
+                left    : 20%;
+
+                @media (max-width: 767px) {
                     bottom: 55px;
                 }
             }
@@ -142,8 +145,8 @@ footer {
         padding: 32px 0px;
 
         @media (max-width: 767px) {
-            padding: 40px 0px;
-            display: flex;
+            padding       : 40px 0px;
+            display       : flex;
             flex-direction: column-reverse;
         }
 
@@ -151,8 +154,8 @@ footer {
 
             @media (max-width: 767px) {
                 position: absolute;
-                top: 56px;
-                padding: 0px;
+                top     : 56px;
+                padding : 0px;
             }
         }
 
@@ -169,16 +172,16 @@ footer {
 
                 &:first-child {
                     @media (max-width: 767px) {
-                        width: 49%;
+                        width       : 49%;
                         margin-right: 15px;
                     }
                 }
 
                 a {
-                    color: #202020 !important;
-                    font-family: $inter;
-                    font-size: 16px;
-                    line-height: 19.36px;
+                    color         : #202020 !important;
+                    // font-family: $inter;
+                    font-size     : 16px;
+                    line-height   : 19.36px;
 
                 }
             }
@@ -186,17 +189,17 @@ footer {
 
         .social-list {
             display: flex;
-            float: right;
+            float  : right;
 
             @media (max-width: 767px) {
-                float: none;
-                width: 85%;
+                float : none;
+                width : 85%;
                 margin: 0px auto 20px;
 
             }
 
             &__item {
-                border: 1px solid #fff;
+                border       : 1px solid #fff;
                 border-radius: 50%;
 
                 &:not(:last-child) {
@@ -222,14 +225,14 @@ footer {
         }
 
         .policy-link {
-            display: flex;
+            display : flex;
             position: absolute;
-            right: 0px;
-            bottom: -8px;
+            right   : 0px;
+            bottom  : -8px;
 
             @media (max-width: 767px) {
                 position: relative;
-                bottom: 0px;
+                bottom  : 0px;
             }
 
             &__item {

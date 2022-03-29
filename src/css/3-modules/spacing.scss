@@ -86,7 +86,6 @@
 
 // section padding mental health 
 
-
 .section-padding-lg {
   padding-top   : 50px;
   padding-bottom: 50px;
@@ -102,18 +101,26 @@
   }
 }
 
-// .mb-2 {
-//   margin-bottom: 1.5rem !important;
-
-//   @media (min-width: 768px) {
-//     margin-bottom: 2rem !important;
-//   }
-// }
-
 .pb-4 {
   padding-bottom: 2rem !important;
 
   @media (min-width: 768px) {
     padding-bottom: 4rem !important;
+  }
+}
+
+// Sections spacings
+
+.dq-max342 {
+  max-width: 316px;
+  margin   : 0 auto;
+}
+
+.dq-section-padding180 {
+  @media (min-width: 768px) {
+    padding: {
+      top   : 150px;
+      bottom: 150px;
+    }
   }
 }
