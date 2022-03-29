@@ -1,12 +1,12 @@
 .aboutbanner-section {
-    position: relative;
-    background: linear-gradient(180deg, #FFFFFF -6.18%, #FFF4F4 101.72%);
+    position     : relative;
+    background   : linear-gradient(180deg, #FFFFFF -6.18%, #FFF4F4 101.72%);
     border-radius: 12px;
 
     @media (min-width: 767px) {
-        padding: 42px 100px 320px;
-        position: relative;
-        margin: 0px 15px 250px 15px;
+        padding      : 42px 100px 320px;
+        position     : relative;
+        margin       : 0px 15px 250px 15px;
         border-radius: 12px;
     }
 
@@ -25,41 +25,41 @@
 
     @media (min-width: 767px) {
         position: relative;
-        padding: 150px 0 75px;
+        padding : 150px 0 75px;
     }
 
     #nav-tab {
         .nav-item {
-            padding: 0px 0px 19px 0px;
-            line-height: 32px !important;
+            padding       : 0px 0px 19px 0px;
+            line-height   : 32px !important;
             letter-spacing: -0.5px;
-            font-weight: 500;
-            color: #1D1919;
-            opacity: 0.7;
-            background: transparent;
-            border: none;
-            cursor: pointer;
+            font-weight   : 500;
+            color         : #1D1919;
+            opacity       : 0.7;
+            background    : transparent;
+            border        : none;
+            cursor        : pointer;
 
             @media(max-width: 767px) {
                 // flex: none;
                 font-size: 16px !important;
-                padding: 16px 5px;
+                padding  : 16px 5px;
             }
         }
 
         .nav-item.active {
-            padding: 0px 0px 16px 0px;
-            line-height: 32px !important;
+            padding       : 0px 0px 16px 0px;
+            line-height   : 32px !important;
             letter-spacing: -0.5px;
-            font-weight: 800;
-            color: #1B4A52;
-            opacity: 1;
-            background: transparent;
-            border-bottom: 3px solid #1B4A52;
+            font-weight   : 800;
+            color         : #1B4A52;
+            opacity       : 1;
+            background    : transparent;
+            border-bottom : 3px solid #1B4A52;
 
             @media(max-width: 767px) {
                 font-size: 16px !important;
-                padding: 16px 5px;
+                padding  : 16px 5px;
             }
         }
     }
@@ -72,18 +72,18 @@
         }
 
         .logo-size {
-            width: 278px;
-            height: 168px;
-            text-align: center;
-            border: 1px solid #B1CBCF;
+            width        : 278px;
+            height       : 168px;
+            text-align   : center;
+            border       : 1px solid #B1CBCF;
             border-radius: 24px;
-            padding: 64px 10px;
-            display: inline-flex;
+            padding      : 64px 10px;
+            display      : inline-flex;
 
             @media(max-width: 767px) {
-                width: 100%;
-                height: 65px;
-                padding: 10px 10px;
+                width        : 100%;
+                height       : 65px;
+                padding      : 10px 10px;
                 border-radius: 12px;
             }
 
@@ -98,7 +98,7 @@
     position: relative;
 
     @media (min-width: 767px) {
-        padding: 146px 100px 146px;
+        padding : 146px 100px 146px;
         position: relative;
     }
 
@@ -107,7 +107,7 @@
         position: relative;
 
         @media (max-width: 766px) {
-            display: flex;
+            display       : flex;
             flex-direction: column-reverse;
         }
 
@@ -126,9 +126,9 @@
             margin-right: 70px;
 
             @media (max-width: 766px) {
-                display: flex;
+                display       : flex;
                 flex-direction: column-reverse;
-                margin-right: 0px;
+                margin-right  : 0px;
             }
 
             .mission-text {
@@ -136,7 +136,7 @@
 
                 @media (max-width: 767px) {
                     padding-right: 0px;
-                    margin-top: 40px;
+                    margin-top   : 40px;
                 }
             }
 
@@ -149,12 +149,12 @@
             margin-top: 25px;
 
             .vision-text {
-                margin-top: 48px;
+                margin-top   : 48px;
                 padding-right: 115px;
 
                 @media (max-width: 767px) {
                     padding-right: 0px;
-                    margin-top: 40px;
+                    margin-top   : 40px;
                 }
             }
         }
@@ -164,11 +164,11 @@
 
 
 .builder-section {
-    background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
-    margin: 0px 15px;
+    background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+    margin       : 0px 15px;
     border-radius: 12px;
-    position: relative;
-    padding: 88px 0px 37px;
+    position     : relative;
+    padding      : 88px 0px 37px;
 
     @media(min-width: 767px) {
         padding: 92px 100px 205px;
@@ -176,19 +176,19 @@
 
     .builder-row {
         @media(max-width: 767px) {
-            display: flex;
+            display       : flex;
             flex-direction: column-reverse;
             ;
         }
 
         // builder-swiper
         .swiper {
-            width: 100%;
-            max-height: 455px;
+            width       : 100%;
+            max-height  : 455px;
             padding-left: 45px;
 
             @media(max-width: 767px) {
-                max-height: 530px;
+                max-height  : 530px;
                 padding-left: 25px;
             }
         }
@@ -210,18 +210,18 @@
         }
 
         .swiper-pagination-bullets {
-            right: inherit;
-            left: 0px;
-            top: 50% !important;
+            right : inherit;
+            left  : 0px;
+            top   : 50% !important;
             height: 65px;
 
             @media(max-width: 767px) {
                 transform: rotate(-90deg) !important;
-                left: 150px;
-                top: 90% !important;
-                height: 58px;
-                width: 40px;
-                z-index: 9;
+                left     : 150px;
+                top      : 90% !important;
+                height   : 58px;
+                width    : 40px;
+                z-index  : 9;
             }
 
             .swiper-pagination-bullet {
@@ -229,8 +229,8 @@
                 margin: 10px 0px !important;
 
                 @media(max-width: 767px) {
-                    height: 20px;
-                    width: 3px;
+                    height       : 20px;
+                    width        : 3px;
                     border-radius: 4px;
                 }
             }
@@ -245,26 +245,26 @@
             position: relative;
 
             .builder-right-card {
-                width: 85%;
-                padding: 48px 48px;
-                height: 279px;
-                background: rgba(255, 255, 255, 0.4);
-                position: absolute;
-                transform: translateY(318px);
-                inset: 0;
-                z-index: 2;
+                width          : 85%;
+                padding        : 48px 48px;
+                height         : 279px;
+                background     : rgba(255, 255, 255, 0.4);
+                position       : absolute;
+                transform      : translateY(318px);
+                inset          : 0;
+                z-index        : 2;
                 backdrop-filter: blur(10px);
-                border-radius: 24px;
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                left: 120px;
+                border-radius  : 24px;
+                border         : 1px solid rgba(255, 255, 255, 0.2);
+                left           : 120px;
 
                 @media (max-width: 767px) {
-                    width: 95%;
-                    position: relative;
-                    left: 0px;
-                    margin: 0px auto;
+                    width    : 95%;
+                    position : relative;
+                    left     : 0px;
+                    margin   : 0px auto;
                     transform: translateY(-50px);
-                    padding: 24px 20px;
+                    padding  : 24px 20px;
                 }
             }
 
@@ -282,8 +282,8 @@
 
 
 .team-section {
-    background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
-    margin: 0px 15px 15px 15px;
+    background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+    margin       : 0px 15px 15px 15px;
     border-radius: 12px;
 
     @media(min-width: 767px) {
@@ -295,12 +295,12 @@
     }
 
     .newteam {
-        display: flex;
+        display       : flex;
         flex-direction: column-reverse;
     }
 
     .our-team {
-        position: relative;
+        position  : relative;
         margin-top: 100px;
         text-align: center;
 
@@ -311,39 +311,39 @@
         }
 
         .image-box {
-            width: 100%;
+            width   : 100%;
             position: absolute;
-            z-index: 1;
-            top: -83px;
+            z-index : 1;
+            top     : -83px;
         }
 
         .name {
-            display: block;
+            display    : block;
             font-weight: 800;
-            font-size: 24px;
-            color: #1D1919;
+            font-size  : 24px;
+            color      : #1D1919;
         }
 
         .title {
-            display: block;
+            display    : block;
             font-weight: 500;
-            font-size: 16px;
-            color: #1D1919;
-            opacity: 0.6;
+            font-size  : 16px;
+            color      : #1D1919;
+            opacity    : 0.6;
         }
 
         .my-image {
-            width: 297px;
+            width : 297px;
             height: 378px;
         }
 
         .team-image {
-            position: relative;
+            position     : relative;
             border-radius: 200px;
-            height: 295.83px;
-            width: 297px;
-            overflow: hidden;
-            margin: auto;
+            height       : 295.83px;
+            width        : 297px;
+            overflow     : hidden;
+            margin       : auto;
         }
 
         .bg1 {
@@ -371,27 +371,27 @@
         }
 
         .team-content {
-            margin-top: 25px;
+            margin-top   : 25px;
             margin-bottom: 40px;
         }
 
         .team-social img {
-            height: 44px;
-            width: 47px;
+            height    : 44px;
+            width     : 47px;
             margin-top: 25px;
         }
 
         .team-social {
-            background: #1B4A52;
+            background     : #1B4A52;
             backdrop-filter: blur(148px);
-            border-radius: 200px;
-            height: 0px;
-            width: 297px;
-            border-radius: 250px;
-            position: absolute;
-            bottom: -180px;
-            z-index: 2;
-            transition: all 0.5s ease 0s;
+            border-radius  : 200px;
+            height         : 0px;
+            width          : 297px;
+            border-radius  : 250px;
+            position       : absolute;
+            bottom         : -180px;
+            z-index        : 2;
+            transition     : all 0.5s ease 0s;
         }
     }
 }
@@ -410,68 +410,68 @@
 
     .opportunity-mobile {
         @media(max-width: 767px) {
-            position: relative;
-            height: auto;
+            position     : relative;
+            height       : auto;
             // overflow-x: scroll;
-            overflow-y: hidden;
-            top: 0%;
+            overflow-y   : hidden;
+            top          : 0%;
         }
 
         .options {
-            display: flex;
+            display       : flex;
             flex-direction: row;
-            align-items: stretch;
-            overflow: hidden;
-            min-width: 700px;
-            max-width: 100%;
-            width: calc(100% - 0px);
-            height: 500px;
-            position: relative;
-            z-index: 1;
-            top: 0;
-            left: 0%;
+            align-items   : stretch;
+            overflow      : hidden;
+            min-width     : 700px;
+            max-width     : 100%;
+            width         : calc(100% - 0px);
+            height        : 500px;
+            position      : relative;
+            z-index       : 1;
+            top           : 0;
+            left          : 0%;
 
             @media(max-width: 767px) {
-                height: 100%;
-                left: 0px;
+                height   : 100%;
+                left     : 0px;
                 min-width: 955px;
             }
 
             .option {
-                position: relative;
-                width: 25%;
-                overflow: hidden;
+                position           : relative;
+                width              : 25%;
+                overflow           : hidden;
                 background-position: center;
-                cursor: pointer;
-                transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+                cursor             : pointer;
+                transition         : .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 
                 @media(max-width: 767px) {
                     margin-right: 16px;
-                    width: 100%;
+                    width       : 100%;
                 }
 
                 .option-card {
-                    height: 100%;
+                    height      : 100%;
                     margin-right: 10px;
 
                     .option__img {
-                        height: 100%;
-                        width: 100%;
-                        float: right;
+                        height  : 100%;
+                        width   : 100%;
+                        float   : right;
                         position: relative;
 
                         @media(max-width: 767px) {
                             height: 245;
-                            top: 0%;
+                            top   : 0%;
                         }
                     }
                 }
 
                 &.active {
-                    flex-grow: 10000;
-                    transform: scale(1);
-                    max-width: 700px;
-                    margin: 0px;
+                    flex-grow      : 10000;
+                    transform      : scale(1);
+                    max-width      : 700px;
+                    margin         : 0px;
                     background-size: auto 100%;
 
                     @media(max-width: 767px) {
@@ -487,18 +487,18 @@
     }
 
     .scrollbar {
-        float: left;
+        float     : left;
         background: transparent;
         overflow-y: scroll;
     }
 
     #style-3::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.0);
-        background-color: transparent;
+        // -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.0);
+        background-color  : transparent;
     }
 
     #style-3::-webkit-scrollbar {
-        width: 1px;
+        width           : 1px;
         background-color: transparent;
     }
 
@@ -519,68 +519,70 @@
 
 
 .investor-section {
-    background: linear-gradient(180deg, #FFFFFF 0%, #FEFAF6 33.02%);
-    margin: 0px 15px 15px 15px;
+    background   : linear-gradient(180deg, #FFFFFF 0%, #FEFAF6 33.02%);
+    margin       : 0px 15px 15px 15px;
     border-radius: 12px;
-    padding: 56px 0px 113px;
+    padding      : 56px 0px 113px;
 
     @media(min-width: 767px) {
         padding: 56px 0px 92px;
     }
     .investor-icons {
-        margin-top: 84px;
+        margin-top    : 84px;
         padding-bottom: 55px;
         position: relative;
-        overflow: hidden;
+        overflow: hidden;       
+
         @media(max-width: 767px) {
             margin-top: 36px;
         }
         &::after {
-            position: absolute;
-            content: "";
-            top: -105%;
-            width: 240px;
-            height: 300px;
-            z-index: 9;
-            left: -20px;
+            position  : absolute;
+            content   : "";
+            top       : -105%;
+            width     : 240px;
+            height    : 300px;
+            z-index   : 9;
+            left      : -20px;
             background: linear-gradient(180deg, #FFFBF7 22.43%, rgba(255, 255, 255, 0) 91.36%);
-            transform: rotate(-90deg);
+            transform: rotate(-90deg);      
             @media(max-width: 767px) {
                 content: none;
             }
         }
         &::before {
-            position: absolute;
-            content: "";
-            top: -105%;
-            width: 240px;
-            height: 300px;
-            z-index: 9;
-            right: -20px;
+            position  : absolute;
+            content   : "";
+            top       : -105%;
+            width     : 240px;
+            height    : 300px;
+            z-index   : 9;
+            right     : -20px;
             background: linear-gradient(180deg, #FFFBF7 22.43%, rgba(255, 255, 255, 0) 91.36%);
-            transform: matrix(0, -1, -1, 0, 0, 0);
+            transform: matrix(0, -1, -1, 0, 0, 0);    
             @media(max-width: 767px) {
                 content: none;
             }
         }
         .investor-logo {
-            width: 278px;
-            height: 115px;
+            width     : 278px;
+            height    : 115px;
             text-align: center;
-            padding: 42px 10px;
+            padding   : 42px 10px;
             text-align: center;
-            display: inline-flex;
+            display: inline-flex;           
+
             @media(max-width: 767px) {
-                width: 100%;
-                height: 65px;
-                padding: 10px 10px;
+                width        : 100%;
+                height       : 65px;
+                padding      : 10px 10px;
                 border-radius: 12px;
             }
         }
         .swiper-pagination-bullet {
-            width: 15px !important;
+            width        : 15px !important;
             border-radius: 3px !important;
-            height: 5px;
+            height       : 5px;
         }
         .swiper-pagination-bullet-active {
             background: #000 !important;
@@ -588,141 +590,6 @@
     }
 }
 
-
-
-
-// .timeline-section {
-//     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
-//     border-radius: 12px;
-
-//     @media (min-width: 767px) {
-//         padding: 151px 0px 165px;
-//         margin: 15px 15px;
-//     }
-
-
-//     .swiper-container-wrapper {
-//         &--timeline {
-//             .swiper-slide {
-//                 display: flex;
-
-//                 .slide-img {
-//                     width: 40%;
-//                     margin-right: 110px;
-
-//                     img {
-//                         border-radius: 24px;
-//                     }
-//                 }
-
-//                 .slide-content {
-//                     width: 50%;
-//                     padding: 110px 0px;
-
-//                     .slide-icon {
-//                         width: 10%;
-//                         margin-bottom: 31px;
-//                     }
-//                 }
-
-
-
-//                 &-active {
-//                     .title {
-//                         opacity: 1;
-//                     }
-//                 }
-//             }
-
-//             .swiper-pagination-progressbar {
-//                 position: relative;
-//                 margin-bottom: 70px;
-//                 background-color: transparent;
-//                 height: 6px;
-//                 border-bottom: 1px solid red;
-//                 width: 100%;
-//                 &-fill {
-//                     background-color: #E2504B;
-//                     height: 9px;
-//                     top: 2px;
-//                 }
-//             }
-
-//             .swiper-pagination-custom {
-//                 position: relative;
-//                 list-style: none;
-//                 margin: 1rem 0;
-//                 padding: 0;
-//                 display: flex;
-//                 line-height: 1.66;
-//                 bottom: 0;
-//                 z-index: 11;
-//                 width: 100%;
-//                 display: flex;
-
-//                 .swiper-pagination-switch {
-//                     position: relative;
-//                     width: 100%;
-//                     height: 30px;
-//                     line-height: 30px;
-//                     display: block;
-
-//                     .switch-title {
-//                         position: absolute;
-//                         font-weight: 400;
-//                         right: 0;
-//                         transform: translateX(50%);
-//                         transition: 0.2s all ease-in-out;
-//                         transition-delay: 0s;
-//                         cursor: pointer;
-//                         z-index: 1;
-
-//                         &:after {
-//                             position: absolute;
-//                             top: calc(100% + 19px);
-//                             right: 50%;
-//                             transform: translateX(50%) translateY(-50%);
-//                             width: 12px;
-//                             height: 12px;
-//                             background-color: red;
-//                             border-radius: 2rem;
-//                             content: "";
-//                             transition: 0.2s all ease-in-out;
-//                             transition-delay: 0s;
-//                             z-index: 1;
-//                         }
-//                     }
-
-//                     &.active {
-//                         .switch-title {
-//                             font-weight: 400;
-//                             transition-delay: 0.4s;
-
-//                             &:after {
-//                                 background-color: red;
-//                                 width: 25px;
-//                                 height: 25px;
-//                                 transition-delay: 0.4s;
-//                             }
-//                         }
-
-//                         ~.swiper-pagination-switch {
-//                             .switch-title {
-//                                 color: blue;
-//                                 font-weight: 16px;
-
-//                                 &:after {
-//                                     background-color: red;
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }
 
 
 
@@ -882,5 +749,4 @@
     }
 
 }
-
 

@@ -187,8 +187,7 @@ var swiper = new Swiper(".teamSwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  
+  },  
 });
 
 

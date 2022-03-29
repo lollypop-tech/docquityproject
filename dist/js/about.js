@@ -184,7 +184,6 @@ var swiper = new Swiper(".teamSwiper", {
     el: ".swiper-pagination",
     clickable: true
   }
-
 });
 
 // investor

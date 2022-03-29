@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing                 : border-box;
     // user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
@@ -10,25 +10,24 @@ a {
     &:hover,
     &:active,
     &:focus {
-        outline: 0;
+        outline        : 0;
         text-decoration: none !important;
-        color: #1D1919;
+        color          : #1D1919;
     }
 }
 
 html,
 body {
-    font-family: $robo;
-    font-weight: $fnt-reg;
-    color: #2D343B;
+    font-family: 'Manrope', sans-serif;
+    color      : #2D343B;
     @include font-smoothing();
 
     p {
-        opacity: 0.7;
+        opacity       : 0.7;
         letter-spacing: 0.1px;
 
         @media (min-width: $md) {
-            font-size: 16px;
+            font-size  : 16px;
             line-height: 28px;
         }
     }
@@ -45,8 +44,8 @@ body {
 
 .container-bn {
     position: relative;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin  : 0 auto;
+    padding : 0 2rem;
 
     @media (min-width: 1400px) {
         max-width: 1250px;
@@ -55,17 +54,17 @@ body {
 
 //font sizes
 .fnt-14 {
-    font-size: 14px;
+    font-size  : 14px;
     line-height: 28px;
 }
 
 .fnt-18 {
-    font-size: 18px;
+    font-size  : 18px;
     line-height: 25px;
 }
 
 .fnt-42 {
-    font-size: 30px;
+    font-size  : 30px;
     line-height: 119.8%;
 
     @media (min-width: $md) {
@@ -74,10 +73,11 @@ body {
 }
 
 .fnt-20 {
-    font-size: 14px;
+    font-size  : 14px;
     line-height: 40px;
+
     @media (min-width: $md) {
-        font-size: 20px;
+        font-size  : 20px;
         line-height: 40px;
     }
 }
@@ -85,9 +85,9 @@ body {
 
 //head class
 .c-h1 {
-    font-size: 42px;
+    font-size  : 42px;
     line-height: 50px;
-    color: #FFFFFF;
+    color      : #FFFFFF;
 }
 
 .mb-57 {
@@ -146,11 +146,11 @@ body {
 }
 
 .footer-link {
-    color: #fff !important;
-    opacity: 0.7;
-    font-weight: 500 !important;
-    font-size: 14px;
-    line-height: 21px;
+    color         : #fff !important;
+    opacity       : 0.7;
+    font-weight   : 500 !important;
+    font-size     : 14px;
+    line-height   : 21px;
     letter-spacing: 0.1px;
 }
 
@@ -159,14 +159,14 @@ body {
 }
 
 .gray-btn {
-    background: linear-gradient(94.21deg, #252424 4.48%, #424242 87.94%);
-    padding: 19px 32px;
-    line-height: 16px !important;
-    color: #fff !important;
+    background   : linear-gradient(94.21deg, #252424 4.48%, #424242 87.94%);
+    padding      : 19px 32px;
+    line-height  : 16px !important;
+    color        : #fff !important;
     border-radius: 12px;
-    display: inline-block;
-    box-shadow: 0 20px 30px -6px rgba(60, 59, 61, 0.5);
-    transition: all 0.5s ease-in-out;
+    display      : inline-block;
+    box-shadow   : 0 20px 30px -6px rgba(60, 59, 61, 0.5);
+    transition   : all 0.5s ease-in-out;
 
     &:hover {
         box-shadow: none;
@@ -176,12 +176,15 @@ body {
 .op1 {
     opacity: 1;
 }
+
 .mb-2 {
     margin-bottom: 2px !important;
 }
+
 .mb-3 {
     margin-bottom: 3px !important;
 }
+
 .mb-4 {
     margin-bottom: 3px !important;
 }
@@ -206,6 +209,7 @@ body {
 .lh24 {
     line-height: 24px !important;
 }
+
 .lh32 {
     line-height: 32px !important;
 }
@@ -217,29 +221,38 @@ body {
 .lh20 {
     line-height: 20px !important;
 }
+
 .lh21 {
-    line-height: 21px!important;
+    line-height: 21px !important;
 }
+
 .lh80 {
-    line-height: 30px!important;
+    line-height: 30px !important;
+
     @media (min-width: 768px) {
-        line-height: 80px!important;
+        line-height: 80px !important;
     }
 }
+
 .mb-12 {
-    margin-bottom: 12px!important;
+    margin-bottom: 12px !important;
+
     @media (min-width: 768px) {
         margin-bottom: 12px !important;
     }
 }
+
 .mb-16 {
-    margin-bottom: 24px!important;
+    margin-bottom: 24px !important;
+
     @media (min-width: 768px) {
         margin-bottom: 16px !important;
     }
 }
+
 .mb-19 {
-    margin-bottom: 19px!important;
+    margin-bottom: 19px !important;
+
     @media (min-width: 768px) {
         margin-bottom: 19px !important;
     }
@@ -247,6 +260,7 @@ body {
 
 .mb-24 {
     margin-bottom: 16px;
+
     @media (min-width: 768px) {
         margin-bottom: 24px !important;
     }
@@ -259,22 +273,27 @@ body {
 .mb-44 {
     margin-bottom: 44px !important;
 }
+
 .mb-45 {
-    margin-bottom:39px !important;
+    margin-bottom: 39px !important;
+
     @media (min-width: 768px) {
-    margin-bottom: 45px !important;
+        margin-bottom: 45px !important;
     }
 }
 
 .mb-51 {
     margin-bottom: 51px !important;
 }
+
 .mb-58 {
     margin-bottom: 60px !important;
+
     @media (min-width: 768px) {
-    margin-bottom: 58px !important;
+        margin-bottom: 58px !important;
     }
 }
+
 .ml-16 {
     margin-left: 16px;
 }
@@ -289,12 +308,14 @@ body {
 
 main {
     padding-top: 130px;
-    @media(max-width: 768px) {    
-        padding-top: 113px;     
-      } 
+
+    @media(max-width: 768px) {
+        padding-top: 113px;
+    }
 }
-.ls15{
-letter-spacing: 0.15px;
+
+.ls15 {
+    letter-spacing: 0.15px;
 }
 
 
@@ -316,8 +337,24 @@ letter-spacing: 0.15px;
     }
 }
 
-.pad-0{
-    @media (max-width: 768px) {
-        padding: 0px;
+.dq-flexcenter {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+// Circles
+
+.dq-circle {
+    border-radius: 50%;
+
+    &--bluish {
+        background: rgba($color: #B1CBCF, $alpha: .15);
+    }
+
+    &--lg {
+        height: 117px;
+        width : 117px;
+        margin: 0 auto;
     }
 }
