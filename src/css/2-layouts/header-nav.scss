@@ -290,14 +290,18 @@
             }
 
             .line {
-                width           : 20px;
-                height          : 2px;
-                background-color: #000000;
+                width           : 25px;
+                height          : 3px;
+                background-color: #1B4A52;
                 display         : block;
                 margin          : 5px auto;
                 transition      : all 0.3s ease-in-out;
                 opacity         : 1;
                 border-radius   : 2px;
+
+                &:nth-child(2) {
+                    display: none;
+                }
 
                 &:nth-child(3) {
                     width      : 16px;
@@ -312,12 +316,14 @@
 
         // Mobile icon active
         .menu-icon.active .line {
-            width           : 20px;
-            background-color: #000 !important;
+            width           : 25px;
+            height: 2px;
+            background-color: #1B4A52!important;
         }
 
         .menu-icon.active .line:nth-child(2) {
             opacity  : 0;
+            display: block;
             transform: translateX(100%);
         }
 
