@@ -25,6 +25,13 @@
     padding      : .8rem 1.4rem;
     border-radius: $border-radius12;
     opacity      : .6;
+
+    &--sec {
+        background: linear-gradient(94.21deg, #252424 4.48%, #424242 87.94%);
+        text-align: left;
+        color     : $white;
+        opacity   : 1;
+    }
 }
 
 .dq-rating-text {
@@ -79,7 +86,10 @@
     margin-bottom : 2rem;
 
     &__title {
-        color: #1B4A52;
+        color      : #1B4A52;
+        font-size  : 16px !important;
+        line-height: 26px !important;
+        font-weight: $fnt-semibold;
     }
 }
 
@@ -107,6 +117,11 @@
 
 .dq-thumbnail {
     margin-bottom: 3rem;
+
+    &__heading {
+        @extend .fnt-xxl;
+        @extend .txt-clr-green;
+    }
 
     p {
         color      : rgba($color: #1D1919, $alpha: .7);

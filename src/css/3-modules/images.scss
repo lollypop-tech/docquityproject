@@ -1,15 +1,25 @@
 .imgfluid {
-  max-width: 100%;
+  max-width : 100%;
   object-fit: contain;
 }
 
 .img99x99 {
-  height: 64px;
-  width: 64px;
+  height       : 64px;
+  width        : 64px;
   border-radius: 50%;
 
   @media (min-width: $md) {
     height: 99px;
-    width: 99px;
+    width : 99px;
   }
+}
+
+.dq-brder-12 {
+  border-radius: 12px;
+}
+
+.dq405x222 {
+  height    : 222px;
+  width     : 100%;
+  object-fit: cover;
 }

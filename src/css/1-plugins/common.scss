@@ -73,12 +73,12 @@ body {
 }
 
 .fnt-20 {
-    font-size  : 14px;
-    line-height: 40px;
+    font-size  : 14px !important;
+    line-height: 22px !important;
 
     @media (min-width: $md) {
-        font-size  : 20px;
-        line-height: 40px;
+        font-size  : 20px !important;
+        line-height: 30px !important;
     }
 }
 
@@ -181,22 +181,22 @@ body {
     margin-bottom: 2px !important;
 }
 
-.mb-3 {
-    margin-bottom: 3px !important;
-}
+// .mb-3 {
+//     margin-bottom: 3px !important;
+// }
 
-.mb-4 {
-    margin-bottom: 3px !important;
-}
+// .mb-4 {
+//     margin-bottom: 3px !important;
+// }
 
 
 .mb-6 {
     margin-bottom: 6px;
 }
 
-.mb-5 {
-    margin-bottom: 5px !important;
-}
+// .mb-5 {
+//     margin-bottom: 5px !important;
+// }
 
 .mb-13 {
     margin-bottom: 13px !important;
