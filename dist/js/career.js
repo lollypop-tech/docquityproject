@@ -4,7 +4,7 @@
 var swiper = new Swiper('.diverseSwiper', {
   direction: 'vertical',
   slidesPerView: 3,
-  spaceBetween: 0,
+  spaceBetween: 40,
   grabCursor: true,
   loop: true,
   // autoplay: {
