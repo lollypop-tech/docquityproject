@@ -4,14 +4,14 @@ section.brand-section
             .col-lg-6.ml-auto.mr-auto.text-center 
                 h2.h2.fnt-lex.fnt500.mb-24 We work with the most renowned brands in healthcare
                 p.txt-md.text-blackish.fnt500.fnt-man.opacity-text.mb-45 Take a look at some of the companies that have been supporting our growth across Southeast Asia and beyond.
-    .container
+    .container-fluid
         .row.justify-content-center
             .col-md-6
                 nav
                     #nav-tab.nav.nav-tabs.nav-fill(role='tablist')
                         #nav-home-tab.nav-item.nav-link.active.fnt-20.fnt-man(data-toggle='tab' href='#nav-home' role='tab' aria-controls='nav-home' aria-selected='true') Medical Associations
                         #nav-profile-tab.nav-item.nav-link.fnt-20.fnt-man(data-toggle='tab' href='#nav-profile' role='tab' aria-controls='nav-profile' aria-selected='false') Pharma Companies
-            .col-12
+            .col-12.pad-0
                 #nav-tabContent.tab-content.brand-slider-tabpane
                     #nav-home.mar-tp.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-home-tab')
                         include brandslider.pug

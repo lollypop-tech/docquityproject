@@ -10,12 +10,12 @@
         }
 
         .banner-left {
-            padding:44px 15px 44px;
-            text-align:center;
+            padding: 44px 15px 44px;           
+
             @media (min-width: 768px) {
                 padding: 220px 115px 0px 80px;
                 text-align: left;
-            }  
+            }
         }
     }
 
@@ -30,80 +30,79 @@
         padding: 127px 0px 131px;
     }
 
-    .region-card {
-        box-shadow: 0px 21px 54px 0px #00000014;
-        background: #fff;
-        border: 1px solid #B1CBCF;
-        border-radius: 24px;
-        padding: 54px 40px 25px 40px;
-        color: #1D1919;
-        transition: all 0.5s ease 0s;
+    .region-cardlist {
 
-        &:hover {
-            background: #1B4A52;
-
-            h6 {
-                color: #fff !important;
-                opacity: 1;
-            }
-
-            p {
-                color: #fff !important;
-            }
-
-            .white {
-                fill: #fff !important;
-            }
-
-        }
-
-    }
-
-    .region-card1 {
-        position: relative;
-        top: 140px;
-        width: 47%;
-
-        @media (max-width: 768px) {
-            top: 0;
-            width: 100%;
-            margin: 0px auto 32px;
-        }
-    }
-
-    .region-card2 {
-        position: relative;
-        transform: translateX(300px);
-        top: -255px;
-        width: 47%;
-
-        @media (max-width: 768px) {
-            top: 0px;
-            transform: translateX(0px);
-            width: 100%;
-            margin: 0px auto 32px;
-        }
-    }
-
-    .region-card3 {
-        position: absolute;
-        right: 25px;
-        width: 45%;
-        top: 280px;
-
-        @media (max-width: 768px) {
+        &__item {
             position: relative;
-            top: 0px;
-            transform: translateX(0px);
-            width: 100%;
-            right: 0px;
-            margin: 0px auto 0px;
+            .region-card {
+                box-shadow: 0px 21px 54px 0px #00000014;
+                background: #fff;
+                border: 1px solid #B1CBCF;
+                border-radius: 24px;
+                padding: 54px 40px 25px 40px;
+                color: #1D1919;
+                transition: all 0.5s ease 0s;
+                width: 47%;
+
+                &:hover {
+                    background: #1B4A52;
+
+                    h6 {
+                        color: #fff !important;
+                        opacity: 1;
+                    }
+
+                    p {
+                        color: #fff !important;
+                    }
+
+                    .white {
+                        fill: #fff !important;
+                    }
+
+                }
+
+            }
+
+            .region-card1 {
+                position: relative;
+                top: 140px;  
+                @media (max-width: 768px) {
+                    top: 0;
+                    width: 100%;
+                    margin: 0px auto 32px;
+                }
+            }
+            .region-card2 {
+                position: absolute;
+                right: 0px;
+                top: -255px; 
+                @media (max-width: 768px) {
+                    top: 0px;
+                    transform: translateX(0px);
+                    width: 100%;
+                    margin: 0px auto 32px;
+                    position: relative;
+                }
+            }
+            .region-card3 {
+                position: absolute;
+                right: 0;                
+                top: 30px;  
+                @media (max-width: 768px) {
+                    position: relative;
+                    top: 0px;
+                    transform: translateX(0px);
+                    width: 100%;
+                    right: 0px;
+                    margin: 0px auto 0px;
+                }
+            }
         }
     }
 
     .region-right {
         padding: 62px 0px 0px;
-        text-align: center;
 
         @media (min-width: 768px) {
             padding: 140px 60px 165px;
@@ -127,7 +126,7 @@
     .individual-left {
         @media (max-width: 768px) {
             position: relative;
-            transform: translateY(170px);
+            transform: translateY(310px);
         }
     }
 
@@ -136,7 +135,7 @@
 
         @media (max-width: 768px) {
             margin-top: 0px;
-            transform: translateY(-315px);
+            transform: translateY(-351px);
         }
 
         .second-slide {
@@ -222,7 +221,7 @@
                 .max2 {
                     line-height: 28px;
                     margin-top: 25px;
-                    color:#1B4A52!important;
+                    color: #1B4A52 !important;
                 }
 
                 .max3 {
@@ -255,26 +254,25 @@
             -webkit-justify-content: center;
             justify-content: center;
             -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
+            -ms-flex-align: center;            
+            align-items: baseline;
 
             .support-card {
-                height: 357px;
+                height: auto;
                 padding: 32px 15px;
                 border-radius: 24px;
                 position: relative;
                 background: #b1cbcf33;
-                margin-bottom: 45px;
 
                 .support-icon {
                     width: 20%;
                 }
+
                 .max2 {
                     @media(max-width: 767px) {
                         line-height: 20px;
                         margin-top: 25px;
-                        color:#1B4A52!important;
+                        color: #1B4A52 !important;
                     }
                 }
             }
@@ -314,13 +312,21 @@
         padding-left: 45px;
 
         @media(max-width: 767px) {
-            max-height: 630px;
-            padding-left:0px;
+            max-height: 707px;
+            padding-left: 0;
+            padding-bottom: 45px;
         }
     }
 
     .swiper-slide {
         display: flex;
+        &:nth-child(odd){
+            @media(max-width: 767px) {
+                background: #b1cbcf33;
+                border-radius: 20px;
+            }
+            
+        }
     }
 
     .swiper-pagination-bullets {
@@ -359,7 +365,7 @@
         transition: all 0.3s ease 0s;
 
         @media(max-width: 767px) {
-            padding: 32px 15px;
+            padding:0px 15px;
         }
 
         .diverse-div {
@@ -378,7 +384,7 @@
         &:hover {
             background: #b1cbcf33;
             border-radius: 24px;
-        }
+        }        
     }
 
     .diverse-right {
@@ -415,7 +421,8 @@
             transform: translateX(80px);
             top: 4px;
             display: inline-flex;
-            @media(max-width: 767px){
+
+            @media(max-width: 767px) {
                 transform: translateX(50px);
             }
 
@@ -433,14 +440,17 @@
     .review-list {
         display: inline-block;
         margin-bottom: 64px;
+
         @media(max-width: 767px) {
             margin-bottom: 0px;
         }
+
         &__item {
             width: 32%;
             float: left;
             text-align: center;
             padding: 15px 55px;
+
             @media(max-width: 767px) {
                 width: 100%;
                 padding: 45px 30px;
@@ -553,8 +563,8 @@
             cursor: pointer;
 
             @media(max-width: 767px) {
-                flex: none;
-                font-size: 16px!important;
+                // flex: none;
+                font-size: 16px !important;
                 padding: 16px 5px;
             }
         }
@@ -568,8 +578,9 @@
             opacity: 1;
             background: transparent;
             border-bottom: 3px solid #1B4A52;
+
             @media(max-width: 767px) {
-                font-size: 16px!important;
+                font-size: 16px !important;
                 padding: 16px 5px;
             }
         }
@@ -577,7 +588,7 @@
 
     .department-list {
         margin-top: 40px;
-       
+
 
         &__item {
             margin-bottom: 20px;
@@ -614,7 +625,7 @@
 
                     @media(max-width: 767px) {
                         position: absolute;
-                        right: 45px;
+                        right:15px;
                         top: 15px;
                         margin-right: 0;
                     }
@@ -643,6 +654,8 @@
                         text-align: center;
                         box-shadow: none;
                         padding: 15px 20px;
+                        position: relative;
+                        right: inherit;
                     }
 
                 }

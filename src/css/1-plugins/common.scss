@@ -266,6 +266,14 @@ body {
     }
 }
 
+.mb-22 {
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 22px !important;
+    }
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }

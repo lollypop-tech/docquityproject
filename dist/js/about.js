@@ -20,7 +20,7 @@ $(document).ready(function () {
     },
     loop: false,
     effect: "slide",
-    spaceBetween: 30,
+    spaceBetween: 10,
     on: {
       init: function init() {
         $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
@@ -45,21 +45,22 @@ var rightSlider = new Swiper('.js-partners-icons', {
   spaceBetween: 10,
   loop: true,
   autoplay: {
-    delay: 0
+    delay: 0,
+    disableOnInteraction: true
   },
-  speed: 3000,
+  speed: 4000,
   breakpoints: {
     500: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     700: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     }
   }
 });
@@ -71,22 +72,21 @@ var rightSlider = new Swiper('.js-partners-icons-reverse', {
   autoplay: {
     delay: 0,
     disableOnInteraction: true,
-    //waitForTransition: false,
     reverseDirection: true
   },
-  speed: 3000,
+  speed: 5000,
   breakpoints: {
     500: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     700: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     }
   }
 });
@@ -102,16 +102,16 @@ var rightSlider = new Swiper('.js-pharma-icons', {
   speed: 3000,
   breakpoints: {
     500: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     700: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     }
   }
 });
@@ -129,16 +129,16 @@ var rightSlider = new Swiper('.js-pharma-icons-reverse', {
   speed: 3000,
   breakpoints: {
     500: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     700: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     },
     768: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      slidesPerView: 4.5,
+      spaceBetween: 10
     }
   }
 });
@@ -184,7 +184,6 @@ var swiper = new Swiper(".teamSwiper", {
     el: ".swiper-pagination",
     clickable: true
   }
-
 });
 
 // investor
