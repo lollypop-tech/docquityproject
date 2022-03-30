@@ -26,8 +26,6 @@ mixin head(page_name)
 
 	meta(name= "keywords", content= "")
 
-	//- <link rel="preconnect" href="https://fonts.googleapis.com">
-	//- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		//- lexend
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,13 +33,11 @@ mixin head(page_name)
 		//- manorpe
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">	
 
-	link(rel= "stylesheet", href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css")
-	//- link(rel= "stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css")
+	//- link(rel= "stylesheet", href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css")	
+	
 	link(rel= "stylesheet", href="css/main.css")
-	//- link(rel= "stylesheet", href="fonts/fonts.css")
 
 	if(page_name === "home")
 		title Docquity
@@ -51,6 +47,7 @@ mixin head(page_name)
 	
 	if(page_name === "about")
 		title Docquity	
+		//- link(rel= "stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css")
 		link(rel= "stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
 		link(rel="canonical" href="/about.html")
 		meta(name="description" content="Docquity about page")

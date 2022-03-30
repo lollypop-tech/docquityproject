@@ -15,7 +15,8 @@
 
         @media (min-width: 767px) {
             position: absolute;
-
+            width: 100%;
+            left: 0px;
         }
     }
 }
@@ -71,6 +72,10 @@
             margin-top: 41px;
         }
 
+        .js-partners-icons,.js-partners-icons-reverse,.js-pharma-icons,.js-pharma-icons-reverse{
+            overflow: hidden;
+        }
+
         .logo-size {
             width        : 278px;
             height       : 168px;
@@ -78,7 +83,8 @@
             border       : 1px solid #B1CBCF;
             border-radius: 24px;
             padding      : 64px 10px;
-            display      : inline-flex;
+            display      : inline-flex;            
+            cursor:pointer;         
 
             @media(max-width: 767px) {
                 width        : 100%;
@@ -111,26 +117,13 @@
             flex-direction: column-reverse;
         }
 
-        &__item {
-            width: 47%;
-            float: left;
-
-            @media (max-width: 766px) {
-                width: 100%;
-                float: none;
-            }
-
-        }
-
-        .mission-div {
-            margin-right: 70px;
-
+        .mission-div {   
+            padding-right: 30px; 
             @media (max-width: 766px) {
                 display       : flex;
                 flex-direction: column-reverse;
-                margin-right  : 0px;
+                padding-right: 15px;
             }
-
             .mission-text {
                 padding-right: 115px;
 
@@ -146,8 +139,10 @@
         }
 
         .vision-div {
-            margin-top: 25px;
-
+            padding-left: 30px;
+            @media (max-width: 766px) {
+                padding-left: 15px;
+            }
             .vision-text {
                 margin-top   : 48px;
                 padding-right: 115px;
@@ -186,6 +181,7 @@
             width       : 100%;
             max-height  : 455px;
             padding-left: 45px;
+            margin-top: 72px;
 
             @media(max-width: 767px) {
                 max-height  : 530px;
@@ -196,8 +192,7 @@
         .swiper-slide {
             display: flex;
 
-            .builder-card {
-                padding-right: 84px;
+            .builder-card {              
 
                 @media(max-width: 767px) {
                     padding-right: 25px;
@@ -250,13 +245,14 @@
                 height         : 279px;
                 background     : rgba(255, 255, 255, 0.4);
                 position       : absolute;
-                transform      : translateY(318px);
+                transform      : translateY(390px);
                 inset          : 0;
                 z-index        : 2;
                 backdrop-filter: blur(10px);
                 border-radius  : 24px;
                 border         : 1px solid rgba(255, 255, 255, 0.2);
-                left           : 120px;
+                left           : inherit;
+                right: -40px;
 
                 @media (max-width: 767px) {
                     width    : 95%;
@@ -285,31 +281,23 @@
     background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     margin       : 0px 15px 15px 15px;
     border-radius: 12px;
-
+    padding: 0px 0px 52px;
     @media(min-width: 767px) {
         padding: 40px 0px 61px;
     }
-
     .support-list {
         margin-top: 56px;
-    }
-
-    .newteam {
-        display       : flex;
-        flex-direction: column-reverse;
     }
 
     .our-team {
         position  : relative;
         margin-top: 100px;
         text-align: center;
-
         &:hover {
             .team-social {
                 height: 100%;
             }
         }
-
         .image-box {
             width   : 100%;
             position: absolute;
@@ -318,18 +306,11 @@
         }
 
         .name {
-            display    : block;
-            font-weight: 800;
-            font-size  : 24px;
-            color      : #1D1919;
+            display    : block;           
         }
 
         .title {
-            display    : block;
-            font-weight: 500;
-            font-size  : 16px;
-            color      : #1D1919;
-            opacity    : 0.6;
+            display    : block;            
         }
 
         .my-image {
@@ -374,13 +355,11 @@
             margin-top   : 25px;
             margin-bottom: 40px;
         }
-
         .team-social img {
             height    : 44px;
             width     : 47px;
             margin-top: 25px;
         }
-
         .team-social {
             background     : #1B4A52;
             backdrop-filter: blur(148px);
@@ -392,13 +371,26 @@
             bottom         : -180px;
             z-index        : 2;
             transition     : all 0.5s ease 0s;
+            cursor: pointer;
+        }
+    }
+    .team-desktop{
+        @media(max-width: 768px) {
+            position: relative;
+            transform: translateY(540px);
+            }
+    }
+    .team-mobile{
+        @media(max-width: 768px) {
+        position: relative;
+        transform: translateY(-220px);
         }
     }
 }
 
 
 .opportunity-section {
-    padding: 70px 0px 77px;
+    padding: 80px 0px 84px;
 
     @media(min-width: 768px) {
         padding: 130px 0px 130px;
@@ -459,6 +451,8 @@
                         width   : 100%;
                         float   : right;
                         position: relative;
+                        object-fit: cover;
+                        border-radius: 20px;
 
                         @media(max-width: 767px) {
                             height: 245;

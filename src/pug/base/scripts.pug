@@ -7,22 +7,24 @@ script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
 script(defer src='js/plugins/niceselect.js')
 //START: Custom scripts
 mixin script
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js')
+    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js')
+    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js')
     //- script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js")  
     script(defer src="js/common.js")
     //- script(defer src="js/home.js")
     
     if(page_name =="home")
     
         script(defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js")
+        //- script(defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js")     
         script(defer src="js/home.js")
         script(defer src="js/home-new.js")
 
     if(page_name =="about")
     
         script(defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js")  
+        //- script(defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js") 
         script(defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js")     
         script(defer src="js/about.js")
         script(defer src="js/home.js")
