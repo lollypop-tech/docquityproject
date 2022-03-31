@@ -62,7 +62,12 @@
 
 .fnt-14 {
   font-size  : 14px !important;
-  line-height: 20px !important;
+  line-height: 24px !important;
+}
+
+.fnt-12 {
+  font-size  : 12px !important;
+  line-height: 22px !important;
 }
 
 .fnt-10 {
@@ -110,4 +115,5 @@
 .dq-sec-title {
   font-weight: $fnt-semibold;
   color      : #1B4A52;
+  @extend .fnt-20;
 }

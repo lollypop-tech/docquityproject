@@ -6,7 +6,7 @@
     }
 
     &__cnt {
-        padding-right: 4rem;
+        // padding-right: 2rem;
     }
 }
 
@@ -127,4 +127,43 @@
         color      : rgba($color: #1D1919, $alpha: .7);
         font-weight: $fnt-medium;
     }
+}
+
+
+// offers
+
+.dq-feature-list {
+    padding: 0 1rem;
+
+    &__item {
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.dq-feature-thumbnail {
+    transition   : 680ms background cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 44px;
+    padding      : 20px;
+    cursor       : pointer;
+
+    &:is(:hover, :focus) {
+        background: rgba($color: #B1CBCF, $alpha: .1);
+        transition: 680ms background cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        .dq-circle {
+            transition: 380ms background cubic-bezier(0.165, 0.84, 0.44, 1);
+            background: #1B4A52;
+        }
+    }
+}
+
+// Wall of love
+
+.dq-maincnt-leftwrap {
+    padding-right: 3rem;
+    padding-top  : 8rem;
 }

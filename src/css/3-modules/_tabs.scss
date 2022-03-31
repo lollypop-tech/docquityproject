@@ -5,7 +5,7 @@
         font-size    : 14px !important;
         line-height  : 22px !important;
         border-radius: 20px;
-        margin-right : 1rem;
+        margin-right : .6rem;
 
         padding: {
             top   : .6rem !important;
@@ -35,3 +35,28 @@
 
 // Tabs cards
 
+.dq-thumbnailcard {
+    &__heading {
+        font-weight: $fnt-bold;
+    }
+
+    &__body {
+        padding-top  : 1.5rem;
+        padding-right: 2.5rem;
+
+        p {
+            @extend .fnt-14;
+            max-width: 360px;
+        }
+    }
+}
+
+.dq-categ-name {
+    color      : #1B4A52;
+    font-weight: $fnt-medium;
+}
+
+.-secondary {
+    background: #1B4A52;
+    color     : $white;
+}
