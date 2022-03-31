@@ -1,0 +1,26 @@
+section.dq-section-padding100
+    .container
+        .row.pb-md-4
+            .col-md-10.col-lg-6
+                span.dq-sec-subtxt.d-block.mb-3 Thought leadership
+                p Advice on navigating your career, practice, and the ever changing world.
+        
+        .row
+            .col-12
+                ul#myTab.dq-tab.dq-tab--pri.nav.nav-tabs(role='tablist')
+                    li.nav-item
+                        a#home-tab.nav-link.active(data-toggle='tab' href='#home' role='tab' aria-controls='home' aria-selected='true') Trending
+                    li.nav-item
+                        a#profile-tab.nav-link(data-toggle='tab' href='#profile' role='tab' aria-controls='profile' aria-selected='false') Articles
+                    li.nav-item
+                        a#contact-tab.nav-link(data-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Case Studies
+                    li.nav-item
+                        a#webinar-tab.nav-link(data-toggle='tab' href='#webinar' role='tab' aria-controls='webinar' aria-selected='false') Webinar
+
+            .col-12
+                #myTabContent.tab-content.dq-tabcontent-overide
+                    #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab')
+                        include Leadership-tabs/trending.pug
+                    #profile.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab') 12
+                    #contact.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab') 13
+                    #webinar.tab-pane.fade(role='tabpanel' aria-labelledby='webinar-tab') 11

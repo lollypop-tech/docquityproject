@@ -6,7 +6,7 @@
     }
 
     &__cnt {
-        padding-right: 4rem;
+        // padding-right: 2rem;
     }
 }
 
@@ -25,6 +25,13 @@
     padding      : .8rem 1.4rem;
     border-radius: $border-radius12;
     opacity      : .6;
+
+    &--sec {
+        background: linear-gradient(94.21deg, #252424 4.48%, #424242 87.94%);
+        text-align: left;
+        color     : $white;
+        opacity   : 1;
+    }
 }
 
 .dq-rating-text {
@@ -79,7 +86,10 @@
     margin-bottom : 2rem;
 
     &__title {
-        color: #1B4A52;
+        color      : #1B4A52;
+        font-size  : 16px !important;
+        line-height: 26px !important;
+        font-weight: $fnt-semibold;
     }
 }
 
@@ -108,11 +118,57 @@
 .dq-thumbnail {
     margin-bottom: 3rem;
 
+    &__heading {
+        @extend .fnt-xxl;
+        @extend .txt-clr-green;
+    }
+
     p {
         color      : rgba($color: #1D1919, $alpha: .7);
         font-weight: $fnt-medium;
     }
 }
+
+
+// offers
+
+.dq-feature-list {
+    padding: 0 1rem;
+
+    &__item {
+        margin-bottom: 3rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.dq-feature-thumbnail {
+    transition   : 680ms background cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 44px;
+    padding      : 20px;
+    cursor       : pointer;
+
+    &:is(:hover, :focus) {
+        background: rgba($color: #B1CBCF, $alpha: .1);
+        transition: 680ms background cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        .dq-circle {
+            transition: 380ms background cubic-bezier(0.165, 0.84, 0.44, 1);
+            background: #1B4A52;
+        }
+    }
+}
+
+// Wall of love
+
+.dq-maincnt-leftwrap {
+    padding-right: 3rem;
+    padding-top  : 8rem;
+}
+
+
 
 
 // why use docquity 

@@ -1,0 +1,62 @@
+.dq-tab {
+    border: 1px solid transparent !important;
+
+    .nav-link {
+        font-size    : 14px !important;
+        line-height  : 22px !important;
+        border-radius: 20px;
+        margin-right : .6rem;
+
+        padding: {
+            top   : .6rem !important;
+            bottom: .6rem !important;
+            left  : 1.2rem !important;
+            right : 1.2rem !important;
+        }
+
+        &:is(:hover, :focus) {
+            border-color: #1B4A52 !important;
+        }
+    }
+
+    &--pri {
+        .active {
+            background : #1B4A52 !important;
+            border     : none;
+            color      : $white !important;
+            font-weight: $fnt-exbold;
+        }
+    }
+}
+
+.dq-tabcontent-overide {
+    padding-top: 3rem;
+}
+
+// Tabs cards
+
+.dq-thumbnailcard {
+    &__heading {
+        font-weight: $fnt-bold;
+    }
+
+    &__body {
+        padding-top  : 1.5rem;
+        padding-right: 2.5rem;
+
+        p {
+            @extend .fnt-14;
+            max-width: 360px;
+        }
+    }
+}
+
+.dq-categ-name {
+    color      : #1B4A52;
+    font-weight: $fnt-medium;
+}
+
+.-secondary {
+    background: #1B4A52;
+    color     : $white;
+}
