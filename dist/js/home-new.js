@@ -151,4 +151,68 @@ $(document).ready(function () {
     });
 });
 
+// why use docquity
+
+
+// builder
+
+var swiper = new Swiper('.whyusedocquitySwiper', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 25,
+    grabCursor: true,
+    loop: true,
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        767: {
+            direction: 'vertical',
+            slidesPerView: 2
+        },
+        768: {
+            direction: 'vertical',
+            slidesPerView: 2
+        }
+    }
+});
+
+// investor
+var rightSlider = new Swiper('.investor-icons', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+        delay: 0
+    },
+    speed: 3000,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 6,
+            spaceBetween: 10
+        },
+        700: {
+            slidesPerView: 6,
+            spaceBetween: 10
+        },
+        768: {
+            slidesPerView: 6,
+            spaceBetween: 10
+        }
+    }
+});
+
 },{}]},{},[1])//# sourceMappingURL=home-new.js.map
