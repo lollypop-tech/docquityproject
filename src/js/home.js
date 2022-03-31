@@ -15,3 +15,9 @@
 window.addEventListener("load", function() {
     document.querySelector("body").classList.add("loaded");
 });
+
+
+$(".option").hover(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+  });

@@ -38,7 +38,7 @@ body {
     position: relative;
 
     @media (min-width: 1400px) {
-        max-width: 1200px;
+        max-width: 1300px;
     }
 }
 
@@ -73,21 +73,12 @@ body {
 }
 
 .fnt-20 {
-    font-size  : 20px;
-    line-height: 40px;
-    // @media (min-width: $md) {
-    //     font-size  : 20px;
-    //     line-height: 40px;
-    // }
-}
-
-.fnt-24 {
-    font-size  :20px;
-    line-height: 24px;
+    font-size  : 14px !important;
+    line-height: 22px !important;
 
     @media (min-width: $md) {
-        font-size  : 24px;
-        line-height: 24px;
+        font-size  : 20px !important;
+        line-height: 30px !important;
     }
 }
 
@@ -190,22 +181,22 @@ body {
     margin-bottom: 2px !important;
 }
 
-.mb-3 {
-    margin-bottom: 3px !important;
-}
+// .mb-3 {
+//     margin-bottom: 3px !important;
+// }
 
-.mb-4 {
-    margin-bottom: 3px !important;
-}
+// .mb-4 {
+//     margin-bottom: 3px !important;
+// }
 
 
 .mb-6 {
     margin-bottom: 6px;
 }
 
-.mb-5 {
-    margin-bottom: 5px !important;
-}
+// .mb-5 {
+//     margin-bottom: 5px !important;
+// }
 
 .mb-13 {
     margin-bottom: 13px !important;
@@ -364,6 +355,7 @@ main {
 
 .dq-circle {
     border-radius: 50%;
+    margin       : 0 auto;
 
     &--bluish {
         background: rgba($color: #B1CBCF, $alpha: .15);
@@ -372,6 +364,10 @@ main {
     &--lg {
         height: 117px;
         width : 117px;
-        margin: 0 auto;
+    }
+
+    &--md {
+        height: 74px;
+        width : 74px;
     }
 }

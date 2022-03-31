@@ -15,13 +15,13 @@
 }
 
 .fnt-xxl {
-  font-size  : 16px;
-  line-height: 130%;
+  font-size  : 16px !important;
+  line-height: 130% !important;
   font-weight: $fnt-bold;
 
   @media (min-width: $md) {
-    font-size  : 24px;
-    line-height: 34px;
+    font-size  : 24px !important;
+    line-height: 34px !important;
   }
 }
 
@@ -55,14 +55,44 @@
   }
 }
 
+.fnt-16 {
+  font-size  : 16px !important;
+  line-height: 26px !important;
+}
+
 .fnt-14 {
-  font-size  : 14px;
-  line-height: 20px;
+  font-size  : 14px !important;
+  line-height: 24px !important;
+}
+
+.fnt-12 {
+  font-size  : 12px !important;
+  line-height: 22px !important;
 }
 
 .fnt-10 {
-  font-size  : 10px;
-  line-height: 15px;
+  font-size  : 10px !important;
+  line-height: 15px !important;
+}
+
+.fnt-manro-semi {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: $fnt-semibold !important;
+}
+
+.fnt-manro-bold {
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: $fnt-bold !important;
+}
+
+.fnt-Lexend-medi {
+  font-family: 'Lexend Deca', sans-serif !important;
+  font-weight: $fnt-medium !important;
+}
+
+.fnt-Lexend-bold {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: $fnt-bold !important;
 }
 
 // new font sizes
@@ -85,4 +115,5 @@
 .dq-sec-title {
   font-weight: $fnt-semibold;
   color      : #1B4A52;
+  @extend .fnt-20;
 }

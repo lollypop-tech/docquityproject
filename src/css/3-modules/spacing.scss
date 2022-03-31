@@ -124,3 +124,12 @@
     }
   }
 }
+
+.dq-section-padding100 {
+  @media (min-width: 768px) {
+    padding: {
+      top   : 100px;
+      bottom: 100px;
+    }
+  }
+}
