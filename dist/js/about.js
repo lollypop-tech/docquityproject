@@ -79,7 +79,7 @@ var rightSlider = new Swiper('.js-partners-icons', {
     delay: 0,
     disableOnInteraction: true
   },
-  speed: 4000,
+  speed: 5000,
   breakpoints: {
     500: {
       slidesPerView: 4.5,
@@ -217,6 +217,11 @@ var swiper = new Swiper(".teamSwiper", {
   }
 });
 
+$(".option").hover(function () {
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+});
+
 // investor
 var rightSlider = new Swiper('.investor-icons', {
   slidesPerView: 3,
@@ -244,11 +249,6 @@ var rightSlider = new Swiper('.investor-icons', {
       spaceBetween: 10
     }
   }
-});
-
-$(".option").hover(function () {
-  $(".option").removeClass("active");
-  $(this).addClass("active");
 });
 
 },{}]},{},[1])//# sourceMappingURL=about.js.map
