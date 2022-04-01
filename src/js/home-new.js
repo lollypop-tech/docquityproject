@@ -1,36 +1,4 @@
 $(document).ready(function () {
-  // number increment
-
-  var a = 0;
-  $(window).scroll(function () {
-    var p = $("#counter").offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() > p) {
-      $(".counter-value").each(function () {
-        var $this = $(this),
-          countTo = $this.attr("data-count");
-        $({
-          countNum: $this.text(),
-        }).animate(
-          {
-            countNum: countTo,
-          },
-          {
-            duration: 4000,
-            easing: "swing",
-            step: function step() {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function complete() {
-              $this.text(this.countNum);
-              //alert('finished');
-            },
-          }
-        );
-      });
-      a = 1;
-    }
-  });
-
   // client say //
 
   var clientsay = new Swiper(".js-client-say", {
@@ -146,9 +114,10 @@ $(document).ready(function () {
     },
   });
 });
-// why use docquity
 
 // builder
+
+// why use docquity
 
 var swiper = new Swiper(".whyusedocquitySwiper", {
   direction: "horizontal",
@@ -156,10 +125,10 @@ var swiper = new Swiper(".whyusedocquitySwiper", {
   spaceBetween: 25,
   grabCursor: true,
   loop: true,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -192,5 +161,19 @@ var rightSlider = new Swiper(".investor-icons", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    700: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
   },
 });

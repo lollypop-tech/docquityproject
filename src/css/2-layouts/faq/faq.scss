@@ -1,14 +1,155 @@
+.subheader-section {
+    background: #1B4A52;
+    margin: 0px 20px 0px 20px;
+    border-radius: 24px;
+    padding: 47px 0px 48px;
+
+    .search-container {
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-top: 32px;
+
+        input#search-bar {
+            margin: 0 auto;
+            width: 100%;
+            height: 45px;
+            padding: 0 20px;
+            font-size: 1rem;
+            border: none;
+            outline: 0;
+            background: #38656D;
+            border-radius: 8px;
+            color: #fff;
+
+            &:focus {
+                transition: 0.35s ease;
+                color: #000;
+
+                &::-webkit-input-placeholder {
+                    color: #fff !important;
+                }
+
+                &::-moz-placeholder {
+                    color: #fff !important;
+                }
+
+                &:-ms-placeholder {
+                    // transition: opacity 0.45s ease;
+                    // opacity: 0;
+                    color: #fff !important;
+                }
+            }
+        }
+
+        .search-icon {
+            position: absolute;
+            float: right;
+            width: 18px;
+            height: 18px;
+            top: 15px;
+            right: 15px;
+        }
+    }
+}
+
+.category-section {
+    padding: 30px 0px 40px;
+
+    @media(min-width: 767px) {
+        padding: 64px 0 48px;
+    }
+
+    .category-Swiper {
+        padding-bottom: 48px;
+        overflow: hidden;
+
+        .swiper-slide {
+            width: 343px !important;
+
+            @media(max-width: 767px) {
+                width: 100% !important;
+            }
+
+            .category-card {
+                border: 1px solid #EEEEEE;
+                border-radius: 24px;
+                padding: 32px 32px;
+                transition: all 0.5s ease 0s;
+
+                .category-icon {
+                    width: 13%;
+                    margin-bottom: 24px;
+                }
+
+                &:hover {
+                    box-shadow: 0px 21px 54px 0px #00000014;
+                    border: 1px solid #B1CBCF;
+                    background: #E8EDEE;
+
+                }
+            }
+        }
+        .swiper-pagination-bullets {
+            bottom: 0px;
+            .swiper-pagination-bullet {
+                width: 20px !important;
+                border-radius: 3px !important;
+                height: 5px;
+            }
+            @media(max-width: 767px) {
+               display: none;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #1B4A52 !important;
+        }
+        .swiper-button-prev,.swiper-button-next{
+            top: 96%;
+            background: #b1cbcf5e;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #B1CBCF;
+            border-radius: 20px;
+            &:hover{
+                background: #1B4A52;
+                border: 1px solid  #1B4A52;
+                .arr{
+                    fill:#fff;
+                }
+            }
+
+            &::after{content:none;}
+            @media(min-width: 767px) {
+               display: none;
+            }
+        }
+        .swiper-button-next{                 
+            right: 140px;                
+            transform: rotate(180deg); 
+        }
+       .swiper-button-prev{               
+            left: 140px;    
+        }
+
+      
+    }
+}
 
 .faq-section {
-    background: #faebd77a;
-    padding: 96px 0px;
+
     #faqpricing {
         @media(max-width: 767px) {
             padding: 16px 0 0px;
         }
+
         .card {
             background: #fff;
-            border: none;
+            border: 1px solid #EEEEEE;
+            border-radius: 16px;
+            transition: all 0.5s ease 0s;
+
             &:not(:last-child) {
                 margin-bottom: 24px;
 
@@ -16,44 +157,24 @@
                     margin-bottom: 16px;
                 }
             }
+
             .card-header {
                 border: 0;
                 padding: 0;
                 background: none;
 
                 .btn-header-link {
-                    color: #fff;
                     display: block;
                     text-align: left;
-                    background: #fff;
-                    // color: #4E5FF9;
                     padding: 24px 20px;
                     position: relative;
-                    border-top-left-radius: 4px;
-                    border-top-right-radius: 4px;
-                    border-bottom-left-radius: 0px;
-                    border-bottom-right-radius: 0px;
                     border: 0 !important;
+                    font-weight: 700;                   
+                    white-space: pre-line;               
 
                     @media(max-width: 767px) {
                         padding: 24px 40px 24px 20px;
-                    }
-                    .desc-head {
-                        // font-family: $sen;
-                        font-size: 18px;
-                        font-weight: 400;
-                        line-height: 32px;
-
-                        @media(max-width: 767px) {
-                            font-size: 18px;
-                            line-height: 26px;
-                            white-space: pre-line;
-                            font-weight: 500;
-                        }
-
-                        @media(max-width: 1024px) {
-                            white-space: pre-line;
-                        }
+                        font-size: 16px;
                     }
 
                     &:after {
@@ -70,10 +191,10 @@
 
                 .btn-header-link.collapsed {
                     background: rgba(255, 255, 255, 0.1);
-                    color: #202020;
                     padding: 24px 20px;
                     border-radius: 4px;
                     border: 1px solid rgba(23, 36, 63, 0.1);
+                    font-weight: 600;
 
                     &:after {
                         content: url(../img/faq/right.svg);
@@ -89,16 +210,13 @@
                 }
             }
 
-            .collapsing {
-                background: #F8F8FF;
-            }
+            // .collapsing {}
 
             .collapse {
                 border: 0;
             }
 
             .collapse.show {
-                background: #F8F8FF;
                 border-bottom-left-radius: 4px;
                 border-bottom-right-radius: 4px;
                 position: relative;
@@ -107,11 +225,12 @@
 
             .card-body {
                 padding: 0px 20px 20px;
-                background: #fff;
+                
+            }
+
+            &:hover {
+                box-shadow: 13px 8px 45px 0 #00000014;
             }
         }
     }
 }
-
-
-
