@@ -121,6 +121,7 @@
     &__heading {
         @extend .fnt-xxl;
         @extend .txt-clr-green;
+        font-weight: 800;
     }
 
     p {
@@ -147,7 +148,7 @@
 .dq-feature-thumbnail {
     transition   : 680ms background cubic-bezier(0.165, 0.84, 0.44, 1);
     border-radius: 44px;
-    padding      : 20px;
+    padding      : 30px 25px;
     cursor       : pointer;
 
     &:is(:hover, :focus) {
@@ -160,6 +161,110 @@
         }
     }
 }
+
+.dq-mobile-mockup-figlist {
+    position: absolute;
+    left    : 0;
+    right   : 0;
+    top     : 18px;
+    bottom  : 0;
+
+    &__item {
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        right   : 0;
+    }
+}
+
+// Happy Users
+
+.dq-mockup-bg {
+    position : absolute;
+    left     : 50%;
+    top      : -40px;
+    bottom   : 0;
+    transform: translateX(-50%);
+}
+
+.dq-humansSlider {
+    position: relative;
+
+    &::before,
+    &::after {
+        content   : "";
+        position  : absolute;
+        top       : 0;
+        bottom    : 0;
+        background: #FFFFFF;
+        filter    : blur(76px);
+        height    : 100%;
+        width     : 150px;
+        z-index   : 2;
+    }
+
+    &::before {
+        left: 0;
+    }
+
+    &::after {
+        right: 0;
+    }
+
+    &__figwrap {
+        transform : translateZ(0) scale(.85);
+        transition: all .5s ease 0s;
+    }
+
+    .swiper-slide-active {
+        .dq-humansSlider__figwrap {
+            transform : translateZ(0) scale(1) !important;
+            transition: all .5s ease 0s;
+        }
+
+        .dq-humansSlider__media {
+            opacity   : 1;
+            transition: all .3s ease 0s;
+        }
+    }
+}
+
+.dq-humansSlider__media {
+    position     : absolute;
+    bottom       : 0;
+    opacity      : 0;
+    left         : 0rem;
+    right        : 0rem;
+    height       : 100%;
+    transition   : all .6s ease 0s;
+    z-index      : 2;
+    color        : $white;
+    background   : linear-gradient(180deg, rgba(0, 0, 0, 0) 70.69%, #000000 100%);
+    border-radius: 25px;
+    padding      : 1rem 1.2rem;
+}
+
+
+.swiper-pagination-flatindic {
+    position: relative !important;
+    bottom  : -3.5rem !important;
+
+    .swiper-pagination-bullet {
+        background   : #1B4A52;
+        width        : 16px;
+        border-radius: 4px !important;
+        height       : 6px !important;
+        transition   : all .5s ease 0s;
+
+        &-active {
+            width     : 33px !important;
+            transition: all .5s ease 0s;
+        }
+    }
+}
+
+
+
 
 // Wall of love
 
