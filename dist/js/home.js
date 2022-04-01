@@ -19,4 +19,10 @@ window.addEventListener("load", function () {
     document.querySelector("body").classList.add("loaded");
 });
 
+// explore
+$(".option").hover(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+});
+
 },{}]},{},[1])//# sourceMappingURL=home.js.map
