@@ -4,6 +4,35 @@
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 $(document).ready(function () {
+  // number increment
+
+  var a = 0;
+  $(window).scroll(function () {
+    var p = $("#counter").offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > p) {
+      $(".counter-value").each(function () {
+        var $this = $(this),
+            countTo = $this.attr("data-count");
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        }, {
+          duration: 4000,
+          easing: "swing",
+          step: function step() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function complete() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+        });
+      });
+      a = 1;
+    }
+  });
+
   // client say //
 
   var clientsay = new Swiper(".js-client-say", {
@@ -62,6 +91,24 @@ $(document).ready(function () {
       }
     };
 
+    // const enableSwiper = function () {
+    //     mySwiper = new Swiper(".js-resp-capabilities", {
+    //         loop: true,
+    //         slidesPerView: 1.5,
+    //         // a11y: true,
+    //         keyboardControl: true,
+    //         grabCursor: true,
+    //         autoplay: {
+    //             delay:1000,
+    //             disableOnInteraction: false,
+    //         },
+
+    //         // pagination
+    //         pagination: ".swiper-pagination",
+    //         paginationClickable: true,
+    //     });
+    // };
+
     var enableSwiper = function enableSwiper() {
       var _ref;
 
@@ -80,18 +127,11 @@ $(document).ready(function () {
     breakpointChecker();
   })(); /* IIFE end */
 
-  var swiper = new Swiper(".testimonial", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    // mousewheel: true,
-    keyboard: true
-  });
+  // $(".sidebar li").click(function (e) {
+  //     // $(".sidebar li").removeClass("active");
+  //     alert("working");
+  //     $(this).addClass("active");
+  // });
 
   var Centermodeswiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
@@ -104,69 +144,53 @@ $(document).ready(function () {
     }
   });
 });
-
 // why use docquity
-
 
 // builder
 
-var swiper = new Swiper('.whyusedocquitySwiper', {
-    direction: 'horizontal',
-    slidesPerView: 1,
-    spaceBetween: 25,
-    grabCursor: true,
-    loop: true,
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
+var swiper = new Swiper(".whyusedocquitySwiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  spaceBetween: 25,
+  grabCursor: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    767: {
+      direction: "vertical",
+      slidesPerView: 2
     },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    breakpoints: {
-        767: {
-            direction: 'vertical',
-            slidesPerView: 2
-        },
-        768: {
-            direction: 'vertical',
-            slidesPerView: 2
-        }
+    768: {
+      direction: "vertical",
+      slidesPerView: 2
     }
+  }
 });
 
 // investor
-var rightSlider = new Swiper('.investor-icons', {
-    slidesPerView: 3,
-    spaceBetween: 10,
-    loop: true,
-    autoplay: {
-        delay: 0
-    },
-    speed: 3000,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
-    breakpoints: {
-        500: {
-            slidesPerView: 6,
-            spaceBetween: 10
-        },
-        700: {
-            slidesPerView: 6,
-            spaceBetween: 10
-        },
-        768: {
-            slidesPerView: 6,
-            spaceBetween: 10
-        }
-    }
+var rightSlider = new Swiper(".investor-icons", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 0
+  },
+  speed: 3000,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
 });
 
 },{}]},{},[1])//# sourceMappingURL=home-new.js.map
