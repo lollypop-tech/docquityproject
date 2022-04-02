@@ -206,6 +206,15 @@
   height   : auto;
 }
 
+.img-fluid-save{
+  max-width: 100%;
+  height   : auto;
+  @media (max-width: 766px) {
+    width: 93%;
+    height: 670px;
+  }
+}
+
 .txt-md {
 
   font-size  : 14px;

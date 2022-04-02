@@ -22,4 +22,13 @@ $(".option").hover(function () {
     $(this).addClass("active");
   });
 
+//   jQuery(document).ready(function($) {
   
+//       var ww = document.body.clientWidth;
+//       if (ww < 600) {
+//         $('.option').removeClass('active');
+//       } else if (ww >= 601) {
+//         $('.option').addClass('active');
+//       };
+ 
+//   });

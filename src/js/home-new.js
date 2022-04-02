@@ -177,3 +177,110 @@ var rightSlider = new Swiper(".investor-icons", {
     },
   },
 });
+
+
+// why docquity offers
+
+$('.thumbnail-credit').hover(function () {
+  $('.dq-mobile-credit').show();
+  $('.dq-mobile-webiner').hide();
+  $('.dq-mobile-clinical').hide();
+  $('.dq-mobile-doctalks').hide();
+  $('.dq-mobile-channels').hide();
+  $('.dq-mobile-private').hide();
+});
+$('.thumbnail-webinar').hover(function () {
+  $('.dq-mobile-credit').hide();
+  $('.dq-mobile-webiner').show();
+  $('.dq-mobile-clinical').hide();
+  $('.dq-mobile-doctalks').hide();
+  $('.dq-mobile-channels').hide();
+  $('.dq-mobile-private').hide();
+});
+$('.thumbnail-clinical').hover(function () {
+  $('.dq-mobile-credit').hide();
+  $('.dq-mobile-webiner').hide();
+  $('.dq-mobile-clinical').show();
+  $('.dq-mobile-doctalks').hide();
+  $('.dq-mobile-channels').hide();
+  $('.dq-mobile-private').hide();
+});
+$('.thumbnail-doctalks').hover(function () {
+  $('.dq-mobile-credit').hide();
+  $('.dq-mobile-webiner').hide();
+  $('.dq-mobile-clinical').hide();
+  $('.dq-mobile-doctalks').show();
+  $('.dq-mobile-channels').hide();
+  $('.dq-mobile-private').hide();
+});
+$('.thumbnail-channel').hover(function () {
+  $('.dq-mobile-credit').hide();
+  $('.dq-mobile-webiner').hide();
+  $('.dq-mobile-clinical').hide();
+  $('.dq-mobile-doctalks').hide();
+  $('.dq-mobile-channels').show();
+  $('.dq-mobile-private').hide();
+});
+$('.thumbnail-private').hover(function () {
+  $('.dq-mobile-credit').hide();
+  $('.dq-mobile-webiner').hide();
+  $('.dq-mobile-clinical').hide();
+  $('.dq-mobile-doctalks').hide();
+  $('.dq-mobile-channels').hide();
+  $('.dq-mobile-private').show();
+});
+
+// mobile slider
+var swiper = new Swiper('.offerSwiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 25,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  }, 
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    767: {
+      direction: 'vertical',
+      slidesPerView:2,        
+    },
+    768: {
+      direction: 'vertical',
+      slidesPerView:2,        
+    }
+  }  
+});
+
+
+// why docquity mobile
+var swiper = new Swiper('.docquitywhySwiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 25,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  }, 
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    767: {
+      direction: 'vertical',
+      slidesPerView:2,        
+    },
+    768: {
+      direction: 'vertical',
+      slidesPerView:2,        
+    }
+  }  
+});

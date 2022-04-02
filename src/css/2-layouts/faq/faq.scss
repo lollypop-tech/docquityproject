@@ -1,8 +1,10 @@
 .subheader-section {
-    background: #1B4A52;
-    margin: 0px 20px 0px 20px;
+    background: url(../img/faq/faq.png);
+    margin: 0 20px;
     border-radius: 24px;
-    padding: 47px 0px 48px;
+    padding: 47px 0 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .search-container {
         width: 100%;

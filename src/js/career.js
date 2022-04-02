@@ -67,3 +67,58 @@ var swiper = new Swiper(".supportSwiper", {
   },
   
 });
+
+// support card svg animation
+var circle = new Vivus('square1', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square2', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square3', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square4', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square5', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square6', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square7', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square8', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
+
+var circle = new Vivus('square9', {
+  type: 'delayed', 
+  duration: 200,
+  animTimingFunction: Vivus.EASE_IN.EASE_OUT
+});
