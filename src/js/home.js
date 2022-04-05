@@ -17,18 +17,30 @@ window.addEventListener("load", function() {
 });
 
 // explore
+// $(function() {
+// var screensize = document.documentElement.clientWidth;
+// if (screensize  > 767) {
+//   $('#option2').addClass('active');
+// }
+  
+// });
+
 $(".option").hover(function () {
     $(".option").removeClass("active");
     $(this).addClass("active");
   });
+  
 
 //   jQuery(document).ready(function($) {
-  
-//       var ww = document.body.clientWidth;
-//       if (ww < 600) {
-//         $('.option').removeClass('active');
-//       } else if (ww >= 601) {
-//         $('.option').addClass('active');
+
+//       var screenWidth = document.body.clientWidth;
+//       if (screenWidth > 768) {
+//         $(".option").removeClass("active");
+        
+//       } else if (screenWidth = 767) {
+//         $(".option").hover(function () {
+//             $(".option").removeClass("active");
+//             $(this).addClass("active");
+//           });
 //       };
- 
 //   });

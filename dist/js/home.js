@@ -16,24 +16,35 @@
 
 // body loaded
 window.addEventListener("load", function () {
-    document.querySelector("body").classList.add("loaded");
+  document.querySelector("body").classList.add("loaded");
 });
 
 // explore
+// $(function() {
+// var screensize = document.documentElement.clientWidth;
+// if (screensize  > 767) {
+//   $('#option2').addClass('active');
+// }
+
+// });
+
 $(".option").hover(function () {
-    $(".option").removeClass("active");
-    $(this).addClass("active");
+  $(".option").removeClass("active");
+  $(this).addClass("active");
 });
 
 //   jQuery(document).ready(function($) {
 
-//       var ww = document.body.clientWidth;
-//       if (ww < 600) {
-//         $('.option').removeClass('active');
-//       } else if (ww >= 601) {
-//         $('.option').addClass('active');
-//       };
+//       var screenWidth = document.body.clientWidth;
+//       if (screenWidth > 768) {
+//         $(".option").removeClass("active");
 
+//       } else if (screenWidth = 767) {
+//         $(".option").hover(function () {
+//             $(".option").removeClass("active");
+//             $(this).addClass("active");
+//           });
+//       };
 //   });
 
 },{}]},{},[1])//# sourceMappingURL=home.js.map
