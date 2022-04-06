@@ -29,18 +29,5 @@ $(".option").hover(function () {
     $(".option").removeClass("active");
     $(this).addClass("active");
   });
-  
 
-//   jQuery(document).ready(function($) {
-
-//       var screenWidth = document.body.clientWidth;
-//       if (screenWidth > 768) {
-//         $(".option").removeClass("active");
-        
-//       } else if (screenWidth = 767) {
-//         $(".option").hover(function () {
-//             $(".option").removeClass("active");
-//             $(this).addClass("active");
-//           });
-//       };
-//   });
+// 

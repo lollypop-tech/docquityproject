@@ -92,7 +92,6 @@
 .dq-playstore-group{
     @media(max-width: 767px) {
         display: flex;
-        justify-content: space-between;
        }
 }
 
@@ -103,6 +102,10 @@
     padding      : .8rem 1.4rem;
     border-radius: $border-radius12;
     opacity      : .6;
+
+    @media(max-width: 767px) {
+        padding: 0.8rem 1.1rem;
+       }
 
     &--sec {
         background: linear-gradient(94.21deg, #252424 4.48%, #424242 87.94%);
@@ -151,6 +154,8 @@
             border-bottom: 1px solid #B1CBCF;
             border-right: none;
             padding     : 2rem 3rem;
+            width: 80%;
+            margin: 0px auto;
            }
 
         &:last-child {
@@ -203,6 +208,10 @@
     padding-bottom: 2.5rem;
     margin-bottom : 2rem;
     margin-top: 70px;
+
+    @media(max-width: 766px) {
+        border-bottom: none;
+    }
 
     &__title {
         color      : #1B4A52;
@@ -364,12 +373,17 @@
 // }
 
 //Why- docquity-offers
+.dq-offers{
+    padding-bottom: 70px;
 .dq-playstore-list{
     display: flex;
     width: 36%;
     margin: 0px auto;
     @media(max-width: 767px) {
-        width: 85%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     &__item{
         &:nth-child(1){
@@ -407,7 +421,7 @@
         //mobile-offerswiper 
         .offerSwiper{
             width: 100%;
-            height: 1040px;  
+            height: 100%;  
             margin-top: 80px;         
             .swiper-slide {
                 display: flex;
@@ -469,6 +483,7 @@
                 margin-top: 30px;
             }
         } 
+    }
 
 // Happy Users
 
@@ -583,6 +598,13 @@
 .dq-maincnt-leftwrap {
     padding-right: 3rem;
     padding-top  : 8rem;
+    @media(max-width: 767px) {
+        padding-right: 1rem;
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        padding-left: 1rem;
+    }
 }
 
 // Explore
@@ -1365,6 +1387,16 @@
 //     }
 //  }
 
+
+.leadership{
+    .dq-tab{
+        .nav-link{
+            @media(max-width: 767px) {
+                padding: 5px !important;
+            }
+        }
+    }
+}
 // homeleadershipSwiper
 .homeleadershipSwiper{
     width: 100%;
@@ -1379,5 +1411,11 @@
     }
     .swiper-pagination-bullet-active {
         background:#1B4A52 !important;
-    }  
+    }
+    .swiper-button-next{
+        right: 0px !important;
+    }
+    .swiper-button-prev {
+        left: 0px !important;
+  }
 }
