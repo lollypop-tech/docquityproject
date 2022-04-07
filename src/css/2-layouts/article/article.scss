@@ -160,7 +160,24 @@
 
                     .article-card {
                         .article-card-img {
+                            position: relative;
                             margin-bottom: 32px;
+                            img{
+                                border-radius: 16px;
+                            }
+                        }
+                        .article-card-text{
+                            .blog-heading{
+                                display: block;
+                                display: -webkit-box;
+                                max-width: 100%;
+                                height: 61px;
+                                margin: 0 auto;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;                               
+                                text-overflow: ellipsis;
+                            }
                         }
                     }
                 }
@@ -473,10 +490,7 @@
 }
 
 
-
 // pagination
-
-
 
 .simple-pagination ul {
 	margin: 0 0 20px;

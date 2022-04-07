@@ -313,9 +313,9 @@
     p {
         color      : rgba($color: #1D1919, $alpha: .7);
         font-weight: $fnt-medium;
-        @media(max-width: 767px) {
-            margin-bottom: rem;
-        }
+        // @media(max-width: 767px) {
+        //     margin-bottom: rem;
+        // }
     }
 }
 .dq-bg-gradient{

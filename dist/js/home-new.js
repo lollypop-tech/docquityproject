@@ -150,35 +150,6 @@ var swiper = new Swiper(".whyusedocquitySwiper", {
   }
 });
 
-// investor
-var rightSlider = new Swiper(".investor-icons", {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 0
-  },
-  speed: 3000,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  breakpoints: {
-    500: {
-      slidesPerView: 6,
-      spaceBetween: 10
-    },
-    700: {
-      slidesPerView: 6,
-      spaceBetween: 10
-    },
-    768: {
-      slidesPerView: 6,
-      spaceBetween: 10
-    }
-  }
-});
-
 // why docquity offers
 
 $('.thumbnail-credit').hover(function () {
