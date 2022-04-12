@@ -1,0 +1,186 @@
+.webinarbanner-section {
+    background: #1B4A52;
+    background-image: url(../img/article/overlay.png);
+    background-position: center;
+    background-size: cover;
+    margin: 0px 12px 0px 12px;
+    border-radius: 24px;   
+    text-align: center;
+    padding: 40px 0px 60px;  
+    @media (min-width: 768px) {
+        padding: 56px 0px 28px;       
+        margin: 0px 20px 0px 20px;
+        text-align: left;
+    }
+    .webinar-row{
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+        .banner-left{
+            padding: 210px 65px 0px 0px;
+            @media (max-width: 768px) {
+                padding: 40px 0px; 
+
+            }
+        }
+    }  
+
+    
+
+}
+
+.counter-section {
+    .counterwebinar-list {
+        display: flex;
+
+        @media(max-width: 767px) {
+            margin-bottom: 0px;
+        }
+
+        &__item {
+            width: 32%;
+            float: left;
+            padding: 15px 25px;
+
+            @media(max-width: 767px) {
+                width: 100%;
+                padding: 45px 30px;
+            }
+
+            .counter-icon {
+                float: left;
+                margin-right: 21px;
+            }
+
+            &:first-child,
+            &:nth-child(2) {
+                border-right: 1px solid #EEEEEE;
+
+                @media(max-width: 767px) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    .counterSwiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+
+        .swiper-slide {
+            padding: 0px 5px !important;
+
+            .counter-icon {
+                float: left;
+                margin-right: 21px;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 15px !important;
+            border-radius: 3px !important;
+            height: 5px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #1B4A52 !important;
+        }
+
+    }
+}
+
+
+.articlebanner-section {
+    .events-banner {
+        display: inline-flex;
+        width: 80%;
+        margin: 32px auto 0px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            display: block;
+            width: 100%;
+        }
+
+        .events-img1 {
+            float: left;
+
+            @media (max-width: 767px) {
+                float: none;
+                position: relative;
+                transform: translateX(-20px);
+            }
+        }
+
+        .events-img2 {
+            float: left;
+            margin-left: -15px;
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top: 0px;
+                transform: translateX(155px);
+            }
+        }
+
+        .events-img3 {
+            float: left;
+            margin-left: -15px;
+            margin-right: 14px;
+
+            @media (max-width: 767px) {
+                position: absolute;
+                top: 0px;
+                transform: translateX(175px);
+            }
+        }
+    }
+}
+
+
+.articletabs-section {
+    .article-tabpane {
+
+        .recent-row,
+        .popular-row {
+            .article-list {
+                &__item {
+                    .article-card {
+                        .article-card-img {
+                            .newest {
+                                background: #1B4A52;
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                border-radius: 8px;
+                                padding: 5px 10px;
+
+                            }
+
+                            .play {
+                                position: absolute;
+                                top: 65px;
+                                left: 40%;
+                            }
+                        }
+
+                        .cardbottom-list {
+                            margin-top: 16px;
+                            display: flex;
+
+                            &__item {
+                                .video-time {
+                                    position: absolute;
+                                    right: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

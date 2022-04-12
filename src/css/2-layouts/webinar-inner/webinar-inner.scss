@@ -1,0 +1,87 @@
+.border-section{     
+   
+    .cardtop-list {
+        display: flex;
+        position: relative;
+        bottom: 0px;
+        transform: translateX(0px);
+        left: 0%;
+        @media(min-width: 767px) {
+            width: 50%;
+            position: absolute;
+            bottom: 25px;
+            transform: translateX(300px);
+            left: 3%;
+        
+        }
+
+        &__item {
+            .card-icon {
+                margin-right: 5px;
+            }
+
+            &:nth-child(1) {
+                width: 30%;
+            }
+        }
+    }
+
+.video-container-inner {
+    width: 90%;        
+    position: absolute;  
+    transform: translateY(-285px);
+    top:0px;
+    @media(max-width: 767px) {
+        width: 100%; 
+        position: relative;       
+        transform: translateY(0px);
+
+    }
+    .js-video {
+        height: 628px;
+        width: 100%;
+        position: relative;
+
+        @media(max-width: 767px) {
+            height: 215px;
+        }
+        .play {
+            position: absolute;
+            left: 45%;
+            top: 45%;
+            height: 100px;
+            width: 100px;
+            z-index: 2;
+    
+            @media(max-width: 767px) {
+                left: 35%;
+                top: 25%;
+            }
+            img{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .video-poster {
+            background: url(../img/webinars/webinar-inner.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 628px;
+    
+            @media(max-width: 767px) {
+                height: 215px;        
+            }
+    
+        }
+    }
+    .js-video iframe {
+        z-index: 5;
+        position: relative;
+    }
+
+}
+}

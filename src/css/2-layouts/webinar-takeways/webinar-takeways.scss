@@ -1,0 +1,145 @@
+.border-section{
+    border: none;
+    border-radius: 32px;
+    position: relative;
+   
+    @media(min-width: 767px) {
+        padding:385px 52px 48px;
+        border: 2px solid #EEEEEE;
+        margin-top: 285px;
+    }
+    .webinar-row{
+        @media(max-width: 767px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .reg-btn{
+            position: relative;
+            transform: translateY(30px);
+            @media(max-width: 767px) {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 58px;
+            }
+        }
+        .overlap-img-sec{
+            margin-top: 12px!important;
+            display:inline-flex;
+        } 
+    }
+   
+    .video-container-webinar {
+        width: 90%;        
+        position: absolute;  
+        transform: translateY(-285px);
+        top:0px;
+        @media(max-width: 767px) {
+            width: 100%; 
+            position: relative;       
+            transform: translateY(0px);
+
+        }
+        .js-video {
+            height: 628px;
+            width: 100%;
+            position: relative;
+    
+            @media(max-width: 767px) {
+                height: 215px;
+            }
+            .play {
+                position: absolute;
+                left: 45%;
+                top: 45%;
+                height: 100px;
+                width: 100px;
+                z-index: 2;
+        
+                @media(max-width: 767px) {
+                    left: 35%;
+                    top: 25%;
+                }
+                img{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        
+            .video-poster {
+                background: url(../img/webinars/webinar-video.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 100%;
+                height: 628px;
+        
+                @media(max-width: 767px) {
+                    height: 215px;        
+                }
+        
+            }
+        }
+        .js-video iframe {
+            z-index: 5;
+            position: relative;
+        }
+
+    }
+
+    #nav-tab {
+        .nav-item {            
+            padding: 0px 0px 19px 0px;
+            line-height: 32px !important;
+            letter-spacing: -0.5px;
+            font-weight: 500;
+            color: #1D1919;
+            opacity: 0.7;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+
+            @media(max-width: 767px) {
+                // flex: none;
+                font-size: 16px !important;
+                padding: 16px 5px;
+            }
+        }
+
+        .nav-item.active {
+            padding: 0px 0px 16px 0px;
+            line-height: 32px !important;
+            letter-spacing: -0.5px;
+            font-weight: 800;
+            color: #1B4A52;
+            opacity: 1;
+            background: transparent;
+            border-bottom: 3px solid #1B4A52;
+
+            @media(max-width: 767px) {
+                font-size: 16px !important;
+                padding: 16px 5px;
+            }
+        }
+    }
+    .takeways-pane{
+        margin: 40px 0px 30px;
+
+        .takesways-list__item {            
+            position: relative; 
+            opacity: 0.7;   
+            padding-left: 35px;     
+            margin-bottom: 16px;   
+            &::before{
+                content: url(../img/webinars/red-logo.svg);
+                height: 17px;
+                width: 17px;
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+        }
+    }
+
+}

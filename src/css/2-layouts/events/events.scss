@@ -1,42 +1,32 @@
-.articlebanner-section {
-    .events-banner {
-        display: inline-flex;
-        width: 80%;
-        margin: 32px auto 0px;
+.overlap-img-sec{
+    display: inline-flex;
+    width: 80%;
+    margin: 32px auto 0px;
+    position: relative;
+    @media (max-width: 767px) {
+        display: block;           
+    }
+    .overlap-banner{
+        width:20%;
         position: relative;
         @media (max-width: 767px) {
-            display: block;
-            width: 100%;
+            width: 30%;
+            margin: 0 auto;
+            height: 40px
         }
-
         .events-img1 {
-            float: left;
-            @media (max-width: 767px) {
-                float: none;
-                position: relative;
-                transform: translateX(-20px);
-            }
+            position: absolute;
+            left: 0px;
         }
 
         .events-img2 {
-            float: left;
-            margin-left: -15px;
-            @media (max-width: 767px) {
-                position: absolute;
-                top:0px;
-                transform: translateX(155px);
-            }
+            position: absolute;
+            transform: translateX(15px);
         }
 
         .events-img3 {
-            float: left;
-            margin-left: -15px;
-            margin-right: 14px;
-            @media (max-width: 767px) {
-                position: absolute;
-                top:0px;
-                transform: translateX(175px);
-            }
+            position: absolute;
+            transform: translateX(35px);
         }
     }
 }

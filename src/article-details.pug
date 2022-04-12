@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en" dir="ltr")
+	- var page_name= "article-details"
+	head
+
+		include pug/base/head.pug
+		+head(page_name)
+	body
+		// Header
+		.header-wrap
+			include pug/base/header-transparent.pug
+		//- include pug/base/headerside-sticky.pug
+
+		//- // LOADER
+		//- #loader-wrapper
+		//- 	#loader
+		//- 	.loader-section.section-left
+		//- 	.loader-section.section-right 
+		
+		main.js-common-animations.js-home-animations.js-footer-gsap
+			
+			// Banner
+			include pug/layouts/article-details/main.pug
+
+		
+		.footer
+			include ./pug/base/footer.pug
+
+		include pug/base/scripts.pug
+		+script(page_name)

@@ -16,7 +16,7 @@
 
 // body loaded
 window.addEventListener("load", function () {
-  document.querySelector("body").classList.add("loaded");
+    document.querySelector("body").classList.add("loaded");
 });
 
 // explore
@@ -29,10 +29,8 @@ window.addEventListener("load", function () {
 // });
 
 $(".option").hover(function () {
-  $(".option").removeClass("active");
-  $(this).addClass("active");
+    $(".option").removeClass("active");
+    $(this).addClass("active");
 });
-
-//
 
 },{}]},{},[1])//# sourceMappingURL=home.js.map
