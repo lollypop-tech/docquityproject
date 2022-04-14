@@ -1,0 +1,18 @@
+.privacyhead-section {
+    background-image: url(../img/privacy/Privacy2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 95px;
+    @media(min-width: 767px) {
+        padding: 0px 0px 80px;
+        background-image: url(../img/privacy/Privacy1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .text01{
+        text-align: center;
+        @media(max-width: 767px) {
+            text-align: left;
+        }
+    }
+}

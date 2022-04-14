@@ -152,14 +152,17 @@
   
 }
 
-.similararticle-section {
+.clientstories-details {
     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     border-radius: 12px;
     padding: 43px 0px 51px;
+    margin-bottom: 40px;
+    
 
     @media(min-width: 767px) {
         margin: 0px 20px 0px 20px;
         padding: 87px 0px 44px;
+        margin-bottom: 40px;
     }
 
     .similarSwiper {
@@ -222,25 +225,29 @@
         }
     }
 
-    .article-card {
-        .article-card-img {
+    .clientstories-details-card {
+        .clientstories-details-card-img {
             position: relative;
             margin-bottom: 32px;
-            height: 256px;
+            height: 100%;
 
             img {
                 border-radius: 16px;
-                height: 100%;
-                object-fit: cover;
+                // height: 345px;
             }
 
-            .newest {
+            .category {
                 background: #1B4A52;
                 position: absolute;
-                left: 10px;
-                top: 10px;
+                left: 24px;
+                top: 30px;
                 border-radius: 8px;
-                padding: 5px 10px;
+                // padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 39px;
+                width: 104px;
 
             }
 
@@ -251,7 +258,7 @@
             }
         }
 
-        .article-card-text {
+        .clientstories-details-card-text {
             .blog-heading {
                 display: block;
                 display: -webkit-box;
@@ -272,21 +279,6 @@
                         width: 60%;                                  
                         .eventscard-sec {
                             width: 100%;
-                    
-                            .events-img1 {
-                                float: left;
-                            }
-                    
-                            .events-img2 {
-                                float: left;
-                                margin-left: -15px;
-                            }
-                    
-                            .events-img3 {
-                                float: left;
-                                margin-left: -15px;
-                                margin-right: 14px;
-                            }
                         }
                     } 
                     .video-time {
