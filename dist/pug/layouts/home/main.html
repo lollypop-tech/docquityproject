@@ -71,7 +71,8 @@
         <div class="swiper whyusedocquitySwiper swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="whyusedocquity-card">                              
+              <div class="whyusedocquity-card active" id="card0">
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/discuss.png" alt=""/></div>
                 <div class="whyusedocquity-img"><img src="./img/home/clinical.svg" alt="icon"/></div>
                 <div class="whyusedocquity-text"></div>
                 <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">Discuss Clinical Experiences</h6>
@@ -79,11 +80,30 @@
               </div>
             </div>
             <div class="swiper-slide"> 
-              <div class="whyusedocquity-card">                          
+              <div class="whyusedocquity-card inactive" id="card1">   
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/medicalinsight.png" alt=""/></div>
                 <div class="whyusedocquity-img"><img src="./img/home/medicalinsight.svg" alt="icon"/></div>
                 <div class="whyusedocquity-text"></div>
                 <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">Explore medical Insights</h6>
                 <p class="txt-md text-blackish fnt500 fnt-man">Enjoy ongoing access to a database of recorded sessions, journals, publications and a lot more, so you can learn on your own schedule.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="whyusedocquity-card inactive" id="card2"> 
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/h3doctalks.png" alt=""/></div>
+                <div class="whyusedocquity-img"><img src="./img/home/clinical.svg" alt="icon"/></div>
+                <div class="whyusedocquity-text"></div>
+                <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">H3 DocTalks</h6>
+                <p class="txt-md text-blackish fnt500 fnt-man">We have curated a list of short videos of top key opinion leaders in Asia to ensure even the busiest doctors can participate and learn.</p>
+              </div>
+            </div>
+            <div class="swiper-slide"> 
+              <div class="whyusedocquity-card inactive" id="card3">  
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/cmecredit.png" alt=""/></div>
+                <div class="whyusedocquity-img"><img src="./img/home/medicalinsight.svg" alt="icon"/></div>
+                <div class="whyusedocquity-text"></div>
+                <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">H3 Certified CME/CPD Credits</h6>
+                <p class="txt-md text-blackish fnt500 fnt-man">Regularly expand and refresh your medical knowledge on variety of industry topics. All that while securing CME and CPD credits from the comfort of your home.</p>
               </div>
             </div>
           </div>
@@ -99,9 +119,12 @@
         </div>
       </div>
       <div class="col-lg-6 offset-lg-1 col-12">
-        <div class="whyusedocquity-right">
-          <div class="whyusedocquity-right-img"><img class="w100" src="./img/home/whydocquity.png" alt=""/></div>
-        </div>
+        <ul class="whyusedocquity-right">
+          <li class="whyusedocquity-right-img active" id="useBoxcard0"> <img class="w100" src="./img/home/discuss.png" alt=""/></li>
+          <li class="whyusedocquity-right-img" id="useBoxcard1"><img class="w100" src="./img/home/medicalinsight.png" alt=""/></li>
+          <li class="whyusedocquity-right-img" id="useBoxcard2"><img class="w100" src="./img/home/h3doctalks.png" alt=""/></li>
+          <li class="whyusedocquity-right-img" id="useBoxcard3"><img class="w100" src="./img/home/cmecredit.png" alt=""/></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -314,7 +337,7 @@
       <div class="col-md-4 text-center dq-mockup-row">
         <div class="dq-feature-list">
           <div class="dq-feature-list__item">
-            <div class="dq-feature-thumbnail thumbnail-credit">
+            <div class="dq-feature-thumbnail thumbnail-credit active" id="link0">
               <div class="dq-circle dq-circle--md dq-circle--bluish dq-flexcenter"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1475_11625)">
 <path class="red" d="M30.8248 27.87C30.7066 27.87 30.5896 27.8467 30.4804 27.8015C30.3712 27.7563 30.272 27.69 30.1884 27.6064C30.1048 27.5228 30.0385 27.4236 29.9933 27.3144C29.9481 27.2052 29.9248 27.0882 29.9248 26.97V12.195C29.9248 11.9563 30.0196 11.7274 30.1884 11.5586C30.3572 11.3898 30.5861 11.295 30.8248 11.295C31.0635 11.295 31.2924 11.3898 31.4612 11.5586C31.63 11.7274 31.7248 11.9563 31.7248 12.195V26.97C31.7248 27.2087 31.63 27.4376 31.4612 27.6064C31.2924 27.7752 31.0635 27.87 30.8248 27.87V27.87Z" fill="#FF6961"/>
@@ -335,7 +358,7 @@
             </div>
           </div>
           <div class="dq-feature-list__item">
-            <div class="dq-feature-thumbnail thumbnail-webinar">
+            <div class="dq-feature-thumbnail thumbnail-credit inactive" id="link1">
               <div class="dq-circle dq-circle--md dq-circle--bluish dq-flexcenter"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path class="red" d="M24.0003 22C22.978 22.004 21.9776 21.7042 21.126 21.1387C20.2744 20.5733 19.61 19.7676 19.2169 18.8239C18.8239 17.8802 18.72 16.8411 18.9185 15.8383C19.1169 14.8355 19.6088 13.9142 20.3316 13.1914C21.0545 12.4685 21.9757 11.9767 22.9785 11.7782C23.9813 11.5798 25.0205 11.6836 25.9642 12.0767C26.9079 12.4697 27.7136 13.1342 28.279 13.9858C28.8445 14.8374 29.1442 15.8378 29.1403 16.86C29.135 18.2216 28.5918 19.5259 27.629 20.4887C26.6662 21.4515 25.3619 21.9948 24.0003 22ZM24.0003 14.1C23.4536 14.0961 22.918 14.2546 22.4615 14.5554C22.005 14.8563 21.6481 15.2859 21.4361 15.7899C21.2242 16.2938 21.1667 16.8494 21.2709 17.3861C21.3751 17.9228 21.6364 18.4165 22.0216 18.8045C22.4068 19.1925 22.8985 19.4573 23.4344 19.5654C23.9703 19.6736 24.5263 19.6201 25.0318 19.4118C25.5373 19.2035 25.9695 18.8498 26.2737 18.3955C26.5779 17.9411 26.7402 17.4067 26.7403 16.86C26.735 16.1349 26.4447 15.4411 25.932 14.9283C25.4193 14.4156 24.7253 14.1253 24.0003 14.12V14.1Z" fill="#FC6B72"/>
 <path class="red" d="M14 31.76H13.7C13.3926 31.68 13.1295 31.4814 12.9683 31.2078C12.8071 30.9341 12.761 30.6077 12.84 30.3C13.4511 27.8319 14.8521 25.6311 16.8298 24.0329C18.8075 22.4348 21.2534 21.527 23.7948 21.4477C26.3362 21.3684 28.8339 22.1221 30.9073 23.5938C32.9808 25.0656 34.5164 27.1747 35.28 29.6C35.3273 29.7511 35.3443 29.9099 35.3302 30.0675C35.3161 30.2251 35.2711 30.3784 35.1978 30.5186C35.1244 30.6589 35.0241 30.7833 34.9027 30.8847C34.7813 30.9862 34.641 31.0628 34.49 31.11C34.339 31.1573 34.1801 31.1744 34.0225 31.1603C33.8649 31.1461 33.7116 31.1011 33.5714 31.0278C33.4312 30.9544 33.3068 30.8541 33.2053 30.7327C33.1038 30.6113 33.0273 30.4711 32.98 30.32C32.3728 28.3945 31.1529 26.7202 29.5061 25.5521C27.8593 24.384 25.8758 23.7862 23.8578 23.8496C21.8398 23.913 19.8979 24.6342 18.3277 25.9034C16.7575 27.1726 15.6451 28.9202 15.16 30.88C15.0898 31.1336 14.9383 31.3571 14.7287 31.5161C14.5191 31.6751 14.2631 31.7608 14 31.76Z" fill="#FC6B72"/>
@@ -350,7 +373,7 @@
             </div>
           </div>
           <div class="dq-feature-list__item">
-            <div class="dq-feature-thumbnail thumbnail-clinical">
+            <div class="dq-feature-thumbnail thumbnail-credit inactive" id="link2">
               <div class="dq-circle dq-circle--md dq-circle--bluish dq-flexcenter"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_893_9610)">
 <path class="white" d="M34 42.7H14C12.5554 42.7 11.1697 42.1275 10.1463 41.1079C9.12291 40.0882 8.54533 38.7046 8.54004 37.26V18.7C8.54019 18.5255 8.57776 18.3531 8.65022 18.1944C8.72267 18.0357 8.82832 17.8944 8.96004 17.78L23.16 5.61999C23.3774 5.43407 23.654 5.33191 23.94 5.33191C24.2261 5.33191 24.5027 5.43407 24.72 5.61999L38.92 17.78C39.0518 17.8944 39.1574 18.0357 39.2299 18.1944C39.3023 18.3531 39.3399 18.5255 39.34 18.7V37.16C39.3615 38.6013 38.8121 39.9926 37.8118 41.0305C36.8114 42.0683 35.4412 42.6685 34 42.7ZM11 19.26V37.26C11.0253 38.0457 11.3501 38.7921 11.9079 39.3461C12.4656 39.9002 13.2141 40.22 14 40.24H34C34.81 40.2347 35.5853 39.9107 36.158 39.3379C36.7307 38.7652 37.0548 37.9899 37.06 37.18V19.18L24 8.13999L11 19.26Z" fill="#1B4A52"/>
@@ -371,20 +394,20 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 text-center">
-        <div class="dq-mobile-wrap">
-          <div class="dq-mobile-credit"> <img class="img-fluid" src="./img/what-doquity/credit.png" alt="Mobile skeleton"/></div>
-          <div class="dq-mobile-webiner"><img class="img-fluid" src="./img/what-doquity/webinar.png" alt="Mobile skeleton"/></div>
-          <div class="dq-mobile-clinical"><img class="img-fluid" src="./img/what-doquity/clinical.png" alt="Mobile skeleton"/></div>
-          <div class="dq-mobile-doctalks"><img class="img-fluid" src="./img/what-doquity/doctalks.png" alt="Mobile skeleton"/></div>
-          <div class="dq-mobile-channels"><img class="img-fluid" src="./img/what-doquity/channels.png" alt="Mobile skeleton"/></div>
-          <div class="dq-mobile-private"><img class="img-fluid" src="./img/what-doquity/private.png" alt="Mobile skeleton"/></div>
-        </div>
+      <div class="col-md-4 text-center">               
+        <ul class="dq-mobile-wrap">
+          <li class="dq-mobile-credit active" id="offerBoxlink0"> <img class="img-fluid" src="./img/what-doquity/credit.png" alt="Mobile skeleton"/></li>
+          <li class="dq-mobile-credit" id="offerBoxlink1"><img class="img-fluid" src="./img/what-doquity/webinar.png" alt="Mobile skeleton"/></li>
+          <li class="dq-mobile-credit" id="offerBoxlink2"> <img class="img-fluid" src="./img/what-doquity/clinical.png" alt="Mobile skeleton"/></li>
+          <li class="dq-mobile-credit" id="offerBoxlink3"> <img class="img-fluid" src="./img/what-doquity/doctalks.png" alt="Mobile skeleton"/></li>
+          <li class="dq-mobile-credit" id="offerBoxlink4"> <img class="img-fluid" src="./img/what-doquity/channels.png" alt="Mobile skeleton"/></li>
+          <li class="dq-mobile-credit" id="offerBoxlink5"> <img class="img-fluid" src="./img/what-doquity/private.png" alt="Mobile skeleton"/></li>
+        </ul>
       </div>
       <div class="col-md-4 text-center">
         <div class="dq-feature-list">
           <div class="dq-feature-list__item">
-            <div class="dq-feature-thumbnail thumbnail-doctalks">
+            <div class="dq-feature-thumbnail thumbnail-credit inactive" id="link3">
               <div class="dq-circle dq-circle--md dq-circle--bluish dq-flexcenter"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_893_9655)">
 <path class="white" d="M17.5999 26.72C16.0845 26.7147 14.6326 26.1104 13.5611 25.0388C12.4895 23.9673 11.8852 22.5154 11.8799 21C11.8852 19.4846 12.4895 18.0327 13.5611 16.9612C14.6326 15.8896 16.0845 15.2853 17.5999 15.28C19.1153 15.2853 20.5671 15.8896 21.6387 16.9612C22.7103 18.0327 23.3146 19.4846 23.3199 21C23.3199 22.517 22.7172 23.9719 21.6445 25.0446C20.5718 26.1174 19.1169 26.72 17.5999 26.72ZM17.5999 17.68C16.721 17.6852 15.8796 18.0367 15.2581 18.6582C14.6366 19.2797 14.2851 20.1211 14.2799 21C14.2719 21.441 14.3519 21.8792 14.5152 22.2889C14.6784 22.6987 14.9217 23.0718 15.2308 23.3865C15.5399 23.7011 15.9086 23.9511 16.3154 24.1217C16.7221 24.2923 17.1588 24.3801 17.5999 24.38C18.4804 24.38 19.3249 24.0302 19.9475 23.4076C20.5701 22.785 20.9199 21.9405 20.9199 21.06C20.9279 20.619 20.8479 20.1808 20.6846 19.7711C20.5213 19.3613 20.278 18.9882 19.9689 18.6735C19.6599 18.3588 19.2912 18.1089 18.8844 17.9383C18.4776 17.7677 18.041 17.6799 17.5999 17.68Z" fill="#1B4A52"/>
@@ -407,7 +430,7 @@
             </div>
           </div>
           <div class="dq-feature-list__item">
-            <div class="dq-feature-thumbnail thumbnail-channel">
+            <div class="dq-feature-thumbnail thumbnail-credit inactive" id="link4">
               <div class="dq-circle dq-circle--md dq-circle--bluish dq-flexcenter"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_893_9732)">
 <path class="white" d="M35.58 38.44H12.42C10.2468 38.4347 8.16418 37.5691 6.62753 36.0324C5.09087 34.4958 4.22525 32.4131 4.21997 30.24V17.88C4.22525 15.7068 5.09087 13.6242 6.62753 12.0875C8.16418 10.5509 10.2468 9.68527 12.42 9.67999H35.58C37.7531 9.68527 39.8358 10.5509 41.3724 12.0875C42.9091 13.6242 43.7747 15.7068 43.78 17.88V30.2C43.7826 31.2795 43.5726 32.3489 43.1619 33.3472C42.7513 34.3455 42.148 35.2531 41.3865 36.0183C40.6251 36.7834 39.7204 37.3911 38.7241 37.8066C37.7278 38.2222 36.6594 38.4374 35.58 38.44ZM12.42 12.12C10.8886 12.12 9.4194 12.7255 8.33283 13.8046C7.24626 14.8837 6.63053 16.3487 6.61997 17.88V30.2C6.61997 31.7382 7.23104 33.2135 8.31875 34.3012C9.40646 35.3889 10.8817 36 12.42 36H35.58C37.1182 36 38.5935 35.3889 39.6812 34.3012C40.7689 33.2135 41.38 31.7382 41.38 30.2V17.88C41.38 16.3417 40.7689 14.8665 39.6812 13.7788C38.5935 12.6911 37.1182 12.08 35.58 12.08L12.42 12.12Z" fill="#1B4A52"/>
@@ -425,7 +448,7 @@
             </div>
           </div>
           <div class="dq-feature-list__item">
-            <div class="dq-feature-thumbnail thumbnail-private">
+            <div class="dq-feature-thumbnail thumbnail-credit inactive" id="link5">
               <div class="dq-circle dq-circle--md dq-circle--bluish dq-flexcenter"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_893_9730)">
 <path class="red" d="M16.0999 20.44C15.2763 20.444 14.4701 20.2034 13.7833 19.7487C13.0966 19.294 12.5603 18.6457 12.2424 17.8859C11.9244 17.1261 11.8392 16.289 11.9974 15.4808C12.1557 14.6725 12.5503 13.9294 13.1313 13.3456C13.7123 12.7618 14.4535 12.3636 15.261 12.2015C16.0685 12.0393 16.9059 12.1205 17.6672 12.4348C18.4285 12.7491 19.0794 13.2822 19.5374 13.9668C19.9954 14.6513 20.2399 15.4564 20.2399 16.28C20.2399 17.3799 19.8044 18.4349 19.0286 19.2145C18.2527 19.9941 17.1998 20.4347 16.0999 20.44ZM16.0999 14.44C15.7502 14.4361 15.4071 14.5364 15.1147 14.7283C14.8222 14.9201 14.5935 15.1948 14.4578 15.5172C14.3222 15.8396 14.2856 16.1951 14.3529 16.5384C14.4202 16.8816 14.5882 17.1971 14.8355 17.4444C15.0829 17.6917 15.3983 17.8598 15.7416 17.927C16.0848 17.9943 16.4403 17.9578 16.7627 17.8221C17.0851 17.6864 17.3598 17.4577 17.5517 17.1653C17.7435 16.8728 17.8439 16.5298 17.8399 16.18C17.8144 15.7361 17.6198 15.3188 17.2962 15.0138C16.9727 14.7088 16.5446 14.5393 16.0999 14.54V14.44Z" fill="#FF6961"/>

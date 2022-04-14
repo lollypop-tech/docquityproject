@@ -118,11 +118,13 @@ $(document).ready(function () {
 
 // builder
 
+
 // why use docquity
 
 var swiper = new Swiper(".whyusedocquitySwiper", {
   direction: "horizontal",
   slidesPerView: 1,
+  slidesPerGroup: 2,
   spaceBetween: 25,
   grabCursor: true,
   loop: true,
@@ -150,55 +152,30 @@ var swiper = new Swiper(".whyusedocquitySwiper", {
   }
 });
 
-// why docquity offers
+// why use docquity hover
+var $boxes1 = $(".whyusedocquity-right-img"),
+    $productLinks1 = $(".whyusedocquity-card").mouseover(function () {
+  $boxes1.removeClass("active").filter("#useBox" + this.id).addClass("active");
+});
 
-$('.thumbnail-credit').hover(function () {
-  $('.dq-mobile-credit').show();
-  $('.dq-mobile-webiner').hide();
-  $('.dq-mobile-clinical').hide();
-  $('.dq-mobile-doctalks').hide();
-  $('.dq-mobile-channels').hide();
-  $('.dq-mobile-private').hide();
+$(document).ready(function () {
+  $(".whyusedocquity-card").hover(function () {
+    $(".whyusedocquity-card").not(this).removeClass("active").addClass("inactive");
+    $(this).addClass("active").removeClass("inactive");
+  });
 });
-$('.thumbnail-webinar').hover(function () {
-  $('.dq-mobile-credit').hide();
-  $('.dq-mobile-webiner').show();
-  $('.dq-mobile-clinical').hide();
-  $('.dq-mobile-doctalks').hide();
-  $('.dq-mobile-channels').hide();
-  $('.dq-mobile-private').hide();
+
+// why docquity offers
+var $boxes = $(".dq-mobile-credit"),
+    $productLinks = $(".thumbnail-credit").mouseover(function () {
+  $boxes.removeClass("active").filter("#offerBox" + this.id).addClass("active");
 });
-$('.thumbnail-clinical').hover(function () {
-  $('.dq-mobile-credit').hide();
-  $('.dq-mobile-webiner').hide();
-  $('.dq-mobile-clinical').show();
-  $('.dq-mobile-doctalks').hide();
-  $('.dq-mobile-channels').hide();
-  $('.dq-mobile-private').hide();
-});
-$('.thumbnail-doctalks').hover(function () {
-  $('.dq-mobile-credit').hide();
-  $('.dq-mobile-webiner').hide();
-  $('.dq-mobile-clinical').hide();
-  $('.dq-mobile-doctalks').show();
-  $('.dq-mobile-channels').hide();
-  $('.dq-mobile-private').hide();
-});
-$('.thumbnail-channel').hover(function () {
-  $('.dq-mobile-credit').hide();
-  $('.dq-mobile-webiner').hide();
-  $('.dq-mobile-clinical').hide();
-  $('.dq-mobile-doctalks').hide();
-  $('.dq-mobile-channels').show();
-  $('.dq-mobile-private').hide();
-});
-$('.thumbnail-private').hover(function () {
-  $('.dq-mobile-credit').hide();
-  $('.dq-mobile-webiner').hide();
-  $('.dq-mobile-clinical').hide();
-  $('.dq-mobile-doctalks').hide();
-  $('.dq-mobile-channels').hide();
-  $('.dq-mobile-private').show();
+
+$(document).ready(function () {
+  $(".thumbnail-credit").hover(function () {
+    $(".thumbnail-credit").not(this).removeClass("active").addClass("inactive");
+    $(this).addClass("active").removeClass("inactive");
+  });
 });
 
 // mobile slider

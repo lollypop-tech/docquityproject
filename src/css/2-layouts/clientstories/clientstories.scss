@@ -1,0 +1,139 @@
+// 01clientstories
+.clientstories01{
+    background-image: url(../img/productcpd/Section01Bg.png);
+    background-position: center;
+    background-size: cover;
+    margin: 0px 12px 0px 12px;
+    border-radius: 24px;
+    padding: 84px 0 23px;
+
+    @media (min-width: 768px) {
+        // padding: 164px 0px 220px;
+        padding: 127px 0 62px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .dq-figwrap {
+        img{
+            margin-left: -37px;
+        @media(max-width: 767px) {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    }
+
+    .section01-home-banner{
+        &__cntsection01{
+        margin-left: 90px;
+        @media(max-width: 767px) {
+            margin-left: 0px;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            color: #1D1919;
+            opacity: 0.7;
+            width: 420px;
+            @media(max-width: 767px) {
+                width: 100%;
+            }
+        }
+        }
+        
+       &__heading{
+           width: 450px;
+            font-size: 32px;
+            line-height: 40px;
+            color: #1D1919;
+            @media(max-width: 767px) {
+                width: 100%;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 16px;
+            }
+       }
+       
+    }
+
+}
+
+.tag-list {
+    display: inline-block;
+    width: 100%;
+
+    &__item {
+        // width: 100%;
+        float: left;
+        color: #1B4A52;
+        text-align: center;
+        background: #1b4a521a;
+        margin: 0px 13px 13px 0px;
+        border-radius: 15px;
+
+        &:hover {
+            background: #1B4A52;
+
+            a {
+                color: #fff !important;
+            }
+        }
+
+        a {
+            padding: 4px 10px;
+            display: block;
+        }
+    }
+}
+
+
+.articletabs-section {
+        .clientstories-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    .article-tabpane {
+
+        .recent-row,
+        .popular-row {
+            .article-list {
+                &__item {
+                    .article-card {
+                        .article-card-img {
+                            .newest {
+                                background: #1B4A52;
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                border-radius: 8px;
+                                padding: 5px 10px;
+
+                            }
+
+                            .play {
+                                position: absolute;
+                                top: 65px;
+                                left: 40%;
+                            }
+                        }
+
+                        .cardbottom-list {
+                            margin-top: 16px;
+                            display: flex;
+
+                            &__item {
+                                .video-time {
+                                    position: absolute;
+                                    right: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

@@ -396,28 +396,29 @@
         display: none;
     }
 }
-.dq-mobile-wrap{
-    position: relative;
-    transform:translateY(50px);
-    .dq-mobile-credit{
-        display: block;
-    }
-    .dq-mobile-webiner{
-        display: none;
-    }
-    .dq-mobile-clinical{
-        display: none;
-    }
-    .dq-mobile-doctalks{
-        display: none;
-    }
-    .dq-mobile-channels{
-        display: none;
-    }
-    .dq-mobile-private{
-        display: none;
-    }
-}
+// .dq-mobile-wrap{
+//     position: relative;
+//     transform:translateY(50px);
+//     .dq-mobile-credit{
+//         display: block;
+//     }
+//     .dq-mobile-webiner{
+//         display: none;
+//     }
+//     .dq-mobile-clinical{
+//         display: none;
+//     }
+//     .dq-mobile-doctalks{
+//         display: none;
+//     }
+//     .dq-mobile-channels{
+//         display: none;
+//     }
+//     .dq-mobile-private{
+//         display: none;
+//     }
+// }
+
         //mobile-offerswiper 
         .offerSwiper{
             width: 100%;
@@ -1253,139 +1254,111 @@
     position     : relative;
     padding      : 88px 0px 37px;
 
-
     @media(min-width: 767px) {
         padding: 64px 40px 53px 80px;
     }
-    @media(max-width: 766px) {
-        margin-bottom: 170px;
-    }
-
     .whyusedocquity-row {
         @media(max-width: 767px) {
             display       : flex;
-            flex-direction: column-reverse;
-            ;
+            flex-direction: column-reverse;            
         }
-
         // whyusedocquity-swiper
-        .whyusedocquitySwiper {
-            width       : 100%;
-            max-height  : 544px;
+        .whyusedocquitySwiper{
+            width: 100%;
+            max-height: 544px;
             padding-left: 45px;
-            margin-top  : 30px;
+            margin-top: 30px;
 
             @media(max-width: 767px) {
-                max-height    : 530px;
-                padding-left  : 25px;
+                max-height  :665px;
+                padding-left: 25px;
                 padding-bottom: 55px;
             }
-
             .swiper-slide {
                 display: flex;
-
-                .whyusedocquity-card {
-                    padding: 32px 32px;
-
+                .whyusedocquity-card {   
+                    padding: 32px 32px;           
                     @media(max-width: 767px) {
                         padding: 0px 0px;
                     }
+                    .whyusedocquity-div {
+                        @media(min-width: 767px) {
+                            display: none;
+                        }
 
+                    }
                     .whyusedocquity-img {
                         margin-bottom: 27px;
                     }
-
                     &:hover {
-                        background   : #b1cbcf33;
-                        border-radius: 24px;
-                    }
-                }
+                        @media(min-width: 767px) {
+                            background: #b1cbcf33;
+                            border-radius: 24px;  
+                        }
+                                              
+                    }  
+                }                
             }
-
             .swiper-pagination-bullets {
                 right : inherit;
                 left  : 0px;
                 top   : 50% !important;
-                height: 65px;
-
+                height: 65px;    
                 @media(max-width: 767px) {
                     display: none;
                 }
-
                 .swiper-pagination-bullet {
                     margin: 10px 0px !important;
                 }
-
                 .swiper-pagination-bullet-active {
                     background: #1B4A52 !important;
                 }
             }
-
-            .swiper-button-prev,
-            .swiper-button-next {
-                top          : 92%;
-                background   : #b1cbcf5e;
-                width        : 35px;
-                height       : 35px;
-                border       : 1px solid #B1CBCF;
+            .swiper-button-prev,.swiper-button-next{
+                top: 92%;
+                background: #b1cbcf5e;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #B1CBCF;
                 border-radius: 20px;
-
-                &:hover {
+                &:hover{
                     background: #1B4A52;
-                    border    : 1px solid #1B4A52;
-
-                    .arr {
-                        fill: #fff;
+                    border: 1px solid  #1B4A52;
+                    .arr{
+                        fill:#fff;
                     }
                 }
 
-                &::after {
-                    content: none;
-                }
-
+                &::after{content:none;}
                 @media(min-width: 767px) {
-                    display: none;
+                   display: none;
                 }
             }
-
-            .swiper-button-next {
-                right    : 110px;
-                transform: rotate(180deg);
+            .swiper-button-next{                 
+                right: 110px;                
+                transform: rotate(180deg); 
             }
-
-            .swiper-button-prev {
-                left: 110px;
+           .swiper-button-prev{               
+                left: 110px;    
             }
-        }
-
+        }   
         .whyusedocquity-right {
             position: relative;
-
             @media(max-width: 767px) {
                 margin-top: 80px;
+             }
+            .whyusedocquity-right-img{
+                display: none;                
+            }
+            .whyusedocquity-right-img.active {
+                display: block;
+                @media(max-width: 767px) {
+                    display: none;
+                }
             }
         }
     }
 }
-// @media (max-width: 767.98px) { 
-//     .explore-section .explore-mobile .options .option.active .secondlabel {
-//         display: flex;
-//         right: 0px!important;
-//         bottom: -343px!important;
-//     }
-//     .explore-section .explore-mobile .options .option.option-card,.explore-section .explore-mobile .options .option:not(.active) .option-card--one{
-//         height: 1039px !important;
-//     }
-//     .explore-section .explore-mobile .options .option{
-//         margin-bottom: 250px !important;
-//     }
-//     .explore-section .explore-mobile .options .option .option-card--two {
-//         height: 1039px;
-//     }
-//     .explore-section .explore-mobile .options .option.active .secondlabel {
-//         bottom: -200px!important;
-//     }
-//  }
 
 
 .leadership{
@@ -1418,4 +1391,14 @@
     .swiper-button-prev {
         left: 0px !important;
   }
+}
+
+
+.dq-mobile-wrap{
+    position: relative;
+    transform:translateY(50px);
+    .dq-mobile-credit{display: none;}
+    .dq-mobile-credit.active {
+        display: block;
+    }
 }
