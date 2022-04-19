@@ -169,12 +169,11 @@ body {
     line-height  : 16px !important;
     color        : #fff !important;
     border-radius: 12px;
-    display      : inline-block;
-    box-shadow   : 0 20px 30px -6px rgba(60, 59, 61, 0.5);
+    display      : inline-block;    
     transition   : all 0.5s ease-in-out;
 
     &:hover {
-        box-shadow: none;
+        box-shadow: 4px 4px 24px 0px #00000033;
     }
 }
 

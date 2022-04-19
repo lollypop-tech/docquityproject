@@ -1,0 +1,64 @@
+.termsbanner-section {  
+    background:url(../img/faq/faq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 20px 0px 20px;
+    border-radius: 24px;
+    padding: 60px 0px 58px;
+}
+
+.sticky-tab-list {
+    position: sticky;
+    top: 150px;
+}
+
+.termstabs-section {
+    @media (min-width: 767px) {
+        padding: 95px 0px 95px;
+    }
+
+    .vertical-tab-list {
+        border-left: 2px solid #EEEEEE;
+
+        // @media (max-width: 767px) {
+        //     display: none;
+        //     visibility: hidden;
+        // }
+        &__item {
+            padding: 15px 15px 15px 15px;            
+            cursor: pointer;
+            color: #1D1919;
+            position: relative;
+            margin-bottom: 5px;
+            @media (min-width: 768px) {
+                padding: 10px 20px;
+            }
+            @media (min-width: 1200px) {
+                padding: 10px 0px 10px 15px;
+            }
+            &:last-child {
+                border-bottom: 0;
+            } 
+            &.active {
+                color:#1B4A52;
+                font-weight: 700;                 
+                .light{
+                    background: #1B4A52;
+                    width: 5px;
+                    height: 100%;
+                    top: 0;
+                    position: absolute;
+                    left: -4px;
+                    border-radius: 5px;
+                }           
+            }
+            &:hover {
+                color: #1B4A52;
+            }
+        }       
+    }
+    .tabs-card{
+        &__item{margin-bottom: 40px;}
+    }
+    
+}

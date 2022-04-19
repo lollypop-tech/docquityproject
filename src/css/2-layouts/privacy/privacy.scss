@@ -1,142 +1,64 @@
-.privacyhead-section {
-    background-image: url(../img/privacy/Privacy22.png);
-    background-size: cover;
+.termsbanner-section {  
+    background:url(../img/faq/faq.png);
     background-repeat: no-repeat;
-    // margin-top: 95px;
-    margin: 95px 16px 20px;
-    height: 200px;
+    background-size: cover;
+    margin: 0px 20px 0px 20px;
     border-radius: 24px;
-    color: #ffffff;
-    @media(min-width: 767px) {
-        padding: 0px 0px 80px;
-        background-image: url(../img/privacy/Privacy11.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 24px;
-        color: #ffffff;
+    padding: 60px 0px 58px;
+}
+
+.sticky-tab-list {
+    position: sticky;
+    top: 150px;
+}
+
+.termstabs-section {
+    @media (min-width: 767px) {
+        padding: 95px 0px 95px;
     }
-    .text01{
-        position: absolute;
-        margin-top: 50px;
-        text-align: center;
-        font-size: 16px !important;
-        span{
-            opacity: 0.7;
-        }
-        @media(max-width: 767px) {
-            text-align: center;
-            font-size: 14px !important;
-            margin-top: 65px;
-            span{
-                opacity: 0.7;
-                font-size: 14px !important;
+
+    .vertical-tab-list {
+        border-left: 2px solid #EEEEEE;
+
+        // @media (max-width: 767px) {
+        //     display: none;
+        //     visibility: hidden;
+        // }
+        &__item {
+            padding: 15px 15px 15px 15px;            
+            cursor: pointer;
+            color: #1D1919;
+            position: relative;
+            margin-bottom: 5px;
+            @media (min-width: 768px) {
+                padding: 10px 20px;
             }
-        }
+            @media (min-width: 1200px) {
+                padding: 10px 0px 10px 15px;
+            }
+            &:last-child {
+                border-bottom: 0;
+            } 
+            &.active {
+                color:#1B4A52;
+                font-weight: 700;                 
+                .light{
+                    background: #1B4A52;
+                    width: 5px;
+                    height: 100%;
+                    top: 0;
+                    position: absolute;
+                    left: -4px;
+                    border-radius: 5px;
+                }           
+            }
+            &:hover {
+                color: #1B4A52;
+            }
+        }       
     }
-}
-
-
-.privacytabs{
-    position: relative;
-nav {
-	position: relative;
-	top: 5%;
-	bottom: auto;
-	z-index: 10;
-	a {
-		display: inline-block;
-		color: #272727;
-		text-decoration: none;
-		font-size: 1em;
-		&:hover {
-			color: #9b59b6;
-			span {
-				background-color: #9b59b6;
-			}
-		}
-	}
-	.active-section {
-		color: #9b59b6;
-		span {
-			background-color: #9b59b6;
-		}
-		.rect {
-			width: 40px;
-		}
-	}
-}
-ul {
-	list-style: none;
-	padding: 0;
-}
-li {
-	padding: 10px 0;
-}
-span {
-	display: inline-block;
-	position: relative;
-}
-.circle {
-	height: 10px;
-	width: 10px;
-	left: -10px;
-	border-radius: 50%;
-	background-color: #272727;
-}
-.rect {
-	height: 3px;
-	width: 0px;
-	left: 0;
-	bottom: 4px;
-	background-color: #272727;
-	-webkit-transition: -webkit-transform 0.6s, width 1s;
-	-moz-transition: -webkit-transform 0.6s, width 1s;
-	transition: transform 0.6s, width 1s;
-}
-.content-section {
-	position: relative;
-	width: 80%;
-	height: 90%;
-	left: 50%;
-	background-color: #ecf1f1;
-	text-align: center;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	h1 {
-		position: relative;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translateX(-50%) translateY(-50%);
-		-moz-transform: translateX(-50%) translateY(-50%);
-		-ms-transform: translateX(-50%) translateY(-50%);
-		-o-transform: translateX(-50%) translateY(-50%);
-		transform: translateX(-50%) translateY(-50%);
-		color: #9b59b6;
-		font-size: 3em;
-	}
-}
-.about {
-	position: relative;
-	bottom: 0;
-	left: 1%;
-	a {
-		text-decoration: none;
-		font-size: 1.5em;
-		&:visited {
-			color: #000;
-		}
-		&:active {
-			color: #000;
-		}
-		&:link {
-			color: #000;
-		}
-		&:hover {
-			color: red;
-		}
-	}
-}
+    .tabs-card{
+        &__item{margin-bottom: 40px;}
+    }
+    
 }
