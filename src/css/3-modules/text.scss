@@ -124,6 +124,10 @@
     font-size  : 48px !important;
     line-height: 54px;
   }
+  @media(min-width: 992px) and (max-width: 1300px) {
+    font-size  : 38px !important;
+    line-height: 54px;
+}
 }
 
 .h2 {

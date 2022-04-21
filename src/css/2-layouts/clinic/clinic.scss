@@ -47,6 +47,8 @@
 
             .pressroom-left-img {
                 margin-top: 115px;
+                width: 488px;
+                height: 500px;
                 @media (max-width: 767px) {
                     margin-top: 0px;
                 }
@@ -65,6 +67,10 @@
                 @media (max-width: 767px) {
                     padding-right: 0px;
                     margin-top: 40px;
+                }
+                .pressroom-right-img{
+                    width: 488px;
+                   height: 500px;
                 }
             }
         }
@@ -193,7 +199,8 @@
             position:relative;
             opacity: 0.7;   
             padding-left: 35px;     
-            margin-top: 59px;
+            // margin-top: 59px;
+            margin-top: 15px;
             @media(max-width: 767px) {
                 position: relative;
                 transform: translateY(-250px);
@@ -224,9 +231,9 @@
     }  
     .queries-left{
         padding-top: 32px;
-        text-align:center;
+        // text-align:center;
         @media(min-width: 767px) {
-            padding: 120px 0px;
+            padding: 120px 124px;
         }
     }
  

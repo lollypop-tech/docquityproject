@@ -110,18 +110,33 @@
                 .client-list{
                     width: 100%;
                     display: inline-block;
+                    
+                    @media(min-width:768px){
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        padding-bottom: 120px;
+                    }
         
                     &__item {
-                        width: 48%;
                         float: left;
                         margin-bottom: 32px;
         
                         @media(max-width: 767px) {
                             width: 100%;
+                            
                         }
         
                         &:nth-child(odd) {
-                            margin-right: 32px;
+                            @media(min-width:768px){
+                            position: relative;
+                            right: 32px;
+                            }
+                        }
+                        &:nth-child(even){
+                            @media(min-width:768px){
+                                position: relative;
+                                top: 80px;
+                            }
                         }
         
                         .client-card {

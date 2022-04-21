@@ -376,6 +376,7 @@
 
             .support-card {
                 height: 295px;
+                width: 361px;
                 padding: 32px 32px;
                 transition: all 0.4s ease 0s;
                 position: relative;
@@ -409,7 +410,8 @@
                 z-index: 1;
                 top: 0px;
                 background: #deeff2;
-                width: 350px;
+                width: 361px;
+                // width: 100%;
                 height: auto;
                 opacity: 0;
                 padding: 32px 32px;
@@ -506,17 +508,24 @@
     @media(min-width: 767px) {
         padding: 80px 0px 0px;
     }
+    .diverse-row{
+        padding-bottom: 35px;
+    }
 
     // diverse-swiper
     .swiper {
         width: 100%;
-        max-height: 800px;
+        // max-height: 800px;
+        
         padding-left: 45px;
+        @media(min-width:1202px) {
+            max-height:510px;
+        }
 
         @media(max-width: 767px) {
-            max-height: 707px;
+            max-height: 700px;
             padding-left: 0;
-            padding-bottom: 45px;
+            padding-bottom: 20px;
         }
     }
 
@@ -534,7 +543,7 @@
     .swiper-pagination-bullets {
         right: inherit;
         left: 0px;
-        top: 50% !important;
+        top: 30% !important;
         height: 65px;
 
         @media(max-width: 767px) {
@@ -563,11 +572,11 @@
     }
 
     .diverse-card {
-        padding: 32px 40px;
+        padding: 15px 35px;
         transition: all 0.3s ease 0s;
 
         @media(max-width: 767px) {
-            padding:0px 15px;
+            padding:25px 15px;
         }
 
         .diverse-div {
@@ -590,13 +599,13 @@
     }
 
     .diverse-right {
-        background-image: url(../img/career/diverse-back.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom;
+        // background-image: url(../img/career/diverse-back.png);
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // background-position: bottom;
 
         .diverse-right-img {
-            width: 90%;
+            width: 55%;
             margin: 0px auto;
         }
     }
@@ -825,6 +834,9 @@
                 .position {
                     margin-right: 76px;
                     padding-top: 8px;
+                    p{
+                        margin-bottom: 0 !important;
+                    }
 
                     @media(max-width: 767px) {
                         position: absolute;
@@ -837,7 +849,7 @@
                 .location {
                     background: #1B4A521A;
                     border-radius: 200px;
-                    height: 24px;
+                    height: 31px;
                     padding: 3px 16px;
                     margin-right: 12px;
                     position: relative;
@@ -846,7 +858,8 @@
 
                 .faq-btn {
                     position: absolute;
-                    right: 25px;
+                    right: 30px;
+                    top: 29px;
                     line-height: 16px !important;
                     padding: 20px 25px;
 

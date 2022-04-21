@@ -123,6 +123,12 @@
       bottom: 150px;
     }
   }
+  @media(min-width: 992px) and (max-width: 1300px) {
+    padding: {
+      top   : 70px;
+      bottom: 150px;
+    }
+}
 }
 
 .dq-section-padding100 {

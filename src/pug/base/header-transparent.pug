@@ -10,7 +10,7 @@ header.header#header.header-transparent.svg-white
 							span.line
 							span.line
 					
-						.logo.d-flex.align-items-center
+						.logo
 							a.navbar-link.header-brand-logo(href="index.html")
 								//- img(src="./img/common-img/logo-w.svg", alt="")
 								include ../../img/docquity.svg					
@@ -34,7 +34,9 @@ header.header#header.header-transparent.svg-white
 									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 										| Products
 									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
-										a.dropdown-item(href='#') Pre Silicon	
+										a.dropdown-item(href='pre-silicon.html') Pre Silicon
+										a.dropdown-item(href='post-silicon.html') Post Silicon
+										a.dropdown-item(href='beyond-silicon.html') Beyond Silicon
 							li.menu__item.drodown-header
 								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
 								.dropdown
@@ -48,4 +50,16 @@ header.header#header.header-transparent.svg-white
 									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 										| Company
 									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
-										a.dropdown-item(href='#') Company						
+										a.dropdown-item(href='#') Company
+							li.menu__item.drodown-header
+								a(href="#") 									
+									<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.0443 13.7226C14.483 15.972 11.9331 17.3049 9.13349 17.3049C4.50091 17.3049 0.75 13.5913 0.75 9.04893C0.75 4.50657 4.50091 0.792969 9.13349 0.792969C9.25573 0.792969 9.37439 0.795624 9.49041 0.801916C7.64837 2.18417 6.55679 4.33924 6.55679 6.64734C6.55679 10.7122 9.90677 14.0017 14.0047 14.0017C14.7122 14.0017 15.3965 13.9084 16.0443 13.7226ZM9.90158 0.694351L9.90985 0.692432L9.90158 0.694351Z" stroke="#1D1919" stroke-width="1.5"/>
+									</svg>
+							li.menu__item.drodown-header
+								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
+								.dropdown
+									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+										img(src="./img/home/flag.svg", alt="") 	
+									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
+										a.dropdown-item(href='#') Company

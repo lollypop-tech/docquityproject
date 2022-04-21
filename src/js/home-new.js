@@ -124,7 +124,7 @@ $(document).ready(function () {
 var swiper = new Swiper(".whyusedocquitySwiper", {
   direction: "horizontal",
   slidesPerView: 1,
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
   spaceBetween: 25,
   grabCursor: true,
   loop: true,
@@ -262,4 +262,36 @@ var swiper = new Swiper(".homeleadershipSwiper", {
       slidesPerGroup:3       
     }
   }  
+});
+
+//home page mobile slider
+
+$(document).ready(function() {   
+  var mySwiper = new Swiper(".testswiper", {
+    spaceBetween: 25,
+    slidesPerView: 1,
+    centeredSlides: true,        
+    loop: true,
+    // autoplay: {
+    //   delay:0,
+    //   disableOnInteraction: true,
+    // },
+    speed: 800,      
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      767: {      
+        slidesPerView:7 
+      },
+      768: {      
+        slidesPerView:7      
+      }
+    }  
+  });
 });

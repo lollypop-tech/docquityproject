@@ -4,7 +4,8 @@
 var swiper = new Swiper('.diverseSwiper', {
   direction: 'vertical',
   slidesPerView: 3,
-  spaceBetween: 40,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
   grabCursor: true,
   loop: true,
   // autoplay: {
@@ -17,10 +18,14 @@ var swiper = new Swiper('.diverseSwiper', {
   },
   breakpoints: {
     767: {
-      slidesPerView: 4
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 10
     },
     768: {
-      slidesPerView: 4
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 10
     }
   }
 });

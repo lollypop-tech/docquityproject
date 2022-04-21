@@ -11,11 +11,21 @@ header .nav {
     @media (min-width: 993px) {
         transform : translateY(0);
         transition: transform 0.5s ease-in-out;
-        padding   : 44px 100px;
+        padding   : 24px 100px;
     }
 
     &.loaded {
         opacity: 1;
+    }
+}
+
+.home{
+    header .nav {  
+        @media (min-width: 993px) {
+            transform : translateY(0);
+            transition: transform 0.5s ease-in-out;
+            padding   : 52px 100px;
+        }
     }
 }
 
@@ -62,7 +72,7 @@ header .nav {
 
     &:hover,
     &:active {
-        color: #FF9530;
+        // color: #FF9530;
     }
 
     &:focus {
@@ -72,9 +82,11 @@ header .nav {
 }
 
 // Sticky navigation
+.home header .nav.sticky,
 header .nav.sticky {
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1) !important;
     background: $w !important;
+    padding: 20px 100px;
 
     .h-dropdown .nice-select {
         border-color: #121212;
@@ -110,7 +122,7 @@ header .nav.sticky {
     }
 }
 
-.header-unpin .nav {
+.home .header-unpin .nav,.header-unpin .nav {
     @media (min-width: 993px) {
         transform: translateY(-135px);
     }
@@ -126,6 +138,10 @@ header .nav.sticky {
     @media (min-width: 767px) {
         padding: 0px 0;
     }
+    .header-brand-logo{
+        display: flex;
+    }
+
 }
 
 // Menu start here
@@ -141,18 +157,16 @@ header .nav.sticky {
         display: block;
     }
 
-    &-list {
+    &-list {            
         @media (min-width: 768px) {
             height     : 100%;
             display    : flex;
             align-items: center;
         }
-
         @media only screen and (width: 768px) and (height: 1024px) and (orientation:portrait) {
             display    : block;
             align-items: baseline !important;
         }
-
         &--left {
             order        : -1;
             margin-bottom: 0;
@@ -160,7 +174,13 @@ header .nav.sticky {
             @media only screen and (width: 768px) and (height: 1024px) and (orientation:portrait) {
                 order: 1;
             }
-        }
+        }   
+        li{
+            &:nth-child(4){
+                margin-left: 25px;
+                a{display: flex;}
+            }
+        }   
     }
 
     &__item {
@@ -574,13 +594,13 @@ header .nav.sticky {
     }
 
     .show {
-        .header-btn {
-            color: #FF9530;
-        }
+        // .header-btn {
+        //     color: #FF9530;
+        // }
 
         .dropdown-toggle::after {
-            border-left     : 1px solid #FF9530;
-            border-top      : 1px solid #FF9530;
+            border-left     : 1px solid #2d343b;
+            border-top      : 1px solid #2d343b;
             content         : "";
             display         : block;
             height          : 8px;

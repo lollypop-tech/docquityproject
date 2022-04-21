@@ -47,27 +47,31 @@ $(".step").click(function () {
 
 $(".step01").click(function () {
   $("#line-progress").css("width", "3%");
-  $(".first").addClass("active").siblings().removeClass("active");
+  $(".slider-count1").addClass("active").siblings().removeClass("active");
 });
 
 $(".step02").click(function () {
-  $("#line-progress").css("width", "25%");
-  $(".second").addClass("active").siblings().removeClass("active");
+  $("#line-progress").css("width", "18%");
+  $(".slider-count2").addClass("active").siblings().removeClass("active");
 });
 
 $(".step03").click(function () {
-  $("#line-progress").css("width", "50%");
-  $(".third").addClass("active").siblings().removeClass("active");
+  $("#line-progress").css("width", "38%");
+  $(".slider-count3").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click(function () {
-  $("#line-progress").css("width", "75%");
-  $(".fourth").addClass("active").siblings().removeClass("active");
+  $("#line-progress").css("width", "57%");
+  $(".slider-count4").addClass("active").siblings().removeClass("active");
 });
 
 $(".step05").click(function () {
+  $("#line-progress").css("width", "77%");
+  $(".slider-count5").addClass("active").siblings().removeClass("active");
+});
+$(".step06").click(function () {
   $("#line-progress").css("width", "100%");
-  $(".fifth").addClass("active").siblings().removeClass("active");
+  $(".slider-count6").addClass("active").siblings().removeClass("active");
 });
 
 //brand slider
