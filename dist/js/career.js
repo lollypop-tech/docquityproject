@@ -147,4 +147,47 @@ $('.hover-card').hover(function () {
   new Vivus('square17', { duration: 150 });
 });
 
+var SwiperTop = new Swiper('.swiper--top', {
+  direction: 'vertical',
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 8000,
+  autoplay: {
+    delay: 1
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+
+var SwiperBottom = new Swiper('.swiper--bottom', {
+  direction: 'vertical',
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 8000,
+  autoplay: {
+    delay: 1,
+    reverseDirection: true
+  },
+  loop: true,
+  loopedSlides: 4,
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+var SwiperThird = new Swiper('.swiper--third', {
+  direction: 'vertical',
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 8000,
+  autoplay: {
+    delay: 1
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+
 },{}]},{},[1])//# sourceMappingURL=career.js.map

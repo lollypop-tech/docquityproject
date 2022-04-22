@@ -45,33 +45,64 @@ $(".step").click(function () {
   $(this).nextAll().removeClass("active");
 });
 
+$(".slider-pagination1").click(function () {
+  $(".step01").addClass("active").prevAll().addClass("active");
+  $(".step01").nextAll().removeClass("active");
+});
+$(".slider-pagination2").click(function () {
+  $(".step02").addClass("active").prevAll().addClass("active");
+  $(".step02").nextAll().removeClass("active");
+});
+$(".slider-pagination3").click(function () {
+  $(".step03").addClass("active").prevAll().addClass("active");
+  $(".step03").nextAll().removeClass("active");
+});
+$(".slider-pagination4").click(function () {
+  $(".step04").addClass("active").prevAll().addClass("active");
+  $(".step04").nextAll().removeClass("active");
+});
+$(".slider-pagination5").click(function () {
+  $(".step05").addClass("active").prevAll().addClass("active");
+  $(".step05").nextAll().removeClass("active");
+});
+$(".slider-pagination6").click(function () {
+  $(".step06").addClass("active").prevAll().addClass("active");
+  $(".step06").nextAll().removeClass("active");
+});
+
 $(".step01").click(function () {
   $("#line-progress").css("width", "3%");
   $(".slider-count1").addClass("active").siblings().removeClass("active");
+  $(".slider-pagination1").addClass("active").siblings().removeClass("active");
 });
 
 $(".step02").click(function () {
   $("#line-progress").css("width", "18%");
   $(".slider-count2").addClass("active").siblings().removeClass("active");
+  $(".slider-pagination2").addClass("active").siblings().removeClass("active");
 });
 
 $(".step03").click(function () {
   $("#line-progress").css("width", "38%");
   $(".slider-count3").addClass("active").siblings().removeClass("active");
+  $(".slider-pagination3").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click(function () {
   $("#line-progress").css("width", "57%");
   $(".slider-count4").addClass("active").siblings().removeClass("active");
+  $(".slider-pagination4").addClass("active").siblings().removeClass("active");
 });
 
 $(".step05").click(function () {
   $("#line-progress").css("width", "77%");
   $(".slider-count5").addClass("active").siblings().removeClass("active");
+  $(".slider-pagination5").addClass("active").siblings().removeClass("active");
 });
 $(".step06").click(function () {
   $("#line-progress").css("width", "100%");
   $(".slider-count6").addClass("active").siblings().removeClass("active");
+  $(".slider-pagination6").addClass("active").siblings().removeClass("active");
 });
 
 //brand slider

@@ -295,3 +295,46 @@ $(document).ready(function() {
     }  
   });
 });
+
+let SwiperTop = new Swiper('.wall--top', {
+  direction:'vertical',
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 8000,
+  autoplay: {
+    delay: 1,
+  },
+  loop: true,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+
+let SwiperBottom = new Swiper('.wall--bottom', {
+  direction:'vertical',
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 8000,
+  autoplay: {
+    delay: 1,
+    reverseDirection: true
+  },
+  loop: true,
+  loopedSlides: 4,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});
+let SwiperThird = new Swiper('.wall--third', {
+  direction:'vertical',
+  spaceBetween: 0,
+  centeredSlides: true,
+  speed: 8000,
+  autoplay: {
+    delay: 1,
+  },
+  loop: true,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true
+});

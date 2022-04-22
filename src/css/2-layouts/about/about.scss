@@ -956,3 +956,159 @@
         background: #007aff;
     }
 }
+// new map
+
+#image-map2{
+    @media (max-width: 766px) {
+        display: none;
+     } 
+     .hotspot{
+        background-color:transparent; 
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        width: 220px;
+        height: 68px;
+            .hotspot-img{
+                width: 75px;
+                height: 75px;
+                position: relative;
+                z-index: 9;
+                img{
+                    height: 100%;
+                }
+            }
+            .spot{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                height: 100%;
+                width: 0px;
+                background-color: #fff;
+                overflow: hidden;
+                transition: 0.5s;
+                border-radius: 40px;
+                box-shadow: 0 0 11px rgba(33,33,33,.2); 
+                opacity: 0;
+                font-size: 11px;
+                .loc-icon{
+                    float: left;
+                    margin-right: 5px;
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }    
+   
+}
+
+#image-map2 .hotspot:hover
+{
+  overflow: visible;
+}
+#image-map2 .hotspot:hover .hotspot-img{
+    z-index: 999;
+}
+
+#image-map2 .hotspot:hover .spot
+{
+
+  width: 100%;
+  padding: 5px 20px 0 85px;
+  z-index: 99;
+  opacity: 1;
+    
+}
+
+#image-map2 #spot-1
+{
+    left: 27rem;
+    top: 9.5rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+
+#image-map2 #spot-2
+{
+    left: 27rem;
+    top: 24rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+
+#image-map2 #spot-3
+{
+    left: 46.7rem;
+    top: 23.8rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+#image-map2 #spot-4
+{
+    left: 51.8rem;
+    top: 21.8rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+#image-map2 #spot-5
+{
+    left: 48.4rem;
+    top: 30.6rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+#image-map2 #spot-6
+{
+    left: 51.3rem;
+    top: 34.4rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+#image-map2 #spot-7
+{
+    left: 55rem;
+    top: 42.4rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+#image-map2 #spot-8
+{
+    left: 67rem;
+    top: 22.1rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+
+#image-map2 #spot-9
+{
+    left: 66.7rem;
+    top: 13.7rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+}
+
+.mobilemap{
+    @media (min-width: 766px) {
+        display: none;        
+     }
+    @media (max-width: 766px) {
+        overflow-x: scroll;        
+     }     
+    .mobileimage{
+        height: 100vh;
+      
+    }
+}
+.mobilemap::-webkit-scrollbar {    
+    height: 0px!important;
+    }
