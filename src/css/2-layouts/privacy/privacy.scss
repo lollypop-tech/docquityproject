@@ -9,7 +9,7 @@
 
 .sticky-tab-list {
     position: sticky;
-    top: 150px;
+    top: 85px;
 }
 
 .termstabs-section {
@@ -17,13 +17,65 @@
         padding: 95px 0px 95px;
     }
 
+    .privacyverticalswiper-button-next{
+        @media (min-width: 768px){
+            display: none;
+
+        }
+
+    }
+    .privacyverticalswiper-button-next:hover {
+        border: none !important;
+        outline: none !important;
+    }
+
+    .privacyverticalswiper-button-next{
+        top: 28%;
+        background: #B1CBCF;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #EEEEEE;
+        border-radius: 35px;
+        position: absolute;
+        @media (max-width: 768px) {
+            top: 5%;
+        }
+
+        &::after{content:none;}
+        
+    }
+    .privacyverticalswiper-button-next{                 
+        right: -4px;                
+        transform: rotate(180deg); 
+        z-index: 11;
+        position: absolute;
+
+        svg{
+            margin: 18px 19px;
+        }
+    }
+
+    .privacyverticalswiper-button-next:after, .swiper-rtl {
+        content: 'next';
+        display: none;
+    }
+
     .vertical-tab-list {
         border-left: 2px solid #EEEEEE;
 
-        // @media (max-width: 767px) {
-        //     display: none;
-        //     visibility: hidden;
-        // }
+        @media (max-width: 767px) {
+            display: flex;           
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        &__tabfont{
+            @media (max-width: 767px) {
+                font-weight: 700;
+                font-size: 16px !important;
+                line-height: 28px;
+                width: max-content;
+            }
+        }
         &__item {
             padding: 15px 15px 15px 15px;            
             cursor: pointer;
@@ -50,6 +102,13 @@
                     position: absolute;
                     left: -4px;
                     border-radius: 5px;
+
+                    @media (max-width: 767px) {     
+                    transform: rotate(90deg);
+                    top: 23px !important;
+                    left: 63px !important;
+                    margin: 0 40px;
+                    }
                 }           
             }
             &:hover {

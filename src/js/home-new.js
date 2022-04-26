@@ -266,35 +266,35 @@ var swiper = new Swiper(".homeleadershipSwiper", {
 
 //home page mobile slider
 
-$(document).ready(function() {   
-  var mySwiper = new Swiper(".testswiper", {
-    spaceBetween: 25,
-    slidesPerView: 1,
-    centeredSlides: true,        
-    loop: true,
-    // autoplay: {
-    //   delay:0,
-    //   disableOnInteraction: true,
-    // },
-    speed: 800,      
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    breakpoints: {
-      767: {      
-        slidesPerView:7 
-      },
-      768: {      
-        slidesPerView:7      
-      }
-    }  
-  });
-});
+// $(document).ready(function() {   
+//   var mySwiper = new Swiper(".testswiper", {
+//     spaceBetween: 25,
+//     slidesPerView: 1,
+//     centeredSlides: true,        
+//     loop: true,
+//     // autoplay: {
+//     //   delay:0,
+//     //   disableOnInteraction: true,
+//     // },
+//     speed: 800,      
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev"
+//     },
+//     breakpoints: {
+//       767: {      
+//         slidesPerView:7 
+//       },
+//       768: {      
+//         slidesPerView:7      
+//       }
+//     }  
+//   });
+// });
 
 let SwiperTop = new Swiper('.wall--top', {
   direction:'vertical',
@@ -337,4 +337,44 @@ let SwiperThird = new Swiper('.wall--third', {
   slidesPerView:'auto',
   allowTouchMove: false,
   disableOnInteraction: true
+});
+
+
+$(document).ready(function () {
+  var mySwipermobile = new Swiper(".testswiper", {
+    effect: 'coverflow',    
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    // grabCursor: true,
+    slideToClickedSlide: true,
+    // autoplay: {
+    //   delay:0,
+    //   disableOnInteraction: true,
+    // },
+    speed: 800,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch:-90,
+      depth:150,
+      modifier:1,
+      slideShadows: false,
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 7
+      },
+      768: {
+        slidesPerView: 7
+      }
+    }
+  });
 });

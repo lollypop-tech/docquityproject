@@ -29,7 +29,7 @@ var swiper = new Swiper('.section07swiper', {
 
 //  Section 10
 
-var swiper = new Swiper(".section10swiper", {
+var swiper = new Swiper(".section100swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,

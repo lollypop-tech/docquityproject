@@ -32,14 +32,15 @@ var swiper = new Swiper(".similarSwiper", {
   }
 });
 
-jQuery(document).ready(function () {
-  jQuery('.play').click(function (event) {
-    event.preventDefault();
-    //var url = $(this).html(); //this will not work	
-    $(".js-video").append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Fx6o45GNX9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-    $(this).hide();
-    //$('video-poster').css('z-index','-1');
-  });
-});
+// jQuery(document).ready(function() {
+//   jQuery('.play').click(function(event){
+//      event.preventDefault();
+//     //var url = $(this).html(); //this will not work	
+//      $(".js-video").append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Fx6o45GNX9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+//     $(this).hide();
+//     //$('video-poster').css('z-index','-1');
+
+//   });
+// });
 
 },{}]},{},[1])//# sourceMappingURL=clientstories-details.js.map

@@ -339,17 +339,14 @@
             margin-top: 0px;
             transform: translateY(-351px);
         }
-
-        .second-slide {
-            position: relative;
-            transform: translateY(20px);
+        .first-slide{
+            img{
+                height: 413px;
+            }
         }
-
-        .third-slide {
-            position: relative;
-            transform: translateY(40px);
+        .scale1{
+            transform: scaleY(1.4);
         }
-
     }
 
 }
@@ -961,7 +958,11 @@
                         position: relative;
                         overflow: hidden;   
                         margin-bottom:10px; 
-                        img{object-fit:scale-down;height: 100%;width: 100%;}
+                        img{
+                            object-fit:scale-down;
+                            height: 100%;
+                            width: 100%;
+                    }
                       }
                   } 
               }  

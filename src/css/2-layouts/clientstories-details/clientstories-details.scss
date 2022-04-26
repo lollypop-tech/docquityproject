@@ -43,7 +43,7 @@
         .author-img {
             width: 4%;
             float: left;
-            margin-right: 5px;
+            margin-right: 13px;
 
             @media(max-width: 767px) {
                 width: 14%;
@@ -128,28 +128,18 @@
             }
         
             .video-poster {
-                background: url(../img/clientstories-details/Container.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                position: absolute;
                 width: 100%;
                 height: 590px;
-        
                 @media(max-width: 767px) {
                     height: 180px;
                 }
-        
             }
         }
         .js-video iframe {
             z-index: 5;
             position: relative;
         }
-
     }
-
-
-  
 }
 
 .clientstories-details {
@@ -158,7 +148,6 @@
     padding: 43px 0px 51px;
     margin-bottom: 40px;
     
-
     @media(min-width: 767px) {
         margin: 0px 20px 0px 20px;
         padding: 87px 0px 44px;
@@ -292,7 +281,6 @@
     }
 
 }
-
 
 .product-section {
     .search-container1 {

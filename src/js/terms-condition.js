@@ -20,19 +20,37 @@ $('body').on('click', '.tab-view-btn', function() {
 
 
 $('body').on('click', '.vertical-tab-list__item', function() {
+
     var $index = $(this).attr('data-index');
-    var eqlist = $(this).parents('.scroll-section').find('.tabs-card').find('.tabs-card__item').eq($index);
+    console.log("index value",$index)
+    var eqlist = $(this).parents('.scroll-section').find('.tabs-card').find('.tabs-card__item').eq($index);   
+    console.log("equity",eqlist)
     $(this).addClass('active');
     $(this).parents('.vertical-tab-list').find('.vertical-tab-list__item').not(this).removeClass('active');    
     $(this).parents('.vertical-tab-item').find('.vertical-tab-list-content__item').removeClass('active');
+    $(this).parents('.scroll-section').find('.tabs-card').find('.content-display').not(this).removeClass('active');
+    $(this).parents('.scroll-section').find('.tabs-card').find('.content-display').eq($index).addClass('active');
     $(this).parents('.vertical-tab-item').find('.vertical-tab-list-content__item').eq($index).addClass('active');
 
     if ($(window).width() < 768) { 
         $(this).addClass('active');
-        $(this).parents('.vertical-tab-item').find('.vertical-tab-list__item').not(this).removeClass('active');
+        // $(this).parents('.vertical-tab-item').find('.vertical-tab-list__item').not(this).removeClass('active');
+        $(this).parents('.tabs-card').find('.content-display').not(this).removeClass('active');
+        $('body').off('scroll mousewheel touchmove');
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 53} ,1500)
+
     }
     $("html, body").animate({ scrollTop: $(eqlist).offset().top-150}, 1500);
 });
+
+// $('body').on('click', '.vertical-tab-list__item', function() {
+//     var $index = $(this).attr('data-index');
+//     console.log("indexes",$index)
+//     var eqlist = $(this).parents('.scroll-section').find('.tabs-card').find('.tabs-card__item').eq($index);
+//     console.log("eqlist",eqlist)
+
+// });
 
 
 $(window).scroll(function(){
@@ -51,3 +69,14 @@ $(window).scroll(function(){
     })
 
 });
+
+
+
+const rightBtn = document.querySelector('.verticalswiper-button-next');
+ 
+rightBtn.addEventListener("click", function(event) {
+ const conent = document.querySelector('.vertical-tab-list');
+ conent.scrollLeft += 200;
+ event.preventDefault();
+});
+

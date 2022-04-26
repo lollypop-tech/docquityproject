@@ -1,39 +1,81 @@
 // section01
 
-.section01 {
+.section011 {
     position: relative;
     background: linear-gradient(180deg, #FFFFFF -6.18%, #FFF4F4 101.72%);
     border-radius: 12px;
 
     @media (min-width: 767px) {
-        padding: 42px 100px 320px;
+        padding: 42px 100px 220px;
         position: relative;
         margin: 0px 15px 250px 15px;
         border-radius: 12px;
     }
 
+    .section011-row{
+        padding: 55px 0px;
+    }
+
+    .newbanner{
+        img{
+            margin-bottom: 15px;
+        }
+        h1{
+            width: 596px;
+            margin: 0 auto;
+            @media (max-width: 766px) {
+                width: 100%;
+            }
+        }
+        p{
+            width: 508px;
+            margin: 26px auto;
+            @media (max-width: 766px) {
+                width: 100%;
+            }
+        }
+    }
+
     .banner-img-btm{
         margin-bottom: 145px;
+        @media (max-width: 766px) {
+            margin-bottom: 0px;
+        }
     }
     .btn01{
         margin-bottom: 25px;
+        @media (min-width: 767px) {
+            margin-bottom: 0px;
+        }
     }
 
     .banner-img {
         position: relative;
+        display: flex;
+        justify-content: center;
         @media (min-width: 767px) {
             position: absolute;
             width: 100%;
             left: 0px;
         }
         img{
-            height: 682px;
+            margin-top: 64px;
+            @media (min-width: 767px) {
+                height: 682px;
+                width: 1174px !important;
+            }
         }
     }
 }
 
-// section04
-.section04{
+//section020
+
+.section020{
+    padding-top: 150px;
+}
+
+// section040
+.section040{
     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     border-radius: 12px;   
     @media(max-width: 766px) {
@@ -93,7 +135,7 @@
 // section06
 
 
-.section06{
+.section060{
     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     border-radius: 12px;   
     @media(max-width: 766px) {
@@ -294,7 +336,7 @@
 }
 
 //section 10
-.section10{
+.section100{
     background: linear-gradient(180deg, #FFFFFF 0%, #FEFAF6 33.02%);
     border-radius: 12px;
     margin: 0px 15px 15px 15px;
@@ -305,20 +347,20 @@
         padding: 40px 0px 61px;
     }
 
-    .section10-desktop {
+    .section100-desktop {
         @media(max-width: 767px) {
             padding-top: 80px;
         }
     }
     
-    .section10-mobile {
+    .section100-mobile {
         @media(max-width: 768px) {
             position: relative;
             transform: translateY(-220px);
         }
     }
 
-    .section10swiper{
+    .section100swiper{
         width: 100%;             
         margin-top: 80px;         
         .swiper-slide {
@@ -420,6 +462,7 @@
                 @media (max-width: 766px) {
                     width: 100%;
                     margin-right: 0px;
+                    padding: 0 20px;
                 }
     
                 img {
@@ -437,7 +480,7 @@
     
                 @media (max-width: 766px) {
                     width: 100%;
-                    padding: 40px 8px;
+                    padding: 40px 10px;
                 }
     
                 .slide-icon {
@@ -455,8 +498,219 @@
     background: #ffffff;
     border-radius: 12px;
     margin: 0px 12px 0px 12px;
+    padding: 80px 4px;
     @media (min-width: 768px) {
         padding: 164px 0px 220px;
         margin: 0px 20px 0px 20px;
+    }
+}
+
+.docquityclinicsection {
+    background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+    margin       : 0px 15px;
+    border-radius: 12px;
+    position     : relative;
+    padding      : 88px 0px 37px;
+
+    @media(min-width: 767px) {
+        padding: 64px 40px 53px 80px;
+    }
+    .docquityclinictabsection{    
+        @media(max-width: 767px) {
+        display: none;
+        }
+        .nav-tabs{
+            border:none;
+            display: block;
+            width: 90%;
+            .nav-item{
+                text-align: left;
+                padding: 0px;
+                border: none;
+            }                     
+        }        
+        .nav-link.active {
+           background-color:#b1cbcf33!important;
+           border-radius: 24px;
+           .whyusedocquity-card {
+            height: auto;
+            width: 100%;
+            display: block;
+           }
+           .whyusedocquity-text{
+               p{
+                   padding-left: 72px;
+               }
+           }
+        }
+    } 
+    
+    .whyusedocquity-card {
+        height: 120px;
+        display: block;
+        line-height: 28px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        cursor: pointer;   
+        // padding: 18px 32px ;
+        padding: 16px 30px ;   
+        @media(max-width: 767px) {
+            padding: 0px 0px;
+        }
+        .whyusedocquity-div {
+            @media(min-width: 767px) {
+                display: none;
+            }
+        }
+        .whyusedocquity-img {
+            height: 100%;
+            margin-right: 25px;
+            float: left;
+            @media(max-width: 767px) {
+                float: none;
+                }
+        }       
+    }    
+    .whyusedocquity-row {
+        @media(min-width: 767px) {
+                    display: none;
+        }
+        @media(max-width: 767px) {
+            display: block;
+        }
+        // whyusedocquity-swiper
+        .whyusedocquitySwiper{
+            width: 100%;
+            max-height: 544px;
+            padding-left: 45px;
+            margin-top: 30px;
+            @media(max-width: 767px) {
+                max-height  :665px;
+                padding-left: 25px;
+                padding-bottom: 55px;
+            }
+            .swiper-slide {
+                display: flex;                            
+            }
+            .swiper-pagination-bullets {                
+                @media(max-width: 767px) {
+                    display: none;
+                }              
+            }
+            .swiper-button-prev,.swiper-button-next{
+                top: 92%;
+                background: #b1cbcf5e;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #B1CBCF;
+                border-radius: 20px;
+                &:hover{
+                    background: #1B4A52;
+                    border: 1px solid  #1B4A52;
+                    .arr{
+                        fill:#fff;
+                    }
+                }
+
+                &::after{content:none;}
+                @media(min-width: 767px) {
+                   display: none;
+                }
+            }
+            .swiper-button-next{                 
+                right: 110px;                
+                transform: rotate(180deg); 
+            }
+           .swiper-button-prev{               
+                left: 110px;    
+            }
+        }
+    }
+}
+
+
+//clinic page
+.clinicdocquity-section{    
+    position     : relative;
+    padding      : 88px 0px 37px;  
+    margin-bottom: 100px;  
+    @media(min-width: 767px) {
+        padding: 64px 40px 53px 80px;
+        margin-bottom: 100px; 
+    }
+    .clinicdocquitytabsection{    
+        @media(max-width: 767px) {
+        display: none;
+        }
+        .nav{
+            border-left: 2px solid #eee; 
+            display: block;
+                    
+        } 
+        .nav-tabs{
+            border-bottom: none!important;
+        }   
+        .nav-link {
+            padding: 15px 15px 15px 15px;   
+            text-align:left;         
+            cursor: pointer;
+            color: #1D1919;
+            position: relative;
+            margin-bottom: 5px;
+            border:none;  
+            font-weight: 400;         
+            @media (min-width: 768px) {
+                padding: 10px 20px;
+            }
+            @media (min-width: 1200px) {
+                padding: 10px 0px 10px 15px;
+            }
+        
+            &.active {
+                color:#1B4A52;
+                font-weight: 800;                 
+                .light{
+                    background: #1B4A52;
+                    width: 5px;
+                    height: 100%;
+                    top: 0;
+                    position: absolute;
+                    left: -4px;
+                    border-radius: 5px;
+                }           
+            }
+            &:hover {
+                color: #1B4A52;
+            }
+        }   
+       
+        .clinicrighttabs{            
+            background-image: url(../img/docquityclinic/clinicback.svg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 24px;
+            position: relative;
+            transform: translateY(30px);
+            text-align: center;
+            padding: 0px 55px 0px 55px;
+            .clinicdocquity-img {
+                width: 100%;               
+                position: relative;
+                transform: translateY(-30px);
+                img{margin-bottom: 30px;}
+            }
+        }
+    } 
+   
+    .clinicdocquity-row  {
+        @media(min-width: 767px) {
+                    display: none;
+        }
+        @media(max-width: 767px) {
+            display: block;
+        }
     }
 }
