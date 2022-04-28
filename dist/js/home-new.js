@@ -121,49 +121,49 @@ $(document).ready(function () {
 
 // why use docquity
 
-var swiper = new Swiper(".whyusedocquitySwiper", {
-  direction: "horizontal",
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  spaceBetween: 25,
-  grabCursor: true,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  breakpoints: {
-    767: {
-      direction: "vertical",
-      slidesPerView: 2
-    },
-    768: {
-      direction: "vertical",
-      slidesPerView: 2
-    }
-  }
-});
+// var swiper = new Swiper(".whyusedocquitySwiper", {
+//   direction: "horizontal",
+//   slidesPerView: 1,
+//   slidesPerGroup: 1,
+//   spaceBetween: 25,
+//   grabCursor: true,
+//   loop: true,
+//   autoplay: {
+//     delay: 2000,
+//     disableOnInteraction: false,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {
+//     767: {
+//       direction: "vertical",
+//       slidesPerView: 2,
+//     },
+//     768: {
+//       direction: "vertical",
+//       slidesPerView: 2,
+//     },
+//   },
+// });
 
-// why use docquity hover
-var $boxes1 = $(".whyusedocquity-right-img"),
-    $productLinks1 = $(".whyusedocquity-card").mouseover(function () {
-  $boxes1.removeClass("active").filter("#useBox" + this.id).addClass("active");
-});
+// // why use docquity hover
+// var $boxes1 = $(".whyusedocquity-right-img"),
+//     $productLinks1 = $(".whyusedocquity-card").mouseover(function () {
+//   $boxes1.removeClass("active").filter("#useBox" + this.id).addClass("active");
+// });
 
-$(document).ready(function () {
-  $(".whyusedocquity-card").hover(function () {
-    $(".whyusedocquity-card").not(this).removeClass("active").addClass("inactive");
-    $(this).addClass("active").removeClass("inactive");
-  });
-});
+// $(document).ready(function () {
+//   $(".whyusedocquity-card").hover(function () {
+//     $(".whyusedocquity-card").not(this).removeClass("active").addClass("inactive");
+//     $(this).addClass("active").removeClass("inactive");
+//   });
+// });
 
 // why docquity offers
 var $boxes = $(".dq-mobile-credit"),
@@ -272,10 +272,10 @@ var swiper = new Swiper(".homeleadershipSwiper", {
 //     centeredSlides: true,        
 //     loop: true,
 //     // autoplay: {
-//     //   delay:0,
+//     //   delay:395,
 //     //   disableOnInteraction: true,
 //     // },
-//     speed: 800,      
+//     speed: 2600,      
 //     pagination: {
 //       el: ".swiper-pagination",
 //       clickable: true,
@@ -299,9 +299,9 @@ var SwiperTop = new Swiper('.wall--top', {
   direction: 'vertical',
   spaceBetween: 0,
   centeredSlides: true,
-  speed: 8000,
+  speed: 2600,
   autoplay: {
-    delay: 1
+    delay: 395
   },
   loop: true,
   slidesPerView: 'auto',
@@ -313,9 +313,9 @@ var SwiperBottom = new Swiper('.wall--bottom', {
   direction: 'vertical',
   spaceBetween: 0,
   centeredSlides: true,
-  speed: 8000,
+  speed: 2600,
   autoplay: {
-    delay: 1,
+    delay: 395,
     reverseDirection: true
   },
   loop: true,
@@ -328,9 +328,9 @@ var SwiperThird = new Swiper('.wall--third', {
   direction: 'vertical',
   spaceBetween: 0,
   centeredSlides: true,
-  speed: 8000,
+  speed: 2600,
   autoplay: {
-    delay: 1
+    delay: 395
   },
   loop: true,
   slidesPerView: 'auto',
@@ -376,5 +376,121 @@ $(document).ready(function () {
     }
   });
 });
+
+var swiper = new Swiper(".whyusedocquitySwiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 25,
+  grabCursor: true,
+  loop: true,
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    767: {
+      direction: "vertical",
+      slidesPerView: 3,
+      spaceBetween: 0
+    },
+    768: {
+      direction: "vertical",
+      slidesPerView: 3,
+      spaceBetween: 0
+    }
+  }
+});
+
+// why use docquity hover
+var $boxes1 = $(".whyusedocquity-right-img"),
+    $productLinks1 = $(".whyusedocquity-card").click(function () {
+  $boxes1.removeClass("active").filter("#useBox" + this.id).addClass("active");
+});
+
+$(document).ready(function () {
+  $(".whyusedocquity-card").onclick(function () {
+    $(".whyusedocquity-card").not(this).removeClass("active").addClass("inactive");
+    $(this).addClass("active").removeClass("inactive");
+  });
+});
+
+// let SwiperTop= new Swiper('.wall--top1', {
+//   direction:'vertical',
+//   spaceBetween: 0,
+//   centeredSlides: true,
+//   speed: 2600,
+//   autoplay: {
+//     delay: 395,
+//     disableOnInteraction: false,  
+//     // pauseOnMouseEnter: true 
+//   },
+//   loop: true,
+//   slidesPerView:'auto',
+//   allowTouchMove: false,
+//   disableOnInteraction: true
+
+// });
+// $('.wall--top1').on('mouseenter', function(e){
+//   console.log('stop autoplay');
+//   SwiperTop.autoplay.stop();
+// })
+// $('.wall--top1').on('mouseleave', function(e){
+//   console.log('start autoplay');
+//   SwiperTop.autoplay.start();
+// })
+
+// let SwiperBottom = new Swiper('.wall--top2', {
+//   direction:'vertical',
+//   spaceBetween: 0,
+//   centeredSlides: true,
+//   speed: 2600,
+//   autoplay: {
+//     delay: 395,
+//     reverseDirection: true
+//   },
+//   loop: true,
+//   // loopedSlides: 4,
+//   slidesPerView:'auto',
+//   allowTouchMove: false,
+//   disableOnInteraction: true
+// });
+// $('.wall--top2').on('mouseenter', function(e){
+//   console.log('stop autoplay');
+//   SwiperBottom.autoplay.stop();
+// })
+// $('.wall--top2').on('mouseleave', function(e){
+//   console.log('start autoplay');
+//   SwiperBottom.autoplay.start();
+// })
+// let SwiperThird = new Swiper('.wall--top3', {
+//   direction:'vertical',
+//   spaceBetween: 0,
+//   centeredSlides: true,
+//   speed: 2600,
+//   autoplay: {
+//     delay: 395,
+//   },
+//   loop: true,
+//   slidesPerView:'auto',
+//   allowTouchMove: false,
+//   disableOnInteraction: true
+// });
+// $('.wall--top3').on('mouseenter', function(e){
+//   console.log('stop autoplay');
+//   SwiperThird.autoplay.stop();
+// })
+// $('.wall--top3').on('mouseleave', function(e){
+//   console.log('start autoplay');
+//   SwiperThird.autoplay.start();
+// })
 
 },{}]},{},[1])//# sourceMappingURL=home-new.js.map

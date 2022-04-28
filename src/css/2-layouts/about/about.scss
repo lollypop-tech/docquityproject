@@ -6,8 +6,13 @@
     @media (min-width: 767px) {
         padding: 42px 100px 320px;
         position: relative;
-        margin: 0px 15px 250px 15px;
+        margin: 0px 15px 205px;
         border-radius: 12px;
+    }
+    .newbanner{
+        .para{
+            margin-bottom: 50px;
+        }
     }
 
     .banner-img {
@@ -26,7 +31,12 @@
 
     @media (min-width: 767px) {
         position: relative;
-        padding: 150px 0 75px;
+        padding: 100px 0 0px;
+        margin-bottom: 50px;
+    }
+
+    .para-text{
+        margin-bottom: 25px;
     }
 
     #nav-tab {
@@ -66,7 +76,7 @@
     }
 
     .brand-slider-tabpane {
-        margin-top: 60px;
+        padding-top: 50px;
 
         @media(max-width: 767px) {
             margin-top: 41px;
@@ -107,7 +117,7 @@
     position: relative;
 
     @media (min-width: 767px) {
-        padding: 146px 100px 146px;
+        padding: 100px 100px 0px;
         position: relative;
     }
     .vision-img{
@@ -144,6 +154,9 @@
 
             .mission-text {
                 padding-right: 115px;
+                .para{
+                    margin-bottom: 40px;
+                }
 
                 @media (max-width: 767px) {
                     padding-right: 0px;
@@ -195,7 +208,7 @@
     padding: 88px 0px 37px;
 
     @media(min-width: 767px) {
-        padding: 92px 100px 205px;
+        padding: 100px 100px 150px;
     }
 
     .builder-row {
@@ -229,7 +242,7 @@
                 }
 
                 .builder-img {
-                    margin-bottom: 27px;
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -274,8 +287,7 @@
                 @media (max-width: 767px) {
                     width: 100%;
                 }
-                margin: auto;
-                margin-top: 75px;
+                margin: 0px auto auto;
                 img{
                     border-radius: 24px;
                 }
@@ -330,13 +342,14 @@
     }
 
     .support-list {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .our-team {
         position: relative;
         // margin-top: 100px;
-        margin-top: 60px;
+        // margin-top: 60px;
+        margin-top: 35px;
         text-align: center;
 
         &:hover {
@@ -349,7 +362,8 @@
             width: 100%;
             position: absolute;
             z-index: 1;
-            top: -83px;
+            // top: -83px;
+            top: -51px;
         }
 
         .name {
@@ -361,17 +375,22 @@
         }
 
         .my-image {
-            width: 297px;
-            height: 378px;
+            // width: 297px;
+            // height: 378px;
+            width: 250px;
+            height: 300px;
         }
 
         .team-image {
             position: relative;
-            border-radius: 200px;
-            height: 295.83px;
-            width: 297px;
+            // border-radius: 200px;
+            // height: 295.83px;
+            // width: 297px;
             overflow: hidden;
             margin: auto;
+            width: 255px;
+            height: 250px;
+            border-radius: 100%;
         }
 
         .bg1 {
@@ -412,15 +431,18 @@
         .team-social {
             background: #1B4A52;
             backdrop-filter: blur(148px);
-            border-radius: 200px;
+            // border-radius: 200px;
             height: 0px;
-            width: 297px;
-            border-radius: 250px;
+            // width: 297px;
+            // border-radius: 250px;
             position: absolute;
-            bottom: -180px;
+            // bottom: -180px;
             z-index: 2;
             transition: all 0.5s ease 0s;
             cursor: pointer;
+            width: 260px;
+            border-radius: 260px;
+            bottom: -150px;
         }
     }
 
@@ -428,6 +450,9 @@
         @media(max-width: 768px) {
             position: relative;
             transform: translateY(540px);
+        }
+        .para-to{
+            margin-bottom: 30px;
         }
     }
 
@@ -444,7 +469,7 @@
     padding: 80px 0px 84px;
 
     @media(min-width: 768px) {
-        padding: 130px 0px 130px;
+        padding: 100px 0px 100px;
     }
 
     .opportunity__head {
@@ -556,6 +581,15 @@
         @media(max-width: 767px) {
             margin-top: 56px;
         }
+        h2{
+            margin-bottom: 30px;
+        }
+        .para-talk{
+            margin-bottom: 30px;
+        }
+        .para-ok{
+            margin-bottom: 32px;
+        }
     }
 }
 
@@ -570,7 +604,9 @@
     padding: 56px 0px 113px;
 
     @media(min-width: 767px) {
-        padding: 56px 0px 92px;
+        padding: 100px 0px 100px;
+
+
     }
     // .section02{
     //     background: red !important;
@@ -653,7 +689,7 @@
     border-radius: 12px;
     margin: 0px 15px 0px 15px;
     @media (min-width: 767px) {
-        padding: 100px 0px 70px;
+        padding: 100px 0px 50px;
         
     }
 
@@ -955,8 +991,7 @@
         color: #fff;
         background: #007aff;
     }
-}
-// new map
+}// new map
 
 #image-map2{
     @media (max-width: 766px) {
@@ -968,12 +1003,13 @@
         overflow: hidden;
         position: absolute;
         width: 220px;
-        height: 68px;
+        height: 64px;
             .hotspot-img{
-                width: 75px;
-                height: 75px;
+                width: 70px;
+                height: 70px;
                 position: relative;
                 z-index: 9;
+                left: -3px;
                 img{
                     height: 100%;
                 }
@@ -1015,7 +1051,7 @@
 {
 
   width: 100%;
-  padding: 5px 20px 0 85px;
+  padding: 2px 20px 0 85px;
   z-index: 99;
   opacity: 1;
     
@@ -1023,78 +1059,151 @@
 
 #image-map2 #spot-1
 {
-    left: 27rem;
-    top: 9.5rem;
+    left: 23.9rem;
+    top: 8.7rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 35rem;
+        top: 11.5rem;
+    }
+    @media(min-width: 1440px) and (max-width: 1440px){
+        left: 25.9rem;
+        top: 8.7rem;
+    }
 }
 
 #image-map2 #spot-2
 {
-    left: 27rem;
-    top: 24rem;
+    left: 24.2rem;
+    top: 22rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 35.2rem;
+        top: 32rem;
+    }
+    @media(min-width: 1440px) and (max-width: 1440px){
+        left: 25.8rem;
+        top: 23rem;
+    }
 }
 
 #image-map2 #spot-3
 {
-    left: 46.7rem;
-    top: 23.8rem;
-    @media (max-width: 766px) {
-        display: none;
-     } 
-}
-#image-map2 #spot-4
-{
-    left: 51.8rem;
+    left: 42.7rem;
     top: 21.8rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 61.4rem;
+        top: 32.8rem;
+    }
+    @media(min-width: 1440px) and (max-width: 1440px){
+        left: 45.7rem;
+        top: 22.8rem;
+    }
+        
+}
+#image-map2 #spot-4
+{
+    left: 46.8rem;
+    top: 19.8rem;
+    @media (max-width: 766px) {
+        display: none;
+     } 
+     @media  screen and (min-width: 1920px) {
+        left: 66.8rem;
+        top: 27.8rem;
+     }
+     @media(min-width: 1440px) and (max-width: 1440px){
+        left: 49.8rem;
+        top: 19.8rem;
+    }
 }
 #image-map2 #spot-5
 {
-    left: 48.4rem;
-    top: 30.6rem;
+    left: 43.2rem;
+    top: 27.2rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 61.6rem;
+        top: 39.1rem;
+     }
+     @media(min-width: 1440px) and (max-width: 1440px){
+        left: 45.9rem;
+        top: 29.2rem;
+    }
 }
 #image-map2 #spot-6
 {
-    left: 51.3rem;
-    top: 34.4rem;
+    left: 45.3rem;
+    top: 31.1rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 65.3rem;
+        top: 46.1rem;
+     }
+     @media(min-width: 1440px) and (max-width: 1440px){
+        left: 48.3rem;
+        top: 33.1rem;
+    }
 }
 #image-map2 #spot-7
 {
-    left: 55rem;
-    top: 42.4rem;
+    left: 49rem;
+    top: 38.1rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 70rem;
+        top: 56.1rem;
+     }
+     @media(min-width: 1440px) and (max-width: 1440px){
+        left: 53rem;
+        top: 41.1rem;
+    }
 }
 #image-map2 #spot-8
 {
-    left: 67rem;
-    top: 22.1rem;
+    left: 60rem;
+    top: 20.8rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 85rem;
+        top: 29.8rem;
+    }
+    @media(min-width: 1440px) and (max-width: 1440px){
+        left: 63rem;
+        top: 21.8rem;
+    }
 }
 
 #image-map2 #spot-9
 {
-    left: 66.7rem;
-    top: 13.7rem;
+    left: 58.8rem;
+    top: 12.6rem;
     @media (max-width: 766px) {
         display: none;
      } 
+     @media  screen and (min-width: 1920px) {
+        left: 84.8rem;
+        top: 19.6rem;
+    }
+    @media(min-width: 1440px) and (max-width: 1440px){
+        left: 62.8rem;
+        top: 13.6rem;
+    }
 }
 
 .mobilemap{

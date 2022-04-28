@@ -1,28 +1,58 @@
+// var swiper = new Swiper('.diverseSwiper', {
+//   direction: 'vertical',
+//   slidesPerView:3,
+//   slidesPerGroup: 1,
+//   spaceBetween:20,
+//   grabCursor: true,
+//   loop: true,
+//   // autoplay: {
+//   //   delay: 2000,
+//   //   disableOnInteraction: false,
+//   // },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     767: {
+//       slidesPerView:3,
+//       slidesPerGroup: 1, 
+//       spaceBetween:10,
+//     },
+//     768: {
+//       slidesPerView:2,
+//       slidesPerGroup: 1, 
+//       spaceBetween:10,      
+//     }
+//   }  
+// });
+
+
 var swiper = new Swiper('.diverseSwiper', {
   direction: 'vertical',
-  slidesPerView:3,
+  slidesPerView:2,
   slidesPerGroup: 1,
-  spaceBetween:20,
+  spaceBetween:0,
   grabCursor: true,
   loop: true,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
   breakpoints: {
     767: {
-      slidesPerView:3,
+      slidesPerView:2,
       slidesPerGroup: 1, 
-      spaceBetween:10,
+      spaceBetween:0,
     },
     768: {
       slidesPerView:2,
       slidesPerGroup: 1, 
-      spaceBetween:10,      
+      spaceBetween:0,      
     }
   }  
 });
@@ -191,3 +221,8 @@ let SwiperThird = new Swiper('.swiper--third', {
   allowTouchMove: false,
   disableOnInteraction: true
 });
+
+
+
+
+//https://github.com/OwlCarousel2/OwlCarousel2/issues/1471

@@ -20,11 +20,11 @@ header .nav {
 }
 
 .home{
-    header .nav {  
+    header .nav {
         @media (min-width: 993px) {
             transform : translateY(0);
             transition: transform 0.5s ease-in-out;
-            padding   : 52px 100px;
+            padding   : 25px 60px;
         }
     }
 }

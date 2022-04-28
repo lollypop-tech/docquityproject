@@ -1,31 +1,61 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
+// var swiper = new Swiper('.diverseSwiper', {
+//   direction: 'vertical',
+//   slidesPerView:3,
+//   slidesPerGroup: 1,
+//   spaceBetween:20,
+//   grabCursor: true,
+//   loop: true,
+//   // autoplay: {
+//   //   delay: 2000,
+//   //   disableOnInteraction: false,
+//   // },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     767: {
+//       slidesPerView:3,
+//       slidesPerGroup: 1, 
+//       spaceBetween:10,
+//     },
+//     768: {
+//       slidesPerView:2,
+//       slidesPerGroup: 1, 
+//       spaceBetween:10,      
+//     }
+//   }  
+// });
+
+
 var swiper = new Swiper('.diverseSwiper', {
   direction: 'vertical',
-  slidesPerView: 3,
+  slidesPerView: 2,
   slidesPerGroup: 1,
-  spaceBetween: 20,
+  spaceBetween: 0,
   grabCursor: true,
   loop: true,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
   },
   breakpoints: {
     767: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 10
+      spaceBetween: 0
     },
     768: {
       slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 10
+      spaceBetween: 0
     }
   }
 });
@@ -189,5 +219,7 @@ var SwiperThird = new Swiper('.swiper--third', {
   allowTouchMove: false,
   disableOnInteraction: true
 });
+
+//https://github.com/OwlCarousel2/OwlCarousel2/issues/1471
 
 },{}]},{},[1])//# sourceMappingURL=career.js.map

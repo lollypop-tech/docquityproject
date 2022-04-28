@@ -122,61 +122,8 @@
 }
 
 
-
-.investor-section{
+.section02 {
     background: #ffffff !important;
-    @media(max-width: 767px) {
-        padding: 56px 0 40px !important;
-    }
-    .section02 {
-        background: #ffffff !important;
-        @media(max-width: 767px) {
-            padding: 6px 0 20px !important;
-        }
-
-        .investor-icons {
-            margin-top: 84px;
-            padding-bottom: 55px;
-            position: relative;
-            overflow: hidden;
-    
-            @media(max-width: 767px) {
-                margin-top: 36px;
-            }
-    
-            &::after {
-                position: absolute;
-                content: "";
-                top: -105%;
-                width: 240px;
-                height: 300px;
-                z-index: 9;
-                left: -20px;
-                background: linear-gradient(180deg, #FFFFFF 22.43%, rgba(255, 255, 255, 0) 91.36%);
-                transform: rotate(-90deg);
-    
-                @media(max-width: 767px) {
-                    content: none;
-                }
-            }
-    
-            &::before {
-                position: absolute;
-                content: "";
-                top: -105%;
-                width: 240px;
-                height: 300px;
-                z-index: 9;
-                right: -20px;
-                background: linear-gradient(180deg, #FFFFFF 22.43%, rgba(255, 255, 255, 0) 91.36%);
-                transform: matrix(0, -1, -1, 0, 0, 0);
-    
-                @media(max-width: 767px) {
-                    content: none;
-                }
-            }
-        }
-    }
 }
 
 
@@ -821,15 +768,15 @@
 }
 }
 
-.product-section{
-    background: linear-gradient(176.06deg, #FFFFFF -19.33%, #FEFAF6 47.28%);
-    border-radius: 12px;
-    margin: 0px 12px 0px 12px;
-    @media (min-width: 768px) {
-        padding: 164px 0px 220px;
-        margin: 0px 20px 0px 20px;
-    }
-}
+// .product-section{
+//     background: linear-gradient(176.06deg, #FFFFFF -19.33%, #FEFAF6 47.28%);
+//     border-radius: 12px;
+//     margin: 0px 12px 0px 12px;
+//     @media (min-width: 768px) {
+//         padding: 164px 0px 220px;
+//         margin: 0px 20px 0px 20px;
+//     }
+// }
 
 .section03 {
     background: #1B4A52;

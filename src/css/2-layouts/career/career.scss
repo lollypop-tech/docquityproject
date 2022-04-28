@@ -229,7 +229,7 @@
     position: relative;
 
     @media (min-width: 768px) {
-        padding: 127px 0px 131px;
+        padding: 100px 0px 100px;
     }
 
     .region-cardlist {
@@ -307,7 +307,7 @@
         padding: 62px 0px 0px;
 
         @media (min-width: 768px) {
-            padding: 140px 60px 165px;
+            padding: 165px 60px 165px;
             text-align: left;
         }
     }
@@ -355,7 +355,7 @@
     padding: 80px 15px;
 
     @media(min-width: 767px) {
-        padding: 130px 0px 105px;
+        padding: 100px 0px 50px;
     }
 
     .support-list {
@@ -496,51 +496,153 @@
 
 
 
+// .diverse-section {
+//     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+//     margin: 0px 15px;
+//     border-radius: 12px;
+//     position: relative;
+
+//     @media(min-width: 767px) {
+//         padding: 100px 0px 0px;
+//     }
+//     .diverse-row{
+//         padding-bottom: 35px;
+//     }
+
+//     // diverse-swiper
+//     .swiper {
+//         width: 100%;
+//         // max-height: 800px;
+        
+//         padding-left: 45px;
+//         @media(min-width:1202px) {
+//             max-height:510px;
+//         }
+
+//         @media(max-width: 767px) {
+//             max-height: 700px;
+//             padding-left: 0;
+//             padding-bottom: 20px;
+//         }
+//     }
+
+//     .swiper-slide {
+//         display: flex;
+//         &:nth-child(odd){
+//             @media(max-width: 767px) {
+//                 background: #b1cbcf33;
+//                 border-radius: 20px;
+//             }
+            
+//         }
+//     }
+
+//     .swiper-pagination-bullets {
+//         right: inherit;
+//         left: 0px;
+//         top: 30% !important;
+//         height: 65px;
+
+//         @media(max-width: 767px) {
+//             transform: rotate(-90deg) !important;
+//             left: 105px;
+//             top: 91% !important;
+//             height: 58px;
+//             width: 40px;
+//             z-index: 9;
+//         }
+
+//         .swiper-pagination-bullet {
+//             // display: none !important;
+//             margin: 10px 0px !important;
+
+//             @media(max-width: 767px) {
+//                 height: 20px;
+//                 width: 3px;
+//                 border-radius: 4px;
+//             }
+//         }
+
+//         .swiper-pagination-bullet-active {
+//             background: #1B4A52 !important;
+//         }
+//     }
+
+//     .diverse-card {
+//         padding: 15px 35px;
+//         transition: all 0.3s ease 0s;
+
+//         @media(max-width: 767px) {
+//             padding:25px 15px;
+//         }
+
+//         .diverse-div {
+//             .diverse-img {
+//                 float: left;
+//                 margin-right: 16px;
+//             }
+
+//             .diverse-text {
+//                 display: table;
+//                 padding-top: 5px;
+//             }
+
+//         }
+
+//         &:hover {
+//             background: #b1cbcf33;
+//             border-radius: 24px;
+//         }        
+//     }
+
+//     .diverse-right {
+//         // background-image: url(../img/career/diverse-back.png);
+//         // background-repeat: no-repeat;
+//         // background-size: contain;
+//         // background-position: bottom;
+
+//         .diverse-right-img {
+//             width: 55%;
+//             margin: 0px auto;
+//         }
+//     }
+// }
+
+
 .diverse-section {
     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     margin: 0px 15px;
     border-radius: 12px;
     position: relative;
-
     @media(min-width: 767px) {
         padding: 80px 0px 0px;
     }
-    .diverse-row{
-        padding-bottom: 35px;
-    }
-
     // diverse-swiper
     .swiper {
-        width: 100%;
-        // max-height: 800px;
-        
-        padding-left: 45px;
+        width: 100%;        
+        padding-left: 25px;
         @media(min-width:1202px) {
-            max-height:510px;
+            max-height:455px;
         }
-
         @media(max-width: 767px) {
             max-height: 700px;
             padding-left: 0;
             padding-bottom: 20px;
         }
     }
-
-    .swiper-slide {
-        display: flex;
+    .swiper-slide {   
+        height: auto;     
         &:nth-child(odd){
             @media(max-width: 767px) {
                 background: #b1cbcf33;
                 border-radius: 20px;
-            }
-            
+            }            
         }
     }
-
     .swiper-pagination-bullets {
         right: inherit;
         left: 0px;
-        top: 30% !important;
+        top: 50% !important;
         height: 65px;
 
         @media(max-width: 767px) {
@@ -551,9 +653,7 @@
             width: 40px;
             z-index: 9;
         }
-
         .swiper-pagination-bullet {
-            // display: none !important;
             margin: 10px 0px !important;
 
             @media(max-width: 767px) {
@@ -569,9 +669,20 @@
     }
 
     .diverse-card {
-        padding: 15px 35px;
+        padding: 25px 35px;
         transition: all 0.3s ease 0s;
-
+        .desc{
+            display: -webkit-box;
+            max-width: 100%;
+            height:75px;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            margin-bottom: 5px;
+            line-height: 25px;
+        }
         @media(max-width: 767px) {
             padding:25px 15px;
         }
@@ -581,38 +692,31 @@
                 float: left;
                 margin-right: 16px;
             }
-
             .diverse-text {
                 display: table;
                 padding-top: 5px;
             }
-
         }
-
         &:hover {
             background: #b1cbcf33;
             border-radius: 24px;
         }        
     }
 
-    .diverse-right {
-        // background-image: url(../img/career/diverse-back.png);
-        // background-repeat: no-repeat;
-        // background-size: contain;
-        // background-position: bottom;
-
+    .diverse-right {       
         .diverse-right-img {
-            width: 55%;
+            width: 57%;
             margin: 0px auto;
         }
     }
 }
 
+
 .review-section {
     padding: 121px 15px 85px;
 
     @media(min-width: 767px) {
-        padding: 136px 0px 136px;
+        padding: 100px 0px 50px;
     }
 
     .star-div {
@@ -647,7 +751,7 @@
 
     .review-list {
         display: inline-block;
-        margin-bottom: 64px;
+        margin-bottom: 50px;
 
         @media(max-width: 767px) {
             margin-bottom: 0px;
@@ -689,13 +793,13 @@
     border-radius: 12px;
 
     @media(min-width: 767px) {
-        padding: 76px 0px 64px;
+        padding: 50px 0px 100px;
     }
 
     .search-container {
         width: 66%;
         display: block;
-        margin: 40px auto 64px;
+        margin: 40px auto 50px;
         position: relative;
 
         @media(max-width: 767px) {
@@ -889,7 +993,7 @@
     padding: 94px 15px 84px;
 
     @media(min-width: 767px) {
-        padding: 130px 0px 137px;
+        padding: 100px 0px 100px;
     }
 
     .visit-btn {

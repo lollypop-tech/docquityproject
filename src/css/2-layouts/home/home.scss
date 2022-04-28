@@ -1,6 +1,6 @@
 .dq-home-banner {
-    margin: 20px 20px 0px;
-    padding-top: 7rem;
+    // margin: 20px 20px 0px;
+    padding-top: 8rem;
     @media(min-width: 992px) and (max-width: 1400px) {
         padding-top: 85px;
     }
@@ -72,6 +72,7 @@
         }
     }
     .banner-sub{ 
+        margin: 100px 0px;
         @media(max-width: 767px) {
             background: #ffffff;
            }
@@ -96,9 +97,9 @@
 
 .dq-rating-wrap {
     padding-top: 50px;
-    @media(min-width: 992px) and (max-width: 1300px) {
-        padding-top: 20px;
-    }
+    // @media(min-width: 992px) and (max-width: 1300px) {
+    //     padding-top: 20px;
+    // }
 }
 .dq-playstore-group{
     @media(max-width: 767px) {
@@ -131,6 +132,8 @@
     @extend .fnt-lex;
     color  : #1D1919;
     display: inline-block;
+    margin-bottom: 50px !important;
+    margin-top: -5px !important;
 }
 
 .dq-apptext {
@@ -186,47 +189,33 @@
     display    : block;
 }
 
-.dq-webinar-fig{
-    position: relative;
-    .ellipse{
-        position: absolute;
-        z-index: -1;
-        left: 85px;
-        bottom: 58px;
-        @media(min-width: 992px) and (max-width: 1300px) {
-            bottom: -38px;
-            left: -20px;
-        }
-        @media(max-width: 766px) {
-            width: 337px;
-            height: 337px;
-            left: 0;
-            bottom: -16px;
-        }
-    }
-    .fig-img{
-        z-index: 1;
-        @media(min-width: 992px) and (max-width: 1300px) {
-            margin-left: -10px;
-        }
-    }
-
-}
-
 // Interactive webinar
 
-
 .liveInteractive{
+    margin: 100px 0px;
     @media(max-width: 766px) {
         margin-bottom: 88px;
         margin-top: 175px;
     }
 
+    .dq-webinar-fig{
+        position: relative;
+        width: 100%;
+    }
+    .dq-webinar-fig2{
+        position: absolute;
+        width: 100%;
+        top:0px;
+        transform: translateY(50px);
+        left: 0px;
+        @media(max-width: 766px) {
+                    transform: translateY(20px);
+            }
+    }
 .dq-webinar-article {
     border-bottom : 1px solid #EEEEEE;
     padding-bottom: 2.5rem;
-    margin-bottom : 2rem;
-    margin-top: 70px;
+    margin-bottom : 2rem;  
 
     @media(max-width: 766px) {
         border-bottom: none;
@@ -245,10 +234,8 @@
 // Why docuqity
 
 .dq-whydocquity {
-    padding : {
-        top   : 4rem;
-        bottom: 4rem;
-    }
+    margin: 0px 0px 100px;
+    padding: 60px 0px;
 }
 
 .why-docquity-row{
@@ -399,7 +386,7 @@
 
 //Why- docquity-offers
 .dq-offers{
-    padding-bottom: 70px;
+    margin-bottom: 100px;
     @media(max-width: 767px) {
         padding-top: 100px;
     }
@@ -1310,6 +1297,140 @@
 
 // why use docquity 
 
+// .whyusedocquity-section {
+//     background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+//     margin       : 0px 15px;
+//     border-radius: 12px;
+//     position     : relative;
+//     padding      : 88px 0px 37px;
+
+//     @media(min-width: 767px) {
+//         padding: 64px 40px 53px 80px;
+//     }
+//     .docquityuse-img {
+//         img{
+//             margin-top: -26px;
+//         }
+//     }
+//     .docquityusetabsection{    
+//         @media(max-width: 767px) {
+//         display: none;
+//         }
+//         .nav-tabs{
+//             border:none;
+//             display: block;
+//             width: 90%;
+//             .nav-item{
+//                 text-align: left;
+//                 padding: 0px;
+//                 border: none;
+//             }                     
+//         }        
+//         .nav-link.active {
+//            background-color:#b1cbcf33!important;
+//            border-radius: 24px;
+//            .whyusedocquity-card {
+//             height: auto;
+//             width: 100%;
+//             display: block;
+//            }
+//            .whyusedocquity-text{
+//                p{
+//                    padding-left: 72px;
+//                }
+//            }
+//         }
+//     } 
+    
+//     .whyusedocquity-card {
+//         height: 120px;
+//         display: block;
+//         line-height: 28px;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         display: -webkit-box;
+//         -webkit-line-clamp: 3;
+//         -webkit-box-orient: vertical;
+//         cursor: pointer;   
+//         // padding: 18px 32px ;
+//         padding: 16px 25px ;
+//         margin-bottom: 25px;   
+//         @media(max-width: 767px) {
+//             padding: 0px 0px;
+//         }
+//         .whyusedocquity-div {
+//             @media(min-width: 767px) {
+//                 display: none;
+//             }
+//         }
+//         .whyusedocquity-img {
+//             height: 100%;
+//             margin-right: 25px;
+//             float: left;
+//             @media(max-width: 767px) {
+//                 float: none;
+//                 }
+//         }       
+//     }    
+//     .whyusedocquity-row {
+//         @media(min-width: 767px) {
+//                     display: none;
+//         }
+//         @media(max-width: 767px) {
+//             display: block;
+//         }
+//         // whyusedocquity-swiper
+//         .whyusedocquitySwiper{
+//             width: 100%;
+//             max-height: 544px;
+//             padding-left: 45px;
+//             margin-top: 30px;
+//             @media(max-width: 767px) {
+//                 max-height  :665px;
+//                 padding-left: 25px;
+//                 padding-bottom: 55px;
+//             }
+//             .swiper-slide {
+//                 display: flex;                            
+//             }
+//             .swiper-pagination-bullets {                
+//                 @media(max-width: 767px) {
+//                     display: none;
+//                 }              
+//             }
+//             .swiper-button-prev,.swiper-button-next{
+//                 top: 92%;
+//                 background: #b1cbcf5e;
+//                 width: 35px;
+//                 height: 35px;
+//                 border: 1px solid #B1CBCF;
+//                 border-radius: 20px;
+//                 &:hover{
+//                     background: #1B4A52;
+//                     border: 1px solid  #1B4A52;
+//                     .arr{
+//                         fill:#fff;
+//                     }
+//                 }
+
+//                 &::after{content:none;}
+//                 @media(min-width: 767px) {
+//                    display: none;
+//                 }
+//             }
+//             .swiper-button-next{                 
+//                 right: 110px;                
+//                 transform: rotate(180deg); 
+//             }
+//            .swiper-button-prev{               
+//                 left: 110px;    
+//             }
+//         }
+//     }
+// }
+
+
+
 .whyusedocquity-section {
     background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     margin       : 0px 15px;
@@ -1318,92 +1439,84 @@
     padding      : 88px 0px 37px;
 
     @media(min-width: 767px) {
-        padding: 64px 40px 53px 80px;
+        padding: 0px 0px 45px;
     }
-    .docquityusetabsection{    
-        @media(max-width: 767px) {
-        display: none;
-        }
-        .nav-tabs{
-            border:none;
-            display: block;
-            width: 90%;
-            .nav-item{
-                text-align: left;
-                padding: 0px;
-                border: none;
-            }                     
-        }        
-        .nav-link.active {
-           background-color:#b1cbcf33!important;
-           border-radius: 24px;
-           .whyusedocquity-card {
-            height: auto;
-            width: 100%;
-            display: block;
-           }
-           .whyusedocquity-text{
-               p{
-                   padding-left: 72px;
-               }
-           }
-        }
-    } 
-    
-    .whyusedocquity-card {
-        height: 120px;
-        display: block;
-        line-height: 28px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        cursor: pointer;   
-        // padding: 18px 32px ;
-        padding: 16px 30px ;   
-        @media(max-width: 767px) {
-            padding: 0px 0px;
-        }
-        .whyusedocquity-div {
-            @media(min-width: 767px) {
-                display: none;
-            }
-        }
-        .whyusedocquity-img {
-            height: 100%;
-            margin-right: 25px;
-            float: left;
-            @media(max-width: 767px) {
-                float: none;
-                }
-        }       
-    }    
     .whyusedocquity-row {
-        @media(min-width: 767px) {
-                    display: none;
-        }
         @media(max-width: 767px) {
-            display: block;
+            display       : flex;
+            flex-direction: column-reverse;            
         }
         // whyusedocquity-swiper
         .whyusedocquitySwiper{
             width: 100%;
-            max-height: 544px;
-            padding-left: 45px;
-            margin-top: 30px;
+            max-height: 560px;
+            padding-left: 25px;            
+
             @media(max-width: 767px) {
                 max-height  :665px;
                 padding-left: 25px;
                 padding-bottom: 55px;
             }
             .swiper-slide {
-                display: flex;                            
+                // display: flex;
+                // height: auto;
+                .whyusedocquity-card {   
+                    padding: 25px 15px 25px 15px;           
+                    @media(max-width: 767px) {
+                        padding: 0px 0px;
+                    }
+                    .whyusedocquity-div {
+                        @media(min-width: 767px) {
+                            display: none;
+                        }
+                    }
+                    .whyusedocquity-img {
+                        margin-right: 20px;
+                        float: left;
+                        position: relative;
+                        top:5px;
+                        @media(max-width: 767px) {
+                            float: none;
+                            top:0px;
+                            margin-bottom:10px;
+                        }
+                    }
+                    .whyusedocquity-text{
+                        display: table;
+                        .desc{
+                            display: -webkit-box;
+                            max-width: 100%;
+                            height: 85px;                            
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            -o-text-overflow: ellipsis;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    &:hover {
+                        @media(min-width: 767px) {
+                            background: #b1cbcf33;
+                            border-radius: 24px;  
+                        }
+                                              
+                    }  
+                }                
             }
-            .swiper-pagination-bullets {                
+            .swiper-pagination-bullets {
+                right : inherit;
+                left  : 0px;
+                top   : 50% !important;
+                height: 65px;    
                 @media(max-width: 767px) {
                     display: none;
-                }              
+                }
+                .swiper-pagination-bullet {
+                    margin: 10px 0px !important;
+                }
+                .swiper-pagination-bullet-active {
+                    background: #1B4A52 !important;
+                }
             }
             .swiper-button-prev,.swiper-button-next{
                 top: 92%;
@@ -1432,12 +1545,27 @@
            .swiper-button-prev{               
                 left: 110px;    
             }
+        }   
+        .whyusedocquity-right {
+            position: relative;
+            @media(max-width: 767px) {
+                margin-top: 80px;
+             }
+            .whyusedocquity-right-img{
+                display: none;                
+            }
+            .whyusedocquity-right-img.active {
+                display: block;
+                @media(max-width: 767px) {
+                    display: none;
+                }
+            }
         }
     }
 }
 
-
 .leadership{
+    margin-top: 100px;
     .dq-tab{
         .nav-link{
             @media(max-width: 767px) {
@@ -1600,7 +1728,9 @@
 
 .test-section {
     position: relative;   
-    padding: 50px 0px;      
+    padding: 0px 0px 30px;
+    overflow: hidden;
+    margin: 0px 0px 40px;   
     @media (max-width: 767px) {
        height:auto;
     }  
@@ -1790,6 +1920,95 @@
                   background-position: 100% 0;
                 }
               }
+            }    
+        }
+    }
+}
+
+// wall of love section
+.wallhome-setion{
+    margin: 0px 15px;
+    @media (max-width: 768px){
+        margin-bottom: 600px;
+    }
+    .dq-maincnt-leftwrap {
+        padding: 240px 0px 170px 60px;
+        @media (max-width: 768px){
+            padding:70px 0 285px 0px;
+            text-align: center;
+        }
+    }
+    .wallhome-right{padding:0px 0px ;
+    .wallhome-list {
+        width: 100%;
+        display: flex;        
+        position: relative;
+        height: 710px;             
+        @media (max-width: 768px) {            
+            overflow: hidden;   
+            position: absolute;
+            top: -210px;     
+            display: block;
+            width: 90%;
+            left: 15px;
+        }
+        &__item{
+            width: 30%;
+            float: left;
+            margin: 0px 10px;
+            @media (max-width: 768px) {            
+                width: 100%;  
+                margin: 0px auto;   
+            }
+            .swiper-container {    
+                height: 730px;
+                position: relative;                
+                .swiper-wrapper{                      
+                    transition-timing-function:linear!important; 
+                    position: relative;
+                    .swiper-slide {    
+                        display: flex;       
+                        width: auto;
+                        position: relative;                         
+                        height:auto;  
+                        margin-bottom:23px;    
+                        .wall-card {
+                            border: 1px solid #B1CBCF;
+                            border-radius: 20px;
+                            box-shadow: 0px 1px 60px 0px #0000000D;
+                            padding: 24px 22px;
+                            background: #fff;
+        
+                            .wall-icon {
+                                width: 10%;
+                                margin-bottom: 23px;
+                            }
+        
+                            .wall-div {
+                                .wall-image {
+                                    float: left;
+                                    width: 18%;
+                                    position: relative;
+                                    top: 5px;
+                                }
+        
+                                .wall-text {
+                                    display: table;
+                                }
+                            }
+        
+                        }                     
+                      }
+                  } 
+              }  
+            //   @keyframes line-slide {
+            //     0% {
+            //       background-position: -5% 0;
+            //     }
+            //     100% {
+            //       background-position: 100% 0;
+            //     }
+            //   }
             }    
         }
     }
