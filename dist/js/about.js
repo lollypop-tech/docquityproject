@@ -286,4 +286,31 @@ var rightSlider = new Swiper('.investor-icons', {
   }
 });
 
+$(function () {
+
+  $('.vertical-tab-list').scroll(function () {
+    $('#out').text('scrollLeft: ' + $(this).scrollLeft());
+  });
+
+  $('.timelineverticalswiper-button-next').click(function () {
+    $('.vertical-tab-list').animate({
+      scrollLeft: $('.vertical-tab-list').scrollLeft() + 500
+    }, 300);
+
+    return false;
+  });
+});
+
+// $(".js-brand-tabs .nav-link").click(function(){
+//   setTimeout(function(){
+//     alert(1)
+//     rightSlider1.update() 
+//     rightSlider2.update() 
+//     rightSlider3.update() 
+//     rightSlider4.update()
+//   },100)
+
+
+// })
+
 },{}]},{},[1])//# sourceMappingURL=about.js.map

@@ -1,0 +1,324 @@
+// section01
+
+.sec01 {
+    position: relative;
+    background: linear-gradient(180deg, #FFFFFF -6.18%, #FFF4F4 101.72%);
+    border-radius: 12px;
+
+    @media (min-width: 767px) {
+        padding: 42px 100px 220px;
+        position: relative;
+        margin: 0px 15px 250px;
+        border-radius: 12px;
+    }
+
+    .sec01-row{
+        padding: 55px 0px;
+    }
+
+    .newbanner{
+        img{
+            margin-bottom: 15px;
+        }
+        h1{
+            width: 596px;
+            margin: 0 auto;
+            @media (max-width: 766px) {
+                width: 100%;
+            }
+        }
+        p{
+            width: 508px;
+            margin: 26px auto;
+            @media (max-width: 766px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .banner-img-btm{
+        margin-bottom: 145px;
+        @media (max-width: 766px) {
+            margin-bottom: 0px;
+        }
+    }
+    .btn01{
+        margin-bottom: 25px;
+        @media (min-width: 767px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    .banner-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        @media (min-width: 767px) {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+        }
+        img{
+            margin-top: 48px;
+            @media (min-width: 767px) {
+                height: 682px;
+                width: 1174px !important;
+            }
+        }
+    }
+}
+
+.sec02{
+    background: #ffffff !important;
+    @media (min-width: 767px) {
+        padding-top: 300px;
+    }
+}
+
+.patientdocquity-section{    
+    position     : relative;
+    padding      : 88px 0px 37px;  
+    margin-bottom: 100px;  
+    @media(min-width: 767px) {
+        padding: 64px 40px 53px 80px;
+        margin-bottom: 100px; 
+    }
+    .patientdocquitytabsection{    
+        @media(max-width: 767px) {
+        display: none;
+        }
+        .nav{
+            display: block;
+            flex-wrap: nowrap !important;
+            display: flex !important;
+            width: 120%;
+        } 
+        .navtabs{
+            display: flex !important;
+        }
+        .navtab{
+            display: block;
+            flex-wrap: nowrap !important;
+            display: flex;
+        }
+        .nav-tabs{
+            border-bottom: none!important;
+        }   
+        .nav-link {
+            padding: 15px 15px 15px 15px;   
+            text-align:left;         
+            cursor: pointer;
+            color: #1D1919;
+            position: relative;
+            margin-bottom: 5px;
+            border:none;  
+            font-weight: 400;         
+            @media (min-width: 768px) {
+                padding: 10px 20px;
+            }
+            @media (min-width: 1200px) {
+                padding: 10px 0px 10px 15px;
+            }
+        
+            &.active {
+                color:#1B4A52;
+                font-weight: 800;                 
+                .light{
+                    background: #1B4A52;
+                    width: 5px;
+                    height: 100%;
+                    top: 0;
+                    position: absolute;
+                    left: -4px;
+                    border-radius: 5px;
+                }           
+            }
+            &:hover {
+                color: #1B4A52;
+            }
+        }   
+       
+        .patientrighttabs{            
+            background-image: url(../img/docquityclinic/clinicback.svg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 24px;
+            position: relative;
+            transform: translateY(30px);
+            text-align: center;
+            padding: 0px 55px 0px 55px;
+            .patientdocquity-img {
+                width: 100%;               
+                position: relative;
+                transform: translateY(-30px);
+                img{margin-bottom: 30px;}
+            }
+        }
+    } 
+   
+    .patientdocquity-row  {
+        @media(min-width: 767px) {
+                    display: none;
+        }
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
+}
+
+.section080{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FEFAF6 33.02%);
+    border-radius: 12px;
+    margin: 0px 15px 15px 15px;
+    border-radius: 12px;
+    padding: 0px 0px 52px;
+
+    @media(min-width: 767px) {
+        padding: 40px 0px 61px;
+    }
+
+    .section080-desktop {
+        @media(max-width: 767px) {
+            padding-top: 80px;
+        }
+    }
+    
+    .section080-mobile {
+        @media(max-width: 768px) {
+            position: relative;
+            transform: translateY(-220px);
+        }
+    }
+
+    .section080swiper{
+        width: 100%;             
+        margin-top: 80px;         
+        .swiper-slide {
+            display: flex;   
+            text-align: center; 
+            @media(max-width: 767px) {
+                flex-direction: column;
+            }                      
+        }
+        .swiper-pagination-bullets {
+            right : inherit;
+            left  : 0px;
+            // top   : 50% !important;
+            bottom: -47px !important;
+            height: 65px;    
+            
+            .swiper-pagination-bullet {
+                margin: 10px 5px !important;
+            }
+            .swiper-pagination-bullet-active {
+                background: #1B4A52 !important;
+            }
+        }
+        .swiper-pagination-flatindic {
+        
+            .swiper-pagination-bullet {
+                background   : #1B4A52;
+                width        : 16px;
+                border-radius: 4px !important;
+                height       : 6px !important;
+                transition   : all .5s ease 0s;
+        
+                &-active {
+                    width     : 33px !important;
+                    transition: all .5s ease 0s;
+                }
+            }
+        }
+        .swiper-button-prev,.swiper-button-next{
+            top: 55%;
+            background: #b1cbcf5e;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #B1CBCF;
+            border-radius: 20px;
+            &:hover{
+                background: #1B4A52;
+                border: 1px solid  #1B4A52;
+                .arr{
+                    fill:#fff;
+                }
+            }
+
+            &::after{content:none;}
+            
+        }
+        .swiper-button-next{                 
+            right: 95px;                
+            transform: rotate(180deg); 
+            @media (max-width: 767px) {
+                display: none;
+            }  
+        }
+       .swiper-button-prev{               
+            left: 95px;
+            @media (max-width: 767px) {
+                display: none;
+            }    
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 64px;
+        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+            .slide-img {
+                width: 37%;
+                // margin-right: 100px;
+    
+                @media (max-width: 766px) {
+                    width: 100%;
+                    margin-right: 0px;
+                    padding: 0 20px;
+                }
+    
+                img {
+                    @media (max-width: 766px) {
+                        width: 100% !important;
+                    }
+                    border-radius: 24px;
+                }
+            }
+    
+            .slide-content {
+                text-align: left;
+                width: 35%;
+                padding: 60px 0px;
+    
+                @media (max-width: 766px) {
+                    width: 100%;
+                    padding: 40px 10px;
+                }
+    
+                .slide-icon {
+                    width: 10%;
+                    margin-bottom: 31px;
+                }
+            }
+            
+    }
+    
+}

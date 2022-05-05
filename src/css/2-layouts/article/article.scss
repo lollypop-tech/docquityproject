@@ -5,10 +5,10 @@
     background-size: cover;
     margin: 0px 12px 0px 12px;
     border-radius: 24px;
-    padding: 84px 0px 165px;
+    padding: 80px 0px 165px;
 
     @media (min-width: 768px) {
-        padding: 164px 0px 220px;
+        padding: 110px 0px 160px;
         margin: 0px 20px 0px 20px;
     }
 
@@ -158,22 +158,25 @@
                 &__item {
                     width: 48%;
                     float: left;
-                    margin-bottom: 32px;
+                    margin-bottom: 48px;
 
                     @media(max-width: 767px) {
                         width: 100%;
                     }
 
                     &:nth-child(odd) {
-                        margin-right: 32px;
+                        margin-right: 30px;
                     }
 
                     .article-card {
                         .article-card-img {
                             position: relative;
                             margin-bottom: 32px;
+                            height: 222px;
                             img{
                                 border-radius: 16px;
+                                object-fit: cover;
+                                height: 100%;
                             }
                         }
                         .article-card-text{

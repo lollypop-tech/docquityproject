@@ -8,11 +8,11 @@
     background-size: cover;
     margin: 0px 12px 0px 12px;
     border-radius: 24px;
-    padding: 84px 0 23px;
+    padding: 74px 0 23px;
 
     @media (min-width: 768px) {
         // padding: 164px 0px 220px;
-        padding: 127px 0 62px;
+        padding: 100px 0 100px;
         margin: 0px 20px 0px 20px;
     }
 
@@ -23,7 +23,7 @@
             // margin-left: -37px;
         @media(max-width: 767px) {
             width: 100%;
-            height: 306px;
+            height: 280px;
             margin-left: 0;
         }
     }
@@ -32,6 +32,7 @@
     .section01-home-banner{
         &__cntsection01{
         margin-left: 90px;
+        margin-top: 20px;
         @media(max-width: 767px) {
             margin-left: 0px;
             text-align: center;
@@ -67,7 +68,7 @@
     .section01-banner {
         // display: inline-flex;
         width: 100%;
-        margin: 32px auto 0px;
+        margin: 49px auto 0px;
         position: relative;
         @media (max-width: 767px) {
             display: block;
@@ -116,6 +117,9 @@
                 opacity: 0.7;
                 width: 312px;
             }
+            .span_text{
+                margin-top: -8px;
+            }
         }
     }
 
@@ -130,8 +134,8 @@
 // Section 04
 .section04 {
     padding : {
-        top   : 5rem;
-        bottom: 5rem;
+        top   : 100px;
+        bottom: 100px;
     }
 
 .section04-sec-cntinfo {
@@ -491,6 +495,7 @@
                 @media (max-width: 766px) {
                     width: 100%;
                     margin-right: 0px;
+                    margin-top: 25px;
                 }
     
                 img {
@@ -514,6 +519,10 @@
                 .slide-icon {
                     width: 10%;
                     margin-bottom: 31px;
+                    img{
+                        width: 56px;
+                        height: 56px;
+                    }
                 }
             }
             
@@ -532,6 +541,9 @@
     }
     .section05-desktop{
         padding-bottom: 5px;
+        p{
+            margin-bottom: 10px;
+        }
     }
     .section-col{
         // display: flex;

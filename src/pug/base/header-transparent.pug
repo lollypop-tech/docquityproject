@@ -1,65 +1,115 @@
 header.header#header.header-transparent.svg-white
 	nav.nav.nav-wrap.mobile.active
-		.container-fluid
+		.container
 			.row
-				.nav-wrapper.col-12 
+				.nav-wrapper.col-12
+					
 					.nav-header
-						
 						.menu-icon
 							span.line
 							span.line
 							span.line
 					
 						.logo
-							a.navbar-link.header-brand-logo(href="index.html")
-								//- img(src="./img/common-img/logo-w.svg", alt="")
-								include ../../img/docquity.svg					
-						
-						
-							
-								
+							a.navbar-link.header-brand-logo(href="index.html") 
+								//- img(src="./img/easebuzz/home/eb-logo.svg", alt="logo")
+								include ../../img/docquity.svg
 					.hamb-overlay
 					.menu
-						.white-logo
-							a.navbar-link.header-brand-logo(href="index.html")
-								//- img(src="./img/common-img/logo-w.svg", alt="")
-								include ../../img/docquity.svg
 						ul.menu-list.menu-list--left.mb-header-nav
-								
-							
-
-							li.menu__item.drodown-header
-								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
-								.dropdown
-									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-										| Products
-									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
-										a.dropdown-item(href='pre-silicon.html') Pre Silicon
-										a.dropdown-item(href='post-silicon.html') Post Silicon
-										a.dropdown-item(href='beyond-silicon.html') Beyond Silicon
-							li.menu__item.drodown-header
-								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
-								.dropdown
-									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-										| Resources
-									.dropdown-menu(aria-labelledby='dropdownMenuButton')
-										a.dropdown-item(href='#') abc
-							li.menu__item.drodown-header
-								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
-								.dropdown
-									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-										| Company
-									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
-										a.dropdown-item(href='#') Company
-							li.menu__item.drodown-header
-								a(href="#") 									
+							li.menu__item.ui.dropdown.header-select-dropdown
+								input(type='hidden' name='Products')
+								.d-flex.align-items-center.menu__link
+									.default.nav-dropdown-text.pr-3 Products
+									include ../../img/home/down-arrow.svg
+								//- .menu.transition.visible.header-select-dropdown__menu
+								.menu.transition.hidden.header-select-dropdown__menu
+									.item.p-0.nav-menu-lists
+										.nav-menu-lists-item
+											h5.p-4.my-0 Doctors
+										include ./doctors.pug
+									.item.p-0.nav-menu-lists
+										.nav-menu-lists-item
+											h5.p-4.my-0 Pharmaceutical
+										include ./pharma.pug 
+									.item.p-0.nav-menu-lists
+										.nav-menu-lists-item
+											h5.p-4.my-0 Patient
+										include ./patient.pug
+							li.menu__item.only-mobile
+								h5.gradient-text.mb-0.pr-3 Products
+								#navMenu.accordion.navMenuList
+									.card
+										#navMenuhead1.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu1' aria-expanded='false' aria-controls='navMenu1') Doctors
+										#navMenu1.collapse(aria-labelledby='navMenuhead1' data-parent='#navMenu')
+											.card-body 
+												include ./doctors.pug
+									.card
+										#navMenuhead2.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu2' aria-expanded='false' aria-controls='navMenu2') Pharmaceutical
+										#navMenu2.collapse(aria-labelledby='navMenuhead2' data-parent='#navMenu')
+											.card-body 
+												include ./pharma.pug 
+									.card
+										#navMenuhead3.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu3' aria-expanded='false' aria-controls='navMenu3') Patient
+										#navMenu3.collapse(aria-labelledby='navMenuhead3' data-parent='#navMenu')
+											.card-body 
+												include ./patient.pug							
+							li.menu__item.ui.dropdown.header-select-dropdown-company
+								input(type='hidden' name='Resource')
+								.d-flex.align-items-center.menu__link
+									.default.nav-dropdown-text.pr-3 Resource
+									include ../../img/home/down-arrow.svg								
+								.menu.transition.hidden.header-select-dropdown-company__menu.p-4
+									include ./resource.pug
+							li.menu__item.only-mobile
+								h5.gradient-text.mb-0.pr-3 Resource
+								#navMenu.accordion.navMenuList
+									.card
+										#navMenuhead10.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu10' aria-expanded='false' aria-controls='navMenu10') Company
+										#navMenu10.collapse(aria-labelledby='navMenuhead11' data-parent='#navMenu')
+											.card-body
+												include ./resource.pug
+							li.menu__item.ui.dropdown.header-select-dropdown-company
+								input(type='hidden' name='Resource')
+								.d-flex.align-items-center.menu__link
+									.default.nav-dropdown-text.pr-3 Company
+									include ../../img/home/down-arrow.svg								
+								.menu.transition.hidden.header-select-dropdown-company__menu.p-4
+									include ./company.pug
+							li.menu__item.only-mobile
+								h5.gradient-text.mb-0.pr-3 Company
+								#navMenu.accordion.navMenuList
+									.card
+										#navMenuhead11.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu11' aria-expanded='false' aria-controls='navMenu11') Company
+										#navMenu11.collapse(aria-labelledby='navMenuhead11' data-parent='#navMenu')
+											.card-body
+												include ./company.pug							
+							li.menu__item.theme
+								a(href="index.html").menu__link
 									<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.0443 13.7226C14.483 15.972 11.9331 17.3049 9.13349 17.3049C4.50091 17.3049 0.75 13.5913 0.75 9.04893C0.75 4.50657 4.50091 0.792969 9.13349 0.792969C9.25573 0.792969 9.37439 0.795624 9.49041 0.801916C7.64837 2.18417 6.55679 4.33924 6.55679 6.64734C6.55679 10.7122 9.90677 14.0017 14.0047 14.0017C14.7122 14.0017 15.3965 13.9084 16.0443 13.7226ZM9.90158 0.694351L9.90985 0.692432L9.90158 0.694351Z" stroke="#1D1919" stroke-width="1.5"/>
 									</svg>
-							li.menu__item.drodown-header
-								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
-								.dropdown
-									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-										img(src="./img/home/flag.svg", alt="") 	
-									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
-										a.dropdown-item(href='#') Company
+							li.menu__item.ui.dropdown.header-select-dropdown-lang
+								input(type='hidden' name='language')
+									
+								.default.text 								
+									img(src="./img/header/flag.svg", alt="")
+								include ../../img/home/down-arrow.svg							
+								.menu.transition.hidden.header-select-dropdown-lang__menu.p-4
+									.item(data-value='0') 
+										span.country-flag 
+											img(src="./img/header/flag.svg", alt="")
+										span.country-lang Language 1
+									.item(data-value='1') 
+										span.country-flag 
+											img(src="./img/header/uk.svg", alt="")
+										span.country-lang Language 2
+									.item(data-value='2') 
+										span.country-flag 
+											img(src="./img/header/flag.svg", alt="")
+										span.country-lang Language 3

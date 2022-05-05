@@ -75,6 +75,7 @@
         margin: 100px 0px;
         @media(max-width: 767px) {
             background: #ffffff;
+                margin: 15px 0px;
            }
         p{
         display: block;
@@ -194,8 +195,8 @@
 .liveInteractive{
     margin: 100px 0px;
     @media(max-width: 766px) {
-        margin-bottom: 88px;
-        margin-top: 175px;
+        margin-bottom: 0px;
+        margin-top: 80px;
     }
 
     .dq-webinar-fig{
@@ -249,8 +250,9 @@
             margin-top: 80px;         
             .swiper-slide {
                 display: flex;   
-                text-align: center;                       
+                text-align: center;
             }
+                
             .swiper-pagination-bullets {
                 right : inherit;
                 left  : 0px;
@@ -273,6 +275,9 @@
                 height: 35px;
                 border: 1px solid #B1CBCF;
                 border-radius: 20px;
+                @media(max-width: 767px) {
+                    top: 94%;
+                 }
                 &:hover{
                     background: #1B4A52;
                     border: 1px solid  #1B4A52;
@@ -287,11 +292,11 @@
                 }
             }
             .swiper-button-next{                 
-                right: 95px;                
+                right: 115px;                
                 transform: rotate(180deg); 
             }
            .swiper-button-prev{               
-                left: 95px;    
+                left: 110px;    
             }
         }
 
@@ -388,7 +393,8 @@
 .dq-offers{
     margin-bottom: 100px;
     @media(max-width: 767px) {
-        padding-top: 100px;
+        padding-top: 0px;
+        padding-bottom: 80px;
     }
 .dq-playstore-list{
     display: flex;
@@ -453,6 +459,12 @@
                 display: flex;
                 .offer-card{
                     text-align: center;
+                    .offer-img{
+                        @media(max-width: 767px) {
+                            width: 70%;
+                            margin: 0px auto;
+                        }
+                    }
                     .offer-icon{
                         background: #1B4A52;
                         width: 75px;
@@ -631,7 +643,7 @@
 
     @media(max-width: 767px) {
         padding      : 0px 0px 440px;
-        margin-bottom: 400px;
+        // margin-bottom: 400px;
         position: relative;
         height: 1800px;
     }
@@ -1266,6 +1278,8 @@
         align-items: center;
         .option-mob-img1{
             margin-top: 44px !important;
+            width :302.54px;
+            height: 606.9px;
         }
     }
     .label-mob{
@@ -1431,6 +1445,316 @@
 
 
 
+// .whyusedocquity-section {
+//     background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+//     margin       : 0px 15px;
+//     border-radius: 12px;
+//     position     : relative;
+//     padding      : 88px 0px 37px;
+
+//     @media(min-width: 767px) {
+//         padding: 0px 0px 45px;
+//     }
+//     .whyusedocquity-row {
+//         @media(max-width: 767px) {
+//             display       : flex;
+//             flex-direction: column-reverse;            
+//         }
+//         // whyusedocquity-swiper
+//         .whyusedocquitySwiper{
+//             width: 100%;
+//             max-height: 606px;
+//             padding-left: 25px;            
+
+//             @media(max-width: 767px) {
+//                 max-height  :665px;
+//                 padding-left: 25px;
+//                 padding-bottom: 85px;
+//             }
+//             .swiper-slide {
+//                 // display: flex;
+//                 // height: auto;
+//                 .whyusedocquity-card {   
+//                     padding: 25px 15px 25px 15px; 
+//                     height: 120px;
+//                     display: block;
+//                     line-height: 28px;
+//                     overflow: hidden;
+//                     text-overflow: ellipsis;
+//                     display: -webkit-box;
+//                     -webkit-line-clamp: 3;
+//                     -webkit-box-orient: vertical;
+//                     cursor: pointer;
+//                     margin-bottom: 25px;              
+//                     @media(max-width: 767px) {
+//                         padding: 0px 0px;
+//                     }
+//                     .whyusedocquity-div {
+//                         @media(min-width: 767px) {
+//                             display: none;
+//                         }
+//                     }
+//                     .whyusedocquity-img {
+//                         background: #B1CBCF;
+//                         width: 56px;
+//                         height: 56px;
+//                         border-radius: 50%;
+//                         padding: 12px 12px;
+//                         margin-right: 20px;
+//                         float: left;
+//                         position: relative;
+//                         top:5px;
+//                         @media(max-width: 767px) {
+//                             float: none;
+//                             top:0px;
+//                             margin-bottom:10px;
+//                         }
+//                         img{
+//                             width: 32px;
+//                             height: 32px;
+//                         }
+//                     }
+//                     .whyusedocquity-text{
+//                         display: table;
+//                         h6{
+//                             margin-bottom: 20px;
+//                         }
+//                         .desc{
+//                             display: -webkit-box;
+//                             max-width: 100%;
+//                             height: 85px;                            
+//                             -webkit-line-clamp: 3;
+//                             -webkit-box-orient: vertical;
+//                             overflow: hidden;
+//                             -o-text-overflow: ellipsis;
+//                             text-overflow: ellipsis;
+//                         }
+//                     }
+//                     &:hover {
+//                         @media(min-width: 767px) {
+//                             background: #b1cbcf33;
+//                             border-radius: 24px;  
+//                         }
+                                              
+//                     }  
+//                 }                
+//             }
+//             .swiper-pagination-bullets {
+//                 right : inherit;
+//                 left  : 0px;
+//                 top   : 50% !important;
+//                 height: 65px;    
+//                 @media(max-width: 767px) {
+//                     display: none;
+//                 }
+//                 .swiper-pagination-bullet {
+//                     margin: 10px 0px !important;
+//                 }
+//                 .swiper-pagination-bullet-active {
+//                     background: #1B4A52 !important;
+//                 }
+//             }
+//             .swiper-button-prev,.swiper-button-next{
+//                 top: 92%;
+//                 background: #b1cbcf5e;
+//                 width: 35px;
+//                 height: 35px;
+//                 border: 1px solid #B1CBCF;
+//                 border-radius: 20px;
+//                 &:hover{
+//                     background: #1B4A52;
+//                     border: 1px solid  #1B4A52;
+//                     .arr{
+//                         fill:#fff;
+//                     }
+//                 }
+
+//                 &::after{content:none;}
+//                 @media(min-width: 767px) {
+//                    display: none;
+//                 }
+//             }
+//             .swiper-button-next{                 
+//                 right: 110px;                
+//                 transform: rotate(180deg); 
+//             }
+//            .swiper-button-prev{               
+//                 left: 110px;    
+//             }
+//         }   
+//         .whyusedocquity-right {
+//             position: relative;
+//             @media(max-width: 767px) {
+//                 margin-top: 80px;
+//              }
+//             .whyusedocquity-right-img{
+//                 display: none;                
+//             }
+//             .whyusedocquity-right-img.active {
+//                 display: block;
+//                 @media(max-width: 767px) {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// .whyusedocquity-section {
+//     background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+//     margin       : 0px 15px;
+//     border-radius: 12px;
+//     position     : relative;
+//     padding      : 88px 0px 37px;
+
+//     @media(min-width: 767px) {
+//         padding: 64px 15px 53px 15px;
+//     }
+//     .whyusedocquity-row {
+//         @media(max-width: 767px) {
+//             display       : flex;
+//             flex-direction: column-reverse;            
+//         }
+//         // whyusedocquity-swiper
+//         .whyusedocquitySwiper{
+//             width: 100%;
+//             max-height: 544px;
+//             padding-left: 25px;            
+
+//             @media(max-width: 767px) {
+//                 max-height  :665px;
+//                 padding-left: 25px;
+//                 padding-bottom: 55px;
+//             }
+//             .swiper-slide {
+//                 // display: flex;
+//                 // height: auto;               
+//                 .whyusedocquity-card {   
+//                     padding: 25px 15px 25px 15px;   
+//                     position: relative;  
+//                     z-index: 0;     
+//                     height: auto; 
+//                     @media(max-width: 767px) {
+//                         padding: 0px 0px;
+//                         height: auto; 
+//                     }
+//                     .whyusedocquity-div {
+//                         @media(min-width: 767px) {
+//                             display: none;
+//                         }
+//                     }
+//                     .whyusedocquity-img {
+//                         margin-right: 20px;
+//                         float: left;
+//                         position: relative;
+//                         top:5px;
+//                         @media(max-width: 767px) {
+//                             float: none;
+//                             top:0px;
+//                             margin-bottom:10px;
+//                         }
+//                     }
+//                     .whyusedocquity-text{
+//                         display: table;
+//                         .desc{
+//                             display: -webkit-box;
+//                             max-width: 100%;
+//                             height: 85px;                            
+//                             -webkit-line-clamp: 3;
+//                             -webkit-box-orient: vertical;
+//                             overflow: hidden;
+//                             -o-text-overflow: ellipsis;
+//                             text-overflow: ellipsis;
+//                         }
+//                     }                      
+//                 }   
+//                 .active{
+//                     background:#b1cbcf33;
+//                     border-radius: 24px;  
+//                     z-index: 1;
+//                     // padding: 15px 25px;
+//                     @media(max-width: 767px) {
+//                        background: transparent;
+//                     }
+//                     .whyusedocquity-text{
+//                         display: table;
+//                         .desc{                         
+//                             max-width: 100%;
+//                             height:auto;    
+//                             display: block;   
+//                             font-size: 15px!important;
+//                             line-height: 23px;   
+//                             @media(max-width: 767px) {
+//                                 font-size: 14px!important;
+//                              }                 
+                       
+//                         }
+//                     }
+//                 }             
+//             }           
+//             .swiper-pagination-bullets {
+//                 right : inherit;
+//                 left  : 0px;
+//                 top   : 50% !important;
+//                 height: 65px;    
+//                 @media(max-width: 767px) {
+//                     display: none;
+//                 }
+//                 .swiper-pagination-bullet {
+//                     margin: 10px 0px !important;
+//                 }
+//                 .swiper-pagination-bullet-active {
+//                     background: #1B4A52 !important;
+//                 }
+//             }
+//             .swiper-button-prev,.swiper-button-next{
+//                 top: 97%;
+//                 background: #b1cbcf5e;
+//                 width: 35px;
+//                 height: 35px;
+//                 border: 1px solid #B1CBCF;
+//                 border-radius: 20px;
+//                 &:hover{
+//                     background: #1B4A52;
+//                     border: 1px solid  #1B4A52;
+//                     .arr{
+//                         fill:#fff;
+//                     }
+//                 }
+
+//                 &::after{content:none;}
+//                 @media(min-width: 767px) {
+//                    display: none;
+//                 }
+//             }
+//             .swiper-button-next{                 
+//                 right: 135px;                
+//                 transform: rotate(180deg); 
+//             }
+//            .swiper-button-prev{               
+//                 left: 135px;    
+//             }
+//         }   
+//         .whyusedocquity-right {
+//             position: relative;
+//             @media(max-width: 767px) {
+//                 margin-top: 25px;
+//              }
+//             .whyusedocquity-right-img{
+//                 display: none;                
+//             }
+//             .whyusedocquity-right-img.active {
+//                 display: block;
+//                 @media(max-width: 767px) {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 .whyusedocquity-section {
     background   : linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     margin       : 0px 15px;
@@ -1439,7 +1763,7 @@
     padding      : 88px 0px 37px;
 
     @media(min-width: 767px) {
-        padding: 0px 0px 45px;
+        padding: 64px 15px 53px 15px;
     }
     .whyusedocquity-row {
         @media(max-width: 767px) {
@@ -1449,7 +1773,7 @@
         // whyusedocquity-swiper
         .whyusedocquitySwiper{
             width: 100%;
-            max-height: 560px;
+            max-height: 544px;
             padding-left: 25px;            
 
             @media(max-width: 767px) {
@@ -1457,13 +1781,16 @@
                 padding-left: 25px;
                 padding-bottom: 55px;
             }
-            .swiper-slide {
-                // display: flex;
-                // height: auto;
+            .swiper-slide {                               
                 .whyusedocquity-card {   
-                    padding: 25px 15px 25px 15px;           
+                    padding: 25px 15px 25px 15px;   
+                    position: relative;  
+                    z-index: 0;     
+                    height: 180px; 
+                    
                     @media(max-width: 767px) {
                         padding: 0px 0px;
+                        height: auto; 
                     }
                     .whyusedocquity-div {
                         @media(min-width: 767px) {
@@ -1474,12 +1801,28 @@
                         margin-right: 20px;
                         float: left;
                         position: relative;
-                        top:5px;
+                        top: 5px;
+                        background: #1b4a521a;
+                        border-radius: 50%;
+                        height: 56px;
+                        width: 56px;
+                        text-align: center;
+                        padding: 10px 0px;
                         @media(max-width: 767px) {
                             float: none;
                             top:0px;
                             margin-bottom:10px;
+                            background:#1B4A52;
                         }
+                        svg{
+                            width: 32px;
+                            height: 32px;                                
+                        }
+                        .white{
+                            @media(max-width: 767px) {
+                            fill:#fff;
+                            }
+                        } 
                     }
                     .whyusedocquity-text{
                         display: table;
@@ -1493,16 +1836,44 @@
                             -o-text-overflow: ellipsis;
                             text-overflow: ellipsis;
                         }
+                    }                      
+                }   
+                .active{
+                    background: #efefef;
+                    border-radius: 24px;  
+                    z-index: 1;                     
+                    @media(max-width: 767px) {
+                       background: transparent;
                     }
-                    &:hover {
-                        @media(min-width: 767px) {
-                            background: #b1cbcf33;
-                            border-radius: 24px;  
+                    .whyusedocquity-img {                        
+                        background: #1B4A52;     
+                        .white{
+                            fill:#fff;
                         }
-                                              
-                    }  
-                }                
-            }
+                    }
+                    .whyusedocquity-text{
+                        display: table;
+                        .desc{     
+                            height:85px;    
+                            display: block;   
+                            font-size: 15px!important;                            
+                            overflow-y:scroll;
+                            &::-webkit-scrollbar {                            
+                                    width: 1px!important;  
+                                    background:#efefef;                      
+                                    }                              
+                            @media(max-width: 767px) {                                
+                                font-size: 14px!important;
+                                display: block;
+                                height: 114px;
+                                letter-spacing: 0px!important;
+                                opacity: 1;
+                             }                 
+                       
+                        }
+                    }
+                }             
+            }           
             .swiper-pagination-bullets {
                 right : inherit;
                 left  : 0px;
@@ -1519,7 +1890,7 @@
                 }
             }
             .swiper-button-prev,.swiper-button-next{
-                top: 92%;
+                top: 97%;
                 background: #b1cbcf5e;
                 width: 35px;
                 height: 35px;
@@ -1532,24 +1903,23 @@
                         fill:#fff;
                     }
                 }
-
                 &::after{content:none;}
                 @media(min-width: 767px) {
                    display: none;
                 }
             }
             .swiper-button-next{                 
-                right: 110px;                
+                right: 135px;                
                 transform: rotate(180deg); 
             }
            .swiper-button-prev{               
-                left: 110px;    
+                left: 135px;    
             }
-        }   
+            }   
         .whyusedocquity-right {
             position: relative;
             @media(max-width: 767px) {
-                margin-top: 80px;
+                margin-top: 25px;
              }
             .whyusedocquity-right-img{
                 display: none;                
@@ -1758,6 +2128,7 @@
             padding-bottom: 0px;
             height:auto;
             background-size:inherit;
+            transform: scale(0.8);
         }
         &::after {
             position: absolute;
@@ -1807,7 +2178,7 @@
             border: 2px solid #DADADA;
             // object-fit: cover;  
             @media(max-width: 767px) {
-                transform: scale(.77);
+                transform: scale(.81);
                 position: relative;
                 top: -25px;
             }      
@@ -1835,95 +2206,95 @@
 }
 
 // wall of love section
-.wallhome-setion{
-    margin: 0px 15px;
-    @media (max-width: 768px){
-        margin-bottom: 600px;
-        margin-top: 70px;
-    }
-    .dq-maincnt-leftwrap {
-        padding: 240px 15px 170px 60px;
-        @media (max-width: 768px){
-            padding:70px 0 285px 0px;
-            text-align: center;
-        }
-    }
-    .wallhome-right{padding:0px 0px ;
-    .wallhome-list {
-        width: 100%;
-        display: flex;        
-        position: relative;
-        height: 710px;             
-        @media (max-width: 768px) {            
-            overflow: hidden;   
-            position: absolute;
-            top: -210px;     
-            display: block;
-            width: 90%;
-            left: 15px;
-        }
-        &__item{
-            width: 30%;
-            float: left;
-            margin: 0px 10px;
-            @media (max-width: 768px) {            
-                width: 100%;  
-                margin: 0px auto;   
-            }
-            .swiper-container {    
-                height: 730px;
-                position: relative;                
-                .swiper-wrapper{
-                    -webkit-transition-timing-function:linear!important;    
-                    transition-timing-function:linear!important; 
-                    position: relative;
-                    .swiper-slide {    
-                        display: flex;       
-                        width: auto;
-                        position: relative;                         
-                        height:auto;  
-                        margin-bottom:23px;    
-                        .wall-card {
-                            border: 1px solid #B1CBCF;
-                            border-radius: 20px;
-                            box-shadow: 0px 1px 60px 0px #0000000D;
-                            padding: 24px 22px;
-                            background: #fff;
+// .wallhome-setion{
+//     margin: 0px 15px;
+//     @media (max-width: 768px){
+//         margin-bottom: 600px;
+//         margin-top: 70px;
+//     }
+//     .dq-maincnt-leftwrap {
+//         padding: 240px 15px 170px 60px;
+//         @media (max-width: 768px){
+//             padding:70px 0 285px 0px;
+//             text-align: center;
+//         }
+//     }
+//     .wallhome-right{padding:0px 0px ;
+//     .wallhome-list {
+//         width: 100%;
+//         display: flex;        
+//         position: relative;
+//         height: 710px;             
+//         @media (max-width: 768px) {            
+//             overflow: hidden;   
+//             position: absolute;
+//             top: -210px;     
+//             display: block;
+//             width: 90%;
+//             left: 15px;
+//         }
+//         &__item{
+//             width: 30%;
+//             float: left;
+//             margin: 0px 10px;
+//             @media (max-width: 768px) {            
+//                 width: 100%;  
+//                 margin: 0px auto;   
+//             }
+//             .swiper-container {    
+//                 height: 730px;
+//                 position: relative;                
+//                 .swiper-wrapper{
+//                     -webkit-transition-timing-function:linear!important;    
+//                     transition-timing-function:linear!important; 
+//                     position: relative;
+//                     .swiper-slide {    
+//                         display: flex;       
+//                         width: auto;
+//                         position: relative;                         
+//                         height:auto;  
+//                         margin-bottom:23px;    
+//                         .wall-card {
+//                             border: 1px solid #B1CBCF;
+//                             border-radius: 20px;
+//                             box-shadow: 0px 1px 60px 0px #0000000D;
+//                             padding: 24px 22px;
+//                             background: #fff;
         
-                            .wall-icon {
-                                width: 10%;
-                                margin-bottom: 23px;
-                            }
+//                             .wall-icon {
+//                                 width: 10%;
+//                                 margin-bottom: 23px;
+//                             }
         
-                            .wall-div {
-                                .wall-image {
-                                    float: left;
-                                    width: 18%;
-                                    position: relative;
-                                    top: 5px;
-                                }
+//                             .wall-div {
+//                                 .wall-image {
+//                                     float: left;
+//                                     width: 18%;
+//                                     position: relative;
+//                                     top: 5px;
+//                                 }
         
-                                .wall-text {
-                                    display: table;
-                                }
-                            }
+//                                 .wall-text {
+//                                     display: table;
+//                                 }
+//                             }
         
-                        }                     
-                      }
-                  } 
-              }  
-              @keyframes line-slide {
-                0% {
-                  background-position: -5% 0;
-                }
-                100% {
-                  background-position: 100% 0;
-                }
-              }
-            }    
-        }
-    }
-}
+//                         }                     
+//                       }
+//                   } 
+//               }  
+//               @keyframes line-slide {
+//                 0% {
+//                   background-position: -5% 0;
+//                 }
+//                 100% {
+//                   background-position: 100% 0;
+//                 }
+//               }
+//             }    
+//         }
+//     }
+// }
 
 // wall of love section
 .wallhome-setion{
@@ -1973,6 +2344,7 @@
                         height:auto;  
                         margin-bottom:23px;    
                         .wall-card {
+                            cursor: pointer;
                             border: 1px solid #B1CBCF;
                             border-radius: 20px;
                             box-shadow: 0px 1px 60px 0px #0000000D;
@@ -1985,15 +2357,30 @@
                             }
         
                             .wall-div {
+                                display: flex;
+                                align-items: center;
                                 .wall-image {
                                     float: left;
                                     width: 18%;
                                     position: relative;
                                     top: 5px;
+                                    margin-right: 10px;
+                                    img{
+                                        width: 60px;
+                                        height: 60px;
+                                        margin-right: 20px;
+                                    }
                                 }
         
                                 .wall-text {
                                     display: table;
+                                    // margin-bottom: -15px !important;
+                                    p{
+                                        margin-left: 20px;
+                                    }
+                                    span{
+                                        margin-left: 20px;
+                                    }
                                 }
                             }
         
@@ -2001,14 +2388,14 @@
                       }
                   } 
               }  
-            //   @keyframes line-slide {
-            //     0% {
-            //       background-position: -5% 0;
-            //     }
-            //     100% {
-            //       background-position: 100% 0;
-            //     }
-            //   }
+              @keyframes line-slide {
+                0% {
+                  background-position: -5% 0;
+                }
+                100% {
+                  background-position: 100% 0;
+                }
+              }
             }    
         }
     }

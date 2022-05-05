@@ -1,0 +1,17 @@
+mixin NavMenuItem(href,src,title,desc)
+	//- if docHrefRequired === true
+	a.d-flex.align-items-center.flex-row(href=href)
+		img.nav-icon(src=src alt=title)
+		.flex-column
+			.d-flex.align-items-center.flex-row
+				h4.mb-0=title				
+			p.nav-desc=desc	
+
+
+mixin SubNavMenuItem(href,src,title,desc)
+	a.d-flex.align-items-center.flex-row(href=href)
+		img.nav-icon(src=src alt=title)
+		.flex-column
+			.d-flex.align-items-center.flex-row
+				h4.mb-0=title
+			p.nav-desc=desc	

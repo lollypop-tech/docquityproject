@@ -9,6 +9,56 @@
         <p class="fnt-md text-blackish fnt500 fnt-man mb-0">We're growing like crazy and need your help. In 2021, we've seen exponential growth. At the moment, our app is used by +300,000 verified doctors, more than 3.5M CME credits have been delivered, our team has reached 280+ employees and our revenue is growing at ~130% YoY. Most of that growth, took place last year.</p>
         <form class="search-container">
           <input id="search-bar" type="text" placeholder="Search here..."/><a href="#"><img class="search-icon" src="./img/icons/dsearch.svg"/></a><img class="dfilter-icon" src="./img/icons/dfilter.svg"/>
+          <div class="department-filter"> 
+            <div class="loation-div">
+              <p class="fnt-14 fnt-man fnt600 text-blackish op1 mb-12">Location </p>
+              <div class="ui selection dropdown">
+                <input type="hidden" name="location"/><i class="dropdown icon"></i>
+                <div class="default text">Location</div>
+                <div class="menu">
+                  <div class="item" data-value="0">Banglore, india</div>
+                  <div class="item" data-value="1">Delhi, india</div>
+                  <div class="item" data-value="2">Chennai, india</div>
+                </div>
+              </div>
+            </div>
+            <div class="department-div">
+              <p class="fnt-14 fnt-man fnt600 text-blackish op1 mb-12">Department</p>
+              <div class="ui selection dropdown">
+                <input type="hidden" name="location"/><i class="dropdown icon"></i>
+                <div class="default text">Department</div>
+                <div class="menu">
+                  <div class="item" data-value="0">Business Associate1</div>
+                  <div class="item" data-value="1">Business Associate2</div>
+                  <div class="item" data-value="2">Business Associate3</div>
+                </div>
+              </div>
+            </div>
+            <div class="year-div">
+              <p class="fnt-14 fnt-man fnt600 text-blackish op1 mb-12">Years of experience</p>
+              <div class="ui selection dropdown">
+                <input type="hidden" name="location"/><i class="dropdown icon"></i>
+                <div class="default text">Years of experience</div>
+                <div class="menu">
+                  <div class="item" data-value="0">2</div>
+                  <div class="item" data-value="1">3</div>
+                  <div class="item" data-value="2">4</div>
+                </div>
+              </div>
+            </div>
+            <div class="role-div">
+              <p class="fnt-14 fnt-man fnt600 text-blackish op1 mb-12">Job Role</p>
+              <div class="ui selection dropdown">
+                <input type="hidden" name="location"/><i class="dropdown icon"></i>
+                <div class="default text">Job Role</div>
+                <div class="menu">
+                  <div class="item" data-value="0">Full Time</div>
+                  <div class="item" data-value="1">Full Time</div>
+                  <div class="item" data-value="2">Full Time                        </div>
+                </div>
+              </div>
+            </div><a class="gray-btn fnt-md fnt600 fnt-man filter-btn" href="">Apply Filters</a>
+          </div>
         </form>
       </div>
     </div>
@@ -19,8 +69,19 @@
             <div class="nav-item nav-link active fnt-20 fnt-man" id="nav-department1-tab" data-toggle="tab" href="#nav-department1" role="tab" aria-controls="nav-home" aria-selected="true">Department 1</div>
             <div class="nav-item nav-link fnt-20 fnt-man" id="nav-department2-tab" data-toggle="tab" href="#nav-department2" role="tab" aria-controls="nav-department2" aria-selected="false">Department 2</div>
             <div class="nav-item nav-link fnt-20 fnt-man" id="nav-department3-tab" data-toggle="tab" href="#nav-department3" role="tab" aria-controls="nav-department3" aria-selected="false">Department 3</div>
+            <div class="nav-item nav-link fnt-20 fnt-man" id="nav-department2-tab" data-toggle="tab" href="#nav-department2" role="tab" aria-controls="nav-department2" aria-selected="false">Department 4</div>
+            <div class="nav-item nav-link fnt-20 fnt-man" id="nav-department3-tab" data-toggle="tab" href="#nav-department3" role="tab" aria-controls="nav-department3" aria-selected="false">Department 5</div>
+            <div class="nav-item nav-link fnt-20 fnt-man" id="nav-department2-tab" data-toggle="tab" href="#nav-department2" role="tab" aria-controls="nav-department2" aria-selected="false">Department 6</div>
           </div>
         </nav>
+        <div class="careerverticalswiper-button-next"><svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="arr" d="M5.26674 0.288783C5.19978 0.221818 5.12277 0.188336 5.03572 0.188336C4.94866 0.188336 4.87165 0.221818 4.80469 0.288783L0.123884 4.96959C0.0569201 5.03655 0.023438 5.11356 0.023438 5.20061C0.023438 5.28767 0.0569201 5.36468 0.123884 5.43164L4.80469 10.1124C4.87165 10.1794 4.94866 10.2129 5.03571 10.2129C5.12277 10.2129 5.19978 10.1794 5.26674 10.1124L5.76897 9.61021C5.83594 9.54325 5.86942 9.46624 5.86942 9.37919C5.86942 9.29213 5.83594 9.21512 5.76897 9.14816L1.82143 5.20061L5.76897 1.25307C5.83594 1.1861 5.86942 1.1091 5.86942 1.02204C5.86942 0.934988 5.83594 0.857979 5.76897 0.791015L5.26674 0.288783Z" fill="#1B4A52"/>
+</svg>
+        </div>
+        <div class="careerverticalswiper-button-pre"><svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="arr" d="M5.26674 0.288783C5.19978 0.221818 5.12277 0.188336 5.03572 0.188336C4.94866 0.188336 4.87165 0.221818 4.80469 0.288783L0.123884 4.96959C0.0569201 5.03655 0.023438 5.11356 0.023438 5.20061C0.023438 5.28767 0.0569201 5.36468 0.123884 5.43164L4.80469 10.1124C4.87165 10.1794 4.94866 10.2129 5.03571 10.2129C5.12277 10.2129 5.19978 10.1794 5.26674 10.1124L5.76897 9.61021C5.83594 9.54325 5.86942 9.46624 5.86942 9.37919C5.86942 9.29213 5.83594 9.21512 5.76897 9.14816L1.82143 5.20061L5.76897 1.25307C5.83594 1.1861 5.86942 1.1091 5.86942 1.02204C5.86942 0.934988 5.83594 0.857979 5.76897 0.791015L5.26674 0.288783Z" fill="#1B4A52"/>
+</svg>
+        </div>
       </div>
       <div class="col-md-9 mr-auto ml-auto">
         <div class="tab-content px-sm-0" id="nav-tabContent">

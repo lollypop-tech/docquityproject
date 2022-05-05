@@ -2,7 +2,7 @@ $panel-bg: #B1CBCF;
 
 
 .dq-careerdetail-wrap {
-    padding:31px 100px 131px 100px;
+    padding:0px 0px 100px 0px;
 }
 
 .dq-panel {
@@ -28,15 +28,18 @@ $panel-bg: #B1CBCF;
 }
 
 .dq-overlist {
-    @media (min-width: 768px) {
-        column-count: 2;
-        column-gap  : 10px;
+    display: inline-block;
+    column-count:3;
+    
+    @media (max-width: 766px) {
+        column-count: 1;
     }
-
-    @media (min-width: 992px) {
-        column-count: 3;
-        column-gap  : 30px;
-    }
+    @media only screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
+        column-count:2;
+      }
+      @media only screen and (width: 820px) and (height: 1180px) and (orientation: portrait) {
+        column-count:2;
+      }
 
     &__item {
         margin-bottom: 1.5rem;

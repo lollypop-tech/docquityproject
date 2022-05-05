@@ -35,10 +35,10 @@ var swiper = new Swiper('.diverseSwiper', {
   spaceBetween:0,
   grabCursor: true,
   loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -222,7 +222,71 @@ let SwiperThird = new Swiper('.swiper--third', {
   disableOnInteraction: true
 });
 
+var $el = $(".dfilter-icon");
+var $ee = $(".department-filter");
+$el.click(function(){
+  // e.stopPropagation();
+  $(".department-filter").toggleClass('active');
+});
+$(document).on('click',function(){
+  if(($(e.target) != $el) && ($ee.hasClass('active'))){
+  $ee.removeClass('active');
+  // console.log("yes");
+}
+});
 
+
+
+$(function(){
+
+  $('.nav-tabs').scroll(function(){
+      $('#out').text('scrollLeft: '+$(this).scrollLeft());
+    });
+
+  $('.careerverticalswiper-button-next').click(function () {
+    if(window.innerWidth >769)
+    {
+      $('.nav-tabs').animate({
+        scrollLeft: $('.nav-tabs').scrollLeft() + 500
+      }, 300);
+    }
+    else{
+      $('.nav-tabs').animate({
+        scrollLeft: $('.nav-tabs').scrollLeft() + 250
+      }, 300);
+    }
+    
+    return false;
+  });
+
+  $('.careerverticalswiper-button-pre').click(function () {
+    if(window.innerWidth >769)
+    {
+      $('.nav-tabs').animate({
+        scrollLeft: $('.nav-tabs').scrollLeft() - 500
+      }, 300);
+    }
+    else{
+      $('.nav-tabs').animate({
+        scrollLeft: $('.nav-tabs').scrollLeft() - 250
+      }, 300);
+    }
+    
+    return false;
+  });
+  var nodes = Array.prototype.slice.call( document.getElementById('nav-tab').children );
+
+  console.log( nodes.length ); 
+  if(nodes.length <= 3) {
+    $('.careerverticalswiper-button-next').addClass('hidden');
+    $('.careerverticalswiper-button-pre').addClass('hidden');
+}
+else {
+  $('.careerverticalswiper-button-next').removeClass('hidden');
+  $('.careerverticalswiper-button-pre').removeClass('hidden');
+
+}
+});
 
 
 //https://github.com/OwlCarousel2/OwlCarousel2/issues/1471

@@ -374,12 +374,20 @@ main {
     }
 
     &--lg {
-        height: 117px;
-        width : 117px;
+        height: 56px;
+        width : 56px;
+    }
+    img{
+        width: 32px;
+        height: 32px;
     }
 
     &--md {
-        height: 74px;
-        width : 74px;
+        height: 56px;
+        width : 56px;
+    }
+    svg{
+        width: 32px;
+        height: 32px;
     }
 }

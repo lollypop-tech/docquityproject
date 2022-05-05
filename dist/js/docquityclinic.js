@@ -45,4 +45,25 @@ var swiper = new Swiper(".section100swiper", {
   }
 });
 
+var swiper = new Swiper(".sticky-tab-list", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next"
+    //   prevEl: ".swiper-button-prev",
+  }
+});
+
+// TAb swipper
+
+var rightBtn = document.querySelector('.privacyverticalswiper-button-next');
+
+rightBtn.addEventListener("click", function (event) {
+  var conent = document.querySelector('.vertical-tab-list');
+  conent.scrollLeft += 200;
+  event.preventDefault();
+});
+
 },{}]},{},[1])//# sourceMappingURL=docquityclinic.js.map

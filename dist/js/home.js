@@ -33,4 +33,37 @@ $(".option").hover(function () {
     $(this).addClass("active");
 });
 
+$(document).ready(function () {
+    $(".ui.dropdown.header-select-dropdown").dropdown();
+    $(".ui.dropdown.header-select-dropdown-company").dropdown();
+    $(".ui.selection.dropdown.help-dropdown").dropdown();
+});
+
+// MOUSE HOVER HOME PAGE BANNER SECTION
+"use strict";
+
+(function () {
+    var hamburger = {
+        navToggle: document.querySelector(".menu-icon"),
+        nav: document.querySelector(".menu"),
+        overlayDiv: document.querySelector(".hamb-overlay"),
+        menuBox: document.getElementsByTagName("BODY")[0],
+        doToggle: function doToggle(e) {
+            e.preventDefault();
+            this.navToggle.classList.toggle("active");
+            this.nav.classList.toggle("active");
+            this.menuBox.classList.toggle("body");
+            this.overlayDiv.classList.toggle("show");
+        }
+    };
+
+    hamburger.navToggle.addEventListener("click", function (e) {
+        hamburger.doToggle(e);
+    });
+})();
+
+$(function () {
+    $('.ui.dropdown').dropdown();
+});
+
 },{}]},{},[1])//# sourceMappingURL=home.js.map

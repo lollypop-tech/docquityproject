@@ -1,0 +1,49 @@
+
+.modal.fade.signupmodal(id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true")
+    .modal-dialog.modal-lg
+        .modal-content
+            .modal-body 
+                button.close2(data-dismiss="modal") 
+                    img(src="./img/icons/modalclose.svg", alt="")
+                .row 
+                    .col-lg-7.signupmodal__imgalignment
+                        img.ml-2.signupmodal__Formimg(src="./img/home-new/illustartion.png", alt="")
+                    .col-lg-5.signupmodal__signupform
+                        .signupmodal__headeralignment
+                            h3.signupmodal__text Login/Register to Explore the Community 
+                            button.close1(data-dismiss="modal") 
+                                img(src="./img/signup/modalclose.svg", alt="")
+                        div 
+                            form.signupmodal__form(action="") 
+                                .signupmodal__labelalignment 
+                                    label.signupmodal__label(for="" , required)  Mobile number*
+                                    .phonenumber2 
+                                        select#countrys(name="countrys").countrycodeoption
+                                            img.signupmodal__otparrow(src="./img/signup/flag.png", alt="") 
+                                            option(value="country1" , selected="selected") 91+                                               
+                                            option(value="country2") 44+
+                                            option(value="country3") 99+
+                                            option(value="country4") 78+
+                                        input.signupmodal__mobileinput(type="number")
+                                button.signupmodal__otpbutton
+                                    span.signupmodal__otptext Request OTP&ensp;
+                                    img.signupmodal__otparrow(src="./img/signup/otparrow.svg", alt="")  
+                                p.signupmodal__privacytext By Clicking Agree & Request OTP, you agree to our Term & Condition &  Data Policy
+                            h2.signupmodal__hr-lines or
+                            .signupmodal__loginoptionalignment
+                                button.signupmodal__loginoption(href="")
+                                    img.ml-2(src="./img/signup/google.svg", alt="")
+                                    span.signupmodal__socialmediatext &ensp;Google
+                                button.signupmodal__loginoption(href="")
+                                    img.ml-2(src="./img/signup/signupfacebook.svg", alt="")
+                                    span.signupmodal__socialmediatext &ensp;Facebook
+                            h2.signupmodal__hr-lines or
+                            div 
+                                p.signupmodal__apptext Get the App
+                                div 
+                                    button.signupmodal__appoption(href="")
+                                        img.ml-2(src="./img/signup/appstore.svg", alt="")
+                                    button.signupmodal__appoption(href="")
+                                        img.ml-2(src="./img/signup/playstore.svg", alt="")
+
+                

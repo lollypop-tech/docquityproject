@@ -8,7 +8,7 @@
     @media (min-width: 767px) {
         padding: 42px 100px 220px;
         position: relative;
-        margin: 0px 15px 250px 15px;
+        margin: 0px 15px 250px;
         border-radius: 12px;
     }
 
@@ -643,11 +643,16 @@
     }
     .clinicdocquitytabsection{    
         @media(max-width: 767px) {
-        display: none;
+        // display: none;
         }
         .nav{
             border-left: 2px solid #eee; 
             display: block;
+            @media(max-width: 767px) {
+                border-left: none; 
+                display: flex;
+                flex-wrap: nowrap;
+            }
                     
         } 
         .nav-tabs{
@@ -680,6 +685,15 @@
                     position: absolute;
                     left: -4px;
                     border-radius: 5px;
+                    @media(max-width: 767px) {
+                        width: 80%;
+                        height: 5px;
+                        top: 89px;
+                        position: absolute;
+                        left: -4px;
+                        -webkit-border-radius: 5px;
+                        border-radius: 5px;
+                    }
                 }           
             }
             &:hover {
@@ -713,4 +727,129 @@
             display: block;
         }
     }
+}
+
+
+
+.privacyverticalswiper-button-next{
+    @media (min-width: 768px){
+        display: none;
+
+    }
+
+}
+.privacyverticalswiper-button-next:hover {
+    border: none !important;
+    outline: none !important;
+}
+
+.privacyverticalswiper-button-next{
+    top: 28%;
+    background: #B1CBCF;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #EEEEEE;
+    border-radius: 35px;
+    position: absolute;
+    @media (max-width: 768px) {
+        top: 5%;
+    }
+
+    &::after{content:none;}
+    
+}
+.privacyverticalswiper-button-next{                 
+    right: -4px;                
+    transform: rotate(180deg); 
+    z-index: 11;
+    position: absolute;
+
+    svg{
+        margin: 18px 19px;
+    }
+}
+
+.privacyverticalswiper-button-next:after, .swiper-rtl {
+    content: 'next';
+    display: none;
+}
+
+// .vertical-tab-list {
+//     border-left: 2px solid #EEEEEE;
+
+//     @media (max-width: 767px) {
+//         display: flex;           
+//         overflow-x: scroll;
+//         overflow-y: hidden;
+//     }
+//     &__tabfont{
+//         @media (max-width: 767px) {
+//             font-weight: 700;
+//             font-size: 16px !important;
+//             line-height: 28px;
+//             width: max-content;
+//         }
+//     }
+// }
+
+// Interactive webinar
+
+.sec060{
+    background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+    border-radius: 12px;
+    margin: 100px 0px;
+    @media(max-width: 766px) {
+        margin-bottom: 88px;
+        margin-top: 175px;
+    }
+
+    .dq-webinar-fig{
+        position: relative;
+        width: 100%;
+    }
+    .dq-webinar-fig2{
+        position: absolute;
+        width: 100%;
+        top:0px;
+        transform: translateY(50px);
+        left: 0px;
+        @media(min-width: 992px) and (max-width: 1199px) {
+            top: 15px;
+            left: 45px;
+        }
+        @media(min-width: 1200px) and (max-width: 1399px) {
+            top: 20px;
+            left: 45px;
+        }
+        @media(min-width: 1200px) and (max-width: 1399px) {
+            top: 38px;
+            left: 70px;
+        }
+        @media(min-width: 1400px){
+            top: 50px;
+            left: 70px;
+        }
+        img{
+            width: 80%;
+        }
+        @media(max-width: 766px) {
+                    transform: translateY(20px);
+            }
+    }
+.dq-webinar-article {
+    border-bottom : 1px solid #EEEEEE;
+    padding-bottom: 2.5rem;
+    margin-bottom : 2rem;  
+
+    @media(max-width: 766px) {
+        border-bottom: none;
+    }
+
+    &__title {
+        color      : #1B4A52;
+        font-size  : 16px !important;
+        line-height: 26px !important;
+        font-weight: $fnt-semibold;
+    }
+}
 }
