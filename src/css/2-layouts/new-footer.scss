@@ -208,6 +208,8 @@ footer {
             &__item {
                 border       : 1px solid #fff;
                 border-radius: 50%;
+                width: 45px;
+                height: 45px;
 
                 &:not(:last-child) {
                     margin-right: 18px;
@@ -219,15 +221,15 @@ footer {
             }
 
             .twitter {
-                padding: 9px 10px;
+                padding: 10px 10px;
             }
 
             .insta {
-                padding: 8px 9px;
+                padding: 10px 9px;
             }
 
             .linked {
-                padding: 6px 12px;
+                padding: 10px 12px;
             }
         }
 

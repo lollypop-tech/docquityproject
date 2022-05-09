@@ -106,108 +106,111 @@ $(".step06").click(function () {
 });
 
 //brand slider
-var rightSlider = new Swiper('.js-partners-icons', {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true
-  },
-  speed: 5000,
-  breakpoints: {
-    500: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    700: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    768: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    }
-  }
-});
+// var rightSlider = new Swiper('.js-partners-icons', {
+//   slidesPerView:3,
+//   spaceBetween:10,
+//   loop: true,
+//   autoplay: {
+//     delay:0,
+//     disableOnInteraction: true,
+//   },
+//   speed: 5000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
 
-var rightSlider = new Swiper('.js-partners-icons-reverse', {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-    reverseDirection: true
-  },
-  speed: 5000,
-  breakpoints: {
-    500: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    700: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    768: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    }
-  }
-});
+
+// var rightSlider = new Swiper('.js-partners-icons-reverse', {
+//   slidesPerView:3,
+//   spaceBetween:10,
+//   loop: true,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: true,
+//     reverseDirection: true,
+//   },
+//   speed: 5000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
 
 //pharma slider
-var rightSlider = new Swiper('.js-pharma-icons', {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 0
-  },
-  speed: 3000,
-  breakpoints: {
-    500: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    700: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    768: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    }
-  }
-});
+// var rightSlider = new Swiper('.js-pharma-icons', {
+//   slidesPerView: 3,
+//   spaceBetween: 10,
+//   loop: true,
+//   autoplay: {
+//     delay:0,
+//   },
+//   speed: 3000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
 
-var rightSlider = new Swiper('.js-pharma-icons-reverse', {
-  slidesPerView: 3,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-    //waitForTransition: false,
-    reverseDirection: true
-  },
-  speed: 3000,
-  breakpoints: {
-    500: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    700: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    },
-    768: {
-      slidesPerView: 4.5,
-      spaceBetween: 10
-    }
-  }
-});
+
+// var rightSlider = new Swiper('.js-pharma-icons-reverse', {
+//   slidesPerView:3,
+//   spaceBetween: 10,
+//   loop: true,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: true,
+//     //waitForTransition: false,
+//     reverseDirection: true,
+//   },
+//   speed: 3000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween:10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
+
 
 // builder
 
@@ -217,10 +220,10 @@ var swiper = new Swiper('.builderSwiper', {
   spaceBetween: 0,
   grabCursor: true,
   loop: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
@@ -309,8 +312,326 @@ $(function () {
 //     rightSlider3.update() 
 //     rightSlider4.update()
 //   },100)
-
-
 // })
+
+
+//brand slider
+
+var rightSlider1 = new Swiper('.js-partners-icons', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true
+  },
+  speed: 5000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    700: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    }
+  }
+});
+
+var rightSlider2 = new Swiper('.js-partners-icons-reverse', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    reverseDirection: true
+  },
+  speed: 5000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    700: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    }
+  }
+});
+
+$("#nav-home-tab").click(function () {
+  var rightSlider3 = new Swiper('.js-partners-icons', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true
+    },
+    speed: 5000,
+    breakpoints: {
+      500: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      700: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      }
+    }
+  });
+
+  var rightSlider4 = new Swiper('.js-partners-icons-reverse', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true,
+      reverseDirection: true
+    },
+    speed: 5000,
+    breakpoints: {
+      500: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      700: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      }
+    }
+  });
+});
+
+//pharma slider
+var rightSlider = new Swiper('.js-pharma-icons', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true
+  },
+  speed: 3000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    700: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    }
+  }
+});
+
+var rightSlider = new Swiper('.js-pharma-icons-reverse', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+    //waitForTransition: false,
+    reverseDirection: true
+  },
+  speed: 3000,
+  breakpoints: {
+    500: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    700: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 4.5,
+      spaceBetween: 10
+    }
+  }
+});
+
+$("#nav-profile-tab").click(function () {
+  var rightSlider = new Swiper('.js-pharma-icons', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true
+    },
+    speed: 3000,
+    breakpoints: {
+      500: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      700: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      }
+    }
+  });
+
+  var rightSlider = new Swiper('.js-pharma-icons-reverse', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true,
+      //waitForTransition: false,
+      reverseDirection: true
+    },
+    speed: 3000,
+    breakpoints: {
+      500: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      700: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 4.5,
+        spaceBetween: 10
+      }
+    }
+  });
+});
+
+$(document).ready(function () {
+  // Owl Carousel
+  var owl = $(".owl-top");
+  owl.owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    autoplayTimeout: 1500,
+    // autoplayHoverPause: true,
+    slideTransition: 'linear',
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3
+      },
+      480: {
+        items: 3
+      },
+      767: {
+        items: 5
+      }
+    }
+  });
+
+  $('.owl-bottom').owlCarousel({
+    loop: true,
+    rtl: true,
+    margin: 10,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    autoplayTimeout: 1500,
+    // autoplayHoverPause: true,
+    slideTransition: 'linear',
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3
+      },
+      480: {
+        items: 3
+      },
+      767: {
+        items: 5
+      }
+    }
+  });
+
+  $('.owl-pharmatop').owlCarousel({
+    loop: true,
+    margin: 30,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    autoplayTimeout: 1500,
+    autoplayHoverPause: true,
+    slideTransition: 'linear',
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3
+      },
+      480: {
+        items: 3
+      },
+      767: {
+        items: 5
+      }
+    }
+  });
+
+  $('.owl-pharmabottom').owlCarousel({
+    loop: true,
+    rtl: true,
+    margin: 30,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    autoplayTimeout: 1500,
+    autoplayHoverPause: true,
+    slideTransition: 'linear',
+    autoHeight: false,
+    autoHeightClass: 'owl-height',
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3
+      },
+      480: {
+        items: 3
+      },
+      767: {
+        items: 5
+      }
+    }
+  });
+});
 
 },{}]},{},[1])//# sourceMappingURL=about.js.map

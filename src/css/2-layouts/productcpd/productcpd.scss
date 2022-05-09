@@ -70,6 +70,9 @@
         width: 100%;
         margin: 49px auto 0px;
         position: relative;
+        // padding-top: 10px!important;
+        display: flex;
+        align-items: center;
         @media (max-width: 767px) {
             display: block;
             width: 100%;
@@ -78,6 +81,12 @@
 
         .section01-img1 {
             float: left;
+            img{
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
             @media (max-width: 767px) {
                 float: none;
                 position: relative;
@@ -88,10 +97,17 @@
         .section01-img2 {
             float: left;
             margin-left: -15px;
+            img{
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: -1px -4px;
+            }
             @media (max-width: 767px) {
                 position: absolute;
                 top:0px;
-                transform: translateX(155px);
+                transform: translateX(165px);
             }
         }
 
@@ -99,16 +115,26 @@
             float: left;
             margin-left: -15px;
             margin-right: 14px;
+            img{
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
             @media (max-width: 767px) {
                 position: absolute;
                 top:0px;
-                transform: translateX(175px);
+                transform: translateX(185px);
             }
         }
 
         .section01-media{
             // display: flex;
             // width: 480px;
+            // span{
+            //     display: flex !important;
+            //     margin-top: -9px !important;
+            // }
             &__cnt{
                 font-weight: 500;
                 font-size: 16px;
@@ -116,9 +142,14 @@
                 color: #1D1919;
                 opacity: 0.7;
                 width: 312px;
+                @media (max-width: 767px) {
+                    margin-top: 13px;
+                }
+                
             }
             .span_text{
-                margin-top: -8px;
+                display: flex !important;
+                margin-top: -8px !important;
             }
         }
     }

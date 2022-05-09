@@ -1,5 +1,9 @@
 .dq-tab {
     border: 1px solid transparent !important;
+    margin-top: 8px;
+    @media(max-width: 767px) {
+        margin-top: 14px;
+    }
 
     .nav-link {
         font-size    : 14px !important;

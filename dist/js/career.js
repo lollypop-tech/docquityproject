@@ -2,10 +2,10 @@
 'use strict';
 
 // var swiper = new Swiper('.diverseSwiper', {
-//   direction: 'vertical',
-//   slidesPerView:3,
+//   direction: 'horizontal',
+//   slidesPerView:1,
 //   slidesPerGroup: 1,
-//   spaceBetween:20,
+//   spaceBetween:0,
 //   grabCursor: true,
 //   loop: true,
 //   // autoplay: {
@@ -16,28 +16,36 @@
 //     el: '.swiper-pagination',
 //     clickable: true,
 //   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
 //   breakpoints: {
-//     767: {
-//       slidesPerView:3,
-//       slidesPerGroup: 1, 
-//       spaceBetween:10,
-//     },
-//     768: {
+//     767: {     
+//       direction: 'vertical',
 //       slidesPerView:2,
 //       slidesPerGroup: 1, 
-//       spaceBetween:10,      
+//       spaceBetween:0,
+//     },
+//     768: {     
+//       direction: 'vertical',
+//       slidesPerView:2,
+//       slidesPerGroup: 1, 
+//       spaceBetween:0,      
 //     }
 //   }  
 // });
 
 
 var swiper = new Swiper('.diverseSwiper', {
-  direction: 'vertical',
-  slidesPerView: 2,
+  direction: 'horizontal',
+  slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 0,
+  spaceBetween: 35,
   grabCursor: true,
   loop: true,
+  autoHeight: true,
+  // mousewheel: true,
   // autoplay: {
   //   delay: 2000,
   //   disableOnInteraction: false,
@@ -46,18 +54,36 @@ var swiper = new Swiper('.diverseSwiper', {
     el: '.swiper-pagination',
     clickable: true
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
   breakpoints: {
     767: {
+      direction: 'vertical',
       slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 0
+      spaceBetween: 0,
+      autoHeight: false
+      // mousewheel: false,
     },
     768: {
+      direction: 'vertical',
       slidesPerView: 2,
       slidesPerGroup: 1,
-      spaceBetween: 0
+      spaceBetween: 0,
+      autoHeight: false
+      // mousewheel: false,  
     }
   }
+});
+
+// diverse-card
+$(document).ready(function () {
+  $(".diverse-card").click(function () {
+    $(".diverse-card").not(this).removeClass("active").addClass("inactive");
+    $(this).addClass("active").removeClass("inactive");
+  });
 });
 
 var swiper = new Swiper(".individualSwiper", {
@@ -86,71 +112,52 @@ var swiper = new Swiper(".individualSwiper", {
 
 // support mobile
 
+// var swiper = new Swiper(".supportSwiper", { 
+//   spaceBetween: 30,
+//   slidesPerView: 1,
+//   slidesPerGroup: 1,
+//   loop: true,
+//   // autoplay: {
+//   //   delay: 5000,
+//   // },
+//   loopFillGroupWithBlank: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+
+// });
+
+
 var swiper = new Swiper(".supportSwiper", {
-  slidesPerView: 1,
   spaceBetween: 30,
-  // slidesPerGroup: 3,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   loop: true,
-  autoplay: {
-    delay: 5000
-  },
-  loopFillGroupWithBlank: true,
+  autoHeight: true,
+  // setWrapperSize:true,
+  // autoplay: {
+  //   delay:5000,
+  // },
+  // loopFillGroupWithBlank: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 
 });
 
-// support card svg animation
-// var circle = new Vivus('square1', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
-// var circle = new Vivus('square2', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
-// var circle = new Vivus('square3', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
-// var circle = new Vivus('square4', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
-// var circle = new Vivus('square5', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
-// var circle = new Vivus('square6', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
-// var circle = new Vivus('square7', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
-// var circle = new Vivus('square8', {
-//   type: 'delayed', 
-//   duration: 200,
-//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
-// });
-
+// support card
+$(document).ready(function () {
+  $(".support-card").click(function () {
+    $(".support-card").not(this).removeClass("active").addClass("inactive");
+    $(this).addClass("active").removeClass("inactive");
+  });
+});
 
 $('.hover-card').hover(function () {
   new Vivus('square10', { duration: 150 });
@@ -234,8 +241,23 @@ $(document).on('click', function () {
 });
 
 $(function () {
-
+  document.getElementById('pre-button').classList.add('display-button');
   $('.nav-tabs').scroll(function () {
+    var $width = $('.nav-tabs').outerWidth();
+    var $scrollWidth = $('.nav-tabs')[0].scrollWidth;
+    var $scrollLeft = $('.nav-tabs').scrollLeft();
+
+    if ($scrollWidth - $width === $scrollLeft) {
+      // alert('right end');
+      document.getElementById('nxt-button').classList.add('display-button');
+    } else {
+      document.getElementById('nxt-button').classList.remove('display-button');
+    }
+    if ($scrollLeft === 0) {
+      document.getElementById('pre-button').classList.add('display-button');
+    } else {
+      document.getElementById('pre-button').classList.remove('display-button');
+    }
     $('#out').text('scrollLeft: ' + $(this).scrollLeft());
   });
 
@@ -253,31 +275,44 @@ $(function () {
     return false;
   });
 
-  $('.careerverticalswiper-button-pre').click(function () {
+  $(".careerverticalswiper-button-pre").click(function () {
+
     if (window.innerWidth > 769) {
-      $('.nav-tabs').animate({
-        scrollLeft: $('.nav-tabs').scrollLeft() - 500
+      $(".nav-tabs").animate({
+        scrollLeft: $(".nav-tabs").scrollLeft() - 500
       }, 300);
     } else {
-      $('.nav-tabs').animate({
-        scrollLeft: $('.nav-tabs').scrollLeft() - 250
+      $(".nav-tabs").animate({
+        scrollLeft: $(".nav-tabs").scrollLeft() - 250
       }, 300);
     }
 
     return false;
   });
-  var nodes = Array.prototype.slice.call(document.getElementById('nav-tab').children);
+  var nodes = Array.prototype.slice.call(document.getElementById("nav-tab").children);
 
   console.log(nodes.length);
   if (nodes.length <= 3) {
-    $('.careerverticalswiper-button-next').addClass('hidden');
-    $('.careerverticalswiper-button-pre').addClass('hidden');
+    $(".careerverticalswiper-button-next").addClass("hidden");
+    $(".careerverticalswiper-button-pre").addClass("hidden");
   } else {
-    $('.careerverticalswiper-button-next').removeClass('hidden');
-    $('.careerverticalswiper-button-pre').removeClass('hidden');
+    $(".careerverticalswiper-button-next").removeClass("hidden");
+    $(".careerverticalswiper-button-pre").removeClass("hidden");
   }
 });
 
-//https://github.com/OwlCarousel2/OwlCarousel2/issues/1471
+function isVisible($el) {
+  var docViewTop = $(window).scrollLeft();
+  var docViewBottom = docViewTop + $(window).innerWidth();
+  var elTop = $el.offset().left;
+  var elBottom = elTop + $el.innerWidth();
+  return elBottom <= docViewBottom && elTop >= docViewTop;
+}
+$(function () {
+  console.log("#Second box  visible=" + isVisible($("#nav-department6-tab")));
+  $(window).scroll(function () {
+    console.log("Second box visible=" + isVisible($("#nav-department6-tab")));
+  });
+});
 
 },{}]},{},[1])//# sourceMappingURL=career.js.map

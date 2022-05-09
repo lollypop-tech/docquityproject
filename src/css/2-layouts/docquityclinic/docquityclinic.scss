@@ -13,7 +13,8 @@
     }
 
     .section011-row{
-        padding: 55px 0px;
+        // padding: 55px 0px;
+        padding: 0px 0px;
     }
 
     .newbanner{
@@ -59,7 +60,7 @@
             left: 0px;
         }
         img{
-            margin-top: 64px;
+            margin-top: 50px;
             @media (min-width: 767px) {
                 height: 682px;
                 width: 1174px !important;
@@ -199,8 +200,8 @@
 .section07 {
     background: #ffffff;
     padding : {
-        top   : 4rem;
-        bottom: 4rem;
+        // top   : 4rem;
+        // bottom: 4rem;
     }
 }
 
@@ -344,7 +345,7 @@
     padding: 0px 0px 52px;
 
     @media(min-width: 767px) {
-        padding: 40px 0px 61px;
+        padding: 100px 0px 61px;
     }
 
     .section100-desktop {
@@ -362,7 +363,7 @@
 
     .section100swiper{
         width: 100%;             
-        margin-top: 80px;         
+        // margin-top: 80px;         
         .swiper-slide {
             display: flex;   
             text-align: center; 
@@ -437,7 +438,7 @@
         height: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 64px;
+        // margin-top: 64px;
         
     }
     .swiper-slide {
@@ -486,6 +487,10 @@
                 .slide-icon {
                     width: 10%;
                     margin-bottom: 31px;
+                    img{
+                        width: 56px;
+                        height: 56px;
+                    }
                 }
             }
             
@@ -631,8 +636,6 @@
     }
 }
 
-
-//clinic page
 .clinicdocquity-section{    
     position     : relative;
     padding      : 88px 0px 37px;  
@@ -641,7 +644,8 @@
         padding: 64px 40px 53px 80px;
         margin-bottom: 100px; 
     }
-    .clinicdocquitytabsection{    
+    .clinicdocquitytabsection{ 
+        margin-top: 76px;   
         @media(max-width: 767px) {
         // display: none;
         }
@@ -651,7 +655,14 @@
             @media(max-width: 767px) {
                 border-left: none; 
                 display: flex;
-                flex-wrap: nowrap;
+                flex-wrap: unset;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                cursor: pointer;
+                margin:50px 0;
+                &::-webkit-scrollbar{
+                    height: 1px !important;
+                }
             }
                     
         } 
@@ -669,6 +680,7 @@
             font-weight: 400;         
             @media (min-width: 768px) {
                 padding: 10px 20px;
+                display: flex;
             }
             @media (min-width: 1200px) {
                 padding: 10px 0px 10px 15px;
@@ -699,6 +711,9 @@
             &:hover {
                 color: #1B4A52;
             }
+            p{
+                white-space: nowrap;
+            }
         }   
        
         .clinicrighttabs{            
@@ -713,7 +728,7 @@
             .clinicdocquity-img {
                 width: 100%;               
                 position: relative;
-                transform: translateY(-30px);
+                transform: translateY(-56px);
                 img{margin-bottom: 30px;}
             }
         }
@@ -727,8 +742,50 @@
             display: block;
         }
     }
-}
 
+    .clinicverticalswiper-button-next:hover , .clinicverticalswiper-button-next:visited {
+        border: none !important;
+        outline: none !important;
+    }
+
+    .clinicverticalswiper-button-next{
+        top: -2%;
+        background: #B1CBCF;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #EEEEEE;
+        border-radius: 35px;
+        position: absolute;
+
+        @media (max-width: 768px) {
+            top: 32%;
+        }
+        @media (min-width: 531px){
+            display: none;
+        }
+
+        &::after{content:none;}
+        
+    }
+    .clinicverticalswiper-button-next{                 
+        right: -71px;                
+        transform: rotate(180deg); 
+        z-index: 1;
+        position: absolute;
+        @media(max-width:659px){
+            right: 1px;
+    }
+
+        svg{
+            margin: 18px 19px;
+        }
+    }
+
+    .clinicverticalswiper-button-next:after, .swiper-rtl {
+        content: 'next';
+        display: none;
+    }
+}
 
 
 .privacyverticalswiper-button-next{
@@ -793,6 +850,20 @@
 // }
 
 // Interactive webinar
+
+.sec050{
+    .dq-webinar-fig2{
+        top: 50px;
+        left: 70px;
+        img{
+            width: 80%;
+        }
+    }
+}
+
+.sec030{
+    margin: 20px auto;
+}
 
 .sec060{
     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);

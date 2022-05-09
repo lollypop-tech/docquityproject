@@ -15,4 +15,21 @@ var swiper = new Swiper(".section080swiper", {
   }
 });
 
+// Tab section
+
+$(function () {
+
+  $('.nav-tabs').scroll(function () {
+    $('#out').text('scrollLeft: ' + $(this).scrollLeft());
+  });
+
+  $('.patientverticalswiper-button-next').click(function () {
+    $('.nav-tabs').animate({
+      scrollLeft: $('.nav-tabs').scrollLeft() + 250
+    }, 300);
+
+    return false;
+  });
+});
+
 },{}]},{},[1])//# sourceMappingURL=docquitypatient.js.map

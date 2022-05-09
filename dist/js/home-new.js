@@ -120,50 +120,6 @@ $(document).ready(function () {
 
 // why use docquity
 
-// var swiper = new Swiper(".whyusedocquitySwiper", {
-//   direction: "horizontal",
-//   slidesPerView: 1,
-//   slidesPerGroup: 1,
-//   spaceBetween: 25,
-//   grabCursor: true,
-//   loop: true,
-//   autoplay: {
-//     delay: 2000,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     767: {
-//       direction: "vertical",
-//       slidesPerView: 2,
-//     },
-//     768: {
-//       direction: "vertical",
-//       slidesPerView: 2,
-//     },
-//   },
-// });
-
-// // why use docquity hover
-// var $boxes1 = $(".whyusedocquity-right-img"),
-//     $productLinks1 = $(".whyusedocquity-card").mouseover(function () {
-//   $boxes1.removeClass("active").filter("#useBox" + this.id).addClass("active");
-// });
-
-// $(document).ready(function () {
-//   $(".whyusedocquity-card").hover(function () {
-//     $(".whyusedocquity-card").not(this).removeClass("active").addClass("inactive");
-//     $(this).addClass("active").removeClass("inactive");
-//   });
-// });
-
 // why docquity offers
 var $boxes = $(".dq-mobile-credit"),
     $productLinks = $(".thumbnail-credit").mouseover(function () {
@@ -264,80 +220,6 @@ var swiper = new Swiper(".homeleadershipSwiper", {
 
 //home page mobile slider
 
-// $(document).ready(function() {   
-//   var mySwiper = new Swiper(".testswiper", {
-//     spaceBetween: 25,
-//     slidesPerView: 1,
-//     centeredSlides: true,        
-//     loop: true,
-//     // autoplay: {
-//     //   delay:395,
-//     //   disableOnInteraction: true,
-//     // },
-//     speed: 2600,      
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev"
-//     },
-//     breakpoints: {
-//       767: {      
-//         slidesPerView:7 
-//       },
-//       768: {      
-//         slidesPerView:7      
-//       }
-//     }  
-//   });
-// });
-
-// let SwiperTop = new Swiper('.wall--top', {
-//   direction:'vertical',
-//   spaceBetween: 0,
-//   centeredSlides: true,
-//   speed: 2600,
-//   autoplay: {
-//     delay: 395,
-//   },
-//   loop: true,
-//   slidesPerView:'auto',
-//   allowTouchMove: false,
-//   disableOnInteraction: true
-// });
-
-// let SwiperBottom = new Swiper('.wall--bottom', {
-//   direction:'vertical',
-//   spaceBetween: 0,
-//   centeredSlides: true,
-//   speed: 2600,
-//   autoplay: {
-//     delay: 395,
-//     reverseDirection: true
-//   },
-//   loop: true,
-//   loopedSlides: 4,
-//   slidesPerView:'auto',
-//   allowTouchMove: false,
-//   disableOnInteraction: true
-// });
-// let SwiperThird = new Swiper('.wall--third', {
-//   direction:'vertical',
-//   spaceBetween: 0,
-//   centeredSlides: true,
-//   speed: 2600,
-//   autoplay: {
-//     delay: 395,
-//   },
-//   loop: true,
-//   slidesPerView:'auto',
-//   allowTouchMove: false,
-//   disableOnInteraction: true
-// });
-
-
 $(document).ready(function () {
   var mySwipermobile = new Swiper(".testswiper", {
     effect: 'coverflow',
@@ -377,60 +259,16 @@ $(document).ready(function () {
   });
 });
 
-// var swiper = new Swiper(".whyusedocquitySwiper", {
-//   direction: "horizontal",
-//   slidesPerView: 1,
-//   slidesPerGroup: 1,
-//   spaceBetween: 25,
-//   grabCursor: true,
-//   loop: true,
-//   // autoplay: {
-//   //   delay: 2000,
-//   //   disableOnInteraction: false,
-//   // },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     767: {
-//       direction: "vertical",
-//       slidesPerView: 3,
-//       spaceBetween: 0,
-//     },
-//     768: {
-//       direction: "vertical",
-//       slidesPerView: 3,
-//       spaceBetween: 0,
-//     },
-//   },
-// });
-
-// // why use docquity hover
-// var $boxes1 = $(".whyusedocquity-right-img"),
-//     $productLinks1 = $(".whyusedocquity-card").click(function () {
-//   $boxes1.removeClass("active").filter("#useBox" + this.id).addClass("active");
-// });
-
-// $(document).ready(function () {
-//   $(".whyusedocquity-card").click(function () {
-//     $(".whyusedocquity-card").not(this).removeClass("active").addClass("inactive");
-//     $(this).addClass("active").removeClass("inactive");
-//   });
-// });
-
-
+// why use docquity
 var swiper = new Swiper(".whyusedocquitySwiper", {
   direction: "horizontal",
   slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 25,
+  spaceBetween: 15,
   grabCursor: true,
   loop: true,
+  autoHeight: true,
+  // mousewheel: false,
   // autoplay: {
   //   delay: 2000,
   //   disableOnInteraction: false,
@@ -447,12 +285,16 @@ var swiper = new Swiper(".whyusedocquitySwiper", {
     767: {
       direction: "vertical",
       slidesPerView: 3,
-      spaceBetween: 0
+      spaceBetween: 0,
+      autoHeight: false
+      // mousewheel: true,     
     },
     768: {
       direction: "vertical",
       slidesPerView: 3,
-      spaceBetween: 0
+      spaceBetween: 0,
+      autoHeight: false
+      // mousewheel: true,  
     }
   }
 });

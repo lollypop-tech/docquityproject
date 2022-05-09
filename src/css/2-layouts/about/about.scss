@@ -26,19 +26,97 @@
     }
 }
 
+// .brand-section {
+//     padding: 78px 0px 77px;
+
+//     @media (min-width: 767px) {
+//         position: relative;
+//         padding: 100px 0 0px;
+//         margin-bottom: 50px;
+//     }
+
+//     .para-text{
+//         margin-bottom: 25px;
+//     }
+
+//     #nav-tab {
+//         .nav-item {
+//             padding: 0px 0px 19px 0px;
+//             line-height: 32px !important;
+//             letter-spacing: -0.5px;
+//             font-weight: 500;
+//             color: #1D1919;
+//             opacity: 0.7;
+//             background: transparent;
+//             border: none;
+//             cursor: pointer;
+
+//             @media(max-width: 767px) {
+//                 // flex: none;
+//                 font-size: 16px !important;
+//                 padding: 16px 5px;
+//             }
+//         }
+
+//         .nav-item.active {
+//             padding: 0px 0px 16px 0px;
+//             line-height: 32px !important;
+//             letter-spacing: -0.5px;
+//             font-weight: 800;
+//             color: #1B4A52;
+//             opacity: 1;
+//             background: transparent;
+//             border-bottom: 3px solid #1B4A52;
+
+//             @media(max-width: 767px) {
+//                 font-size: 16px !important;
+//                 padding: 16px 5px;
+//             }
+//         }
+//     }
+
+//     .brand-slider-tabpane {
+//         padding-top: 50px;
+
+//         @media(max-width: 767px) {
+//             margin-top: 41px;
+//         }
+
+//         .js-partners-icons,
+//         .js-partners-icons-reverse,
+//         .js-pharma-icons,
+//         .js-pharma-icons-reverse {
+//             overflow: hidden;
+//         }
+
+//         .logo-size {
+//             width: 278px;
+//             height: 168px;
+//             text-align: center;
+//             border: 1px solid #B1CBCF;
+//             border-radius: 24px;
+//             // padding      : 64px 10px;
+//             display: inline-flex;
+//             cursor: pointer;
+
+//             @media(max-width: 767px) {
+//                 width: 100%;
+//                 height: 65px;
+//                 padding: 4px 4px;
+//                 border-radius: 12px;
+//             }
+
+//         }
+//     }
+// }
+
+
 .brand-section {
     padding: 78px 0px 77px;
-
     @media (min-width: 767px) {
         position: relative;
-        padding: 100px 0 0px;
-        margin-bottom: 50px;
+        padding: 150px 0 75px;
     }
-
-    .para-text{
-        margin-bottom: 25px;
-    }
-
     #nav-tab {
         .nav-item {
             padding: 0px 0px 19px 0px;
@@ -51,13 +129,11 @@
             border: none;
             cursor: pointer;
 
-            @media(max-width: 767px) {
-                // flex: none;
+            @media(max-width: 767px) {               
                 font-size: 16px !important;
                 padding: 16px 5px;
             }
         }
-
         .nav-item.active {
             padding: 0px 0px 16px 0px;
             line-height: 32px !important;
@@ -74,38 +150,31 @@
             }
         }
     }
-
     .brand-slider-tabpane {
-        padding-top: 50px;
-
+        margin-top: 80px;
         @media(max-width: 767px) {
             margin-top: 41px;
+        }     
+        .medical-top{
+            margin-bottom: 10px;
+        } 
+        .pharma-top{
+            margin-bottom: 10px;
         }
-
-        .js-partners-icons,
-        .js-partners-icons-reverse,
-        .js-pharma-icons,
-        .js-pharma-icons-reverse {
-            overflow: hidden;
-        }
-
         .logo-size {
-            width: 278px;
-            height: 168px;
+            width: 255px;
+            height: 155px;
             text-align: center;
             border: 1px solid #B1CBCF;
-            border-radius: 24px;
-            // padding      : 64px 10px;
+            border-radius: 24px;           
             display: inline-flex;
             cursor: pointer;
-
             @media(max-width: 767px) {
                 width: 100%;
                 height: 65px;
                 padding: 4px 4px;
                 border-radius: 12px;
             }
-
         }
     }
 }
@@ -200,6 +269,140 @@
 }
 
 
+// .builder-section {
+//     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+//     margin: 0px 15px;
+//     border-radius: 12px;
+//     position: relative;
+//     padding: 88px 0px 37px;
+
+//     @media(min-width: 767px) {
+//         padding: 100px 100px 150px;
+//     }
+
+//     .builder-row {
+//         @media(max-width: 767px) {
+//             display: flex;
+//             flex-direction: column-reverse;
+//             ;
+//         }
+
+//         // builder-swiper
+//         .swiper {
+//             width: 100%;
+//             max-height: 455px;
+//             padding-left: 45px;
+//             margin-top: 72px;
+
+//             @media(max-width: 767px) {
+//                 max-height: 480px;
+//                 padding-left: 15px;
+//                 margin-top: 0px;
+//             }
+//         }
+
+//         .swiper-slide {
+//             display: flex;
+
+//             .builder-card {
+
+//                 @media(max-width: 767px) {
+//                     padding-right: 0px;
+//                 }
+
+//                 .builder-img {
+//                     margin-bottom: 30px;
+//                     // background: #1B4A52;
+//                     // width: 56px;
+//                     // height: 56px;
+//                     // border-radius: 50%;
+//                 }
+//             }
+//         }
+
+//         .swiper-pagination-bullets {
+//             right: inherit;
+//             left: 0px;
+//             top: 50% !important;
+//             height: 65px;
+
+//             @media(max-width: 767px) {
+//                 transform: rotate(-90deg) !important;
+//                 left: 45%;
+//                 top: 90% !important;
+//                 height: 58px;
+//                 width: 40px;
+//                 z-index: 9;
+//             }
+
+//             .swiper-pagination-bullet {
+//                 // display: none !important;
+//                 margin: 10px 0px !important;
+
+//                 @media(max-width: 767px) {
+//                     height: 20px;
+//                     width: 3px;
+//                     border-radius: 4px;
+//                 }
+//             }
+
+//             .swiper-pagination-bullet-active {
+//                 background: #1B4A52 !important;
+//             }
+//         }
+
+
+//         .builder-right {
+//             position: relative;
+
+//             .builder-right-img{
+//                 width: 580px;
+//                 @media (max-width: 767px) {
+//                     width: 100%;
+//                 }
+                // margin: 0px auto auto;
+//                 img{
+//                     border-radius: 24px;
+//                 }
+//             }
+
+//             .builder-right-card {
+//                 width: 80%;
+//                 padding: 35px;
+//                 height: 279px;
+//                 background: rgba(255, 255, 255, 0.4);
+//                 position: absolute;
+//                 transform: translateY(330px);
+//                 inset: 0;
+//                 z-index: 2;
+//                 backdrop-filter: blur(10px);
+//                 border-radius: 24px;
+//                 border: 1px solid rgba(255, 255, 255, 0.2);
+//                 left: inherit;
+//                 right: -25px;
+
+//                 @media (max-width: 767px) {
+//                     width: 95%;
+//                     position: relative;
+//                     left: 0px;
+//                     margin: 0px auto;
+//                     transform: translateY(-50px);
+//                     padding: 24px 20px;
+//                 }
+//             }
+
+//             h2 {
+//                 width: 60%;
+
+//                 @media (max-width: 767px) {
+//                     width: 70%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 .builder-section {
     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     margin: 0px 15px;
@@ -231,22 +434,26 @@
                 margin-top: 0px;
             }
         }
-
         .swiper-slide {
             display: flex;
-
             .builder-card {
-
                 @media(max-width: 767px) {
                     padding-right: 0px;
                 }
-
                 .builder-img {
-                    margin-bottom: 30px;
-                    // background: #1B4A52;
-                    // width: 56px;
-                    // height: 56px;
-                    // border-radius: 50%;
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                    background:#1B4A52;
+                    text-align: center;
+                    padding: 10px 0px;
+                    svg{
+                        height: 32px;
+                        width: 32px;
+                    }
+                    .white{
+                        fill: #fff;
+                    }
                 }
             }
         }
@@ -291,6 +498,8 @@
                 @media (max-width: 767px) {
                     width: 100%;
                 }
+                // margin: auto;
+                // margin-top: 75px;
                 margin: 0px auto auto;
                 img{
                     border-radius: 24px;
