@@ -666,7 +666,7 @@
         padding      : 0px 0px 440px;
         // margin-bottom: 400px;
         position: relative;
-        height: 1800px;
+        height: 1600px;
     }
 
     .second-explore{
@@ -1000,7 +1000,7 @@
 
                     .firstlabel{
                         right: -460px;
-                        top: 22% !important;
+                        top: 23% !important;
                         @media(min-width: 992px) and (max-width: 1399px) {
                             // right: -305px;
                             right: -435px;
@@ -1016,7 +1016,7 @@
                     }
 
                     .label {
-                        top  : 30%;
+                        top  : 25%;
                         // right: 110px;
 
                         @media(max-width: 767px) {
@@ -1285,8 +1285,8 @@
         align-items: center;
         margin-bottom: 24px;
         .option-mob-img{
-            width :302.54px;
-            height: 606.9px;
+            width :260px;
+            height: 535px;
             margin-top: 44px !important;
         }
     }
@@ -1299,13 +1299,14 @@
         align-items: center;
         .option-mob-img1{
             margin-top: 44px !important;
-            width :302.54px;
-            height: 606.9px;
+            width :260px;
+            height: 535px;
         }
     }
     .label-mob{
         text-align: center;
-        padding-bottom: 15px;
+        padding-bottom: 35px;
+        margin-top: -35px;
         .info-mob-span{
             font-weight: 500;
             font-size: 14px;
@@ -2513,7 +2514,7 @@
 .wallhome-setion{
     margin: 0px 15px;
     @media (max-width: 768px){
-        margin-bottom: 600px;
+        margin-bottom: 65px;
     }
     .dq-maincnt-leftwrap {
         padding: 240px 0px 170px 60px;
@@ -2581,13 +2582,15 @@
                                     img{
                                         width: 60px;
                                         height: 60px;
-                                        margin-right: 20px;
+                                        margin-right: 18px;
                                     }
                                 }
         
                                 .wall-text {
                                     display: table;
                                     // margin-bottom: -15px !important;
+                                    margin-top: 10px !important;
+                                    padding-top: 10px;
                                     p{
                                         margin-left: 20px;
                                     }

@@ -3,7 +3,7 @@
     position: relative;
 
     @media (min-width: 768px) {
-        padding: 100px 0px 100px;
+        padding: 100px 0px 0px;
     }
     .region-cardlist {
 
@@ -57,7 +57,7 @@
             .region-card2 {
                 position: absolute;
                 right: 0px;
-                top: -255px; 
+                top: -235px; 
                 @media (max-width: 768px) {
                     top: 0px;
                     transform: translateX(0px);
@@ -87,7 +87,7 @@
         padding: 62px 0px 0px;
 
         @media (min-width: 768px) {
-            padding: 165px 60px 165px;
+            padding: 135px 60px 135px;
             text-align: left;
         }
     }
@@ -491,9 +491,13 @@
                     .diverse-img {
                         float: left;
                         margin-right: 16px;
-                        width: 13%;
+                        // width: 13%;
                         @media(max-width: 767px) {
                             width: 20%;                      
+                        }
+                        img{
+                            width: 60px;
+                            height: 60px;
                         }
                     }
                     .diverse-text {
@@ -1094,11 +1098,13 @@
 // }
 
 .talk-section {
-    background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
+    background: linear-gradient(0deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
     margin: 0px 15px;
     border-radius: 12px;
-
-
+    padding: 60px 0px 60px;
+    @media(min-width: 767px) {
+        padding: 76px 0px 64px;
+    }
     #nav-tab {
 
         gap: 90px;
@@ -1154,10 +1160,6 @@
                 }
             }
         }
-
-    @media(min-width: 767px) {
-        padding: 76px 0px 64px;
-    }
 
     .search-container {
         width: 66%;
@@ -1300,7 +1302,7 @@
                 }
 
                 &:hover {
-                    box-shadow: 0 7px 23px 0 #0000000f;
+                    filter: drop-shadow(0 55px 17px #00000012);
                 }
 
                 .department-logo {
@@ -1339,13 +1341,13 @@
                     padding: 3px 16px;
                     margin-right: 12px;
                     position: relative;
-                    transform: translateY(20px);
+                    transform: translateY(14px);
                 }
 
                 .faq-btn {
                     position: absolute;
                     right: 30px;
-                    top: 25px;
+                    top: 25.5px;
                     line-height: 16px !important;
                     padding: 20px 25px;
 
@@ -1385,7 +1387,7 @@
         background: #B1CBCF;
         width: 50px;
         height: 50px;
-        border: 1px solid #EEEEEE;
+        // border: 1px solid #EEEEEE;
         border-radius: 35px;
         cursor: pointer;
         position: absolute;
@@ -1407,7 +1409,7 @@
     }
 
         svg{
-            margin: 18px 19px;
+            margin: 20px 21px;
         }
     }
 
@@ -1429,7 +1431,7 @@
         background: #B1CBCF;
         width: 50px;
         height: 50px;
-        border: 1px solid #EEEEEE;
+        // border: 1px solid #EEEEEE;
         border-radius: 35px;
         cursor: pointer;
         position: absolute;
@@ -1451,7 +1453,7 @@
     }
 
         svg{
-            margin: 18px 19px;
+            margin: 20px 21px;
         }
     }
 

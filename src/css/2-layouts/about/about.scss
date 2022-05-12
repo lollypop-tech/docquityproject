@@ -1,6 +1,6 @@
 .aboutbanner-section {
     position: relative;
-    background: linear-gradient(180deg, #FFFFFF -6.18%, #FFF4F4 101.72%);
+    background: linear-gradient(0deg, #FFFFFF -6.18%, #FFF4F4 101.72%);
     border-radius: 12px;
 
     @media (min-width: 767px) {
@@ -10,6 +10,7 @@
         border-radius: 12px;
     }
     .newbanner{
+        padding-top: 85px;
         .para{
             margin-bottom: 50px;
         }
@@ -171,7 +172,7 @@
             cursor: pointer;
             @media(max-width: 767px) {
                 width: 100%;
-                height: 65px;
+                height: 70px;
                 padding: 4px 4px;
                 border-radius: 12px;
             }
@@ -427,6 +428,7 @@
             max-height: 455px;
             padding-left: 45px;
             margin-top: 72px;
+            cursor: pointer;
 
             @media(max-width: 767px) {
                 max-height: 480px;
@@ -447,6 +449,7 @@
                     background:#1B4A52;
                     text-align: center;
                     padding: 10px 0px;
+                    margin-bottom: 30px;
                     svg{
                         height: 32px;
                         width: 32px;
@@ -455,6 +458,9 @@
                         fill: #fff;
                     }
                 }
+                    h6{
+                        margin-bottom: 20px;
+                    }
             }
         }
 
@@ -466,8 +472,8 @@
 
             @media(max-width: 767px) {
                 transform: rotate(-90deg) !important;
-                left: 45%;
-                top: 90% !important;
+                left: 35%;
+                top: 88% !important;
                 height: 58px;
                 width: 40px;
                 z-index: 9;
@@ -546,7 +552,7 @@
 
 .team-section {
     background: linear-gradient(180deg, #FFFFFF -17.46%, #FEFAF6 47.11%);
-    margin: 0px 15px 15px 15px;
+    margin: 0px 15px 0px 15px;
     border-radius: 12px;
     padding: 0px 0px 52px;
 
@@ -673,6 +679,35 @@
         @media(max-width: 768px) {
             position: relative;
             transform: translateY(-220px);
+        }
+    }
+    .swiper-pagination-bullets {
+        right : inherit;
+        left  : 0px;
+        // top   : 50% !important;
+        bottom: -47px !important;
+        height: 65px;    
+        
+        .swiper-pagination-bullet {
+            margin: 10px 5px !important;
+        }
+        .swiper-pagination-bullet-active {
+            background: #1B4A52 !important;
+        }
+    }
+    .swiper-pagination-flatindic {
+    
+        .swiper-pagination-bullet {
+            background   : #1B4A52;
+            width        : 16px;
+            border-radius: 4px !important;
+            height       : 6px !important;
+            transition   : all .5s ease 0s;
+    
+            &-active {
+                width     : 33px !important;
+                transition: all .5s ease 0s;
+            }
         }
     }
 }
@@ -966,12 +1001,12 @@
             svg {
                 width: 32px;
                 height: 32px;
-                right: 54px;
+                right: 55px;
                 position: absolute;
-                top: 13px;
+                top: 11px;
                 @media (max-width: 766px) {
                     width: 20px;
-                    right: 80px;
+                    right: 81.5px;
                     top: 3px;
                 }
                 @media(min-width: 992px) and (max-width: 1199px) {
@@ -1064,12 +1099,35 @@
             @media(min-width: 1200px) and (max-width: 1399px) {
                 left: 12%;
             }
-            @media (max-width: 767px) {
+            @media(min-width: 350px) and (max-width: 361px) {
                 top: 18px;
-            }
-            @media (max-width:532px){
                 width: 195%;
             }
+            @media(min-width: 362px) and (max-width: 378px) {
+                top: 18px;
+                width: 195%;
+            }
+            @media(min-width: 379px) and (max-width: 400px) {
+                left: 12%;
+                width: 192%;
+                top: 18px;
+            }
+            @media(min-width: 383px) and (max-width: 400px) {
+                left: 11%;
+                width: 181%;
+                top: 18px;
+            }
+            @media(min-width: 401px) and (max-width: 420px) {
+                left: 8%;
+                width: 173%;
+                top: 18px;
+            }
+            // @media (max-width: 767px) {
+            //     top: 18px;
+            // }
+            // @media (max-width:767px){
+            //     width: 195%;
+            // }
         }
 
         #line-progress {
@@ -1084,6 +1142,11 @@
             // @media(min-width: 992px) and (max-width: 1199px) {
             //     width: 1%;
             // }
+            @media(min-width: 379px) and (max-width: 400px) {
+                left: -1%;
+                width: 179%;
+                // top: 18px;
+            }
         }
     }
 
@@ -1284,6 +1347,10 @@
 
 // new map
 
+.map-desktop{
+    padding: 100px 0px 40px;
+}
+
 #image-map2{
     position: relative;
     max-width: 1366px;
@@ -1326,6 +1393,9 @@
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
     opacity: 0;
     font-size: 11px;
+    a{
+        color: #1D1919 !important;
+    }
     .loc-icon{
     float: left;
     margin-right: 5px;

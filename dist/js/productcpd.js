@@ -59,7 +59,25 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
   slideToClickedSlide: true,
   slidesPerView: 8,
   watchSlidesVisibility: true,
-  watchSlidesProgress: true
+  watchSlidesProgress: true,
+  breakpoints: {
+    // 767: {      
+    //   slidesPerView:1,    
+    //   slidesPerGroup:1    
+    // },
+    992: {
+      slidesPerView: 5
+      // slidesPerGroup:3       
+    },
+    1200: {
+      slidesPerView: 7
+      // slidesPerGroup:3       
+    },
+    1400: {
+      slidesPerView: 8
+      // slidesPerGroup:3       
+    }
+  }
 });
 
 var galleryTop = new Swiper('.gallery-top', {

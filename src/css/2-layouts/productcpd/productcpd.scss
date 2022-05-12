@@ -166,11 +166,10 @@
 .section04 {
     padding : {
         top   : 100px;
-        bottom: 100px;
+        // bottom: 100px;
     }
 
 .section04-sec-cntinfo {
-
 
 .section04-sec-subtxt {
     font-size  : 32px;
@@ -192,8 +191,8 @@
 }
 
 .section04-main{
-    padding: 55px 0px;
-    margin-bottom: 3rem;
+    // padding: 55px 0px;
+    // margin-bottom: 3rem;
     border-radius: 24px;
     
     &:hover{
@@ -201,6 +200,7 @@
     }
     @media (max-width: 767px) {
         text-align: center;
+        padding: 0px 0px !important;
     }
 
     .section04-playstore-list{
@@ -609,6 +609,15 @@
         @media (max-width: 767px) {
             width: 100%;
         }
+        @media(min-width: 992px) and (max-width: 1199px) {
+            width: 71.5%;
+        }
+        @media(min-width: 1200px) and (max-width: 1399px) {
+            width: 79%;
+        }
+        @media (min-width: 1400px) {
+            width: 82%;
+        }
         .swiper-slide {
             display: flex;
             justify-content: center;
@@ -824,12 +833,14 @@
 .section03 {
     background: #1B4A52;
     background-image: url(../img/article/overlay.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0px 12px 0px 12px;
     border-radius: 24px;
     padding: 65px 0px 90px;
     overflow: hidden;
+    background-size: cover !important;
     
 
     &::-webkit-scrollbar {

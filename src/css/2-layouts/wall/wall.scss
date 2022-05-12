@@ -57,20 +57,30 @@
                     background: #fff;
 
                     .wall-icon {
-                        width: 10%;
+                        // width: 10%;
                         margin-bottom: 23px;
+                        img{
+                            width: 36px;
+                            height: 36px;
+                        }
                     }
 
                     .wall-div {
                         .wall-image {
                             float: left;
-                            width: 18%;
+                            // width: 18%;
                             position: relative;
                             top: 5px;
+                            img{
+                                width: 60px;
+                                height: 60px;
+                                margin-right: 10px;
+                            }
                         }
 
                         .wall-text {
                             display: table;
+                            padding-top: 10px;
                         }
                     }
 

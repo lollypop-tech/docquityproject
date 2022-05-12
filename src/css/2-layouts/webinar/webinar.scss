@@ -105,7 +105,7 @@
             width: 100%;
         }
 
-        .events-img1 {
+        .webinars-img1 {
             float: left;
 
             @media (max-width: 767px) {
@@ -115,7 +115,7 @@
             }
         }
 
-        .events-img2 {
+        .webinars-img2 {
             float: left;
             margin-left: -15px;
 
@@ -126,7 +126,7 @@
             }
         }
 
-        .events-img3 {
+        .webinars-img3 {
             float: left;
             margin-left: -15px;
             margin-right: 14px;
@@ -171,13 +171,60 @@
                         .cardbottom-list {
                             margin-top: 16px;
                             display: flex;
+                            justify-content: space-between;
 
                             &__item {
                                 .video-time {
                                     position: absolute;
                                     right: 0px;
                                 }
+                                .eventscard-sec{
+                                    // width:23%;
+                                    // position: relative;
+                                    // display: flex;
+                                    // justify-content: space-between;
+                                    @media (max-width: 767px) {
+                                        width: 30%;
+                                        margin: 0 auto;
+                                        height: 40px
+                                    }
+                                    .webinars-img1 {
+                                        position: absolute;
+                                        left: 0px;
+                                        img{
+                                            width: 36px;
+                                            height: 36px;
+                                            border-radius: 50%;
+                                        }
+                                    }
+                            
+                                    .webinars-img2 {
+                                        position: absolute;
+                                        transform: translateX(25px) !important;
+                                        img{
+                                            width: 36px;
+                                            height: 36px;
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                            object-position: -1px -4px;
+                                        }
+                                    }
+                            
+                                    .webinars-img3 {
+                                        position: absolute;
+                                        transform: translateX(45px);
+                                        img{
+                                            width: 36px;
+                                            height: 36px;
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                }
                             }
+                        }
+                        .events-text{
+                            margin-left: 90px;
                         }
                     }
                 }

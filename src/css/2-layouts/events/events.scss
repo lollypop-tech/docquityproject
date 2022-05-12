@@ -89,26 +89,53 @@
 
                         &__item {
                             &:nth-child(1) {
-                                width: 60%;                                  
-                                .eventscard-sec {
-                                    width: 100%;
-                            
+                                width: 60%;
+                                
+                                .eventscard-sec{
+                                    // width:23%;
+                                    // position: relative;
+                                    // display: flex;
+                                    // justify-content: space-between;
+                                    @media (max-width: 767px) {
+                                        width: 30%;
+                                        margin: 0 auto;
+                                        height: 40px
+                                    }
                                     .events-img1 {
-                                        float: left;
+                                        position: absolute;
+                                        left: 0px;
+                                        img{
+                                            width: 36px;
+                                            height: 36px;
+                                            border-radius: 50%;
+                                        }
                                     }
                             
                                     .events-img2 {
-                                        float: left;
-                                        margin-left: -15px;
+                                        position: absolute;
+                                        transform: translateX(25px) !important;
+                                        img{
+                                            width: 36px;
+                                            height: 36px;
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                            object-position: -1px -4px;
+                                        }
                                     }
                             
                                     .events-img3 {
-                                        float: left;
-                                        margin-left: -15px;
-                                        margin-right: 14px;
+                                        position: absolute;
+                                        transform: translateX(45px);
+                                        img{
+                                            width: 36px;
+                                            height: 36px;
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                        }
                                     }
                                 }
                             }
+                            
 
                             .status {
                                 position: absolute;
