@@ -6,7 +6,7 @@
         <div class="category-Swiper swiper-container">
           <div class="swiper-wrapper"> 
             <div class="swiper-slide">
-              <div class="category-card">
+              <div class="category-card active" id="card0">
                 <div class="category-icon"><img class="w100" src="./img/faq/category-icon.svg" alt=""/></div>
                 <div class="category-text">
                   <h6 class="fnt-20 text-blackish fnt700 fnt-lex lh28 mb-6">Category 1</h6>
@@ -15,7 +15,7 @@
               </div>
             </div>
             <div class="swiper-slide"> 
-              <div class="category-card">
+              <div class="category-card inactive" id="card1">
                 <div class="category-icon"><img class="w100" src="./img/faq/category-icon.svg" alt=""/></div>
                 <div class="category-text">
                   <h6 class="fnt-20 text-blackish fnt700 fnt-lex lh28 mb-6">Category 2</h6>
@@ -24,7 +24,7 @@
               </div>
             </div>
             <div class="swiper-slide"> 
-              <div class="category-card">
+              <div class="category-card inactive" id="card2">
                 <div class="category-icon"><img class="w100" src="./img/faq/category-icon.svg" alt=""/></div>
                 <div class="category-text">
                   <h6 class="fnt-20 text-blackish fnt700 fnt-lex lh28 mb-6">Category 3</h6>
@@ -33,7 +33,7 @@
               </div>
             </div>
             <div class="swiper-slide"> 
-              <div class="category-card">
+              <div class="category-card inactive" id="card3">
                 <div class="category-icon"><img class="w100" src="./img/faq/category-icon.svg" alt=""/></div>
                 <div class="category-text">
                   <h6 class="fnt-20 text-blackish fnt700 fnt-lex lh28 mb-6">Category 4</h6>
@@ -42,7 +42,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="category-card">
+              <div class="category-card inactive" id="card4">
                 <div class="category-icon"><img class="w100" src="./img/faq/category-icon.svg" alt=""/></div>
                 <div class="category-text">
                   <h6 class="fnt-20 text-blackish fnt700 fnt-lex lh28 mb-6">Category 5</h6>
@@ -59,8 +59,232 @@
 <path class="arr" d="M5.26674 0.288783C5.19978 0.221818 5.12277 0.188336 5.03572 0.188336C4.94866 0.188336 4.87165 0.221818 4.80469 0.288783L0.123884 4.96959C0.0569201 5.03655 0.023438 5.11356 0.023438 5.20061C0.023438 5.28767 0.0569201 5.36468 0.123884 5.43164L4.80469 10.1124C4.87165 10.1794 4.94866 10.2129 5.03571 10.2129C5.12277 10.2129 5.19978 10.1794 5.26674 10.1124L5.76897 9.61021C5.83594 9.54325 5.86942 9.46624 5.86942 9.37919C5.86942 9.29213 5.83594 9.21512 5.76897 9.14816L1.82143 5.20061L5.76897 1.25307C5.83594 1.1861 5.86942 1.1091 5.86942 1.02204C5.86942 0.934988 5.83594 0.857979 5.76897 0.791015L5.26674 0.288783Z" fill="#1B4A52"/>
 </svg>
           </div>
-          <div class="swiper-pagination"> </div>
+          <div class="swiper-pagination"></div>
         </div>
+      </div>
+      <div class="col-12 col-lg-8 ml-auto mr-auto">
+        <ul class="faq-category-list"> 
+          <li class="faq-category-list__item active" id="useBoxcard0"> 
+            <div class="accordion" id="faqpricing">
+              <div class="card">
+                <div class="card-header" id="faqhead1"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link" href="#" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">Category1 How do I register with Docquity?                              </a></div>
+                <div class="collapse show" id="faq1" aria-labelledby="faqhead1" data-parent="#faqpricing">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead2"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq2" aria-expanded="true" aria-controls="faq2">Category1 How do I register with Docquity? </a></div>
+                <div class="collapse" id="faq2" aria-labelledby="faqhead2" data-parent="#faqpricing">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead3"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq3" aria-expanded="true" aria-controls="faq3">Category1 How do I register with Docquity?  </a></div>
+                <div class="collapse" id="faq3" aria-labelledby="faqhead3" data-parent="#faqpricing">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead4"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq4" aria-expanded="true" aria-controls="faq4">Category1 How do I register with Docquity?</a></div>
+                <div class="collapse" id="faq4" aria-labelledby="faqhead4" data-parent="#faqpricing">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead5"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq5" aria-expanded="true" aria-controls="faq5">Category1 How do I register with Docquity?   </a></div>
+                <div class="collapse" id="faq5" aria-labelledby="faqhead5" data-parent="#faqpricing">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq-category-list__item" id="useBoxcard1">
+            <div class="accordion" id="faqpricing1">
+              <div class="card">
+                <div class="card-header" id="faqhead6"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link" href="#" data-toggle="collapse" data-target="#faq6" aria-expanded="true" aria-controls="faq6">Category2 How do I register with?                              </a></div>
+                <div class="collapse show" id="faq6" aria-labelledby="faqhead6" data-parent="#faqpricing1">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead7"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq7" aria-expanded="true" aria-controls="faq7">Category2 How do I register with Docquity? </a></div>
+                <div class="collapse" id="faq7" aria-labelledby="faqhead7" data-parent="#faqpricing1">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead8"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq8" aria-expanded="true" aria-controls="faq8">Category2 How do I register with Docquity?  </a></div>
+                <div class="collapse" id="faq8" aria-labelledby="faqhead8" data-parent="#faqpricing1">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead9"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq9" aria-expanded="true" aria-controls="faq9">Category2 How do I register with Docquity?</a></div>
+                <div class="collapse" id="faq9" aria-labelledby="faqhead9" data-parent="#faqpricing1">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead10"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq10" aria-expanded="true" aria-controls="faq10">Category2 How do I register with Docquity?   </a></div>
+                <div class="collapse" id="faq10" aria-labelledby="faqhead10" data-parent="#faqpricing1">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq-category-list__item" id="useBoxcard2">
+            <div class="accordion" id="faqpricing2">
+              <div class="card">
+                <div class="card-header" id="faqhead11"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link" href="#" data-toggle="collapse" data-target="#faq11" aria-expanded="true" aria-controls="faq11">Category3 How do I register with ?                              </a></div>
+                <div class="collapse show" id="faq11" aria-labelledby="faqhead11" data-parent="#faqpricing2">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead12"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq12" aria-expanded="true" aria-controls="faq12">Category3 How do I register with Docquity? </a></div>
+                <div class="collapse" id="faq12" aria-labelledby="faqhead12" data-parent="#faqpricing2">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead13"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq13" aria-expanded="true" aria-controls="faq13">Category3 How do I register with Docquity?  </a></div>
+                <div class="collapse" id="faq13" aria-labelledby="faqhead13" data-parent="#faqpricing2">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead14"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq14" aria-expanded="true" aria-controls="faq14">Category3 How do I register with Docquity?</a></div>
+                <div class="collapse" id="faq14" aria-labelledby="faqhead14" data-parent="#faqpricing2">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead15"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq15" aria-expanded="true" aria-controls="faq15">Category3 How do I register with Docquity?   </a></div>
+                <div class="collapse" id="faq15" aria-labelledby="faqhead15" data-parent="#faqpricing2">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.   </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq-category-list__item" id="useBoxcard3">
+            <div class="accordion" id="faqpricing3">
+              <div class="card">
+                <div class="card-header" id="faqhead16"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link" href="#" data-toggle="collapse" data-target="#faq16" aria-expanded="true" aria-controls="faq16">Category4 How do I register with ?                              </a></div>
+                <div class="collapse show" id="faq16" aria-labelledby="faqhead16" data-parent="#faqpricing3">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead17"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq17" aria-expanded="true" aria-controls="faq17">Category4 How do I register with Docquity? </a></div>
+                <div class="collapse" id="faq17" aria-labelledby="faqhead17" data-parent="#faqpricing3">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead18"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq18" aria-expanded="true" aria-controls="faq18">Category4 How do I register with Docquity?  </a></div>
+                <div class="collapse" id="faq18" aria-labelledby="faqhead18" data-parent="#faqpricing3">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead19"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq19" aria-expanded="true" aria-controls="faq19">Category4 How do I register with Docquity?</a></div>
+                <div class="collapse" id="faq19" aria-labelledby="faqhead19" data-parent="#faqpricing3">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead20"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq20" aria-expanded="true" aria-controls="faq20">Category4 How do I register with Docquity?   </a></div>
+                <div class="collapse" id="faq20" aria-labelledby="faqhead20" data-parent="#faqpricing3">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="faq-category-list__item" id="useBoxcard4">
+            <div class="accordion" id="faqpricing4">
+              <div class="card">
+                <div class="card-header" id="faqhead21"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link" href="#" data-toggle="collapse" data-target="#faq21" aria-expanded="true" aria-controls="faq21">Category5 How do I register with ?                              </a></div>
+                <div class="collapse show" id="faq21" aria-labelledby="faqhead21" data-parent="#faqpricing4">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead22"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq22" aria-expanded="true" aria-controls="faq22">Category5 How do I register with Docquity? </a></div>
+                <div class="collapse" id="faq22" aria-labelledby="faqhead22" data-parent="#faqpricing4">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead23"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq23" aria-expanded="true" aria-controls="faq23">Category5 How do I register with Docquity?  </a></div>
+                <div class="collapse" id="faq23" aria-labelledby="faqhead23" data-parent="#faqpricing4">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead24"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq24" aria-expanded="true" aria-controls="faq24">Category5 How do I register with Docquity?</a></div>
+                <div class="collapse" id="faq24" aria-labelledby="faqhead24" data-parent="#faqpricing4">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia.                        </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="faqhead25"><a class="fnt-20 lh24 fnt-man text-blackish mb-0 btn btn-header-link collapsed" href="#" data-toggle="collapse" data-target="#faq25" aria-expanded="true" aria-controls="faq25">Category5 How do I register with Docquity?   </a></div>
+                <div class="collapse" id="faq25" aria-labelledby="faqhead25" data-parent="#faqpricing4">
+                  <div class="card-body">
+                    <p class="txt-md text-blackish fnt500 fnt-man">DocTalks is a library of short video lectures brought to you by doctors from academia. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

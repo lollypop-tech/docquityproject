@@ -1,3 +1,55 @@
+//- section.category-section
+//-     .container-fluid 
+//-         .row 
+//-             .col-lg-12 
+//-                 .category-Swiper.swiper-container
+//-                     .swiper-wrapper 
+//-                         .swiper-slide
+//-                             .category-card
+//-                                 .category-icon
+//-                                     img.w100(src="./img/faq/category-icon.svg", alt="")
+//-                                 .category-text
+//-                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 1
+//-                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.
+//-                         .swiper-slide 
+//-                             .category-card
+//-                                 .category-icon
+//-                                     img.w100(src="./img/faq/category-icon.svg", alt="")
+//-                                 .category-text
+//-                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 2
+//-                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.
+//-                         .swiper-slide 
+//-                             .category-card
+//-                                 .category-icon
+//-                                     img.w100(src="./img/faq/category-icon.svg", alt="")
+//-                                 .category-text
+//-                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 3
+//-                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.
+//-                         .swiper-slide 
+//-                             .category-card
+//-                                 .category-icon
+//-                                     img.w100(src="./img/faq/category-icon.svg", alt="")
+//-                                 .category-text
+//-                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 4
+//-                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.                     
+//-                         .swiper-slide
+//-                             .category-card
+//-                                 .category-icon
+//-                                     img.w100(src="./img/faq/category-icon.svg", alt="")
+//-                                 .category-text
+//-                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 5
+//-                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+//-                     .swiper-button-next
+//-                         <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+//-                         <path class="arr" d="M5.26674 0.288783C5.19978 0.221818 5.12277 0.188336 5.03572 0.188336C4.94866 0.188336 4.87165 0.221818 4.80469 0.288783L0.123884 4.96959C0.0569201 5.03655 0.023438 5.11356 0.023438 5.20061C0.023438 5.28767 0.0569201 5.36468 0.123884 5.43164L4.80469 10.1124C4.87165 10.1794 4.94866 10.2129 5.03571 10.2129C5.12277 10.2129 5.19978 10.1794 5.26674 10.1124L5.76897 9.61021C5.83594 9.54325 5.86942 9.46624 5.86942 9.37919C5.86942 9.29213 5.83594 9.21512 5.76897 9.14816L1.82143 5.20061L5.76897 1.25307C5.83594 1.1861 5.86942 1.1091 5.86942 1.02204C5.86942 0.934988 5.83594 0.857979 5.76897 0.791015L5.26674 0.288783Z" fill="#1B4A52"/>
+//-                         </svg>
+//-                     .swiper-button-prev
+//-                         <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+//-                         <path class="arr" d="M5.26674 0.288783C5.19978 0.221818 5.12277 0.188336 5.03572 0.188336C4.94866 0.188336 4.87165 0.221818 4.80469 0.288783L0.123884 4.96959C0.0569201 5.03655 0.023438 5.11356 0.023438 5.20061C0.023438 5.28767 0.0569201 5.36468 0.123884 5.43164L4.80469 10.1124C4.87165 10.1794 4.94866 10.2129 5.03571 10.2129C5.12277 10.2129 5.19978 10.1794 5.26674 10.1124L5.76897 9.61021C5.83594 9.54325 5.86942 9.46624 5.86942 9.37919C5.86942 9.29213 5.83594 9.21512 5.76897 9.14816L1.82143 5.20061L5.76897 1.25307C5.83594 1.1861 5.86942 1.1091 5.86942 1.02204C5.86942 0.934988 5.83594 0.857979 5.76897 0.791015L5.26674 0.288783Z" fill="#1B4A52"/>
+//-                         </svg>
+//-                     .swiper-pagination 
+
+
 section.category-section
     .container-fluid 
         .row 
@@ -5,35 +57,35 @@ section.category-section
                 .category-Swiper.swiper-container
                     .swiper-wrapper 
                         .swiper-slide
-                            .category-card
+                            .category-card.active#card0
                                 .category-icon
                                     img.w100(src="./img/faq/category-icon.svg", alt="")
                                 .category-text
                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 1
                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.
                         .swiper-slide 
-                            .category-card
+                            .category-card.inactive#card1
                                 .category-icon
                                     img.w100(src="./img/faq/category-icon.svg", alt="")
                                 .category-text
                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 2
                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.
                         .swiper-slide 
-                            .category-card
+                            .category-card.inactive#card2
                                 .category-icon
                                     img.w100(src="./img/faq/category-icon.svg", alt="")
                                 .category-text
                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 3
                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.
                         .swiper-slide 
-                            .category-card
+                            .category-card.inactive#card3
                                 .category-icon
                                     img.w100(src="./img/faq/category-icon.svg", alt="")
                                 .category-text
                                     h6.fnt-20.text-blackish.fnt700.fnt-lex.lh28.mb-6 Category 4
                                     p.txt-md.text-blackish.fnt500.fnt-man.mb-0 DocTalks is a library of short video lectures brought to you by doctors from academia.                     
                         .swiper-slide
-                            .category-card
+                            .category-card.inactive#card4
                                 .category-icon
                                     img.w100(src="./img/faq/category-icon.svg", alt="")
                                 .category-text
@@ -47,4 +99,169 @@ section.category-section
                         <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="arr" d="M5.26674 0.288783C5.19978 0.221818 5.12277 0.188336 5.03572 0.188336C4.94866 0.188336 4.87165 0.221818 4.80469 0.288783L0.123884 4.96959C0.0569201 5.03655 0.023438 5.11356 0.023438 5.20061C0.023438 5.28767 0.0569201 5.36468 0.123884 5.43164L4.80469 10.1124C4.87165 10.1794 4.94866 10.2129 5.03571 10.2129C5.12277 10.2129 5.19978 10.1794 5.26674 10.1124L5.76897 9.61021C5.83594 9.54325 5.86942 9.46624 5.86942 9.37919C5.86942 9.29213 5.83594 9.21512 5.76897 9.14816L1.82143 5.20061L5.76897 1.25307C5.83594 1.1861 5.86942 1.1091 5.86942 1.02204C5.86942 0.934988 5.83594 0.857979 5.76897 0.791015L5.26674 0.288783Z" fill="#1B4A52"/>
                         </svg>
-                    .swiper-pagination 
+                    .swiper-pagination
+                //- section.faq-section 
+                //-     .container-fluid 
+                //-         .row                          
+            .col-12.col-lg-8.ml-auto.mr-auto
+                ul.faq-category-list 
+                    li.faq-category-list__item.active#useBoxcard0 
+                        #faqpricing.accordion
+                            .card
+                                #faqhead1.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#faq1' aria-expanded='true' aria-controls='faq1') Category1 How do I register with Docquity?                              
+                                #faq1.collapse.show(aria-labelledby='faqhead1' data-parent='#faqpricing')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead2.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq2' aria-expanded='true' aria-controls='faq2') Category1 How do I register with Docquity? 
+                                #faq2.collapse(aria-labelledby='faqhead2' data-parent='#faqpricing')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead3.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq3' aria-expanded='true' aria-controls='faq3') Category1 How do I register with Docquity?  
+                                #faq3.collapse(aria-labelledby='faqhead3' data-parent='#faqpricing')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead4.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq4' aria-expanded='true' aria-controls='faq4') Category1 How do I register with Docquity?
+                                #faq4.collapse(aria-labelledby='faqhead4' data-parent='#faqpricing')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead5.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq5' aria-expanded='true' aria-controls='faq5') Category1 How do I register with Docquity?   
+                                #faq5.collapse(aria-labelledby='faqhead5' data-parent='#faqpricing')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.     
+                    li.faq-category-list__item#useBoxcard1
+                        #faqpricing1.accordion
+                            .card
+                                #faqhead6.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#faq6' aria-expanded='true' aria-controls='faq6') Category2 How do I register with?                              
+                                #faq6.collapse.show(aria-labelledby='faqhead6' data-parent='#faqpricing1')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead7.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq7' aria-expanded='true' aria-controls='faq7') Category2 How do I register with Docquity? 
+                                #faq7.collapse(aria-labelledby='faqhead7' data-parent='#faqpricing1')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead8.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq8' aria-expanded='true' aria-controls='faq8') Category2 How do I register with Docquity?  
+                                #faq8.collapse(aria-labelledby='faqhead8' data-parent='#faqpricing1')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead9.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq9' aria-expanded='true' aria-controls='faq9') Category2 How do I register with Docquity?
+                                #faq9.collapse(aria-labelledby='faqhead9' data-parent='#faqpricing1')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead10.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq10' aria-expanded='true' aria-controls='faq10') Category2 How do I register with Docquity?   
+                                #faq10.collapse(aria-labelledby='faqhead10' data-parent='#faqpricing1')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.   
+                    li.faq-category-list__item#useBoxcard2
+                        #faqpricing2.accordion
+                            .card
+                                #faqhead11.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#faq11' aria-expanded='true' aria-controls='faq11') Category3 How do I register with ?                              
+                                #faq11.collapse.show(aria-labelledby='faqhead11' data-parent='#faqpricing2')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead12.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq12' aria-expanded='true' aria-controls='faq12') Category3 How do I register with Docquity? 
+                                #faq12.collapse(aria-labelledby='faqhead12' data-parent='#faqpricing2')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead13.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq13' aria-expanded='true' aria-controls='faq13') Category3 How do I register with Docquity?  
+                                #faq13.collapse(aria-labelledby='faqhead13' data-parent='#faqpricing2')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead14.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq14' aria-expanded='true' aria-controls='faq14') Category3 How do I register with Docquity?
+                                #faq14.collapse(aria-labelledby='faqhead14' data-parent='#faqpricing2')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead15.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq15' aria-expanded='true' aria-controls='faq15') Category3 How do I register with Docquity?   
+                                #faq15.collapse(aria-labelledby='faqhead15' data-parent='#faqpricing2')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.   
+                    li.faq-category-list__item#useBoxcard3
+                        #faqpricing3.accordion
+                            .card
+                                #faqhead16.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#faq16' aria-expanded='true' aria-controls='faq16') Category4 How do I register with ?                              
+                                #faq16.collapse.show(aria-labelledby='faqhead16' data-parent='#faqpricing3')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead17.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq17' aria-expanded='true' aria-controls='faq17') Category4 How do I register with Docquity? 
+                                #faq17.collapse(aria-labelledby='faqhead17' data-parent='#faqpricing3')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead18.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq18' aria-expanded='true' aria-controls='faq18') Category4 How do I register with Docquity?  
+                                #faq18.collapse(aria-labelledby='faqhead18' data-parent='#faqpricing3')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead19.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq19' aria-expanded='true' aria-controls='faq19') Category4 How do I register with Docquity?
+                                #faq19.collapse(aria-labelledby='faqhead19' data-parent='#faqpricing3')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead20.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq20' aria-expanded='true' aria-controls='faq20') Category4 How do I register with Docquity?   
+                                #faq20.collapse(aria-labelledby='faqhead20' data-parent='#faqpricing3')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.
+                    li.faq-category-list__item#useBoxcard4
+                        #faqpricing4.accordion
+                            .card
+                                #faqhead21.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#faq21' aria-expanded='true' aria-controls='faq21') Category5 How do I register with ?                              
+                                #faq21.collapse.show(aria-labelledby='faqhead21' data-parent='#faqpricing4')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead22.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq22' aria-expanded='true' aria-controls='faq22') Category5 How do I register with Docquity? 
+                                #faq22.collapse(aria-labelledby='faqhead22' data-parent='#faqpricing4')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead23.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq23' aria-expanded='true' aria-controls='faq23') Category5 How do I register with Docquity?  
+                                #faq23.collapse(aria-labelledby='faqhead23' data-parent='#faqpricing4')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead24.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq24' aria-expanded='true' aria-controls='faq24') Category5 How do I register with Docquity?
+                                #faq24.collapse(aria-labelledby='faqhead24' data-parent='#faqpricing4')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia.                        
+                            .card
+                                #faqhead25.card-header
+                                    a.fnt-20.lh24.fnt-man.text-blackish.mb-0.btn.btn-header-link.collapsed(href='#' data-toggle='collapse' data-target='#faq25' aria-expanded='true' aria-controls='faq25') Category5 How do I register with Docquity?   
+                                #faq25.collapse(aria-labelledby='faqhead25' data-parent='#faqpricing4')
+                                    .card-body
+                                        p.txt-md.text-blackish.fnt500.fnt-man DocTalks is a library of short video lectures brought to you by doctors from academia. 

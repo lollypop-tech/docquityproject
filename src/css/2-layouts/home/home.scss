@@ -338,7 +338,7 @@
     }
 }
 .dq-bg-gradient{
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
     @media(max-width: 767px) {
         margin-bottom: 80px;
     }
@@ -2511,108 +2511,194 @@
 // }
 
 // wall of love section
+// .wallhome-setion{
+//     margin: 0px 15px;
+//     @media (max-width: 768px){
+//         margin-bottom: 65px;
+//     }
+//     .dq-maincnt-leftwrap {
+//         padding: 240px 0px 170px 60px;
+//         @media (max-width: 768px){
+//             padding:70px 0 285px 0px;
+//             text-align: center;
+//         }
+//     }
+//     .wallhome-right{padding:0px 0px ;
+//     .wallhome-list {
+//         width: 100%;
+//         display: flex;        
+//         position: relative;
+//         height: 710px;             
+//         @media (max-width: 768px) {            
+//             overflow: hidden;   
+//             position: absolute;
+//             top: -210px;     
+//             display: block;
+//             width: 90%;
+//             left: 15px;
+//         }
+//         &__item{
+//             width: 30%;
+//             float: left;
+//             margin: 0px 10px;
+//             @media (max-width: 768px) {            
+//                 width: 100%;  
+//                 margin: 0px auto;   
+//             }
+//             .swiper-container {    
+//                 height: 730px;
+//                 position: relative;                
+//                 .swiper-wrapper{                      
+//                     transition-timing-function:linear!important; 
+//                     position: relative;
+//                     .swiper-slide {    
+//                         display: flex;       
+//                         width: auto;
+//                         position: relative;                         
+//                         height:auto;  
+//                         margin-bottom:23px;    
+//                         .wall-card {
+//                             cursor: pointer;
+//                             border: 1px solid #B1CBCF;
+//                             border-radius: 20px;
+//                             box-shadow: 0px 1px 60px 0px #0000000D;
+//                             padding: 24px 22px;
+//                             background: #fff;
+        
+//                             .wall-icon {
+//                                 width: 10%;
+//                                 margin-bottom: 23px;
+//                             }
+        
+//                             .wall-div {
+//                                 display: flex;
+//                                 align-items: center;
+//                                 .wall-image {
+//                                     float: left;
+//                                     width: 18%;
+//                                     position: relative;
+//                                     top: 5px;
+//                                     margin-right: 10px;
+//                                     img{
+//                                         width: 60px;
+//                                         height: 60px;
+//                                         margin-right: 18px;
+//                                     }
+//                                 }
+        
+//                                 .wall-text {
+//                                     display: table;
+//                                     // margin-bottom: -15px !important;
+//                                     margin-top: 10px !important;
+//                                     padding-top: 10px;
+//                                     p{
+//                                         margin-left: 20px;
+//                                     }
+//                                     span{
+//                                         margin-left: 20px;
+//                                     }
+//                                 }
+//                             }
+        
+//                         }                     
+//                       }
+//                   } 
+//               }  
+//               @keyframes line-slide {
+//                 0% {
+//                   background-position: -5% 0;
+//                 }
+//                 100% {
+//                   background-position: 100% 0;
+//                 }
+//               }
+//             }    
+//         }
+//     }
+// }
+
+
+// wall of love section
 .wallhome-setion{
     margin: 0px 15px;
+    background: #1B4A52;
+    background-image: url(../img/article/overlay.png);
+    background-position: center;
+    background-size: cover;
+    color     : $white;
+    border-radius: 24px;
     @media (max-width: 768px){
-        margin-bottom: 65px;
+        margin-bottom: 60px;
     }
+    // .dq-bg-gradient {
+    //     padding-bottom: 0px !important;
+    // }
     .dq-maincnt-leftwrap {
         padding: 240px 0px 170px 60px;
         @media (max-width: 768px){
-            padding:70px 0 285px 0px;
+            padding:70px 0 85px 0px;
             text-align: center;
         }
+    }     
+}
+.module{
+    height: 700px;
+    overflow: hidden;
+    @media (max-width: 768px){
+        display: none;
     }
-    .wallhome-right{padding:0px 0px ;
-    .wallhome-list {
-        width: 100%;
-        display: flex;        
-        position: relative;
-        height: 710px;             
-        @media (max-width: 768px) {            
-            overflow: hidden;   
-            position: absolute;
-            top: -210px;     
-            display: block;
-            width: 90%;
-            left: 15px;
+}
+.wall-list {
+    width: 100%;
+    display: inline-flex;
+    padding: 0px;
+    &__item{
+        width: 31%;
+        list-style-type: none;
+        @media (max-width: 768px){
+            width:100%;
         }
-        &__item{
-            width: 30%;
-            float: left;
-            margin: 0px 10px;
-            @media (max-width: 768px) {            
-                width: 100%;  
-                margin: 0px auto;   
+        &:nth-child(2){
+            margin: 0px 20px;
+        }
+        li{
+            margin-bottom: 20px;
+            .wall-card {
+                border: 1px solid #b1cbcf;
+                border-radius: 20px;
+                box-shadow: 0px 1px 60px 0px #000 0D;
+                padding: 24px 22px;
+                background: #fff;
+                cursor: pointer;
+                .wall-icon {
+                    width: 10%;
+                    margin-bottom: 23px;
+                }
+               .wall-div{
+                    .wall-image {
+                        float: left;
+                        width: 18%;
+                        position: relative;
+                        top: 5px;
+                        margin-right: 15px;
+                    }
+                    .wall-text {
+                        display: table;
+                    }
+                }
             }
-            .swiper-container {    
-                height: 730px;
-                position: relative;                
-                .swiper-wrapper{                      
-                    transition-timing-function:linear!important; 
-                    position: relative;
-                    .swiper-slide {    
-                        display: flex;       
-                        width: auto;
-                        position: relative;                         
-                        height:auto;  
-                        margin-bottom:23px;    
-                        .wall-card {
-                            cursor: pointer;
-                            border: 1px solid #B1CBCF;
-                            border-radius: 20px;
-                            box-shadow: 0px 1px 60px 0px #0000000D;
-                            padding: 24px 22px;
-                            background: #fff;
-        
-                            .wall-icon {
-                                width: 10%;
-                                margin-bottom: 23px;
-                            }
-        
-                            .wall-div {
-                                display: flex;
-                                align-items: center;
-                                .wall-image {
-                                    float: left;
-                                    width: 18%;
-                                    position: relative;
-                                    top: 5px;
-                                    margin-right: 10px;
-                                    img{
-                                        width: 60px;
-                                        height: 60px;
-                                        margin-right: 18px;
-                                    }
-                                }
-        
-                                .wall-text {
-                                    display: table;
-                                    // margin-bottom: -15px !important;
-                                    margin-top: 10px !important;
-                                    padding-top: 10px;
-                                    p{
-                                        margin-left: 20px;
-                                    }
-                                    span{
-                                        margin-left: 20px;
-                                    }
-                                }
-                            }
-        
-                        }                     
-                      }
-                  } 
-              }  
-              @keyframes line-slide {
-                0% {
-                  background-position: -5% 0;
-                }
-                100% {
-                  background-position: 100% 0;
-                }
-              }
-            }    
         }
+    }        
+}
+
+.scroll2,       
+.scroll1,
+.scroll3 {
+    display: none;
+}
+
+.module-mobile{
+    @media (min-width: 768px){
+       display: none;
     }
 }

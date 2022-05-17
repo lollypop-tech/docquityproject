@@ -257,6 +257,27 @@ $(document).ready(function () {
       }
     }
   });
+ 
+  //Wall of love
+  $(function () {     
+    $('.scroll2').infiniteslide({
+      speed: 50,
+      direction: 'up'
+    });
+    $('.scroll1').infiniteslide({
+      speed: 50,
+      direction: 'down'
+    });
+    $('.scroll3').infiniteslide({
+      speed: 50,
+      direction: 'down'
+    });
+    $('.scroll4').infiniteslide({
+      speed: 50,
+      direction: 'up'
+    });
+  });
+
 });
 
 
@@ -313,73 +334,74 @@ $(document).ready(function () {
   });
 });
 
-let SwiperTop= new Swiper('.wall--top1', {
-  direction:'vertical',
-  spaceBetween: 0,
-  centeredSlides: true,
-  speed: 2900,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,  
-    // pauseOnMouseEnter: true 
-  },
-  loop: true,
-  slidesPerView:'auto',
-  allowTouchMove: false,
-  disableOnInteraction: true
+// let SwiperTop= new Swiper('.wall--top1', {
+//   direction:'vertical',
+//   spaceBetween: 0,
+//   centeredSlides: true,
+//   speed: 2900,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: false,  
+//     // pauseOnMouseEnter: true 
+//   },
+//   loop: true,
+//   slidesPerView:'auto',
+//   allowTouchMove: false,
+//   disableOnInteraction: true
 
-});
+// });
 
-$('.wall--top1').on('mouseenter', function(e){
-  console.log('stop autoplay');
-  SwiperTop.autoplay.stop();
-})
-$('.wall--top1').on('mouseleave', function(e){
-  console.log('start autoplay');
-  SwiperTop.autoplay.start();
-})
+// $('.wall--top1').on('mouseenter', function(e){
+//   console.log('stop autoplay');
+//   SwiperTop.stopAutoplay();
+// })
+// $('.wall--top1').on('mouseleave', function(e){
+//   console.log('start autoplay');
+//   SwiperTop.startAutoplay();
+// })
 
-let SwiperBottom = new Swiper('.wall--top2', {
-  direction:'vertical',
-  spaceBetween: 0,
-  centeredSlides: true,
-  speed: 2900,
-  autoplay: {
-    delay: 0,
-    reverseDirection: true,
-  },
-  loop: true,
-  // loopedSlides: 4,
-  slidesPerView:'auto',
-  allowTouchMove: false,
-  disableOnInteraction: true
-});
-$('.wall--top2').on('mouseenter', function(e){
-  console.log('stop autoplay');
-  SwiperBottom.autoplay.stop();
-})
-$('.wall--top2').on('mouseleave', function(e){
-  console.log('start autoplay');
-  SwiperBottom.autoplay.start();
-})
-let SwiperThird = new Swiper('.wall--top3', {
-  direction:'vertical',
-  spaceBetween: 0,
-  centeredSlides: true,
-  speed: 2900,
-  autoplay: {
-    delay: 0,
-  },
-  loop: true,
-  slidesPerView:'auto',
-  allowTouchMove: false,
-  disableOnInteraction: true
-});
-$('.wall--top3').on('mouseenter', function(e){
-  console.log('stop autoplay');
-  SwiperThird.autoplay.stop();
-})
-$('.wall--top3').on('mouseleave', function(e){
-  console.log('start autoplay');
-  SwiperThird.autoplay.start();
-})
+
+// let SwiperBottom = new Swiper('.wall--top2', {
+//   direction:'vertical',
+//   spaceBetween: 0,
+//   centeredSlides: true,
+//   speed: 2900,
+//   autoplay: {
+//     delay: 0,
+//     reverseDirection: true,
+//   },
+//   loop: true,
+//   // loopedSlides: 4,
+//   slidesPerView:'auto',
+//   allowTouchMove: false,
+//   disableOnInteraction: true
+// });
+// $('.wall--top2').on('mouseenter', function(e){
+//   console.log('stop autoplay');
+//   SwiperBottom.autoplay.stop();
+// })
+// $('.wall--top2').on('mouseleave', function(e){
+//   console.log('start autoplay');
+//   SwiperBottom.autoplay.start();
+// })
+// let SwiperThird = new Swiper('.wall--top3', {
+//   direction:'vertical',
+//   spaceBetween: 0,
+//   centeredSlides: true,
+//   speed: 2900,
+//   autoplay: {
+//     delay: 0,
+//   },
+//   loop: true,
+//   slidesPerView:'auto',
+//   allowTouchMove: false,
+//   disableOnInteraction: true
+// });
+// $('.wall--top3').on('mouseenter', function(e){
+//   console.log('stop autoplay');
+//   SwiperThird.autoplay.stop();
+// })
+// $('.wall--top3').on('mouseleave', function(e){
+//   console.log('start autoplay');
+//   SwiperThird.autoplay.start();
+// })
