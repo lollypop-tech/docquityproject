@@ -398,6 +398,7 @@ header .nav.sticky {
     }
 
     // MENU SLIDING ANIMATION
+    header{
     .menu {
         content         : "";
         height          : 100vh;
@@ -429,6 +430,7 @@ header .nav.sticky {
             height    : 100vh;
         }
     }
+}
 
     .menu-list {
         margin        : 0 6px !important;

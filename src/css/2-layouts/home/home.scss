@@ -220,6 +220,7 @@
 
     @media(max-width: 766px) {
         border-bottom: none;
+        padding-top: 40px;
     }
 
     &__title {
@@ -227,6 +228,9 @@
         font-size  : 16px !important;
         line-height: 26px !important;
         font-weight: $fnt-semibold;
+    }
+    p{
+        padding-bottom: 15px;
     }
 }
 .dq-media{
@@ -2342,7 +2346,9 @@
             padding-bottom: 0px;
             height:auto;
             background-size:inherit;
-            transform: scale(0.8);
+            // transform: scale(0.8);
+            transform: scale(0.89);
+            background-size: contain;
         }
         &::after {
             position: absolute;
@@ -2392,7 +2398,7 @@
             border: 2px solid #DADADA;
             // object-fit: cover;  
             @media(max-width: 767px) {
-                transform: scale(.81);
+                transform: scale(.83);
                 position: relative;
                 top: -25px;
             }      
@@ -2633,8 +2639,14 @@
     // .dq-bg-gradient {
     //     padding-bottom: 0px !important;
     // }
+
+    .dq-bg-gradient{
+        @media (min-width: 768px){
+            flex-wrap: nowrap !important;
+        }
+    }
     .dq-maincnt-leftwrap {
-        padding: 240px 0px 170px 60px;
+        padding: 215px 0px 170px 60px;
         @media (max-width: 768px){
             padding:70px 0 85px 0px;
             text-align: center;
