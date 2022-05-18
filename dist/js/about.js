@@ -652,4 +652,111 @@ $(document).ready(function () {
   });
 });
 
+//brand slider
+// var rightSlider = new Swiper('.js-partners-icons', {
+//   slidesPerView:3,
+//   spaceBetween:10,
+//   loop: true,
+//   autoplay: {
+//     delay:0,
+//     disableOnInteraction: true,
+//   },
+//   speed: 5000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
+
+
+// var rightSlider = new Swiper('.js-partners-icons-reverse', {
+//   slidesPerView:3,
+//   spaceBetween:10,
+//   loop: true,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: true,
+//     reverseDirection: true,
+//   },
+//   speed: 5000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
+
+
+// //pharma slider
+// var rightSlider = new Swiper('.js-pharma-icons', {
+//   slidesPerView: 3,
+//   spaceBetween: 10,
+//   loop: true,
+//   autoplay: {
+//     delay:0,
+//   },
+//   speed: 3000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
+
+
+// var rightSlider = new Swiper('.js-pharma-icons-reverse', {
+//   slidesPerView:3,
+//   spaceBetween: 10,
+//   loop: true,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: true,
+//     //waitForTransition: false,
+//     reverseDirection: true,
+//   },
+//   speed: 3000,
+//   breakpoints: {
+//     500: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     },
+//     700: {
+//       slidesPerView: 4.5,
+//       spaceBetween:10
+//     },
+//     768: {
+//       slidesPerView: 4.5,
+//       spaceBetween: 10
+//     }
+//   }
+// });
+
 },{}]},{},[1])//# sourceMappingURL=about.js.map

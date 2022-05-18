@@ -50,7 +50,7 @@ $(document).ready(function () {
         menuBox: document.getElementsByTagName("BODY")[0],
         doToggle: function doToggle(e) {
             e.preventDefault();
-            this.navToggle.classList.toggle("active");
+            this.navToggle.classList.toggle("show");
             this.nav.classList.toggle("active");
             this.menuBox.classList.toggle("body");
             this.overlayDiv.classList.toggle("show");

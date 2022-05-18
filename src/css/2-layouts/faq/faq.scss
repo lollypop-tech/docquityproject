@@ -26,7 +26,7 @@
 
             &:focus {
                 transition: 0.35s ease;
-                color: #000;
+                color: #fff;
 
                 &::-webkit-input-placeholder {
                     color: #fff !important;
@@ -92,6 +92,12 @@
                     background: #E8EDEE;
 
                 }
+            }
+
+            .active{
+                box-shadow: 0 21px 54px 0 #00000014;
+                border: 1px solid #b1cbcf;
+                background: #e8edee;
             }
         }
         .swiper-pagination-bullets {
