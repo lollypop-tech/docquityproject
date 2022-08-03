@@ -67,4 +67,79 @@ var swiper = new Swiper(".supportSwiper", {
 
 });
 
+// support card svg animation
+// var circle = new Vivus('square1', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+// var circle = new Vivus('square2', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+// var circle = new Vivus('square3', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+// var circle = new Vivus('square4', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+// var circle = new Vivus('square5', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+// var circle = new Vivus('square6', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+// var circle = new Vivus('square7', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+// var circle = new Vivus('square8', {
+//   type: 'delayed', 
+//   duration: 200,
+//   animTimingFunction: Vivus.EASE_IN.EASE_OUT
+// });
+
+
+$('.hover-card').hover(function () {
+  new Vivus('square10', { duration: 150 });
+});
+$('.hover-card').hover(function () {
+  new Vivus('square11', { duration: 150 });
+});
+$('.hover-card').hover(function () {
+  new Vivus('square12', { duration: 150 });
+});
+$('.hover-card').hover(function () {
+  new Vivus('square13', { duration: 150 });
+});
+$('.hover-card').hover(function () {
+  new Vivus('square14', { duration: 150 });
+});
+$('.hover-card').hover(function () {
+  new Vivus('square15', { duration: 150 });
+});
+$('.hover-card').hover(function () {
+  new Vivus('square16', { duration: 150 });
+});
+$('.hover-card').hover(function () {
+  new Vivus('square17', { duration: 150 });
+});
+
 },{}]},{},[1])//# sourceMappingURL=career.js.map

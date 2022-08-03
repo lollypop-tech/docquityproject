@@ -89,11 +89,6 @@ body {
 
 
 //head class
-.c-h1 {
-    font-size  : 42px;
-    line-height: 50px;
-    color      : #FFFFFF;
-}
 
 .mb-57 {
     margin-bottom: 32px;
@@ -129,6 +124,11 @@ body {
 .mb40 {
     @media (min-width: 767px) {
         margin-bottom: 40px !important;
+    }
+}
+.mb80 {
+    @media (min-width: 767px) {
+        margin-bottom: 80px !important;
     }
 }
 
@@ -169,12 +169,11 @@ body {
     line-height  : 16px !important;
     color        : #fff !important;
     border-radius: 12px;
-    display      : inline-block;
-    box-shadow   : 0 20px 30px -6px rgba(60, 59, 61, 0.5);
+    display      : inline-block;    
     transition   : all 0.5s ease-in-out;
 
     &:hover {
-        box-shadow: none;
+        box-shadow: 4px 4px 24px 0px #00000033;
     }
 }
 
@@ -221,7 +220,9 @@ body {
 .lh27{
     line-height: 27px !important;
 }
-
+.lh28{
+    line-height: 28px !important;
+}
 .lh38 {
     line-height: 38px !important;
 }
@@ -229,7 +230,9 @@ body {
 .lh20 {
     line-height: 20px !important;
 }
-
+.lh40 {
+    line-height:40px !important;
+}
 .lh21 {
     line-height: 21px !important;
 }

@@ -110,11 +110,12 @@ $(document).ready(function () {
 var swiper = new Swiper('.whyusedocquitySwiper', {
   direction: 'horizontal',
   slidesPerView: 1,
+  slidesPerGroup: 2,
   spaceBetween: 25,
   grabCursor: true,
   loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 4000,
     disableOnInteraction: false
   },
   pagination: {
@@ -137,14 +138,27 @@ var swiper = new Swiper('.whyusedocquitySwiper', {
   }
 });
 
+// why use docquity hover
+var $boxes1 = $(".whyusedocquity-right-img"),
+    $productLinks1 = $(".whyusedocquity-card").click(function () {
+  $boxes1.removeClass("active").filter("#useBox" + this.id).addClass("active");
+});
+
+$(document).ready(function () {
+  $(".whyusedocquity-card").onclick(function () {
+    $(".whyusedocquity-card").not(this).removeClass("active").addClass("inactive");
+    $(this).addClass("active").removeClass("inactive");
+  });
+});
+
 // investor
 var rightSlider = new Swiper('.investor-icons', {
   slidesPerView: 3,
   spaceBetween: 10,
   loop: true,
-  autoplay: {
-    delay: 0
-  },
+  // autoplay: {
+  //   delay:0,
+  // },
   speed: 3000,
   pagination: {
     el: ".swiper-pagination",
@@ -162,6 +176,105 @@ var rightSlider = new Swiper('.investor-icons', {
     768: {
       slidesPerView: 6,
       spaceBetween: 10
+    }
+  }
+});
+
+// why docquity offers
+
+var $boxes = $(".dq-mobile-credit"),
+    $productLinks = $(".thumbnail-credit").mouseover(function () {
+  $boxes.removeClass("active").filter("#offerBox" + this.id).addClass("active");
+});
+
+$(document).ready(function () {
+  $(".thumbnail-credit").hover(function () {
+    $(".thumbnail-credit").not(this).removeClass("active").addClass("inactive");
+    $(this).addClass("active").removeClass("inactive");
+  });
+});
+
+// mobile slider
+var swiper = new Swiper('.offerSwiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 25,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    767: {
+      direction: 'vertical',
+      slidesPerView: 2
+    },
+    768: {
+      direction: 'vertical',
+      slidesPerView: 2
+    }
+  }
+});
+
+// why docquity mobile
+var swiper = new Swiper('.docquitywhySwiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 25,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    767: {
+      direction: 'vertical',
+      slidesPerView: 2
+    },
+    768: {
+      direction: 'vertical',
+      slidesPerView: 2
+    }
+  }
+});
+
+// homeleadershipSwiper
+var swiper = new Swiper(".homeleadershipSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
+    },
+    768: {
+      slidesPerView: 3,
+      slidesPerGroup: 3
     }
   }
 });

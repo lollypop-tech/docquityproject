@@ -1,0 +1,203 @@
+.overlap-img-sec{
+        display: inline-flex;
+        width: 80%;
+        margin: 32px auto 0px;
+        position: relative;
+        @media (max-width: 767px) {
+            display: block;           
+        }
+        .overlap-banner{
+            width:20%;
+            position: relative;
+            @media (max-width: 767px) {
+                width: 30%;
+                margin: 0 auto;
+                height: 40px
+            }
+            .events-img1 {
+                position: absolute;
+                left: 0px;
+            }
+    
+            .events-img2 {
+                position: absolute;
+                transform: translateX(15px);
+            }
+    
+            .events-img3 {
+                position: absolute;
+                transform: translateX(35px);
+            }
+        }
+}
+ 
+ 
+
+
+        
+
+
+.articletabs-section {
+
+    .article-tabs-row{
+    .article-tabpane {
+        .recent-row,
+        .popular-row {
+            .article-list {
+                width: 100%;
+                display: inline-block;
+
+                &__item {
+                    .article-card {
+                        position: relative;
+
+                        .cardtop-list {
+                            display: flex;
+
+                            &__item {
+                                .card-icon {
+                                    margin-right: 5px;
+                                }
+
+                                &:nth-child(1) {
+                                    width: 30%;
+                                }
+                            }
+                        }
+
+                        .cardbottom-list {
+                            margin-top: 16px;
+                            display: flex;
+
+                            &__item {
+                                &:nth-child(1) {
+                                    width: 60%;                                  
+                                    .eventscard-sec {
+                                        width: 100%;
+                                
+                                        .events-img1 {
+                                            float: left;
+                                        }
+                                
+                                        .events-img2 {
+                                            float: left;
+                                            margin-left: -15px;
+                                        }
+                                
+                                        .events-img3 {
+                                            float: left;
+                                            margin-left: -15px;
+                                            margin-right: 14px;
+                                        }
+                                    }
+                                }
+
+                                .status {
+                                    position: absolute;
+                                    right: 5px;
+
+                                    &::before {
+                                        display: inline-block;
+                                        content: '';
+                                        border-radius: 50%;
+                                        height: 10px;
+                                        width: 10px;
+                                        margin-right: 0.5rem;
+                                    }
+                                }
+
+                                .online {
+                                    &::before {
+                                        background-color: #1FBB59;
+                                    }
+                                }
+
+                                .live {
+                                    &::before {
+                                        background-color: #E2504B;
+                                    }
+                                }
+
+                                .offline {
+                                    &::before {
+                                        background-color: #E27022;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+.counter-section {
+    padding: 40px 15px 80px;
+
+    @media(min-width: 767px) {
+        padding: 68px 0px 130px;
+    }
+
+    .counter-list {
+        display: flex;
+
+        @media(max-width: 767px) {
+            margin-bottom: 0px;
+        }
+
+        &__item {
+            width: 32%;
+            float: left;
+            padding: 15px 55px;
+
+            @media(max-width: 767px) {
+                width: 100%;
+                padding: 45px 30px;
+            }
+
+            .counter-icon {
+                float: left;
+                margin-right: 21px;
+            }
+
+            &:first-child,
+            &:nth-child(2) {
+                border-right: 1px solid #EEEEEE;
+
+                @media(max-width: 767px) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    .counterSwiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+
+        .swiper-slide {
+            padding: 0px 30px !important;
+
+            .counter-icon {
+                float: left;
+                margin-right: 21px;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 15px !important;
+            border-radius: 3px !important;
+            height: 5px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #1B4A52 !important;
+        }
+
+    }
+}

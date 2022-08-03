@@ -251,4 +251,6 @@ var rightSlider = new Swiper('.investor-icons', {
   }
 });
 
+// map javascript
+
 },{}]},{},[1])//# sourceMappingURL=about.js.map

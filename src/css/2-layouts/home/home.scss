@@ -102,6 +102,63 @@
         bottom: 4rem;
     }
 }
+// add by saiky
+.why-docquity-row{
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
+        //mobile-docquitywhyswiper 
+        .docquitywhySwiper{
+            width: 100%;             
+            margin-top: 80px;         
+            .swiper-slide {
+                display: flex;   
+                text-align: center;                       
+            }
+            .swiper-pagination-bullets {
+                right : inherit;
+                left  : 0px;
+                top   : 50% !important;
+                height: 65px;    
+                @media(max-width: 767px) {
+                    display: none;
+                }
+                .swiper-pagination-bullet {
+                    margin: 10px 0px !important;
+                }
+                .swiper-pagination-bullet-active {
+                    background: #1B4A52 !important;
+                }
+            }
+            .swiper-button-prev,.swiper-button-next{
+                top: 92%;
+                background: #b1cbcf5e;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #B1CBCF;
+                border-radius: 20px;
+                &:hover{
+                    background: #1B4A52;
+                    border: 1px solid  #1B4A52;
+                    .arr{
+                        fill:#fff;
+                    }
+                }
+
+                &::after{content:none;}
+                @media(min-width: 767px) {
+                   display: none;
+                }
+            }
+            .swiper-button-next{                 
+                right: 95px;                
+                transform: rotate(180deg); 
+            }
+           .swiper-button-prev{               
+                left: 95px;    
+            }
+        } 
 
 .dq-sec-cntinfo {
     max-width: 500px;
@@ -158,25 +215,118 @@
         .dq-circle {
             transition: 380ms background cubic-bezier(0.165, 0.84, 0.44, 1);
             background: #1B4A52;
+            .white{fill:#fff}
         }
     }
 }
 
-.dq-mobile-mockup-figlist {
-    position: absolute;
-    left    : 0;
-    right   : 0;
-    top     : 18px;
-    bottom  : 0;
+// .dq-mobile-mockup-figlist {
+//     position: absolute;
+//     left    : 0;
+//     right   : 0;
+//     top     : 18px;
+//     bottom  : 0;
 
-    &__item {
-        position: absolute;
-        top     : 0;
-        left    : 0;
-        right   : 0;
+//     &__item {
+//         position: absolute;
+//         top     : 0;
+//         left    : 0;
+//         right   : 0;
+//     }
+// }
+// added by saiky
+.dq-playstore-list{
+    display: flex;
+    width: 36%;
+    margin: 0px auto;
+    @media(max-width: 767px) {
+        width: 85%;
+        
+    }
+    &__item{
+        &:nth-child(1){
+            margin-right: 16px;
+        }
     }
 }
+.offer-section{
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
+.dq-mobile-wrap{
+    position: relative;
+    transform:translateY(50px);
+    .dq-mobile-credit{display: none;}
+    .dq-mobile-credit.active {
+        display: block;
+    }
+    
+}
+        //mobile-offerswiper 
+        .offerSwiper{
+            width: 100%;
+            height: 1040px;  
+            margin-top: 80px;         
+            .swiper-slide {
+                display: flex;
+                .offer-card{
+                    text-align: center;
+                    .offer-icon{
+                        background: #1B4A52;
+                        width: 75px;
+                        height: 75px;
+                        border-radius: 50%;
+                        margin: 0px auto 32px;
+                        padding: 12px 15px;                        
+                        .white{fill:#fff;}
+                    }
+                }              
+            }
+            .swiper-pagination-bullets {
+                right : inherit;
+                left  : 0px;
+                top   : 50% !important;
+                height: 65px;    
+                @media(max-width: 767px) {
+                    display: none;
+                }
+                .swiper-pagination-bullet {
+                    margin: 10px 0px !important;
+                }
+                .swiper-pagination-bullet-active {
+                    background: #1B4A52 !important;
+                }
+            }
+            .swiper-button-prev,.swiper-button-next{
+                top: 92%;
+                background: #b1cbcf5e;
+                width: 35px;
+                height: 35px;
+                border: 1px solid #B1CBCF;
+                border-radius: 20px;
+                &:hover{
+                    background: #1B4A52;
+                    border: 1px solid  #1B4A52;
+                    .arr{
+                        fill:#fff;
+                    }
+                }
 
+                &::after{content:none;}
+                @media(min-width: 767px) {
+                   display: none;
+                }
+            }
+            .swiper-button-next{                 
+                right: 110px;                
+                transform: rotate(180deg); 
+            }
+           .swiper-button-prev{               
+                left: 110px;    
+            }
+        }   
+  
 // Happy Users
 
 .dq-mockup-bg {
@@ -189,6 +339,8 @@
 
 .dq-humansSlider {
     position: relative;
+    padding-bottom: 70px!important;
+
 
     &::before,
     &::after {
@@ -770,8 +922,7 @@
     .whyusedocquity-row {
         @media(max-width: 767px) {
             display       : flex;
-            flex-direction: column-reverse;
-            ;
+            flex-direction: column-reverse;            
         }
         // whyusedocquity-swiper
         .whyusedocquitySwiper{
@@ -781,7 +932,7 @@
             margin-top: 30px;
 
             @media(max-width: 767px) {
-                max-height  : 530px;
+                max-height  :665px;
                 padding-left: 25px;
                 padding-bottom: 55px;
             }
@@ -792,12 +943,21 @@
                     @media(max-width: 767px) {
                         padding: 0px 0px;
                     }
+                    .whyusedocquity-div {
+                        @media(min-width: 767px) {
+                            display: none;
+                        }
+
+                    }
                     .whyusedocquity-img {
                         margin-bottom: 27px;
                     }
                     &:hover {
-                        background: #b1cbcf33;
-                        border-radius: 24px;
+                        @media(min-width: 767px) {
+                            background: #b1cbcf33;
+                            border-radius: 24px;  
+                        }
+                                              
                     }  
                 }                
             }
@@ -849,6 +1009,34 @@
             @media(max-width: 767px) {
                 margin-top: 80px;
              }
+            .whyusedocquity-right-img{
+                display: none;                
+            }
+            .whyusedocquity-right-img.active {
+                display: block;
+                @media(max-width: 767px) {
+                    display: none;
+                }
+            }
         }
     }
+}
+
+
+
+// homeleadershipSwiper
+.homeleadershipSwiper{
+    width: 100%;
+    padding-bottom: 45px!important;    
+  .swiper-pagination-bullets{
+      bottom: 0px!important;
+  } 
+  .swiper-pagination-bullet {
+    width: 15px !important;
+    border-radius: 3px !important;
+    height: 5px;
+    }
+    .swiper-pagination-bullet-active {
+        background:#1B4A52 !important;
+    }  
 }

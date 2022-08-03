@@ -1,51 +1,91 @@
+
 header.header#header.header-transparent.svg-white
 	nav.nav.nav-wrap.mobile.active
-		.container-fluid
+		.container
 			.row
-				.nav-wrapper.col-12 
+				.nav-wrapper.col-12
+					
 					.nav-header
-						
 						.menu-icon
 							span.line
 							span.line
 							span.line
 					
 						.logo.d-flex.align-items-center
-							a.navbar-link.header-brand-logo(href="index.html")
-								//- img(src="./img/common-img/logo-w.svg", alt="")
-								include ../../img/docquity.svg					
-						
-						
-							
-								
+							a.navbar-link.header-brand-logo(href="index.html") 
+								//- img(src="./img/easebuzz/home/eb-logo.svg", alt="logo")
+								include ../../img/docquity.svg
 					.hamb-overlay
 					.menu
-						.white-logo
-							a.navbar-link.header-brand-logo(href="index.html")
-								//- img(src="./img/common-img/logo-w.svg", alt="")
-								include ../../img/docquity.svg
 						ul.menu-list.menu-list--left.mb-header-nav
-								
-							
+							li.menu__item.ui.dropdown.header-select-dropdown
+								input(type='hidden' name='Products')
+								.d-flex.align-items-center.menu__link
+									.default.nav-dropdown-text.pr-3 Products
+									//- include ../../img/easebuzz/home/downArrow.svg
+								//- .menu.transition.visible.header-select-dropdown__menu
+								.menu.transition.hidden.header-select-dropdown__menu
+									.skew-pane
+									.item.p-0.nav-menu-lists
+										.nav-menu-lists-item
+											h5.p-4.my-0 Payments
+										//- include ./payments.pug
+									.item.p-0.nav-menu-lists
+										.nav-menu-lists-item
+											h5.p-4.my-0 Value Added Service
+										//- include ./ValueAddedService.pug 
+									.item.p-0.nav-menu-lists
+										.nav-menu-lists-item
+											h5.p-4.my-0 Financial Service
+										//- include ./FinancialService.pug
+							li.menu__item.only-mobile
+								h5.gradient-text.mb-0.pr-3 Products
+								#navMenu.accordion.navMenuList
+									.card
+										#navMenuhead1.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu1' aria-expanded='false' aria-controls='navMenu1') Payments
+										#navMenu1.collapse(aria-labelledby='navMenuhead1' data-parent='#navMenu')
+											.card-body 
+												//- include ./payments.pug
+									.card
+										#navMenuhead2.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu2' aria-expanded='false' aria-controls='navMenu2') Value Added Service
+										#navMenu2.collapse(aria-labelledby='navMenuhead2' data-parent='#navMenu')
+											.card-body 
+												//- include ./ValueAddedService.pug
+									.card
+										#navMenuhead3.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu3' aria-expanded='false' aria-controls='navMenu3') Financial Service
+										#navMenu3.collapse(aria-labelledby='navMenuhead3' data-parent='#navMenu')
+											.card-body 
+												//- include ./FinancialService.pug
 
-							li.menu__item.drodown-header
-								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
-								.dropdown
-									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-										| Products
-									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
-										a.dropdown-item(href='#') Pre Silicon	
-							li.menu__item.drodown-header
-								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
-								.dropdown
-									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-										| Resources
-									.dropdown-menu(aria-labelledby='dropdownMenuButton')
-										a.dropdown-item(href='#') abc
-							li.menu__item.drodown-header
-								//- a(href="#footerSection").js-contact-link.menu__link Contact Us
-								.dropdown
-									button#dropdownMenuButton.btn.header-btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-										| Company
-									.dropdown-menu(aria-labelledby='dropdownMenuButton') 
-										a.dropdown-item(href='#') Company						
+							//- li.menu__item
+								a(href="index.html").menu__link Company
+							li.menu__item.ui.dropdown.header-select-dropdown-company
+								input(type='hidden' name='Company')
+								.d-flex.align-items-center.menu__link
+									.default.nav-dropdown-text.pr-3 Company
+									//- include ../../img/easebuzz/home/downArrow.svg
+								//- .menu.transition.visible.header-select-dropdown-company__menu
+								.menu.transition.hidden.header-select-dropdown-company__menu.p-4
+									//- include ./company.pug
+							li.menu__item.only-mobile
+								//- h5.gradient-text.mb-0.pr-3 Company
+								#navMenu.accordion.navMenuList
+									.card
+										#navMenuhead11.card-header
+											a.btn.btn-header-link(href='#' data-toggle='collapse' data-target='#navMenu10' aria-expanded='false' aria-controls='navMenu10') Company
+										#navMenu10.collapse(aria-labelledby='navMenuhead11' data-parent='#navMenu')
+											.card-body
+												//- include ./company.pug
+							li.menu__item
+								a(href="pricing.html").menu__link Pricing
+								
+							li.menu__item
+								a(href="index.html").menu__link Resources
+							li.menu__item
+								a(href="sign-in.html").menu__link Sign in
+					
+							li.menu__item.header-sign-up
+								a(href="sign-up.html").sign-up Sign up

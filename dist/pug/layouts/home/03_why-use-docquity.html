@@ -6,7 +6,7 @@
         <div class="dq-sec-cntinfo mb-16">                   <span class="dq-sec-subtxt">Why use Docquity?</span></div>
       </div>
       <div class="col-md-10 ml-auto mr-auto col-lg-10 text-center">               
-        <p class="fnt-md text-blackish fnt500 fnt-man mb-30">Acquire the necessary knowledge to be successful in today’s ever changing world. Docquity helps you with masterclasses, courses, webinars, publications and an extensive library of content from the region’s best healthcare professionals.    </p><a class="dq-btn dq-btn--default mt-3" href="javascript;void(0);">Join For Free<img class="ml-4" src="./img/icons/right-arrow.svg" alt="Arrow icon"/></a>
+        <p class="fnt-md text-blackish fnt500 fnt-man mb-30">Acquire the necessary knowledge to be successful in today’s ever changing world. Docquity helps you with masterclasses, courses, webinars, publications and an extensive library of content from the region’s best healthcare professionals.    </p><a class="gray-btn fnt-md fnt600 fnt-man" href="">See Open Roles </a>
       </div>
     </div>
     <div class="row whyusedocquity-row"> 
@@ -14,7 +14,8 @@
         <div class="swiper whyusedocquitySwiper swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="whyusedocquity-card">                              
+              <div class="whyusedocquity-card active" id="card0">
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/discuss.png" alt=""/></div>
                 <div class="whyusedocquity-img"><img src="./img/home/clinical.svg" alt="icon"/></div>
                 <div class="whyusedocquity-text"></div>
                 <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">Discuss Clinical Experiences</h6>
@@ -22,11 +23,30 @@
               </div>
             </div>
             <div class="swiper-slide"> 
-              <div class="whyusedocquity-card">                          
+              <div class="whyusedocquity-card inactive" id="card1">   
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/medicalinsight.png" alt=""/></div>
                 <div class="whyusedocquity-img"><img src="./img/home/medicalinsight.svg" alt="icon"/></div>
                 <div class="whyusedocquity-text"></div>
                 <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">Explore medical Insights</h6>
                 <p class="txt-md text-blackish fnt500 fnt-man">Enjoy ongoing access to a database of recorded sessions, journals, publications and a lot more, so you can learn on your own schedule.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="whyusedocquity-card inactive" id="card2"> 
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/h3doctalks.png" alt=""/></div>
+                <div class="whyusedocquity-img"><img src="./img/home/clinical.svg" alt="icon"/></div>
+                <div class="whyusedocquity-text"></div>
+                <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">H3 DocTalks</h6>
+                <p class="txt-md text-blackish fnt500 fnt-man">We have curated a list of short videos of top key opinion leaders in Asia to ensure even the busiest doctors can participate and learn.</p>
+              </div>
+            </div>
+            <div class="swiper-slide"> 
+              <div class="whyusedocquity-card inactive" id="card3">  
+                <div class="whyusedocquity-div"> <img class="w100" src="./img/home/cmecredit.png" alt=""/></div>
+                <div class="whyusedocquity-img"><img src="./img/home/medicalinsight.svg" alt="icon"/></div>
+                <div class="whyusedocquity-text"></div>
+                <h6 class="fnt-20 text-blackish fnt700 fnt-man lh32 mb-18">H3 Certified CME/CPD Credits</h6>
+                <p class="txt-md text-blackish fnt500 fnt-man">Regularly expand and refresh your medical knowledge on variety of industry topics. All that while securing CME and CPD credits from the comfort of your home.</p>
               </div>
             </div>
           </div>
@@ -42,9 +62,12 @@
         </div>
       </div>
       <div class="col-lg-6 offset-lg-1 col-12">
-        <div class="whyusedocquity-right">
-          <div class="whyusedocquity-right-img"><img class="w100" src="./img/home/whydocquity.png" alt=""/></div>
-        </div>
+        <ul class="whyusedocquity-right">
+          <li class="whyusedocquity-right-img active" id="useBoxcard0"> <img class="w100" src="./img/home/discuss.png" alt=""/></li>
+          <li class="whyusedocquity-right-img" id="useBoxcard1"><img class="w100" src="./img/home/medicalinsight.png" alt=""/></li>
+          <li class="whyusedocquity-right-img" id="useBoxcard2"><img class="w100" src="./img/home/h3doctalks.png" alt=""/></li>
+          <li class="whyusedocquity-right-img" id="useBoxcard3"><img class="w100" src="./img/home/cmecredit.png" alt=""/></li>
+        </ul>
       </div>
     </div>
   </div>

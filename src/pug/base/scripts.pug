@@ -10,6 +10,7 @@ script(defer src='js/plugins/niceselect.js')
 mixin script
     script(src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js")  
     script(defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+     script(defer src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js")
     script(defer src="js/common.js")
     //- script(defer src="js/home.js")
     
@@ -23,11 +24,61 @@ mixin script
         script(defer src="js/about.js")
         script(defer src="js/home.js")
 
-    if(page_name =="career")      
+    if(page_name =="career")   
+        script(defer src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js" referrerpolicy="no-referrer")   
         script(defer src="js/career.js")
         script(defer src="js/home.js")
     
     if(page_name =="faq")
     
         script(defer src="js/faq.js")
+        script(defer src="js/home.js")
+
+    if(page_name =="article")
+    
+        script(defer src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js")   
+        script(defer src="js/article.js")
+        script(defer src="js/home.js")
+
+    if(page_name =="events")
+    
+        script(defer src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js") 
+        script(defer src="js/article.js")  
+        script(defer src="js/events.js")
+        script(defer src="js/home.js")
+
+    if(page_name =="webinar")
+    
+        script(defer src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js") 
+        script(defer src="js/article.js")  
+        script(defer src="js/events.js")
+        script(defer src="js/home.js")     
+    
+    if(page_name =="article-details")    
+       
+        script(defer src="js/article-details.js")  
+        script(defer src="js/home.js")  
+
+    if(page_name =="webinar-takeways")    
+       
+        script(defer src="js/article-details.js")  
+        script(defer src="js/home.js") 
+
+    if(page_name =="webinar-inner")    
+       
+        script(defer src="js/article-details.js")  
+        script(defer src="js/home.js") 
+
+    if(page_name =="clinic")    
+       
+        script(defer src="js/clinic.js")  
+        script(defer src="js/home.js")
+    
+    if(page_name =="wall")    
+       
+        script(defer src="js/home.js")
+
+    if(page_name =="terms")    
+       
+        script(defer src="js/terms.js")
         script(defer src="js/home.js")

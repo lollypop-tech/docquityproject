@@ -23,7 +23,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   }
 
   /*!
-   * GSAP 3.7.1
+   * GSAP 3.9.1
    * https://greensock.com
    *
    * @license Copyright 2008-2021, GreenSock. All rights reserved.
@@ -151,6 +151,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       _round = function _round(value) {
     return Math.round(value * 100000) / 100000 || 0;
   },
+      _roundPrecise = function _roundPrecise(value) {
+    return Math.round(value * 10000000) / 10000000 || 0;
+  },
       _arrayContainsAny = function _arrayContainsAny(toSearch, toFind) {
     var l = toFind.length,
         i = 0;
@@ -192,10 +195,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     return obj;
   },
-      _setKeyframeDefaults = function _setKeyframeDefaults(obj, defaults) {
-    for (var p in defaults) {
-      p in obj || p === "duration" || p === "ease" || (obj[p] = defaults[p]);
-    }
+      _setKeyframeDefaults = function _setKeyframeDefaults(excludeDuration) {
+    return function (obj, defaults) {
+      for (var p in defaults) {
+        p in obj || p === "duration" && excludeDuration || p === "ease" || (obj[p] = defaults[p]);
+      }
+    };
   },
       _merge = function _merge(base, toMerge) {
     for (var p in toMerge) {
@@ -223,7 +228,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   },
       _inheritDefaults = function _inheritDefaults(vars) {
     var parent = vars.parent || _globalTimeline,
-        func = vars.keyframes ? _setKeyframeDefaults : _setDefaults;
+        func = vars.keyframes ? _setKeyframeDefaults(_isArray(vars.keyframes)) : _setDefaults;
 
     if (_isNotFalse(vars.inherit)) {
       while (parent) {
@@ -347,13 +352,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     return (parentTime - child._start) * child._ts + (child._ts >= 0 ? 0 : child._dirty ? child.totalDuration() : child._tDur);
   },
       _setEnd = function _setEnd(animation) {
-    return animation._end = _round(animation._start + (animation._tDur / Math.abs(animation._ts || animation._rts || _tinyNum) || 0));
+    return animation._end = _roundPrecise(animation._start + (animation._tDur / Math.abs(animation._ts || animation._rts || _tinyNum) || 0));
   },
       _alignPlayhead = function _alignPlayhead(animation, totalTime) {
     var parent = animation._dp;
 
     if (parent && parent.smoothChildTiming && animation._ts) {
-      animation._start = _round(parent._time - (animation._ts > 0 ? totalTime / animation._ts : ((animation._dirty ? animation.totalDuration() : animation._tDur) - totalTime) / -animation._ts));
+      animation._start = _roundPrecise(parent._time - (animation._ts > 0 ? totalTime / animation._ts : ((animation._dirty ? animation.totalDuration() : animation._tDur) - totalTime) / -animation._ts));
 
       _setEnd(animation);
 
@@ -388,8 +393,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   },
       _addToTimeline = function _addToTimeline(timeline, child, position, skipChecks) {
     child.parent && _removeFromParent(child);
-    child._start = _round((_isNumber(position) ? position : position || timeline !== _globalTimeline ? _parsePosition(timeline, position, child) : timeline._time) + child._delay);
-    child._end = _round(child._start + (child.totalDuration() / Math.abs(child.timeScale()) || 0));
+    child._start = _roundPrecise((_isNumber(position) ? position : position || timeline !== _globalTimeline ? _parsePosition(timeline, position, child) : timeline._time) + child._delay);
+    child._end = _roundPrecise(child._start + (child.totalDuration() / Math.abs(child.timeScale()) || 0));
 
     _addLinkedListItem(timeline, child, "_first", "_last", timeline._sort ? "_start" : 0);
 
@@ -434,10 +439,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     if (repeatDelay && tween._repeat) {
       tTime = _clamp(0, tween._tDur, totalTime);
       iteration = _animationCycle(tTime, repeatDelay);
-      prevIteration = _animationCycle(tween._tTime, repeatDelay);
       tween._yoyo && iteration & 1 && (ratio = 1 - ratio);
 
-      if (iteration !== prevIteration) {
+      if (iteration !== _animationCycle(tween._tTime, repeatDelay)) {
         prevRatio = 1 - ratio;
         tween.vars.repeatRefresh && tween._initted && tween.invalidate();
       }
@@ -486,7 +490,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       child = animation._first;
 
       while (child && child._start <= time) {
-        if (!child._dur && child.data === "isPause" && child._start > prevTime) {
+        if (child.data === "isPause" && child._start > prevTime) {
           return child;
         }
 
@@ -496,7 +500,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       child = animation._last;
 
       while (child && child._start >= time) {
-        if (!child._dur && child.data === "isPause" && child._start < prevTime) {
+        if (child.data === "isPause" && child._start < prevTime) {
           return child;
         }
 
@@ -506,12 +510,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   },
       _setDuration = function _setDuration(animation, duration, skipUncache, leavePlayhead) {
     var repeat = animation._repeat,
-        dur = _round(duration) || 0,
+        dur = _roundPrecise(duration) || 0,
         totalProgress = animation._tTime / animation._tDur;
     totalProgress && !leavePlayhead && (animation._time *= dur / animation._dur);
     animation._dur = dur;
-    animation._tDur = !repeat ? dur : repeat < 0 ? 1e10 : _round(dur * (repeat + 1) + animation._rDelay * repeat);
-    totalProgress && !leavePlayhead ? _alignPlayhead(animation, animation._tTime = animation._tDur * totalProgress) : animation.parent && _setEnd(animation);
+    animation._tDur = !repeat ? dur : repeat < 0 ? 1e10 : _roundPrecise(dur * (repeat + 1) + animation._rDelay * repeat);
+    totalProgress > 0 && !leavePlayhead ? _alignPlayhead(animation, animation._tTime = animation._tDur * totalProgress) : animation.parent && _setEnd(animation);
     skipUncache || _uncache(animation.parent, animation);
     return animation;
   },
@@ -588,14 +592,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       _clamp = function _clamp(min, max, value) {
     return value < min ? min : value > max ? max : value;
   },
-      getUnit = function getUnit(value) {
-    if (typeof value !== "string") {
-      return "";
-    }
-
-    var v = _unitExp.exec(value);
-
-    return v ? value.substr(v.index + v[0].length) : "";
+      getUnit = function getUnit(value, v) {
+    return !_isString(value) || !(v = _unitExp.exec(value)) ? "" : value.substr(v.index + v[0].length);
   },
       clamp = function clamp(min, max, value) {
     return _conditionalReturn(value, function (v) {
@@ -687,7 +685,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         distances = cache[l] = [];
         originX = ratios ? Math.min(wrapAt, l) * ratioX - .5 : from % wrapAt;
-        originY = ratios ? l * ratioY / wrapAt - .5 : from / wrapAt | 0;
+        originY = wrapAt === _bigNum ? 0 : ratios ? l * ratioY / wrapAt - .5 : from / wrapAt | 0;
         max = 0;
         min = _bigNum;
 
@@ -709,11 +707,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }
 
       l = (distances[i] - distances.min) / distances.max || 0;
-      return _round(distances.b + (ease ? ease(l) : l) * distances.v) + distances.u;
+      return _roundPrecise(distances.b + (ease ? ease(l) : l) * distances.v) + distances.u;
     };
   },
       _roundModifier = function _roundModifier(v) {
-    var p = v < 1 ? Math.pow(10, (v + "").length - 2) : 1;
+    var p = Math.pow(10, ((v + "").split(".")[1] || "").length);
     return function (raw) {
       var n = Math.round(parseFloat(raw) / v) * v * p;
       return (n - n % 1) / p + (_isNumber(raw) ? 0 : getUnit(raw));
@@ -1009,7 +1007,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     transparent: [_255, _255, _255, 0]
   },
       _hue = function _hue(h, m1, m2) {
-    h = h < 0 ? h + 1 : h > 1 ? h - 1 : h;
+    h += h < 0 ? 1 : h > 1 ? -1 : 0;
     return (h * 6 < 1 ? m1 + (m2 - m1) * h * 6 : h < .5 ? m2 : h * 3 < 2 ? m1 + (m2 - m1) * (2 / 3 - h) * 6 : m1) * _255 + .5 | 0;
   },
       splitColor = function splitColor(v, toHSL, forceAlpha) {
@@ -1272,8 +1270,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         _wake();
       },
-      remove: function remove(callback) {
-        var i;
+      remove: function remove(callback, i) {
         ~(i = _listeners.indexOf(callback)) && _listeners.splice(i, 1) && _i >= i && _i--;
       },
       _listeners: _listeners
@@ -1551,7 +1548,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
         !parent._dp || parent.parent || _postAddChecks(parent, this);
 
-        while (parent.parent) {
+        while (parent && parent.parent) {
           if (parent.parent._time !== parent._start + (parent._ts >= 0 ? parent._tTime / parent._ts : (parent.totalDuration() - parent._tTime) / -parent._ts)) {
             parent.totalTime(parent._tTime, true);
           }
@@ -1603,7 +1600,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       var tTime = this.parent && this._ts ? _parentToChildTotalTime(this.parent._time, this) : this._tTime;
       this._rts = +value || 0;
       this._ts = this._ps || value === -_tinyNum ? 0 : this._rts;
-      return _recacheAncestors(this.totalTime(_clamp(-this._delay, this._tDur, tTime), true));
+
+      _recacheAncestors(this.totalTime(_clamp(-this._delay, this._tDur, tTime), true));
+
+      _setEnd(this);
+
+      return this;
     };
 
     _proto.paused = function paused(value) {
@@ -1640,7 +1642,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     };
 
     _proto.endTime = function endTime(includeRepeats) {
-      return this._start + (_isNotFalse(includeRepeats) ? this.totalDuration() : this.duration()) / Math.abs(this._ts);
+      return this._start + (_isNotFalse(includeRepeats) ? this.totalDuration() : this.duration()) / Math.abs(this._ts || 1);
     };
 
     _proto.rawTime = function rawTime(wrapRepeats) {
@@ -1887,7 +1889,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       var prevTime = this._time,
           tDur = this._dirty ? this.totalDuration() : this._tDur,
           dur = this._dur,
-          tTime = this !== _globalTimeline && totalTime > tDur - _tinyNum && totalTime >= 0 ? tDur : totalTime < _tinyNum ? 0 : totalTime,
+          tTime = totalTime <= 0 ? 0 : _roundPrecise(totalTime),
           crossingStart = this._zTime < 0 !== totalTime < 0 && (this._initted || !dur),
           time,
           child,
@@ -1901,6 +1903,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           prevIteration,
           yoyo,
           isYoyo;
+      this !== _globalTimeline && tTime > tDur && totalTime >= 0 && (tTime = tDur);
 
       if (tTime !== this._tTime || force || crossingStart) {
         if (prevTime !== this._time && dur) {
@@ -1926,7 +1929,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return this.totalTime(cycleDuration * 100 + totalTime, suppressEvents, force);
           }
 
-          time = _round(tTime % cycleDuration);
+          time = _roundPrecise(tTime % cycleDuration);
 
           if (tTime === tDur) {
             iteration = this._repeat;
@@ -1956,7 +1959,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             iteration < prevIteration && (rewinding = !rewinding);
             prevTime = rewinding ? 0 : dur;
             this._lock = 1;
-            this.render(prevTime || (isYoyo ? 0 : _round(iteration * cycleDuration)), suppressEvents, !dur)._lock = 0;
+            this.render(prevTime || (isYoyo ? 0 : _roundPrecise(iteration * cycleDuration)), suppressEvents, !dur)._lock = 0;
             this._tTime = tTime;
             !suppressEvents && this.parent && _callback(this, "onRepeat");
             this.vars.repeatRefresh && !isYoyo && (this.invalidate()._lock = 1);
@@ -1986,7 +1989,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
 
         if (this._hasPause && !this._forcing && this._lock < 2) {
-          pauseTween = _findNextPauseTween(this, _round(prevTime), _round(time));
+          pauseTween = _findNextPauseTween(this, _roundPrecise(prevTime), _roundPrecise(time));
 
           if (pauseTween) {
             tTime -= time - (time = pauseTween._start);
@@ -2187,7 +2190,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       this._forcing = 1;
 
       if (!this._dp && this._ts) {
-        this._start = _round(_ticker.time - (this._ts > 0 ? _totalTime2 / this._ts : (this.totalDuration() - _totalTime2) / -this._ts));
+        this._start = _roundPrecise(_ticker.time - (this._ts > 0 ? _totalTime2 / this._ts : (this.totalDuration() - _totalTime2) / -this._ts));
       }
 
       _Animation.prototype.totalTime.call(this, _totalTime2, suppressEvents);
@@ -2643,11 +2646,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     tween._from = !tl && !!vars.runBackwards;
 
-    if (!tl) {
+    if (!tl || keyframes && !vars.stagger) {
       harness = targets[0] ? _getCache(targets[0]).harness : 0;
       harnessVars = harness && vars[harness.prop];
       cleanVars = _copyExcluding(vars, _reservedProps);
-      prevStartAt && prevStartAt.render(-1, true).kill();
+      prevStartAt && _removeFromParent(prevStartAt.render(-1, true));
 
       if (startAt) {
         _removeFromParent(tween._startAt = Tween.set(targets, _setDefaults({
@@ -2694,6 +2697,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           _removeFromParent(tween._startAt = Tween.set(targets, p));
 
           time < 0 && tween._startAt.render(-1, true);
+          tween._zTime = time;
 
           if (!immediateRender) {
             _initTween(tween._startAt, _tinyNum);
@@ -2738,7 +2742,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         if (autoOverwrite && tween._pt) {
           _overwritingTween = tween;
 
-          _globalTimeline.killTweensOf(target, ptLookup, tween.globalTime(0));
+          _globalTimeline.killTweensOf(target, ptLookup, tween.globalTime(time));
 
           overwritten = !tween.parent;
           _overwritingTween = 0;
@@ -2753,6 +2757,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     tween._onUpdate = onUpdate;
     tween._initted = (!tween._op || tween._pt) && !overwritten;
+    keyframes && time <= 0 && tl.render(_bigNum, true, true);
   },
       _addAliasesToVars = function _addAliasesToVars(targets, vars) {
     var harness = targets[0] ? _getCache(targets[0]).harness : 0,
@@ -2781,11 +2786,40 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     return copy;
   },
+      _parseKeyframe = function _parseKeyframe(prop, obj, allProps, easeEach) {
+    var ease = obj.ease || easeEach || "power1.inOut",
+        p,
+        a;
+
+    if (_isArray(obj)) {
+      a = allProps[prop] || (allProps[prop] = []);
+      obj.forEach(function (value, i) {
+        return a.push({
+          t: i / (obj.length - 1) * 100,
+          v: value,
+          e: ease
+        });
+      });
+    } else {
+      for (p in obj) {
+        a = allProps[p] || (allProps[p] = []);
+        p === "ease" || a.push({
+          t: parseFloat(prop),
+          v: obj[p],
+          e: ease
+        });
+      }
+    }
+  },
       _parseFuncOrString = function _parseFuncOrString(value, tween, i, target, targets) {
     return _isFunction(value) ? value.call(tween, i, target, targets) : _isString(value) && ~value.indexOf("random(") ? _replaceRandom(value) : value;
   },
       _staggerTweenProps = _callbackNames + "repeat,repeatDelay,yoyo,repeatRefresh,yoyoEase",
-      _staggerPropsToSkip = (_staggerTweenProps + ",id,stagger,delay,duration,paused,scrollTrigger").split(",");
+      _staggerPropsToSkip = {};
+
+  _forEachName(_staggerTweenProps + ",id,stagger,delay,duration,paused,scrollTrigger", function (name) {
+    return _staggerPropsToSkip[name] = 1;
+  });
 
   var Tween = function (_Animation2) {
     _inheritsLoose(Tween, _Animation2);
@@ -2834,21 +2868,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         tl.parent = tl._dp = _assertThisInitialized(_this3);
         tl._start = 0;
 
-        if (keyframes) {
-          _setDefaults(tl.vars.defaults, {
-            ease: "none"
-          });
-
-          stagger ? parsedTargets.forEach(function (t, i) {
-            return keyframes.forEach(function (frame, j) {
-              return tl.to(t, frame, j ? ">" : i * stagger);
-            });
-          }) : keyframes.forEach(function (frame) {
-            return tl.to(parsedTargets, frame, ">");
-          });
-        } else {
+        if (stagger || _isFuncOrString(duration) || _isFuncOrString(delay)) {
           l = parsedTargets.length;
-          staggerFunc = stagger ? distribute(stagger) : _emptyFunc;
+          staggerFunc = stagger && distribute(stagger);
 
           if (_isObject(stagger)) {
             for (p in stagger) {
@@ -2860,14 +2882,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           }
 
           for (i = 0; i < l; i++) {
-            copy = {};
-
-            for (p in vars) {
-              if (_staggerPropsToSkip.indexOf(p) < 0) {
-                copy[p] = vars[p];
-              }
-            }
-
+            copy = _copyExcluding(vars, _staggerPropsToSkip);
             copy.stagger = 0;
             yoyoEase && (copy.yoyoEase = yoyoEase);
             staggerVarsToMerge && _merge(copy, staggerVarsToMerge);
@@ -2881,10 +2896,55 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
               copy.delay = 0;
             }
 
-            tl.to(curTarget, copy, staggerFunc(i, curTarget, parsedTargets));
+            tl.to(curTarget, copy, staggerFunc ? staggerFunc(i, curTarget, parsedTargets) : 0);
+            tl._ease = _easeMap.none;
           }
 
           tl.duration() ? duration = delay = 0 : _this3.timeline = 0;
+        } else if (keyframes) {
+          _inheritDefaults(_setDefaults(tl.vars.defaults, {
+            ease: "none"
+          }));
+
+          tl._ease = _parseEase(keyframes.ease || vars.ease || "none");
+          var time = 0,
+              a,
+              kf,
+              v;
+
+          if (_isArray(keyframes)) {
+            keyframes.forEach(function (frame) {
+              return tl.to(parsedTargets, frame, ">");
+            });
+          } else {
+            copy = {};
+
+            for (p in keyframes) {
+              p === "ease" || p === "easeEach" || _parseKeyframe(p, keyframes[p], copy, keyframes.easeEach);
+            }
+
+            for (p in copy) {
+              a = copy[p].sort(function (a, b) {
+                return a.t - b.t;
+              });
+              time = 0;
+
+              for (i = 0; i < a.length; i++) {
+                kf = a[i];
+                v = {
+                  ease: kf.e,
+                  duration: (kf.t - (i ? a[i - 1].t : 0)) / 100 * duration
+                };
+                v[p] = kf.v;
+                tl.to(parsedTargets, v, time);
+                time += v.duration;
+              }
+            }
+
+            tl.duration() < duration && tl.to({}, {
+              duration: duration - tl.duration()
+            });
+          }
         }
 
         duration || _this3.duration(duration = tl.duration());
@@ -2905,7 +2965,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       vars.reversed && _this3.reverse();
       vars.paused && _this3.paused(true);
 
-      if (immediateRender || !duration && !keyframes && _this3._start === _round(parent._time) && _isNotFalse(immediateRender) && _hasNoPausedAncestors(_assertThisInitialized(_this3)) && parent.data !== "nested") {
+      if (immediateRender || !duration && !keyframes && _this3._start === _roundPrecise(parent._time) && _isNotFalse(immediateRender) && _hasNoPausedAncestors(_assertThisInitialized(_this3)) && parent.data !== "nested") {
         _this3._tTime = -_tinyNum;
 
         _this3.render(Math.max(0, -delay));
@@ -2945,7 +3005,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return this.totalTime(cycleDuration * 100 + totalTime, suppressEvents, force);
           }
 
-          time = _round(tTime % cycleDuration);
+          time = _roundPrecise(tTime % cycleDuration);
 
           if (tTime === tDur) {
             iteration = this._repeat;
@@ -2979,7 +3039,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
             if (this.vars.repeatRefresh && !isYoyo && !this._lock) {
               this._lock = force = 1;
-              this.render(_round(cycleDuration * iteration), true).invalidate()._lock = 0;
+              this.render(_roundPrecise(cycleDuration * iteration), true).invalidate()._lock = 0;
             }
           }
         }
@@ -3024,7 +3084,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           pt = pt._next;
         }
 
-        timeline && timeline.render(totalTime < 0 ? totalTime : !time && isYoyo ? -_tinyNum : timeline._dur * ratio, suppressEvents, force) || this._startAt && (this._zTime = totalTime);
+        timeline && timeline.render(totalTime < 0 ? totalTime : !time && isYoyo ? -_tinyNum : timeline._dur * timeline._ease(time / this._dur), suppressEvents, force) || this._startAt && (this._zTime = totalTime);
 
         if (this._onUpdate && !suppressEvents) {
           totalTime < 0 && this._startAt && this._startAt.render(totalTime, true, force);
@@ -3626,7 +3686,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }
     }
   }, _buildModifierPlugin("roundProps", _roundModifier), _buildModifierPlugin("modifiers"), _buildModifierPlugin("snap", snap)) || _gsap;
-  Tween.version = Timeline.version = gsap.version = "3.7.1";
+  Tween.version = Timeline.version = gsap.version = "3.9.1";
   _coreReady = 1;
   _windowExists() && _wake();
   var Power0 = _easeMap.Power0,
@@ -4771,7 +4831,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         } else if (type !== "undefined") {
           if (startAt && p in startAt) {
             startValue = typeof startAt[p] === "function" ? startAt[p].call(tween, index, target, targets) : startAt[p];
-            p in _config.units && !getUnit(startValue) && (startValue += _config.units[p]);
+            _isString(startValue) && ~startValue.indexOf("random(") && (startValue = _replaceRandom(startValue));
+            getUnit(startValue + "") || (startValue += _config.units[p] || getUnit(_get(target, p)) || "");
             (startValue + "").charAt(1) === "=" && (startValue = _get(target, p));
           } else {
             startValue = _get(target, p);
@@ -4857,7 +4918,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             this._pt = new PropTween(this._pt, isTransformRelated ? cache : style, p, startNum, relative ? relative * endNum : endNum - startNum, !isTransformRelated && (endUnit === "px" || p === "zIndex") && vars.autoRound !== false ? _renderRoundedCSSProp : _renderCSSProp);
             this._pt.u = endUnit || 0;
 
-            if (startUnit !== endUnit) {
+            if (startUnit !== endUnit && endUnit !== "%") {
               this._pt.b = startValue;
               this._pt.r = _renderCSSPropWithBeginning;
             }
@@ -4971,107 +5032,115 @@ var commonAnimations = new _newScollInteraction2.default();
 // import homeAnimation from "./gsap/home-interactions";
 // const homeinteractions = new homeAnimation();
 
-
 /** footer-animations **/
 
 // import FooterAnim from "./gsap/footer.js";
 // const footeranimate = new FooterAnim();
 
+// $(document).ready(function() {
+
+//     //parsely
+//     $('#formEmail').parsley();
+//     //nice select
+//     $('select').niceSelect();
+//     $('select').val(1).niceSelect('update');
+
+//     $(".js-tab-slider .nav-link").click(function(e) {
+//         e.preventDefault()
+//         $(".js-tab-slider .nav-link").removeClass("active")
+//         $(this).addClass("active")
+//         let id = $(this).attr('href');
+//         $(".c-tabs__content li").removeClass("active")
+//         $(id).addClass("active")
+
+//     })
+
+//scroll to footer
+
+//     $('.js-contact-link').click(function() {
+//         $('html, body').animate({
+//             scrollTop: $($(this).attr('href')).offset().top
+//         }, 1000);
+//         return false;
+//     });
+
+// });
+
+// mental health
+
+// $(document).ready(function() {
+//     $('select').niceSelect();
+//     $('select').val(1).niceSelect('update');
+
+//     $(".js-health-tabs-slider .nav-link").click(function(e) {
+//         e.preventDefault()
+//         $(".js-health-tabs-slider .nav-link").removeClass("active")
+//         $(this).addClass("active")
+//         let id = $(this).attr('href');
+//         $(".health-tabs-content__content li").removeClass("active")
+//         $(id).addClass("active")
+
+//     })
+// });
+
+// gallery
+
+// $(document).ready(function() {
+//     $('select').niceSelect();
+//     $('select').val(1).niceSelect('update');
+
+//     $(".js-gallery-tabs-slider .nav-link").click(function(e) {
+//         e.preventDefault()
+//         $(".js-gallery-tabs-slider .nav-link").removeClass("active")
+//         $(this).addClass("active")
+//         let id = $(this).attr('href');
+//         $(".gallery-tabs-content__content li").removeClass("active")
+//         $(id).addClass("active")
+
+//     })
+// });
 
 /** Home-interactions **/
 // Website wide scripts
 $(document).ready(function () {
-    $('select').niceSelect();
-    $('select').val(1).niceSelect('update');
-
-    $(".js-tab-slider .nav-link").click(function (e) {
-        e.preventDefault();
-        $(".js-tab-slider .nav-link").removeClass("active");
-        $(this).addClass("active");
-        var id = $(this).attr('href');
-        $(".c-tabs__content li").removeClass("active");
-        $(id).addClass("active");
-    });
-
-    //scroll to footer
-
-
-    $('.js-contact-link').click(function () {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 1000);
-        return false;
-    });
-
-    // // new
-
-    // $(function () {
-    //     //Cycles through each of the links in the nav
-    //     $('.sidebar li a').each(function () {
-    //         console.log(window.location.pathname);
-
-    //         //Compares the href of the nav a element to the URL page
-    //         if ($(this).attr('href') == window.location.pathname) {
-
-    //             //If they match, add class name to the parent li element
-    //             $(this).parent().addClass('active');
-    //         }
-    //     });
-    // });
+  $(".ui.dropdown.header-select-dropdown").dropdown();
+  $(".ui.dropdown.header-select-dropdown-company").dropdown();
+  $(".ui.selection.dropdown.help-dropdown").dropdown();
 });
+// MOUSE HOVER HOME PAGE BANNER SECTION
+// var x, y;
+// var px, py;
+// px = py = 0;
 
-// mental health
+// // Image of cursor
+// var cursor = document.getElementById("cursorAction");
+// var cursor1 = document.getElementById("cursorAction1");
 
-$(document).ready(function () {
-    $('select').niceSelect();
-    $('select').val(1).niceSelect('update');
+// var mutex = false;
+// window.addEventListener("mouseup", function (e) {
+//   // gets the object on image cursor position
+//   var tmp = document.elementFromPoint(x + px, y + py);
+//   mutex = true;
+//   tmp.click();
+//   cursor.style.left = px + x + "px";
+//   cursor.style.top = py + y + "px";
+//   cursor1.style.left = px + x + "px";
+//   cursor1.style.top = py + y + "px";
+// });
 
-    $(".js-health-tabs-slider .nav-link").click(function (e) {
-        e.preventDefault();
-        $(".js-health-tabs-slider .nav-link").removeClass("active");
-        $(this).addClass("active");
-        var id = $(this).attr('href');
-        $(".health-tabs-content__content li").removeClass("active");
-        $(id).addClass("active");
-    });
-});
+// window.addEventListener("mousemove", function (e) {
+//   // Gets the x,y position of the mouse cursor
+//   x = e.clientX - 400;
+//   y = e.clientY - 400;
 
-// gallery
+//   // sets the image cursor to new relative position
+//   cursor.style.left = px + x + "px";
+//   cursor.style.top = py + y + "px";
+//   cursor1.style.left = px + x + "px";
+//   cursor1.style.top = py + y + "px";
+// });
 
-$(document).ready(function () {
-    $('select').niceSelect();
-    $('select').val(1).niceSelect('update');
-
-    $(".js-gallery-tabs-slider .nav-link").click(function (e) {
-        e.preventDefault();
-        $(".js-gallery-tabs-slider .nav-link").removeClass("active");
-        $(this).addClass("active");
-        var id = $(this).attr('href');
-        $(".gallery-tabs-content__content li").removeClass("active");
-        $(id).addClass("active");
-    });
-});
-
-// sticky header
-
-var $window = $(window);
-var $sidebar = $(".sidebar");
-var $sidebarHeight = $sidebar.innerHeight();
-var $footerOffsetTop = $(".footer").offset().top;
-var $sidebarOffset = $sidebar.offset();
-
-$window.scroll(function () {
-    if ($window.scrollTop() > $sidebarOffset.top) {
-        $sidebar.addClass("fixed");
-    } else {
-        $sidebar.removeClass("fixed");
-    }
-    if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop) {
-        $sidebar.css({ "top": -($window.scrollTop() + $sidebarHeight - $footerOffsetTop) });
-    } else {
-        $sidebar.css({ "top": "0" });
-    }
-});
+// MOUSE HOVER HOME PAGE BANNER SECTION
 
 },{"./components/menuInteractions":3,"./components/onloadInteractions":4,"./gsap/new-scoll-interaction":5}],3:[function(require,module,exports){
 // document.addEventListener("DOMContentLoaded", () => {

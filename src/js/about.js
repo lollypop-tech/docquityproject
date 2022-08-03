@@ -259,3 +259,8 @@ var rightSlider = new Swiper('.investor-icons', {
     }
   }
 });
+
+
+
+
+// map javascript

@@ -6,27 +6,47 @@ section.whyusedocquity-section
                     span.dq-sec-subtxt Why use Docquity?
             .col-md-10.ml-auto.mr-auto.col-lg-10.text-center                
                 p.fnt-md.text-blackish.fnt500.fnt-man.mb-30 Acquire the necessary knowledge to be successful in today’s ever changing world. Docquity helps you with masterclasses, courses, webinars, publications and an extensive library of content from the region’s best healthcare professionals.    
-                a.dq-btn.dq-btn--default.mt-3(href="javascript;void(0);")
-                    | Join For Free
-                    img.ml-4(src="./img/icons/right-arrow.svg", alt="Arrow icon")
+                a.gray-btn.fnt-md.fnt600.fnt-man(href="") See Open Roles 
         .row.whyusedocquity-row 
             .col-lg-5.col-12
                 .swiper.whyusedocquitySwiper.swiper-container
                     .swiper-wrapper
                         .swiper-slide
-                            .whyusedocquity-card                               
+                            .whyusedocquity-card.active#card0
+                                .whyusedocquity-div 
+                                    img.w100(src="./img/home/discuss.png", alt="")
                                 .whyusedocquity-img
                                     img(src="./img/home/clinical.svg", alt="icon") 
                                 .whyusedocquity-text
                                 h6.fnt-20.text-blackish.fnt700.fnt-man.lh32.mb-18 Discuss Clinical Experiences
                                 p.txt-md.text-blackish.fnt500.fnt-man You’ll get invaluable support from a network of capable peers who understand the challenges you face and want to see you succeed.
                         .swiper-slide 
-                            .whyusedocquity-card                           
+                            .whyusedocquity-card.inactive#card1    
+                                .whyusedocquity-div 
+                                    img.w100(src="./img/home/medicalinsight.png", alt="")
                                 .whyusedocquity-img
                                     img(src="./img/home/medicalinsight.svg", alt="icon") 
                                 .whyusedocquity-text
                                 h6.fnt-20.text-blackish.fnt700.fnt-man.lh32.mb-18 Explore medical Insights
                                 p.txt-md.text-blackish.fnt500.fnt-man Enjoy ongoing access to a database of recorded sessions, journals, publications and a lot more, so you can learn on your own schedule.
+                        .swiper-slide
+                            .whyusedocquity-card.inactive#card2 
+                                .whyusedocquity-div 
+                                    img.w100(src="./img/home/h3doctalks.png", alt="")                              
+                                .whyusedocquity-img
+                                    img(src="./img/home/clinical.svg", alt="icon") 
+                                .whyusedocquity-text
+                                h6.fnt-20.text-blackish.fnt700.fnt-man.lh32.mb-18 H3 DocTalks
+                                p.txt-md.text-blackish.fnt500.fnt-man We have curated a list of short videos of top key opinion leaders in Asia to ensure even the busiest doctors can participate and learn.
+                        .swiper-slide 
+                            .whyusedocquity-card.inactive#card3   
+                                .whyusedocquity-div 
+                                    img.w100(src="./img/home/cmecredit.png", alt="")                        
+                                .whyusedocquity-img
+                                    img(src="./img/home/medicalinsight.svg", alt="icon") 
+                                .whyusedocquity-text
+                                h6.fnt-20.text-blackish.fnt700.fnt-man.lh32.mb-18 H3 Certified CME/CPD Credits
+                                p.txt-md.text-blackish.fnt500.fnt-man Regularly expand and refresh your medical knowledge on variety of industry topics. All that while securing CME and CPD credits from the comfort of your home.
                     .swiper-button-next
                         <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="arr" d="M5.26674 0.288783C5.19978 0.221818 5.12277 0.188336 5.03572 0.188336C4.94866 0.188336 4.87165 0.221818 4.80469 0.288783L0.123884 4.96959C0.0569201 5.03655 0.023438 5.11356 0.023438 5.20061C0.023438 5.28767 0.0569201 5.36468 0.123884 5.43164L4.80469 10.1124C4.87165 10.1794 4.94866 10.2129 5.03571 10.2129C5.12277 10.2129 5.19978 10.1794 5.26674 10.1124L5.76897 9.61021C5.83594 9.54325 5.86942 9.46624 5.86942 9.37919C5.86942 9.29213 5.83594 9.21512 5.76897 9.14816L1.82143 5.20061L5.76897 1.25307C5.83594 1.1861 5.86942 1.1091 5.86942 1.02204C5.86942 0.934988 5.83594 0.857979 5.76897 0.791015L5.26674 0.288783Z" fill="#1B4A52"/>
@@ -37,6 +57,12 @@ section.whyusedocquity-section
                         </svg>
                     .swiper-pagination
             .col-lg-6.offset-lg-1.col-12
-                .whyusedocquity-right
-                    .whyusedocquity-right-img
-                        img.w100(src="./img/home/whydocquity.png", alt="")
+                ul.whyusedocquity-right
+                    li.whyusedocquity-right-img.active#useBoxcard0 
+                        img.w100(src="./img/home/discuss.png", alt="")
+                    li.whyusedocquity-right-img#useBoxcard1
+                        img.w100(src="./img/home/medicalinsight.png", alt="")
+                    li.whyusedocquity-right-img#useBoxcard2
+                        img.w100(src="./img/home/h3doctalks.png", alt="")
+                    li.whyusedocquity-right-img#useBoxcard3
+                        img.w100(src="./img/home/cmecredit.png", alt="")
